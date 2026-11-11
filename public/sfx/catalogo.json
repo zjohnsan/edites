@@ -1,0 +1,1210 @@
+{
+  "totalSounds": 200,
+  "defaultSounds": {
+    "pop": "SONIDOS/efecto de sonido POP.mp3",
+    "whoosh": "Whosh/Swipe Swoosh Transition Sound Effect.mp3",
+    "ding": "SONIDOS/ES_Notification, Tutorial Message Appear, Attention, Video Game 02 - Epidemic Sound.mp3"
+  },
+  "sounds": [
+    {
+      "path": "Impact y hit/ES_Bass, Boom, Sub, Very Low, Long Revererbant Tail - Epidemic Sound (2).mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 10.58,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Big, Deep Impact, Sub 01 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 4.53,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Designed, Bass Dive, Downer, Transition, Cinematic, Big, Suspense, Variations 01 - Epidemic Sound - 0202-11905.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 11.7,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Impact y hit/ES_Designed, Bass Dive, Impact, Electronic, Deep, Dark, Clean - Epidemic Sound.mp3",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 2.75,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "Impact y hit/ES_Designed, Bass Dive, Trailer Sub, Fall Down, Short, Clean 01 - Epidemic Sound.mp3",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 1.34,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "Impact y hit/ES_Designed, Boom, Bass, Boom, Sub, Low, Long Revererbant Tail - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 7.59,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Designed, Impact, Hit, Big, Dark, Cinematic, Mysterious - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 7.67,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Designed, Stinger, Cinematic Hit, Impact, Metallic Rattle, Riser - Epidemic Sound - 4888-9776.wav",
+      "category": "riser_tension",
+      "durationSeconds": 4.89,
+      "usage": "Subida de tensi?n / suspenso antes de un remate o momento clave"
+    },
+    {
+      "path": "Impact y hit/ES_Designed, Stinger, Distorted Sub Pulse, Impact - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 10.91,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Impact, Dark, Cinematic, Aggressive Hit - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 9.69,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Impact, Dark, Cinematic, Hard Hit 01 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 5.0,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Impact, Dark, Cinematic, Heavy Hit, Rumble - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 5.38,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Impact, Suspense Hit 02 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 11.18,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Low Hit - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 3.55,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Musical, Sample, Stinger, Horror, Scary, Metallic, Creepy, Eerie - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 3.65,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "Impact y hit/ES_Trailer Sub, Fall Down, Medium, Clean 04 - Epidemic Sound.mp3",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 2.52,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "Impact y hit/Efecto de Sonido Impacto - Sonido para TUS VÍDEOS.mp3",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 2.9,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "Riser/ES_Bass, Sharp Detail Riser - Epidemic Sound.mp3",
+      "category": "riser_tension",
+      "durationSeconds": 0.97,
+      "usage": "Subida de tensi?n / suspenso antes de un remate o momento clave"
+    },
+    {
+      "path": "Riser/ES_Designed, Riser, Bass, Sharp Detail Riser - Epidemic Sound (1).mp3",
+      "category": "riser_tension",
+      "durationSeconds": 0.97,
+      "usage": "Subida de tensi?n / suspenso antes de un remate o momento clave"
+    },
+    {
+      "path": "Riser/ES_Designed, Riser, Riser, Transition, Acoustic Guitar 06 - Epidemic Sound - 0000-5206.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 5.21,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Riser/ES_Designed, Riser, Trailer Swell, Reverse 01 - Epidemic Sound.mp3",
+      "category": "riser_tension",
+      "durationSeconds": 7.75,
+      "usage": "Subida de tensi?n / suspenso antes de un remate o momento clave"
+    },
+    {
+      "path": "Riser/ES_Short, Cinematic, Gritty - Epidemic Sound.mp3",
+      "category": "riser_tension",
+      "durationSeconds": 4.3,
+      "usage": "Subida de tensi?n / suspenso antes de un remate o momento clave"
+    },
+    {
+      "path": "Riser/ES_Transition, Long, Build Up, Musical, Mysterious 02 - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 7.62,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "SONIDOS/Among Us Impostor Sound Effect.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 5.69,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/Bonk Sound Effect.mp3",
+      "category": "meme_bonk_golpe_comico",
+      "durationSeconds": 0.98,
+      "usage": "Golpe c?mico (Bonk) ideal para errores tontos o chistes"
+    },
+    {
+      "path": "SONIDOS/ButtonPlate Click (Minecraft Sound) - Sound Effect for editing.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 0.88,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/Comer De Minecraft - Sonido.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 4.34,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/Coro Celestial (Efecto de Sonido) Heavenly Choir.mp3",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 40.44,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/Discord Disconnect  Sound Effect.mp3",
+      "category": "error_fail_tristeza",
+      "durationSeconds": 5.09,
+      "usage": "Sonido de error, rechazo, decepci?n, desconexi?n o fail (Roblox Oof, Discord, Low Honor)"
+    },
+    {
+      "path": "SONIDOS/ES_155959_Designed, Impact, Distorted, Crunchy Shot.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 4.68,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_158029_Designed, Impact, Hit, Big, Powerful, Cinematic, Epic, Thunderblast.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 12.58,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_162014_Designed, Stinger, Impact, Hit, Powerful, Tonal.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 9.49,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_164350_Cartoon, Musical, Orchestral, Trumpet, Vintage, Triumph, Victory.mp3",
+      "category": "notificacion_exito_brillo",
+      "durationSeconds": 9.59,
+      "usage": "Campana/notificaci?n/brillo/victoria para destacar palabras clave, logros o dinero/puntos"
+    },
+    {
+      "path": "SONIDOS/ES_171683_Designed, Stinger, Impact, Metal Detail.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 5.12,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_184469_Designed, Stinger, Distorted Sub Pulse, Impact.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 10.91,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_235346_Designed, Stinger, Impact, Dark, Cinematic, Thunder, Distortion.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 6.5,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Armpit - Epidemic Sound - 0000-0713.wav",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 0.71,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/ES_Bathroom, Toilet, Deodorant, Bottle, Spray, Use - Epidemic Sound.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 4.56,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Bells, Doorbell, Elevator Bell, Ding, Small, Close, Variations - Epidemic Sound - 0000-3441.wav",
+      "category": "notificacion_exito_brillo",
+      "durationSeconds": 3.44,
+      "usage": "Campana/notificaci?n/brillo/victoria para destacar palabras clave, logros o dinero/puntos"
+    },
+    {
+      "path": "SONIDOS/ES_Bone Crack, Bone Cracking - Epidemic Sound.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 4.87,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Brake Squeak, Loud 07 - Epidemic Sound.mp3",
+      "category": "vehiculos_armas_frenada",
+      "durationSeconds": 1.07,
+      "usage": "Frenada brusca, bocina, disparo, taser o veh?culo para cortes abruptos"
+    },
+    {
+      "path": "SONIDOS/ES_Break, Crunch, Dry, Flesh, Vegetables 14 - Epidemic Sound.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 3.38,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Cannon Take Off - Epidemic Sound.mp3",
+      "category": "vehiculos_armas_frenada",
+      "durationSeconds": 3.99,
+      "usage": "Frenada brusca, bocina, disparo, taser o veh?culo para cortes abruptos"
+    },
+    {
+      "path": "SONIDOS/ES_Car Crash, Massive, Debris 10 - Epidemic Sound - 0000-1649.wav",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 1.65,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "SONIDOS/ES_Cartoon, Boing, Jump, Short, Retro, Video Game - Epidemic Sound.mp3",
+      "category": "salto_rebote",
+      "durationSeconds": 0.36,
+      "usage": "Efecto de resorte/rebote para animaciones el?sticas o saltos"
+    },
+    {
+      "path": "SONIDOS/ES_Cartoon, Boing, Jump, Spring - Epidemic Sound - 0000-1389.wav",
+      "category": "salto_rebote",
+      "durationSeconds": 1.39,
+      "usage": "Efecto de resorte/rebote para animaciones el?sticas o saltos"
+    },
+    {
+      "path": "SONIDOS/ES_Cartoon, Pop, Small Lid - Epidemic Sound.mp3",
+      "category": "pop_aparicion",
+      "durationSeconds": 0.44,
+      "usage": "Sonido de pop/corcho/burbuja ideal para aparici?n de ?conos SVG o tarjetas"
+    },
+    {
+      "path": "SONIDOS/ES_Cartoon, Pop, Vanish - Epidemic Sound - 0000-1545.wav",
+      "category": "pop_aparicion",
+      "durationSeconds": 1.54,
+      "usage": "Sonido de pop/corcho/burbuja ideal para aparici?n de ?conos SVG o tarjetas"
+    },
+    {
+      "path": "SONIDOS/ES_Cinematic Hit, Dark, Reverberant, Shock, Terror, Suspense 01 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 15.18,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Cinematic Hit, Dark, Reverberant, Shock, Terror, Suspense 05 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 19.92,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Cinematic Hit, Dark, Reverberant, Shock, Terror, Suspense 06 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 20.13,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Classic, Fast, Crunchy 01 - Epidemic Sound - 0000-1324.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 1.32,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Combat, Bone Crunch, Snap - Epidemic Sound - 3136-4752.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 1.62,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Communications, Camera, Nikon D7200, Digital Camera, Shutter, With Flash - Epidemic Sound - 0078-1261.wav",
+      "category": "camara_foto",
+      "durationSeconds": 1.18,
+      "usage": "Disparo de c?mara fotogr?fica / captura de pantalla o evidencia"
+    },
+    {
+      "path": "SONIDOS/ES_Event, Collect Point - Epidemic Sound - 0000-1708.wav",
+      "category": "notificacion_exito_brillo",
+      "durationSeconds": 1.71,
+      "usage": "Campana/notificaci?n/brillo/victoria para destacar palabras clave, logros o dinero/puntos"
+    },
+    {
+      "path": "SONIDOS/ES_Explosions, Real, Very Small Pop - Epidemic Sound.mp3",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 1.24,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "SONIDOS/ES_Fart, Short - Epidemic Sound - 0000-0624.wav",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 0.62,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/ES_Farts, Designed, Blow Raspberry, Fart Noise, Short - Epidemic Sound - 0000-0337.wav",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 0.34,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/ES_Farts, Designed, Very Reverberant, Short, Meme Redesign - Epidemic Sound - 10415-14125.wav",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 3.71,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/ES_Farts, Real, Wet - Epidemic Sound - 0038-0873.wav",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 0.83,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/ES_Fatal Flaws - Howard Harper-Barnes - 9782-24782.wav",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 15.0,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/ES_Fight, Grab, Punch, Cloth 01 - Epidemic Sound - 1922-2525.wav",
+      "category": "golpe_pelea_crunch",
+      "durationSeconds": 0.6,
+      "usage": "Golpe f?sico, pi?a o rotura de huesos para momentos de dolor/impacto"
+    },
+    {
+      "path": "SONIDOS/ES_Fight, Impact, Punch, Low End - Epidemic Sound.mp3",
+      "category": "golpe_pelea_crunch",
+      "durationSeconds": 0.6,
+      "usage": "Golpe f?sico, pi?a o rotura de huesos para momentos de dolor/impacto"
+    },
+    {
+      "path": "SONIDOS/ES_Food & Drink, Glassware, Bottle, Champagne, Cork Pop, Outside - Epidemic Sound.mp3",
+      "category": "pop_aparicion",
+      "durationSeconds": 0.84,
+      "usage": "Sonido de pop/corcho/burbuja ideal para aparici?n de ?conos SVG o tarjetas"
+    },
+    {
+      "path": "SONIDOS/ES_Food & Drink, Glassware, Bottle, Glass, Cork, Open, Pop - Epidemic Sound.mp3",
+      "category": "pop_aparicion",
+      "durationSeconds": 0.3,
+      "usage": "Sonido de pop/corcho/burbuja ideal para aparici?n de ?conos SVG o tarjetas"
+    },
+    {
+      "path": "SONIDOS/ES_Footsteps, Human, Jump, Land, Shoes, Concrete - Epidemic Sound.mp3",
+      "category": "salto_rebote",
+      "durationSeconds": 0.67,
+      "usage": "Efecto de resorte/rebote para animaciones el?sticas o saltos"
+    },
+    {
+      "path": "SONIDOS/ES_Forest, Twigs, Snap 03 - Epidemic Sound - 0679-1248.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 0.57,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Fruit Bowl, Move On Table 01 - Epidemic Sound.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 1.4,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Geophonic Impact, Trailer Hit 02 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 5.0,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Glass, Tonal, Bottle, Pop, Deep, Big, Open - Epidemic Sound - 0000-2614.wav",
+      "category": "pop_aparicion",
+      "durationSeconds": 2.61,
+      "usage": "Sonido de pop/corcho/burbuja ideal para aparici?n de ?conos SVG o tarjetas"
+    },
+    {
+      "path": "SONIDOS/ES_Global Impact - Philip Ayers - 9838-41000.wav",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 31.16,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Gore, Bone, Bone Crack, Bone Cracking - Epidemic Sound - 0000-0964.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 0.96,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Gore, Bone, Break, Ripping, Cracking, Flesh, Long, Vegetables 06 - Epidemic Sound.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 2.55,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Hand Splash, Small, Singular 01 - Epidemic Sound.mp3",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 15.3,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/ES_Heavy, Thump, Bar, Clunks - Epidemic Sound - 0000-0956.wav",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 0.96,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "SONIDOS/ES_Impact, Dark, Cinematic, Snappy Hit - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 5.88,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_In the Amazonas - Kikoru - 18000-33000.wav",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 15.0,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/ES_Jump, Spring - Epidemic Sound.mp3",
+      "category": "salto_rebote",
+      "durationSeconds": 5.02,
+      "usage": "Efecto de resorte/rebote para animaciones el?sticas o saltos"
+    },
+    {
+      "path": "SONIDOS/ES_Keyboard, Razer, Period, Hits 01 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 3.58,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Magic, Elemental, Light Magic, Fast, Conjure Blade, Slash, Spell 02 - Epidemic Sound - 0000-1868.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 1.87,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Magic, Shimmer, Chime, Crystal, Glint, Glassy, Fantasy - Epidemic Sound - 8976-12990.wav",
+      "category": "notificacion_exito_brillo",
+      "durationSeconds": 4.01,
+      "usage": "Campana/notificaci?n/brillo/victoria para destacar palabras clave, logros o dinero/puntos"
+    },
+    {
+      "path": "SONIDOS/ES_Mechanical, Click, Metal Click, Close, Variations 01 - Epidemic Sound.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 1.81,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Metal, Caravan, Hammer, Tight - Epidemic Sound - 1375-1939.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 0.56,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Metal, Impact, Metal Object, Hit Metal Ladder - Epidemic Sound - 0000-0958.wav",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 0.96,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "SONIDOS/ES_Metal, Impact, Resonating Metal Hit - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 49.96,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Metal, Impact, Sheet Metal Impact, Washing Machine Interior, Metal Resonates Birdsong Hum, Distant Camp - Epidemic Sound - 0664-5435.wav",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 4.77,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Morning, Birds Chirping, Olive Trees, Valley, Distant Traffic, Airplane, Camino Frances - Epidemic Sound - 0000-90537.wav",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 18.62,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/ES_Notification, Tutorial Message Appear, Attention, Video Game 02 - Epidemic Sound.mp3",
+      "category": "notificacion_exito_brillo",
+      "durationSeconds": 1.37,
+      "usage": "Campana/notificaci?n/brillo/victoria para destacar palabras clave, logros o dinero/puntos"
+    },
+    {
+      "path": "SONIDOS/ES_Pistol, Cock - Epidemic Sound - 0000-0987.wav",
+      "category": "vehiculos_armas_frenada",
+      "durationSeconds": 0.99,
+      "usage": "Frenada brusca, bocina, disparo, taser o veh?culo para cortes abruptos"
+    },
+    {
+      "path": "SONIDOS/ES_Pool, Big Hand Splashes, Trashing And Surfacing - Epidemic Sound.mp3",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 39.75,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/ES_Punch, Face - Epidemic Sound.mp3",
+      "category": "golpe_pelea_crunch",
+      "durationSeconds": 3.91,
+      "usage": "Golpe f?sico, pi?a o rotura de huesos para momentos de dolor/impacto"
+    },
+    {
+      "path": "SONIDOS/ES_Punch, Skull, Crash, Split 03 - Epidemic Sound - 0000-1749.wav",
+      "category": "golpe_pelea_crunch",
+      "durationSeconds": 1.75,
+      "usage": "Golpe f?sico, pi?a o rotura de huesos para momentos de dolor/impacto"
+    },
+    {
+      "path": "SONIDOS/ES_Rocket Launcher, Fire, Shoot, Hiss, No Explosion 04 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 9.75,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Rope, Thick, Whoosh, Fast x3 - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.21,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "SONIDOS/ES_Rope, Thin, Swish, Swoosh, Single Whip - Epidemic Sound - 0812-1743.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.93,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "SONIDOS/ES_Rubber, Friction, Latex, Glove, Pull, Stretch, Squeak - Epidemic Sound - 0059-2039.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 1.98,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Sheet, Hit - Epidemic Sound - 0054-0750.wav",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 0.7,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "SONIDOS/ES_Something in the Basement - Lennon Hutton - 48496-106795.wav",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 58.3,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/ES_Stones Shattering, Impact Then Break 02 - Epidemic Sound.mp3",
+      "category": "impacto_cinematico_largo",
+      "durationSeconds": 6.07,
+      "usage": "Impacto cinem?tico profundo con cola larga para revelaciones dram?ticas o terror"
+    },
+    {
+      "path": "SONIDOS/ES_Taser, Stun Gun - Epidemic Sound.mp3",
+      "category": "vehiculos_armas_frenada",
+      "durationSeconds": 2.41,
+      "usage": "Frenada brusca, bocina, disparo, taser o veh?culo para cortes abruptos"
+    },
+    {
+      "path": "SONIDOS/ES_Transition, Fast, Short, Clean 01 - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.41,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "SONIDOS/ES_User Interface, Alert, Denied, Error, Negative, Variations, Video Game 01 - Epidemic Sound - 0744-1520.wav",
+      "category": "error_fail_tristeza",
+      "durationSeconds": 0.78,
+      "usage": "Sonido de error, rechazo, decepci?n, desconexi?n o fail (Roblox Oof, Discord, Low Honor)"
+    },
+    {
+      "path": "SONIDOS/ES_User Interface, Click, Select, Soft Round Pluck, Short, Reverb - Epidemic Sound - 0000-2364.wav",
+      "category": "pop_aparicion",
+      "durationSeconds": 2.36,
+      "usage": "Sonido de pop/corcho/burbuja ideal para aparici?n de ?conos SVG o tarjetas"
+    },
+    {
+      "path": "SONIDOS/ES_User Interface, Motion, Motion, Graphic, Slide, Whoosh - Epidemic Sound - 0000-2294.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 2.29,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "SONIDOS/ES_Vanish 01 - Epidemic Sound.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 5.14,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Vehicles, Door, Car, Close, Internal, Toyota Corolla - Epidemic Sound - 0000-1131.wav",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 1.13,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/ES_Vehicles, Mechanism, Car, SUV, Hand Brake, Apply - Epidemic Sound.mp3",
+      "category": "vehiculos_armas_frenada",
+      "durationSeconds": 0.46,
+      "usage": "Frenada brusca, bocina, disparo, taser o veh?culo para cortes abruptos"
+    },
+    {
+      "path": "SONIDOS/ES_Vivaldi_ The Four Seasons, Violin Concerto in E Major, Op. 8 No. 1, RV 269 _Spring__ I. Allegro - Michelle Ross - 0000-30864.wav",
+      "category": "salto_rebote",
+      "durationSeconds": 30.86,
+      "usage": "Efecto de resorte/rebote para animaciones el?sticas o saltos"
+    },
+    {
+      "path": "SONIDOS/Efecto de sonido pasos de minecraft.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 4.7,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/GTA IV Notification Sound.mp3",
+      "category": "notificacion_exito_brillo",
+      "durationSeconds": 4.02,
+      "usage": "Campana/notificaci?n/brillo/victoria para destacar palabras clave, logros o dinero/puntos"
+    },
+    {
+      "path": "SONIDOS/Gta 4 - Menu sound effects.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 10.12,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/Hit Marker sound effect.mp3",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 0.49,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "SONIDOS/IPHONE NOTIFICATION SOUND EFFECT (PINGDING).mp3",
+      "category": "notificacion_exito_brillo",
+      "durationSeconds": 4.37,
+      "usage": "Campana/notificaci?n/brillo/victoria para destacar palabras clave, logros o dinero/puntos"
+    },
+    {
+      "path": "SONIDOS/Intro de un show mas sonido (1).mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 4.9,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/MOSCAS ZUMBANDO Y DANDO VUELTAS - Flies Buzzing and Circling.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 7.89,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/Minecraft Cave Ambience - Sound Effect (HD).mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 4.04,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/Minecraft Ooh - Free Sound Effect.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 0.91,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/Old Minecraft Door Sound.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 5.43,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/Pedo    Efecto de Sonido    Sound Effect.mp3",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 6.57,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/Pedo.mp3",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 0.55,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/Roblox Death Sound (Oof) - Sound Effect (HD).mp3",
+      "category": "error_fail_tristeza",
+      "durationSeconds": 3.02,
+      "usage": "Sonido de error, rechazo, decepci?n, desconexi?n o fail (Roblox Oof, Discord, Low Honor)"
+    },
+    {
+      "path": "SONIDOS/Sonido Pedo Con Eco.mp3",
+      "category": "meme_pedo_comedia",
+      "durationSeconds": 5.2,
+      "usage": "Sonido c?mico de pedo/burla para momentos absurdos, fails o remates escatol?gicos"
+    },
+    {
+      "path": "SONIDOS/Sonido de impacto.mp3",
+      "category": "impacto_hit_corto",
+      "durationSeconds": 1.46,
+      "usage": "Golpe seco / impacto cinem?tico corto para sellos (FACTOS, ALERTA) o remates"
+    },
+    {
+      "path": "SONIDOS/Sonido de la india meme.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 6.08,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/Sonido de pasos que se escucha en Bob esponja (1).mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 5.02,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/TRUCO ACTIVADO  GRAND THEFT AUTO SAN ANDREAS #gta #gta5 #gtasanandreas #trucos #sonido #gp #gaming.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 10.89,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/The Undertaker Bell  Sound Effect.mp3",
+      "category": "meme_oscuro_campana",
+      "durationSeconds": 4.23,
+      "usage": "Campana f?nebre de The Undertaker para momentos de muerte/condena/impacto oscuro"
+    },
+    {
+      "path": "SONIDOS/Todos los sonidos de mobs (aldeano, golem de hierro, llama y comerciante errante) #minecraft.mp3",
+      "category": "gaming_meme",
+      "durationSeconds": 92.6,
+      "usage": "Efecto cl?sico de videojuegos (Minecraft, GTA, Among Us, Hit Marker) para referencias gamer"
+    },
+    {
+      "path": "SONIDOS/[EFECTO DE SONIDO] Cámara ANALÓGICA.mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 2.14,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/aww sound effect ( 4K ).mp3",
+      "category": "efectos_varios_foley",
+      "durationSeconds": 2.04,
+      "usage": "Efecto foley / sonido ambiental u objeto espec?fico"
+    },
+    {
+      "path": "SONIDOS/efecto de sonido POP.mp3",
+      "category": "pop_aparicion",
+      "durationSeconds": 1.07,
+      "usage": "Sonido de pop/corcho/burbuja ideal para aparici?n de ?conos SVG o tarjetas"
+    },
+    {
+      "path": "SONIDOS/gah dayum (Extended sound).mp3",
+      "category": "musica_ambiente_largo",
+      "durationSeconds": 12.1,
+      "usage": "Pista musical o ambiente largo (>12s) ? requiere recorte o uso de fondo"
+    },
+    {
+      "path": "SONIDOS/low honor sound effect.mp3",
+      "category": "error_fail_tristeza",
+      "durationSeconds": 4.88,
+      "usage": "Sonido de error, rechazo, decepci?n, desconexi?n o fail (Roblox Oof, Discord, Low Honor)"
+    },
+    {
+      "path": "Whosh/Base_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.7,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Cartoon_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.49,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Cloth_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.79,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Deep_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.5,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Aircraft, Jet, Pass By, Designed, Long & Short, Small, Fast 01 - Epidemic Sound - 4899-8708.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.81,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Cold, Whoosh 19 - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.48,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Fast, Clothy - Epidemic Sound - 1174-2412.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.24,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Games, Video, Video Game, Fight Whoosh, Cold, Airy, Rope - Epidemic Sound - 0000-0989.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.99,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Games, Video, Video Game, Fight Whoosh, Cold, Airy, Rope - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 2.63,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Organic, Wind, Big Throw, Long - Epidemic Sound - 0000-4316.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.32,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Organic, Wind, Cool, Fast - Epidemic Sound - 0000-0747.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.75,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Organic, Wind, Interior Howl, Long - Epidemic Sound - 4880-10018.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 5.14,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Organic, Wind, Soft, Normal 02 - Epidemic Sound - 0000-3004.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Organic, Wind, Soft, Normal 02 - Epidemic Sound - 5826-9026.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.2,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Short, Drawer, Short Delay, Dry - Epidemic Sound - 1717-2833.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.12,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Short, Stove, Dry 01 - Epidemic Sound - 0000-1044.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.04,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Stick, Twig, Air, Fast - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.32,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Swooshes, Swish, Rope, Thick, Whoosh, Fast x3 - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.21,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Swooshes, Swish, Rope, Thin, Swish, Swoosh, Single Whip - Epidemic Sound - 0812-1743.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.93,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/ES_Swooshes, Whoosh, Deviant, Tense, Scifi, Slow 02 - Epidemic Sound - 3982-7851.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.87,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Swooshes, Whoosh, Organic, Wind, Interior Howl, Long - Epidemic Sound - 0040-4802.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.76,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/ES_Transition, Whoosh, Fast, Short 01 - Epidemic Sound.mp3",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.02,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Eerie_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.4,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Fast_Deep_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 2.01,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Fast_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.24,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Gritter_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 2.71,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Jet_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Long_Blow_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.5,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Normal_Whoosh 2.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 1.6,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Normal_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.14,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Ring_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 6.36,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Slice_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.3,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Soft_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.05,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Sonido de transición -- Soy chanclitas.mp3",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 2.71,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Spin_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.46,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Static_Whoosh.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.33,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Surround_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 5.05,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Sweeping_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 8.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Swipe Swoosh Transition Sound Effect.mp3",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.67,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Swoosh 2.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.0,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Swoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.26,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Treble_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.79,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Twirl_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 1.67,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Very_Deep_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.53,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Windy_Base_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.69,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Windy_Fast_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 1.67,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Windy_High_Whoosh.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 5.14,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 1.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.77,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Woosh Effect 10.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 1.74,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 11.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 12.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 13.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 14.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.47,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Woosh Effect 15.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.14,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 16.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 17.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 18.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 2.14,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 19.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 2.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 2.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 1.6,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 20.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 6.58,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 3.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.1,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 4.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.32,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Woosh Effect 5.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 1.6,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 6.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 1.5,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Woosh Effect 7.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 3.1,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    },
+    {
+      "path": "Whosh/Woosh Effect 8.wav",
+      "category": "transicion_whoosh_corto",
+      "durationSeconds": 0.31,
+      "usage": "Barrido de aire r?pido ideal para entrada de tarjetas, cambios de c?mara o sellos"
+    },
+    {
+      "path": "Whosh/Woosh Effect 9.wav",
+      "category": "transicion_whoosh_largo",
+      "durationSeconds": 4.0,
+      "usage": "Barrido de aire largo/atmosf?rico para transiciones dram?ticas o giros"
+    }
+  ]
+}

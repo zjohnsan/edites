@@ -1,0 +1,610 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "¡SE OLVIDÓ LA PASTILLA EN VIVO!",
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/muestra2.mp4",
+  "durationInSeconds": 24.7,
+  "cards": [
+    {
+      "title": "MOMENTO PASTILLA",
+      "subtitle": "Prioridades del stream",
+      "emoji": "💊",
+      "start": 3.8,
+      "end": 7.2,
+      "position": "top-right",
+      "sfx": "SONIDOS/Comer De Minecraft - Sonido.mp3",
+      "icon": "💊",
+      "xOffset": 0,
+      "yOffset": 0,
+      "scale": 1
+    },
+    {
+      "title": "CAMBIO DE ESCENA",
+      "subtitle": "Volviendo al stream",
+      "emoji": "🖥️",
+      "start": 7.8,
+      "end": 11.2,
+      "position": "top-left",
+      "sfx": "Whosh/Fast_Whoosh.wav",
+      "icon": "🖥️",
+      "xOffset": 0,
+      "yOffset": 0,
+      "scale": 1
+    },
+    {
+      "title": "10 DE 10",
+      "subtitle": "¿Ustedes qué opinan?",
+      "emoji": "🔥",
+      "start": 13.0,
+      "end": 16.5,
+      "variant": "stamp",
+      "position": "top-right",
+      "sfx": "SONIDOS/Sonido de impacto.mp3",
+      "icon": "🔥",
+      "xOffset": 0,
+      "yOffset": 0,
+      "scale": 1
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "Mira",
+      "start": 0.0,
+      "end": 0.3,
+      "highlight": false
+    },
+    {
+      "word": "amigo,",
+      "start": 0.3,
+      "end": 0.58,
+      "highlight": false
+    },
+    {
+      "word": "eh...",
+      "start": 0.82,
+      "end": 1.52,
+      "highlight": false
+    },
+    {
+      "word": "Ok,",
+      "start": 1.52,
+      "end": 1.7,
+      "highlight": false
+    },
+    {
+      "word": "vamos",
+      "start": 1.78,
+      "end": 1.9,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 1.9,
+      "end": 2.0,
+      "highlight": false
+    },
+    {
+      "word": "hablar",
+      "start": 2.0,
+      "end": 2.1,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 2.1,
+      "end": 2.18,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 2.18,
+      "end": 2.3,
+      "highlight": false
+    },
+    {
+      "word": "tema",
+      "start": 2.3,
+      "end": 2.54,
+      "highlight": false
+    },
+    {
+      "word": "interesante",
+      "start": 2.54,
+      "end": 3.18,
+      "highlight": true,
+      "sfx": "SONIDOS/ES_Notification, Tutorial Message Appear, Attention, Video Game 02 - Epidemic Sound.mp3"
+    },
+    {
+      "word": "Que",
+      "start": 3.18,
+      "end": 3.74,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 3.74,
+      "end": 3.92,
+      "highlight": false
+    },
+    {
+      "word": "para",
+      "start": 3.92,
+      "end": 4.02,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 4.02,
+      "end": 4.2,
+      "highlight": false
+    },
+    {
+      "word": "voy",
+      "start": 4.2,
+      "end": 4.26,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 4.26,
+      "end": 4.34,
+      "highlight": false
+    },
+    {
+      "word": "tomar",
+      "start": 4.34,
+      "end": 4.48,
+      "highlight": false
+    },
+    {
+      "word": "mi",
+      "start": 4.48,
+      "end": 4.84,
+      "highlight": false
+    },
+    {
+      "word": "pastilla,",
+      "start": 4.84,
+      "end": 5.2,
+      "highlight": true,
+      "sfx": "SONIDOS/Comer De Minecraft - Sonido.mp3"
+    },
+    {
+      "word": "mira",
+      "start": 5.2,
+      "end": 5.42,
+      "highlight": false
+    },
+    {
+      "word": "capo",
+      "start": 5.42,
+      "end": 5.8,
+      "highlight": false
+    },
+    {
+      "word": "Ah,",
+      "start": 5.8,
+      "end": 6.0,
+      "highlight": false
+    },
+    {
+      "word": "perdón,",
+      "start": 6.04,
+      "end": 6.26,
+      "highlight": true,
+      "sfx": "SONIDOS/Bonk Sound Effect.mp3"
+    },
+    {
+      "word": "volve",
+      "start": 6.36,
+      "end": 6.5,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 6.5,
+      "end": 6.6,
+      "highlight": false
+    },
+    {
+      "word": "ti,",
+      "start": 6.6,
+      "end": 6.68,
+      "highlight": false
+    },
+    {
+      "word": "o",
+      "start": 6.74,
+      "end": 7.02,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 7.02,
+      "end": 7.2,
+      "highlight": false
+    },
+    {
+      "word": "concha",
+      "start": 7.2,
+      "end": 7.54,
+      "highlight": false
+    },
+    {
+      "word": "Ahí,",
+      "start": 7.54,
+      "end": 7.82,
+      "highlight": false
+    },
+    {
+      "word": "ahora",
+      "start": 7.96,
+      "end": 8.1,
+      "highlight": false
+    },
+    {
+      "word": "sí",
+      "start": 8.1,
+      "end": 8.28,
+      "highlight": false
+    },
+    {
+      "word": "Bueno,",
+      "start": 8.28,
+      "end": 8.54,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 8.64,
+      "end": 8.72,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 8.72,
+      "end": 8.84,
+      "highlight": false
+    },
+    {
+      "word": "dejo",
+      "start": 8.84,
+      "end": 9.0,
+      "highlight": false
+    },
+    {
+      "word": "entero,",
+      "start": 9.0,
+      "end": 9.28,
+      "highlight": true,
+      "sfx": "Whosh/Swipe Swoosh Transition Sound Effect.mp3"
+    },
+    {
+      "word": "vamos",
+      "start": 9.42,
+      "end": 9.54,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 9.54,
+      "end": 9.6,
+      "highlight": false
+    },
+    {
+      "word": "ver",
+      "start": 9.6,
+      "end": 9.64,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 9.64,
+      "end": 9.76,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 9.76,
+      "end": 9.84,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 9.84,
+      "end": 9.94,
+      "highlight": false
+    },
+    {
+      "word": "hace",
+      "start": 9.94,
+      "end": 10.12,
+      "highlight": false
+    },
+    {
+      "word": "Eh,",
+      "start": 10.12,
+      "end": 10.54,
+      "highlight": false
+    },
+    {
+      "word": "ehm...",
+      "start": 10.74,
+      "end": 11.3,
+      "highlight": false
+    },
+    {
+      "word": "Hablar",
+      "start": 11.3,
+      "end": 11.62,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 11.62,
+      "end": 11.7,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 11.7,
+      "end": 11.8,
+      "highlight": false
+    },
+    {
+      "word": "tema,",
+      "start": 11.8,
+      "end": 11.96,
+      "highlight": false
+    },
+    {
+      "word": "gente",
+      "start": 12.08,
+      "end": 12.2,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 12.2,
+      "end": 12.32,
+      "highlight": false
+    },
+    {
+      "word": "seis,",
+      "start": 12.32,
+      "end": 12.46,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 12.56,
+      "end": 12.66,
+      "highlight": false
+    },
+    {
+      "word": "culo",
+      "start": 12.66,
+      "end": 12.88,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 12.88,
+      "end": 12.98,
+      "highlight": false
+    },
+    {
+      "word": "lucía",
+      "start": 12.98,
+      "end": 13.28,
+      "highlight": false
+    },
+    {
+      "word": "10",
+      "start": 13.68,
+      "end": 14.0,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 14.0,
+      "end": 14.26,
+      "highlight": false
+    },
+    {
+      "word": "10",
+      "start": 14.26,
+      "end": 14.66,
+      "highlight": false
+    },
+    {
+      "word": "o",
+      "start": 14.66,
+      "end": 15.26,
+      "highlight": false
+    },
+    {
+      "word": "mal",
+      "start": 15.26,
+      "end": 15.56,
+      "highlight": false
+    },
+    {
+      "word": "Vos",
+      "start": 15.56,
+      "end": 16.02,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 16.02,
+      "end": 16.12,
+      "highlight": false
+    },
+    {
+      "word": "opinas?",
+      "start": 16.12,
+      "end": 16.5,
+      "highlight": true,
+      "sfx": "SONIDOS/ES_Notification, Tutorial Message Appear, Attention, Video Game 02 - Epidemic Sound.mp3"
+    },
+    {
+      "word": "Hmm,",
+      "start": 16.66,
+      "end": 16.84,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 16.94,
+      "end": 16.98,
+      "highlight": false
+    },
+    {
+      "word": "opinas,",
+      "start": 16.98,
+      "end": 17.24,
+      "highlight": true
+    },
+    {
+      "word": "boyón",
+      "start": 17.3,
+      "end": 17.62,
+      "highlight": false
+    },
+    {
+      "word": "Y...",
+      "start": 18.3,
+      "end": 18.62,
+      "highlight": true
+    },
+    {
+      "word": "9",
+      "start": 18.62,
+      "end": 18.78,
+      "highlight": false
+    },
+    {
+      "word": "9,",
+      "start": 18.78,
+      "end": 19.34,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 19.74,
+      "end": 20.04,
+      "highlight": false
+    },
+    {
+      "word": "también,",
+      "start": 20.04,
+      "end": 20.26,
+      "highlight": true,
+      "sfx": "SONIDOS/ES_Notification, Tutorial Message Appear, Attention, Video Game 02 - Epidemic Sound.mp3"
+    },
+    {
+      "word": "la",
+      "start": 20.4,
+      "end": 20.42,
+      "highlight": false
+    },
+    {
+      "word": "verdad",
+      "start": 20.42,
+      "end": 20.54,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 20.54,
+      "end": 20.68,
+      "highlight": false
+    },
+    {
+      "word": "bastante",
+      "start": 20.68,
+      "end": 20.94,
+      "highlight": true
+    },
+    {
+      "word": "bien",
+      "start": 20.94,
+      "end": 21.62,
+      "highlight": false
+    },
+    {
+      "word": "Eh...",
+      "start": 21.96,
+      "end": 22.28,
+      "highlight": false
+    },
+    {
+      "word": "y",
+      "start": 22.28,
+      "end": 22.42,
+      "highlight": false
+    },
+    {
+      "word": "pues,",
+      "start": 22.42,
+      "end": 22.54,
+      "highlight": false
+    },
+    {
+      "word": "está",
+      "start": 22.68,
+      "end": 22.7,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 22.7,
+      "end": 22.72,
+      "highlight": false
+    },
+    {
+      "word": "interesante,",
+      "start": 22.72,
+      "end": 23.1,
+      "highlight": true,
+      "sfx": "SONIDOS/ES_Notification, Tutorial Message Appear, Attention, Video Game 02 - Epidemic Sound.mp3"
+    },
+    {
+      "word": "la",
+      "start": 23.24,
+      "end": 23.36,
+      "highlight": false
+    },
+    {
+      "word": "verdad",
+      "start": 23.36,
+      "end": 23.54,
+      "highlight": false
+    },
+    {
+      "word": "Que",
+      "start": 23.54,
+      "end": 23.88,
+      "highlight": false
+    },
+    {
+      "word": "opinan",
+      "start": 23.88,
+      "end": 24.14,
+      "highlight": false
+    },
+    {
+      "word": "ustedes?",
+      "start": 24.14,
+      "end": 24.38,
+      "highlight": true,
+      "sfx": "SONIDOS/IPHONE NOTIFICATION SOUND EFFECT (PINGDING).mp3"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.venv
+venv/
+ENV/
+
+# Archivos de video y renderizados pesados / temporales
+clips-entrada/*
+!clips-entrada/.gitkeep
+clips-procesados/*
+!clips-procesados/.gitkeep
+shorts-salida/*
+!shorts-salida/.gitkeep
+*.mp4
+*.mkv
+*.avi
+*.mov
+!public/sfx/**
+
+# Archivos temporales de clips generados
+public/vertical_temp.mp4
+public/clips/*
+!public/clips/.gitkeep
+
+# Logs y SO
+*.log
+.DS_Store
+Thumbs.db
