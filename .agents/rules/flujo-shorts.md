@@ -11,18 +11,14 @@ Cuando el usuario pida **"calificá los clips pendientes"** (o similar), NO proc
 2. **Leer** `clips-entrada/transcripciones_pendientes.json`. Por cada clip tenés: `duracion`, `texto_completo`, `segmentos` (`start`, `end`, `text`), `promedio_db` y `picos_audio` (`segundo`, `db`, `sobre_promedio_db`, `intensidad`: `baja` | `media` | `alta` | `muy_alta`, y `texto_cercano`).
 3. **Evaluar cruzando texto + energía**: lo que dice (`segmentos`) y cómo lo dice (`picos_audio`). Un pico `alta`/`muy_alta` con `texto_cercano` vacío o muy corto suele ser una risa explosiva, un grito o un susto sin palabras: es material de gancho aunque no aparezca en la transcripción.
 4. **Presentar una tabla ordenada de mayor a menor puntaje** con estas columnas:
-   - **Puntaje (1-10) y motivo**: retención, energía/picos de audio, si se entiende sin contexto previo y si tiene remate.
-   - **Gancho inicial (`hookTeaser`)**: indicá si el clip ya arranca fuerte (sin teaser) o si conviene adelantar un fragmento de más adelante (frase explosiva o pico de risa/grito) con su `start` y `end` en segundos del clip original. Duración ideal del teaser: 1.5 a 3.5 segundos, y que no sea el remate final completo (que no arruine el desenlace).
-   - **Título gancho sugerido (`hookTitle`)** de 4 a 6 palabras.
+   - **Puntaje (1-10) y motivo**: retención, energía/picos de audio, si se entiende sin contexto previo y si cumple la estructura `Gancho (0-2s) -> Tensión -> Recompensa`.
+   - **Arranque explosivo (`00:00`, cero `hookTeaser`) y recorte de tijera (`22s a 45s`)**: por defecto `habilitarHookTeaser = false` (no usar el teaser repetido `"MÁS ADELANTE..."`). Indicá en qué instante exacto debe empezar el `00:00` (el momento más fuerte, chocante o gracioso en los primeros 2 segundos) y qué frases intermedias, saludos o lecturas lentas del chat cortar con la regla de tijera para que el Short dure entre **22 y 45 segundos** sin un solo segundo de relleno.
+   - **Título limpio (`<= 55` caracteres) + SEO en descripción**: título corto orientado a curiosidad universal (máx. 55 caracteres, sin nombres internos de episodios) usando como máximo `@berlinuno #shorts` al final, más `hookTitle` visual de 4 a 6 palabras. Todos los demás hashtags (`#gaming #humor #clips`, etc.) van exclusivamente en la descripción.
    - **Estilo de edición recomendado**: `simple`, `detallada` o `ilustraciones`.
 5. **Esperar la aprobación del usuario** sobre qué clips procesar. No proceses ninguno por tu cuenta.
-6. **Al aprobar un clip**: seguí el flujo de procesamiento de abajo (`procesar_clip.py` → escenas → segmentos → JSON → render) y en `public/proyectos/<nombre>.json` incluí automáticamente el `hookTitle` y, si correspondía, el `hookTeaser`:
-   ```json
-   "hookTeaser": { "start": 14.2, "end": 16.8, "label": "MÁS ADELANTE..." }
-   ```
-   - **Re-mapear los tiempos del teaser (obligatorio)**: `procesar_clip.py` recorta los silencios con auto-editor, así que los segundos del clip original **no coinciden** con los del video procesado. Buscá la frase del teaser dentro de `subtitles` del JSON recién generado y usá el `start` de su primera palabra y el `end` de su última palabra. Si el teaser era un pico sin palabras, ubicalo por las palabras de alrededor (`texto_cercano`).
-   - `procesar_clip.py` sobrescribe el JSON del proyecto, así que agregá `hookTitle` y `hookTeaser` **después** de correrlo.
-   - En Remotion el teaser se reproduce primero (con sus subtítulos y el badge `label` arriba), luego un flash blanco de 3 frames con whoosh, y después el video completo desde 0:00 con todo desplazado automáticamente. La duración total se ajusta sola en `calculateMetadata`.
+6. **Al aprobar un clip**: seguí el flujo de procesamiento de abajo (`procesar_clip.py` → tijera Whisper `22-45s` → escenas → segmentos → JSON → render) y en `public/proyectos/<nombre>.json`:
+   - Mantené `"habilitarHookTeaser": false` (sin `hookTeaser`, arrancando directo en el gancho en `00:00`).
+   - Incluí el `hookTitle` visual (4-6 palabras) y el bloque `"seo"` (`youtubeTitle` `<= 55` chars con `@berlinuno #shorts` al final, y `youtubeDescription` con los hashtags `#gaming #humor #clips`, etc.).
 
 ---
 
@@ -30,9 +26,9 @@ Cuando el usuario pida **"calificá los clips pendientes"** (o similar), NO proc
 
 Cada vez que el usuario pida procesar un clip de `clips-entrada/` (o del directorio del proyecto), seguí este flujo automático de principio a fin sin preguntar:
 
-1. **Eliminar silencios y detectar escenas dinámicas**:
+1. **Eliminar silencios, aplicar tijera narrativa (`22s–45s`) y detectar escenas dinámicas**:
    Ejecutá `python procesar_clip.py <archivo> --detectar-escenas`.
-   *(Esto genera `clips-procesados/sin_silencio_temp.mp4` a 30fps, detecta si hay cortes/cambios de cámara mayores a 1.5s, imprime los rangos `[start, end]` y guarda una imagen por tramo en `clips-procesados/escena_0.jpg`, `escena_1.jpg`, etc.).*
+   *(Esto genera `clips-procesados/sin_silencio_temp.mp4` a 30fps, aplica `aplicar_tijera_estricta_whisper` para asegurar arranque explosivo en `00:00`, eliminar saludos/lecturas lentas del chat y ajustar la estructura `Gancho -> Tensión -> Recompensa` a **22–45 segundos**, detecta cortes de cámara mayores a 1.5s y guarda `clips-procesados/escena_0.jpg`, `escena_1.jpg`, etc.).*
 
 2. **Inspeccionar visualmente las escenas y procesar por segmentos**:
    - Usá `read_file` para ver todas las imágenes `clips-procesados/escena_*.jpg` generadas.

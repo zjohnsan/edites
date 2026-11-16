@@ -23,8 +23,13 @@ from pathlib import Path
 from typing import Any
 
 from procesar_clip import (
+    DURACION_SHORT_MAX_SEG,
+    DURACION_SHORT_MIN_SEG,
+    HABILITAR_HOOK_TEASER,
     VENTANA_AUDIO_SEG,
+    analizar_estructura_gancho_tension_recompensa,
     detectar_picos_audio,
+    generar_metadata_seo_short,
     medir_rms_por_ventana,
     obtener_duracion_video,
     seleccionar_musica_fondo,
@@ -183,11 +188,28 @@ def main() -> None:
                 max_picos=picos_objetivo,
                 ventana_seg=VENTANA_AUDIO_SEG,
             )
+            plan_narrativo = analizar_estructura_gancho_tension_recompensa(
+                segmentos=segmentos,
+                palabras=palabras,
+                picos_audio=picos,
+                duracion_total=duracion,
+                min_seg=DURACION_SHORT_MIN_SEG,
+                max_seg=DURACION_SHORT_MAX_SEG,
+            )
+            duracion_objetivo = float(
+                plan_narrativo.get("duracion_objetivo_estimada", min(duracion, DURACION_SHORT_MAX_SEG))
+            )
+            seo_sugerido = generar_metadata_seo_short(
+                texto=texto_completo,
+                palabras=palabras,
+                clip_name=clip.stem,
+                picos_audio=picos,
+            )
             musica_sugerida = seleccionar_musica_fondo(
                 base_dir=base_dir,
                 texto=texto_completo,
                 palabras=palabras,
-                duracion_final=duracion,
+                duracion_final=duracion_objetivo,
                 clip_name=clip.stem,
                 picos_audio=picos,
             )
@@ -195,6 +217,12 @@ def main() -> None:
             resultados[clip.name] = {
                 "archivo": clip.name,
                 "duracion": duracion,
+                "duracion_objetivo_22_45s": duracion_objetivo,
+                "habilitarHookTeaser": HABILITAR_HOOK_TEASER,
+                "estructura_narrativa": plan_narrativo.get("estructura", {}),
+                "segmentos_conservar_tijera": plan_narrativo.get("segmentos_conservar", []),
+                "frases_eliminadas_tijera": plan_narrativo.get("frases_eliminadas_tijera", []),
+                "seo_sugerido": seo_sugerido,
                 "texto_completo": texto_completo,
                 "segmentos": segmentos,
                 "promedio_db": promedio_db,
@@ -211,8 +239,11 @@ def main() -> None:
                 if musica_sugerida
                 else ""
             )
+            n_podadas = len(plan_narrativo.get("frases_eliminadas_tijera", []))
             print(
-                f"   OK: {duracion}s, {len(segmentos)} segmentos, promedio {promedio_db} dB. Picos: {resumen_picos or 'ninguno'}{resumen_musica}"
+                f"   OK: {duracion}s -> {duracion_objetivo}s (objetivo 22-45s, {n_podadas} rellenos podados, hookTeaser=False) | "
+                f"Título ({seo_sugerido['titleCharCount']}/55): {seo_sugerido['youtubeTitle']} | "
+                f"Picos: {resumen_picos or 'ninguno'}{resumen_musica}"
             )
 
     # Solo se listan los clips que siguen existiendo en clips-entrada/

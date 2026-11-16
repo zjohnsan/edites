@@ -30,6 +30,13 @@ VENTANA_AUDIO_SEG = 1.0
 AUDIO_SAMPLE_RATE = 16000
 SILENCIO_DB = -60.0
 
+# Reglas de alta retención para YouTube Shorts (Gancho -> Tensión -> Recompensa)
+HABILITAR_HOOK_TEASER = False
+DURACION_SHORT_MIN_SEG = 22.0
+DURACION_SHORT_MAX_SEG = 45.0
+MAX_CARACTERES_TITULO = 55
+SUFIJO_TITULO_CANAL = "@berlinuno #shorts"
+
 
 def obtener_ruta_ffmpeg() -> str:
     """Busca ffmpeg en el PATH o en la ruta de instalación de WinGet."""
@@ -1106,12 +1113,17 @@ def seleccionar_musica_fondo(
 
 
 def cargar_config_edicion(base_dir: Path) -> dict[str, Any]:
-    """Lee config_edicion.json para obtener la configuración global por defecto (ej. usarMejoraIA)."""
+    """Lee config_edicion.json para obtener la configuración global por defecto."""
     cfg_path = base_dir / "config_edicion.json"
     defaults: dict[str, Any] = {
         "usarMejoraIA": False,
         "modeloIA": "realesr-animevideov3",
         "escalaIA": 2,
+        "habilitarHookTeaser": HABILITAR_HOOK_TEASER,
+        "duracionObjetivoMin": DURACION_SHORT_MIN_SEG,
+        "duracionObjetivoMax": DURACION_SHORT_MAX_SEG,
+        "maxCaracteresTitulo": MAX_CARACTERES_TITULO,
+        "sufijoTituloCanal": SUFIJO_TITULO_CANAL,
     }
     if cfg_path.is_file():
         try:
@@ -1121,6 +1133,656 @@ def cargar_config_edicion(base_dir: Path) -> dict[str, Any]:
         except Exception:
             pass
     return defaults
+
+
+FILLER_GREETING_OR_CHAT_PATTERNS: tuple[str, ...] = (
+    r"^\s*(hola|buenas|buen d[ií]a|buenas noches|c[oó]mo andan|c[oó]mo est[aá]n|todo bien)\b",
+    r"\b(gracias por el sub|gracias por suscribirte|gracias por seguir|gracias por el follow)\b",
+    r"\b(a ver qu[eé] dice el chat|par[aá] que leo el chat|estoy leyendo el chat|esper[aá] que leo)\b",
+    r"\b(se escucha bien|me escuchan bien|se ve bien la pantalla|esper[aá] un segundo que acomodo)\b",
+    r"^\s*(bueno gente|che gente|a ver gente|esperen un cachito|un segundito)\b",
+    r"\b(saludos a |un saludo para |mandale un saludo)\b",
+)
+
+HIGH_CURIOSITY_SIGNALS: set[str] = {
+    "por",
+    "qué",
+    "que",
+    "cómo",
+    "como",
+    "cuánto",
+    "cuanto",
+    "nunca",
+    "nadie",
+    "secreto",
+    "verdad",
+    "mentira",
+    "estafa",
+    "peligro",
+    "imposible",
+    "prohibido",
+    "error",
+    "peor",
+    "mejor",
+    "locura",
+    "increíble",
+    "increible",
+    "actualizaron",
+    "salió",
+    "salio",
+    "crasheó",
+    "crasheo",
+    "rompió",
+    "rompio",
+    "descubrí",
+    "descubri",
+    "heladera",
+    "cereal",
+    "planta",
+    "hamburguesa",
+    "escape",
+    "prisión",
+    "prision",
+    "guardia",
+    "ia",
+    "chatgpt",
+}
+
+
+def es_frase_relleno_tijera(
+    texto_seg: str,
+    duracion_seg: float,
+    es_extremo_inicial: bool = False,
+    tiene_pico_audio: bool = False,
+) -> tuple[bool, str]:
+    """
+    Regla de tijera estricta: detecta saludos, lecturas lentas del chat o frases muertas
+    que no aumentan la curiosidad ni acercan el remate final (Recompensa).
+    """
+    limpio = texto_seg.strip()
+    if not limpio:
+        return True, "segmento_vacio"
+
+    lower = limpio.lower()
+    tokens = [_normalizar_token(t) for t in limpio.split() if _normalizar_token(t)]
+    if not tokens:
+        return True, "sin_palabras"
+
+    # Si tiene un pico de audio fuerte o palabra de impacto, nunca es relleno muerto
+    if tiene_pico_audio or any(t in IMPACT_CUT_WORDS for t in tokens):
+        return False, ""
+
+    for pat in FILLER_GREETING_OR_CHAT_PATTERNS:
+        if re.search(pat, lower):
+            return True, "saludo_o_lectura_chat"
+
+    # Arranque tibio en los primeros segundos sin pregunta, conflicto ni gancho
+    if es_extremo_inicial and len(tokens) <= 5 and "?" not in limpio and "!" not in limpio:
+        if not any(t in HIGH_CURIOSITY_SIGNALS for t in tokens):
+            return True, "arranque_tibio_sin_gancho"
+
+    # Lectura lenta o frase muerta (>2.8s con muy baja densidad de palabras y sin señales de curiosidad)
+    wps = len(tokens) / max(0.4, duracion_seg)
+    if (
+        duracion_seg >= 2.8
+        and wps < 1.55
+        and "?" not in limpio
+        and "!" not in limpio
+        and not any(t in HIGH_CURIOSITY_SIGNALS for t in tokens)
+    ):
+        return True, "lectura_lenta_sin_tension"
+
+    return False, ""
+
+
+def _puntuar_segmento_narrativo(
+    seg: dict[str, Any],
+    idx: int,
+    total_segs: int,
+    picos_audio: list[dict[str, Any]],
+) -> float:
+    """Puntúa cuánto aporta un segmento a la estructura Gancho -> Tensión -> Recompensa."""
+    texto = str(seg.get("text", "")).strip()
+    start_t = float(seg.get("start", 0.0))
+    end_t = float(seg.get("end", start_t + 0.5))
+    dur = max(0.3, end_t - start_t)
+    tokens = [_normalizar_token(t) for t in texto.split() if _normalizar_token(t)]
+
+    score = 1.0
+    # Densidad ágil de habla
+    wps = len(tokens) / dur
+    score += min(3.0, wps * 0.7)
+
+    # Palabras de impacto y señales de curiosidad
+    impactos = sum(1 for t in tokens if t in IMPACT_CUT_WORDS)
+    curiosidad = sum(1 for t in tokens if t in HIGH_CURIOSITY_SIGNALS)
+    score += impactos * 3.5 + curiosidad * 1.8
+
+    if "?" in texto or "¡" in texto or "!" in texto:
+        score += 2.2
+
+    # Cruce con picos de energía de audio
+    for p in picos_audio:
+        p_seg = float(p.get("segundo", -99.0))
+        if start_t - 0.8 <= p_seg <= end_t + 0.8:
+            sobre = float(p.get("sobre_promedio_db", 0.0))
+            score += max(2.0, sobre * 0.7)
+
+    # Bonus al remate final (último 25% del clip)
+    if total_segs > 2 and idx >= int(total_segs * 0.75):
+        score += 2.5
+
+    return round(score, 2)
+
+
+def analizar_estructura_gancho_tension_recompensa(
+    segmentos: list[dict[str, Any]],
+    palabras: list[dict[str, Any]],
+    picos_audio: list[dict[str, Any]],
+    duracion_total: float,
+    min_seg: float = DURACION_SHORT_MIN_SEG,
+    max_seg: float = DURACION_SHORT_MAX_SEG,
+) -> dict[str, Any]:
+    """
+    Evalúa y recorta la transcripción bajo la estructura:
+      1. Cero hookTeaser (`habilitarHookTeaser = False`) y arranque explosivo en 00:00 (Gancho en los primeros 2s).
+      2. Tensión sin relleno (elimina saludos, lecturas lentas del chat o frases intermedias muertas).
+      3. Recompensa (remate final claro) ajustando la duración total al rango objetivo de 22s a 45s.
+    """
+    if not segmentos:
+        return {
+            "habilitarHookTeaser": False,
+            "duracion_original": round(duracion_total, 2),
+            "duracion_objetivo_estimada": round(min(duracion_total, max_seg), 2),
+            "en_rango_22_45s": min_seg <= duracion_total <= max_seg,
+            "segmentos_conservar": [
+                {"start": 0.0, "end": round(min(duracion_total, max_seg), 2), "rol": "completo", "text": ""}
+            ],
+            "frases_eliminadas_tijera": [],
+            "estructura": {
+                "gancho_0_2s": "Arranque directo en 00:00",
+                "tension": "Desarrollo continuo",
+                "recompensa": "Cierre del clip",
+            },
+        }
+
+    picos_altos = [
+        p
+        for p in (picos_audio or [])
+        if p.get("intensidad") in {"media", "alta", "muy_alta"}
+        or float(p.get("sobre_promedio_db", 0.0)) >= 3.5
+    ]
+
+    def _tiene_pico(s_ini: float, s_fin: float) -> bool:
+        return any(s_ini - 0.6 <= float(p.get("segundo", -99.0)) <= s_fin + 0.6 for p in picos_altos)
+
+    # 1. Filtrado inicial con regla de tijera estricta
+    candidatos: list[dict[str, Any]] = []
+    eliminadas: list[dict[str, Any]] = []
+    n_segs = len(segmentos)
+
+    for idx, seg in enumerate(segmentos):
+        s_ini = float(seg.get("start", 0.0))
+        s_fin = float(seg.get("end", s_ini + 0.5))
+        dur = max(0.2, s_fin - s_ini)
+        txt = str(seg.get("text", "")).strip()
+        es_inicio = idx == 0 or s_ini < 3.0
+        tiene_pico = _tiene_pico(s_ini, s_fin)
+
+        es_relleno, motivo = es_frase_relleno_tijera(
+            txt, dur, es_extremo_inicial=es_inicio, tiene_pico_audio=tiene_pico
+        )
+        score = _puntuar_segmento_narrativo(seg, idx, n_segs, picos_audio or [])
+
+        if es_relleno and duracion_total > min_seg:
+            eliminadas.append(
+                {
+                    "start": round(s_ini, 2),
+                    "end": round(s_fin, 2),
+                    "motivo": motivo,
+                    "text": txt,
+                }
+            )
+            continue
+
+        candidatos.append(
+            {
+                "idx": idx,
+                "start": round(s_ini, 2),
+                "end": round(s_fin, 2),
+                "duration": round(dur, 2),
+                "score": score,
+                "text": txt,
+            }
+        )
+
+    if not candidatos:
+        candidatos = [
+            {
+                "idx": idx,
+                "start": round(float(s.get("start", 0.0)), 2),
+                "end": round(float(s.get("end", 0.0)), 2),
+                "duration": round(max(0.2, float(s.get("end", 0.0)) - float(s.get("start", 0.0))), 2),
+                "score": _puntuar_segmento_narrativo(s, idx, n_segs, picos_audio or []),
+                "text": str(s.get("text", "")).strip(),
+            }
+            for idx, s in enumerate(segmentos)
+        ]
+
+    # 2. Asegurar que el segundo 00:00 arranque en el instante más explosivo de la apertura
+    # Si el primer segmento es muy débil y el segundo o tercero dentro de los primeros 8s explota, saltar directo al gancho
+    sum_actual = sum(c["duration"] for c in candidatos)
+    while len(candidatos) >= 3 and sum_actual > min_seg:
+        primero = candidatos[0]
+        mejor_apertura = max(candidatos[: min(3, len(candidatos))], key=lambda c: c["score"])
+        if (
+            mejor_apertura["idx"] > primero["idx"]
+            and mejor_apertura["start"] <= 9.0
+            and mejor_apertura["score"] >= primero["score"] + 3.0
+            and (sum_actual - primero["duration"]) >= min_seg
+        ):
+            eliminadas.append(
+                {
+                    "start": primero["start"],
+                    "end": primero["end"],
+                    "motivo": "intro_lenta_antes_del_gancho_00_00",
+                    "text": primero["text"],
+                }
+            )
+            candidatos.pop(0)
+            sum_actual = sum(c["duration"] for c in candidatos)
+        else:
+            break
+
+    # 3. Si la duración supera max_seg (45s), podar frases intermedias de menor impacto
+    # protegiendo siempre el Gancho (primeros 1-2 segmentos) y la Recompensa (últimos 1-2 segmentos de alto impacto)
+    if sum_actual > max_seg and len(candidatos) > 3:
+        idx_gancho = candidatos[0]["idx"]
+        # Identificar el mejor segmento de recompensa en el tramo final
+        tramo_final = candidatos[max(1, len(candidatos) - 3) :]
+        idx_recompensa = max(tramo_final, key=lambda c: c["score"])["idx"]
+        protegidos = {idx_gancho, idx_recompensa, candidatos[-1]["idx"]}
+
+        # Ordenar los intermedios de menor a mayor score para podar relleno hasta entrar en <= 45s
+        intermedios_ordenados = sorted(
+            [c for c in candidatos if c["idx"] not in protegidos],
+            key=lambda c: c["score"],
+        )
+        a_quitar: set[int] = set()
+        for cand in intermedios_ordenados:
+            if sum_actual <= max_seg:
+                break
+            if (sum_actual - cand["duration"]) < min_seg:
+                continue
+            a_quitar.add(cand["idx"])
+            sum_actual -= cand["duration"]
+            eliminadas.append(
+                {
+                    "start": cand["start"],
+                    "end": cand["end"],
+                    "motivo": "tijera_ajuste_22_45s",
+                    "text": cand["text"],
+                }
+            )
+
+        if a_quitar:
+            candidatos = [c for c in candidatos if c["idx"] not in a_quitar]
+
+    # 4. Asignar roles Gancho -> Tensión -> Recompensa y fusionar tramos contiguos (<0.35s gap)
+    n_fin = len(candidatos)
+    for i, c in enumerate(candidatos):
+        if i == 0:
+            c["rol"] = "gancho"
+        elif i >= n_fin - 1 or (n_fin >= 4 and i >= n_fin - 2):
+            c["rol"] = "recompensa"
+        else:
+            c["rol"] = "tension"
+
+    gancho_txt = candidatos[0]["text"] if candidatos else ""
+    tension_txts = [c["text"] for c in candidatos if c.get("rol") == "tension"]
+    recompensa_txts = [c["text"] for c in candidatos if c.get("rol") == "recompensa"]
+    if not recompensa_txts and len(candidatos) >= 2:
+        recompensa_txts = [candidatos[-1]["text"]]
+
+    # Fusionar intervalos muy cercanos para evitar cortes bruscos innecesarios
+    tramos_fusionados: list[dict[str, Any]] = []
+    for c in candidatos:
+        margen_ini = max(0.0, round(c["start"] - 0.08, 2))
+        margen_fin = min(round(duracion_total, 2), round(c["end"] + 0.10, 2))
+        if tramos_fusionados and (margen_ini - tramos_fusionados[-1]["end"]) <= 0.35:
+            tramos_fusionados[-1]["end"] = margen_fin
+            tramos_fusionados[-1]["duration"] = round(
+                tramos_fusionados[-1]["end"] - tramos_fusionados[-1]["start"], 2
+            )
+            tramos_fusionados[-1]["text"] = (
+                f"{tramos_fusionados[-1]['text']} {c['text']}".strip()
+            )
+            if c["rol"] == "recompensa":
+                tramos_fusionados[-1]["rol"] = "recompensa"
+        else:
+            tramos_fusionados.append(
+                {
+                    "start": margen_ini,
+                    "end": margen_fin,
+                    "duration": round(margen_fin - margen_ini, 2),
+                    "rol": c["rol"],
+                    "text": c["text"],
+                }
+            )
+
+    duracion_estimada = round(sum(t["duration"] for t in tramos_fusionados), 2)
+    eliminadas.sort(key=lambda x: x["start"])
+
+    return {
+        "habilitarHookTeaser": False,
+        "duracion_original": round(duracion_total, 2),
+        "duracion_objetivo_estimada": duracion_estimada,
+        "en_rango_22_45s": min_seg <= duracion_estimada <= max_seg,
+        "segmentos_conservar": tramos_fusionados,
+        "frases_eliminadas_tijera": eliminadas,
+        "estructura": {
+            "gancho_0_2s": gancho_txt,
+            "tension": " ".join(tension_txts[:3]).strip() or gancho_txt,
+            "recompensa": " ".join(recompensa_txts).strip() or gancho_txt,
+        },
+    }
+
+
+def aplicar_tijera_estricta_whisper(
+    video_path: Path,
+    procesados_dir: Path,
+    model_name: str = "base",
+    min_seg: float = DURACION_SHORT_MIN_SEG,
+    max_seg: float = DURACION_SHORT_MAX_SEG,
+) -> dict[str, Any]:
+    """
+    Aplica la regla de tijera estricta con Whisper sobre el video sin silencios:
+    - Asegura que el segundo 00:00 arranque directo en el Gancho (primeros 2s).
+    - Recorta frases intermedias de relleno/saludos/lectura lenta del chat.
+    - Ajusta la duración final al rango de alta retención (22s a 45s).
+    """
+    import whisper
+
+    dur_actual = obtener_duracion_video(video_path)
+    print(
+        f"[Tijera Whisper] Analizando estructura Gancho -> Tensión -> Recompensa en '{video_path.name}' ({dur_actual}s, objetivo {int(min_seg)}-{int(max_seg)}s)..."
+    )
+    model = whisper.load_model(model_name)
+    res = model.transcribe(str(video_path), language="es", word_timestamps=True, verbose=False)
+
+    segmentos: list[dict[str, Any]] = []
+    palabras: list[dict[str, Any]] = []
+    for seg in res.get("segments", []):
+        txt = str(seg.get("text", "")).strip()
+        if not txt:
+            continue
+        segmentos.append(
+            {
+                "start": round(float(seg.get("start", 0.0)), 2),
+                "end": round(float(seg.get("end", 0.0)), 2),
+                "text": txt,
+            }
+        )
+        for w in seg.get("words", []) or []:
+            pw = str(w.get("word", "")).strip()
+            if pw:
+                palabras.append(
+                    {
+                        "word": pw,
+                        "start": round(float(w.get("start", 0.0)), 3),
+                        "end": round(float(w.get("end", 0.0)), 3),
+                        "highlight": len(pw) >= 7 or pw.isupper(),
+                    }
+                )
+
+    picos: list[dict[str, Any]] = []
+    try:
+        ventanas = medir_rms_por_ventana(video_path)
+        _, picos = detectar_picos_audio(ventanas, segmentos, palabras, max_picos=6)
+    except Exception:
+        pass
+
+    plan = analizar_estructura_gancho_tension_recompensa(
+        segmentos=segmentos,
+        palabras=palabras,
+        picos_audio=picos,
+        duracion_total=dur_actual,
+        min_seg=min_seg,
+        max_seg=max_seg,
+    )
+
+    tramos = plan.get("segmentos_conservar", [])
+    eliminadas = plan.get("frases_eliminadas_tijera", [])
+    necesita_recorte = bool(eliminadas) or (
+        len(tramos) == 1
+        and (tramos[0]["start"] >= 0.4 or (dur_actual - tramos[0]["end"]) >= 0.5)
+    )
+
+    if necesita_recorte and tramos:
+        ffmpeg_exe = obtener_ruta_ffmpeg()
+        partes_temp: list[Path] = []
+        for idx, tr in enumerate(tramos):
+            s_ini = float(tr["start"])
+            s_fin = float(tr["end"])
+            if s_fin - s_ini < 0.25:
+                continue
+            p_tramo = procesados_dir / f"tijera_seg_{idx}.mp4"
+            dur_tr = max(0.25, s_fin - s_ini)
+            fade_out_st = max(0.0, round(dur_tr - 0.025, 3))
+            subprocess.run(
+                [
+                    ffmpeg_exe,
+                    "-hide_banner",
+                    "-nostats",
+                    "-y",
+                    "-ss",
+                    f"{s_ini:.3f}",
+                    "-to",
+                    f"{s_fin:.3f}",
+                    "-i",
+                    str(video_path),
+                    "-af",
+                    f"afade=t=in:st=0:d=0.02,afade=t=out:st={fade_out_st}:d=0.02",
+                    "-r",
+                    "30",
+                    "-c:v",
+                    "libx264",
+                    "-preset",
+                    "fast",
+                    "-crf",
+                    "18",
+                    "-c:a",
+                    "aac",
+                    "-b:a",
+                    "192k",
+                    str(p_tramo),
+                ],
+                check=True,
+                capture_output=True,
+            )
+            partes_temp.append(p_tramo)
+
+        if partes_temp:
+            salida_tijera = procesados_dir / "tijera_out_temp.mp4"
+            if len(partes_temp) == 1:
+                shutil.move(str(partes_temp[0]), str(salida_tijera))
+            else:
+                lista_txt = procesados_dir / "tijera_concat.txt"
+                lista_txt.write_text(
+                    "\n".join(f"file '{p.resolve().as_posix()}'" for p in partes_temp) + "\n",
+                    encoding="utf-8",
+                )
+                subprocess.run(
+                    [
+                        ffmpeg_exe,
+                        "-hide_banner",
+                        "-nostats",
+                        "-y",
+                        "-f",
+                        "concat",
+                        "-safe",
+                        "0",
+                        "-i",
+                        str(lista_txt),
+                        "-c",
+                        "copy",
+                        str(salida_tijera),
+                    ],
+                    check=True,
+                    capture_output=True,
+                )
+                lista_txt.unlink(missing_ok=True)
+                for p in partes_temp:
+                    p.unlink(missing_ok=True)
+
+            shutil.move(str(salida_tijera), str(video_path))
+            nueva_dur = obtener_duracion_video(video_path)
+            plan["duracion_final_recortada"] = nueva_dur
+            print(
+                f"                 Recorte aplicado: {dur_actual}s -> {nueva_dur}s ({len(eliminadas)} frase(s) de relleno eliminadas)."
+            )
+    else:
+        print(
+            f"                 Sin frases de relleno detectadas ({dur_actual}s). Arranque explosivo conservado en 00:00."
+        )
+
+    plan_path = procesados_dir / "plan_narrativo.json"
+    plan_path.write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8")
+    return plan
+
+
+def limpiar_identificadores_internos(texto: str) -> str:
+    """Elimina códigos de episodio/clip internos (ej. 'clip_s3_05', 'Directito 3/7', 'Parte 1', '#12')."""
+    limpio = re.sub(
+        r"\b(clip[\s_-]*[a-z0-9_]*|s\d+[\s_-]*\d*|ep(?:isodio)?\.?\s*\d+|cap(?:[ií]tulo)?\.?\s*\d+|parte\s*\d+|directito\s*\d+(?:/\d+)?)\b",
+        "",
+        texto,
+        flags=re.IGNORECASE,
+    )
+    limpio = re.sub(r"#\w+", "", limpio)
+    limpio = re.sub(r"\s{2,}", " ", limpio.replace("_", " ")).strip(" -–—:|,.")
+    return limpio
+
+
+def generar_metadata_seo_short(
+    texto: str,
+    palabras: list[dict[str, Any]] | None = None,
+    clip_name: str = "",
+    hook_title: str = "",
+    picos_audio: list[dict[str, Any]] | None = None,
+    max_chars: int = MAX_CARACTERES_TITULO,
+    sufijo_canal: str = SUFIJO_TITULO_CANAL,
+) -> dict[str, Any]:
+    """
+    Genera títulos limpios orientados a curiosidad universal (máx. 55 caracteres, sin nombres internos
+    de episodios) usando como máximo `@berlinuno #shorts` al final, y mueve todos los demás hashtags
+    (`#gaming #humor #clips`, etc.) a la descripción.
+    """
+    sufijo = sufijo_canal.strip()
+    presupuesto_base = max(18, max_chars - (len(sufijo) + 1 if sufijo else 0))
+
+    base_candidata = limpiar_identificadores_internos(hook_title)
+    if not base_candidata:
+        # Buscar la primera oración interrogativa, exclamativa o de alta curiosidad en la transcripción
+        oraciones = [
+            s.strip()
+            for s in re.split(r"(?<=[.!?¡¿])\s+", texto.strip())
+            if len(s.strip()) >= 8
+        ]
+        mejor_oracion = ""
+        mejor_pts = -1.0
+        for idx, orac in enumerate(oraciones[:6]):
+            limpia = limpiar_identificadores_internos(orac)
+            if not limpia:
+                continue
+            toks = [_normalizar_token(t) for t in limpia.split() if _normalizar_token(t)]
+            pts = (3.0 if idx == 0 else 0.0) + (2.5 if "?" in limpia or "!" in limpia else 0.0)
+            pts += sum(2.0 for t in toks if t in HIGH_CURIOSITY_SIGNALS or t in IMPACT_CUT_WORDS)
+            if 12 <= len(limpia) <= presupuesto_base:
+                pts += 2.0
+            if pts > mejor_pts:
+                mejor_pts = pts
+                mejor_oracion = limpia
+
+        base_candidata = mejor_oracion or limpiar_identificadores_internos(clip_name) or "Nadie esperaba que pasara esto"
+
+    # Normalizar capitalización tipo frase (evitar todo mayúsculas si viene de hookTitle)
+    if base_candidata.isupper() and len(base_candidata) > 4:
+        base_candidata = base_candidata.capitalize()
+
+    # Recortar sin cortar palabras ni dejar preposiciones colgadas al final para que `cleanTitle + " " + sufijo` nunca supere max_chars (55)
+    stop_finales = {
+        "de", "del", "el", "la", "los", "las", "un", "una", "unos", "unas",
+        "en", "con", "por", "para", "sin", "sobre", "entre", "hacia", "hasta",
+        "que", "qué", "como", "cómo", "cuando", "donde", "y", "e", "o", "u",
+        "ni", "pero", "a", "al", "se", "su", "sus", "mi", "tu", "es", "son",
+        "antes", "después", "despues", "muy", "más", "mas", "tan",
+    }
+    if len(base_candidata) > presupuesto_base:
+        lim_corte = presupuesto_base - (1 if base_candidata.startswith(("¿", "¡")) else 0)
+        recorte = base_candidata[:lim_corte].rsplit(" ", 1)[0].strip(" ,;:-!¡?¿")
+        palabras_rec = recorte.split()
+        while len(palabras_rec) > 3 and _normalizar_token(palabras_rec[-1]) in stop_finales:
+            palabras_rec.pop()
+        recorte = " ".join(palabras_rec).strip(" ,;:-!¡?¿")
+        if len(recorte) >= 8:
+            base_candidata = recorte
+        else:
+            base_candidata = base_candidata[:lim_corte].strip(" ,;:-!¡?¿")
+        if base_candidata.startswith("¿") and not base_candidata.endswith("?"):
+            base_candidata = base_candidata.rstrip() + "?"
+        elif base_candidata.startswith("¡") and not base_candidata.endswith("!"):
+            base_candidata = base_candidata.rstrip() + "!"
+
+    youtube_title = f"{base_candidata} {sufijo}".strip() if sufijo else base_candidata
+    if len(youtube_title) > max_chars and sufijo:
+        exceso = len(youtube_title) - max_chars
+        base_candidata = base_candidata[: max(8, len(base_candidata) - exceso)].rstrip(" ,;:-")
+        youtube_title = f"{base_candidata} {sufijo}".strip()
+
+    # Generar hookTitle visual corto (4 a 6 palabras en mayúsculas para Remotion) si estaba vacío
+    hook_visual = hook_title.strip()
+    if not hook_visual:
+        palabras_base = [p for p in limpiar_identificadores_internos(base_candidata).split() if p]
+        hook_visual = " ".join(palabras_base[:6]).upper()
+        if hook_visual and not hook_visual.endswith(("!", "?")):
+            hook_visual = f"¡{hook_visual}!"
+
+    # Hashtags de SEO movidos exclusivamente a la descripción
+    texto_lower = f"{clip_name} {texto}".lower()
+    hashtags_desc = ["#gaming", "#humor", "#clips", "#streamer", "#argentina", "#viral"]
+    tematicos = [
+        ("gta", "#gta6"),
+        ("prision", "#escape"),
+        ("prisión", "#escape"),
+        ("guardia", "#gameplay"),
+        ("chatgpt", "#ia"),
+        ("heladera", "#debate"),
+        ("cereal", "#debate"),
+        ("planta", "#reaccion"),
+        ("moto", "#fails"),
+        ("crasheo", "#fails"),
+    ]
+    for kw, tag in tematicos:
+        if kw in texto_lower and tag not in hashtags_desc:
+            hashtags_desc.append(tag)
+
+    resumen_desc = limpiar_identificadores_internos(texto.strip())
+    if len(resumen_desc) > 160:
+        resumen_desc = resumen_desc[:157].rsplit(" ", 1)[0] + "..."
+    if not resumen_desc:
+        resumen_desc = base_candidata
+
+    youtube_description = f"{resumen_desc}\n\n{' '.join(hashtags_desc)}"
+
+    return {
+        "hookTitle": hook_visual,
+        "cleanTitle": base_candidata,
+        "youtubeTitle": youtube_title,
+        "titleCharCount": len(youtube_title),
+        "youtubeDescription": youtube_description,
+        "hashtagsDescripcion": hashtags_desc,
+    }
 
 
 def _resolver_coords_webcam(
@@ -1590,6 +2252,30 @@ def main() -> None:
         action="store_true",
         help="Desactiva la selección automática de música de fondo.",
     )
+    parser.add_argument(
+        "--sin-tijera",
+        action="store_true",
+        help="Desactiva el recorte narrativo estricto con Whisper (Gancho -> Tensión -> Recompensa en 22s-45s).",
+    )
+    parser.add_argument(
+        "--duracion-min",
+        type=float,
+        default=DURACION_SHORT_MIN_SEG,
+        help=f"Duración mínima objetivo del Short en segundos (default: {int(DURACION_SHORT_MIN_SEG)}s).",
+    )
+    parser.add_argument(
+        "--duracion-max",
+        type=float,
+        default=DURACION_SHORT_MAX_SEG,
+        help=f"Duración máxima objetivo del Short en segundos (default: {int(DURACION_SHORT_MAX_SEG)}s).",
+    )
+    parser.add_argument(
+        "--habilitar-hook-teaser",
+        dest="habilitar_hook_teaser",
+        action="store_true",
+        default=HABILITAR_HOOK_TEASER,
+        help="Habilita hookTeaser repetido al inicio (desactivado por defecto: arranque directo en 00:00).",
+    )
     ia_group = parser.add_mutually_exclusive_group()
     ia_group.add_argument(
         "--mejorar-ia",
@@ -1632,6 +2318,12 @@ def main() -> None:
             return
 
     sin_silencio_temp = procesados_dir / "sin_silencio_temp.mp4"
+    cfg_edicion = cargar_config_edicion(base_dir)
+    dur_min_obj = float(args.duracion_min or cfg_edicion.get("duracionObjetivoMin", DURACION_SHORT_MIN_SEG))
+    dur_max_obj = float(args.duracion_max or cfg_edicion.get("duracionObjetivoMax", DURACION_SHORT_MAX_SEG))
+    habilitar_hook_teaser = bool(
+        args.habilitar_hook_teaser or cfg_edicion.get("habilitarHookTeaser", HABILITAR_HOOK_TEASER)
+    )
 
     # Fase 1: --detectar-escenas
     if args.detectar_escenas:
@@ -1639,6 +2331,14 @@ def main() -> None:
             source_video = input_path
         else:
             source_video = eliminar_silencios_auto_editor(input_path, sin_silencio_temp)
+            if not args.sin_tijera:
+                aplicar_tijera_estricta_whisper(
+                    source_video,
+                    procesados_dir,
+                    model_name=args.model,
+                    min_seg=dur_min_obj,
+                    max_seg=dur_max_obj,
+                )
 
         detectar_escenas_ffmpeg(
             source_video,
@@ -1657,6 +2357,14 @@ def main() -> None:
         source_for_ffmpeg = sin_silencio_temp
     else:
         source_for_ffmpeg = eliminar_silencios_auto_editor(input_path, sin_silencio_temp)
+        if not args.sin_tijera:
+            aplicar_tijera_estricta_whisper(
+                source_for_ffmpeg,
+                procesados_dir,
+                model_name=args.model,
+                min_seg=dur_min_obj,
+                max_seg=dur_max_obj,
+            )
 
     vertical_temp = procesados_dir / "vertical_temp.mp4"
     transcripcion_json = procesados_dir / "transcripcion.json"
@@ -1688,7 +2396,6 @@ def main() -> None:
         )
 
     # Resolver si la mejora de calidad por IA está activa (--mejorar-ia / --sin-ia / config_edicion.json)
-    cfg_edicion = cargar_config_edicion(base_dir)
     usar_ia = (
         bool(cfg_edicion.get("usarMejoraIA", False))
         if args.mejorar_ia is None
@@ -1763,9 +2470,26 @@ def main() -> None:
             )
         )
 
+        seo_meta = generar_metadata_seo_short(
+            texto=texto_transcripcion,
+            palabras=palabras,
+            clip_name=clip_name,
+            picos_audio=picos_voz,
+            max_chars=int(cfg_edicion.get("maxCaracteresTitulo", MAX_CARACTERES_TITULO)),
+            sufijo_canal=str(cfg_edicion.get("sufijoTituloCanal", SUFIJO_TITULO_CANAL)),
+        )
+
         remotion_data: dict[str, Any] = {
             "editStyle": args.edit_style,
-            "hookTitle": "",
+            "habilitarHookTeaser": habilitar_hook_teaser,
+            "hookTitle": seo_meta["hookTitle"],
+            "seo": {
+                "youtubeTitle": seo_meta["youtubeTitle"],
+                "cleanTitle": seo_meta["cleanTitle"],
+                "titleCharCount": seo_meta["titleCharCount"],
+                "youtubeDescription": seo_meta["youtubeDescription"],
+                "hashtagsDescripcion": seo_meta["hashtagsDescripcion"],
+            },
             "subtitleConfig": {
                 "yOffset": 0,
                 "scale": 1,
@@ -1779,6 +2503,18 @@ def main() -> None:
             "explainerPanels": [],
             "subtitles": palabras,
         }
+        # Cero hookTeaser por defecto (arranque explosivo directo en 00:00)
+        if not habilitar_hook_teaser:
+            remotion_data.pop("hookTeaser", None)
+
+        seo_txt_path = procesados_dir / f"seo_{clip_name}.txt"
+        seo_txt_path.write_text(
+            f"TÍTULO ({seo_meta['titleCharCount']} chars):\n{seo_meta['youtubeTitle']}\n\nDESCRIPCIÓN:\n{seo_meta['youtubeDescription']}\n",
+            encoding="utf-8",
+        )
+        print(
+            f"      [SEO] Título ({seo_meta['titleCharCount']}/55 chars): {seo_meta['youtubeTitle']}"
+        )
         if musica_fondo:
             remotion_data["backgroundMusic"] = musica_fondo
             musica_public_dir = public_dir / "musica"

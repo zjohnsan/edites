@@ -1,5 +1,10 @@
 {
   "usarMejoraIA": false,
   "modeloIA": "realesr-animevideov3",
-  "escalaIA": 2
+  "escalaIA": 2,
+  "habilitarHookTeaser": false,
+  "duracionObjetivoMin": 22,
+  "duracionObjetivoMax": 45,
+  "maxCaracteresTitulo": 55,
+  "sufijoTituloCanal": "@berlinuno #shorts"
 }
