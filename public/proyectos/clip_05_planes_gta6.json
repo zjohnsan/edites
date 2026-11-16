@@ -1,0 +1,1097 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "¿LIBERTY CITY EN GTA 6? 👀",
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_05_planes_gta6.mp4",
+  "durationInSeconds": 60.633,
+  "cards": [
+    {
+      "title": "¿LIBERTY CITY EN GTA 6? 🗺️",
+      "start": 8.5,
+      "end": 15.0,
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.85,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    },
+    {
+      "title": "DÍA 1 EN DIRECTO: RECORRIENDO TODO EL MAPA 🔥",
+      "start": 32.5,
+      "end": 39.5,
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.82,
+      "sfx": "SONIDOS/Sonido de impacto.mp3"
+    },
+    {
+      "title": "MILTON MUESTRA LA CARA EN GTA 6 👀",
+      "start": 52.0,
+      "end": 59.5,
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.84,
+      "sfx": "SONIDOS/ES_Event, Collect Point - Epidemic Sound - 0000-1708.wav"
+    }
+  ],
+  "subtitles": [
+    {
+      "word": "¿Viste",
+      "start": 0.0,
+      "end": 0.8,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 0.8,
+      "end": 1.02,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 1.02,
+      "end": 1.12,
+      "highlight": false
+    },
+    {
+      "word": "habla",
+      "start": 1.12,
+      "end": 1.32,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 1.32,
+      "end": 1.48,
+      "highlight": false
+    },
+    {
+      "word": "va",
+      "start": 1.48,
+      "end": 1.62,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 1.62,
+      "end": 1.76,
+      "highlight": false
+    },
+    {
+      "word": "estar",
+      "start": 1.76,
+      "end": 1.88,
+      "highlight": false
+    },
+    {
+      "word": "esta",
+      "start": 1.76,
+      "end": 2.0,
+      "highlight": false
+    },
+    {
+      "word": "ciudad",
+      "start": 2.0,
+      "end": 2.2,
+      "highlight": true
+    },
+    {
+      "word": "en",
+      "start": 2.2,
+      "end": 2.4,
+      "highlight": false
+    },
+    {
+      "word": "GTA",
+      "start": 2.4,
+      "end": 2.5,
+      "highlight": true
+    },
+    {
+      "word": "6?",
+      "start": 2.5,
+      "end": 2.78,
+      "highlight": true
+    },
+    {
+      "word": "¿Por",
+      "start": 5.76,
+      "end": 6.18,
+      "highlight": false
+    },
+    {
+      "word": "qué?",
+      "start": 6.18,
+      "end": 6.44,
+      "highlight": false
+    },
+    {
+      "word": "¿No",
+      "start": 6.76,
+      "end": 6.88,
+      "highlight": false
+    },
+    {
+      "word": "escuchaste?",
+      "start": 6.88,
+      "end": 7.28,
+      "highlight": false
+    },
+    {
+      "word": "No,",
+      "start": 7.76,
+      "end": 8.0,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 8.08,
+      "end": 8.1,
+      "highlight": false
+    },
+    {
+      "word": "escuché.",
+      "start": 8.1,
+      "end": 8.48,
+      "highlight": false
+    },
+    {
+      "word": "Se",
+      "start": 8.78,
+      "end": 8.9,
+      "highlight": false
+    },
+    {
+      "word": "dice",
+      "start": 8.9,
+      "end": 9.48,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 9.48,
+      "end": 9.62,
+      "highlight": false
+    },
+    {
+      "word": "va",
+      "start": 9.62,
+      "end": 9.72,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 9.72,
+      "end": 9.8,
+      "highlight": false
+    },
+    {
+      "word": "estar",
+      "start": 9.8,
+      "end": 9.88,
+      "highlight": false
+    },
+    {
+      "word": "esta",
+      "start": 9.88,
+      "end": 10.08,
+      "highlight": false
+    },
+    {
+      "word": "ciudad",
+      "start": 10.08,
+      "end": 10.26,
+      "highlight": true
+    },
+    {
+      "word": "en",
+      "start": 10.26,
+      "end": 10.6,
+      "highlight": false
+    },
+    {
+      "word": "GTA",
+      "start": 10.6,
+      "end": 10.72,
+      "highlight": true
+    },
+    {
+      "word": "6,",
+      "start": 10.6,
+      "end": 10.78,
+      "highlight": true
+    },
+    {
+      "word": "raro,",
+      "start": 10.84,
+      "end": 11.28,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 11.52,
+      "end": 11.72,
+      "highlight": false
+    },
+    {
+      "word": "sí",
+      "start": 11.72,
+      "end": 11.94,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 11.94,
+      "end": 12.06,
+      "highlight": false
+    },
+    {
+      "word": "dice.",
+      "start": 12.06,
+      "end": 12.26,
+      "highlight": false
+    },
+    {
+      "word": "Pero",
+      "start": 12.42,
+      "end": 12.62,
+      "highlight": false
+    },
+    {
+      "word": "sí",
+      "start": 12.62,
+      "end": 12.84,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 12.84,
+      "end": 13.22,
+      "highlight": false
+    },
+    {
+      "word": "Vice",
+      "start": 13.22,
+      "end": 14.04,
+      "highlight": true
+    },
+    {
+      "word": "City.",
+      "start": 14.04,
+      "end": 14.4,
+      "highlight": true
+    },
+    {
+      "word": "Está",
+      "start": 14.68,
+      "end": 14.94,
+      "highlight": false
+    },
+    {
+      "word": "del",
+      "start": 14.94,
+      "end": 15.14,
+      "highlight": false
+    },
+    {
+      "word": "otro",
+      "start": 15.14,
+      "end": 15.32,
+      "highlight": false
+    },
+    {
+      "word": "lado,",
+      "start": 15.32,
+      "end": 15.6,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 16.22,
+      "end": 16.34,
+      "highlight": false
+    },
+    {
+      "word": "ver,",
+      "start": 16.34,
+      "end": 16.48,
+      "highlight": false
+    },
+    {
+      "word": "Estados",
+      "start": 16.58,
+      "end": 16.72,
+      "highlight": false
+    },
+    {
+      "word": "Unidos,",
+      "start": 16.72,
+      "end": 17.04,
+      "highlight": false
+    },
+    {
+      "word": "está",
+      "start": 17.18,
+      "end": 17.28,
+      "highlight": false
+    },
+    {
+      "word": "Miami",
+      "start": 17.28,
+      "end": 17.62,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 17.62,
+      "end": 17.88,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 17.88,
+      "end": 17.96,
+      "highlight": false
+    },
+    {
+      "word": "lado.",
+      "start": 17.96,
+      "end": 18.18,
+      "highlight": false
+    },
+    {
+      "word": "Pero",
+      "start": 18.48,
+      "end": 18.66,
+      "highlight": false
+    },
+    {
+      "word": "tengo",
+      "start": 18.66,
+      "end": 18.82,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 18.82,
+      "end": 18.92,
+      "highlight": false
+    },
+    {
+      "word": "bajar.",
+      "start": 18.92,
+      "end": 19.2,
+      "highlight": false
+    },
+    {
+      "word": "New",
+      "start": 19.28,
+      "end": 19.42,
+      "highlight": true
+    },
+    {
+      "word": "York",
+      "start": 19.42,
+      "end": 19.62,
+      "highlight": true
+    },
+    {
+      "word": "está",
+      "start": 19.62,
+      "end": 19.9,
+      "highlight": false
+    },
+    {
+      "word": "del",
+      "start": 19.9,
+      "end": 20.08,
+      "highlight": false
+    },
+    {
+      "word": "otro,",
+      "start": 20.08,
+      "end": 20.3,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 20.88,
+      "end": 21.14,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 21.14,
+      "end": 21.86,
+      "highlight": false
+    },
+    {
+      "word": "sé",
+      "start": 21.86,
+      "end": 22.04,
+      "highlight": false
+    },
+    {
+      "word": "por",
+      "start": 22.04,
+      "end": 22.22,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 22.22,
+      "end": 22.38,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 22.38,
+      "end": 22.54,
+      "highlight": false
+    },
+    {
+      "word": "dice",
+      "start": 22.54,
+      "end": 22.76,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 22.76,
+      "end": 22.92,
+      "highlight": false
+    },
+    {
+      "word": "va",
+      "start": 22.92,
+      "end": 23.04,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 23.04,
+      "end": 23.16,
+      "highlight": false
+    },
+    {
+      "word": "estar.",
+      "start": 23.16,
+      "end": 23.28,
+      "highlight": false
+    },
+    {
+      "word": "Hay",
+      "start": 23.62,
+      "end": 23.74,
+      "highlight": false
+    },
+    {
+      "word": "rumores.",
+      "start": 23.74,
+      "end": 24.12,
+      "highlight": true
+    },
+    {
+      "word": "Capaz",
+      "start": 24.58,
+      "end": 24.84,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 24.84,
+      "end": 24.96,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 24.96,
+      "end": 25.06,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 25.06,
+      "end": 25.2,
+      "highlight": false
+    },
+    {
+      "word": "misión",
+      "start": 25.2,
+      "end": 25.56,
+      "highlight": true
+    },
+    {
+      "word": "puede",
+      "start": 25.56,
+      "end": 25.78,
+      "highlight": false
+    },
+    {
+      "word": "ser.",
+      "start": 25.78,
+      "end": 25.94,
+      "highlight": false
+    },
+    {
+      "word": "Y",
+      "start": 26.48,
+      "end": 26.72,
+      "highlight": false
+    },
+    {
+      "word": "obviamente,",
+      "start": 26.72,
+      "end": 27.44,
+      "highlight": false
+    },
+    {
+      "word": "obviamente",
+      "start": 27.98,
+      "end": 28.42,
+      "highlight": false
+    },
+    {
+      "word": "puede",
+      "start": 28.42,
+      "end": 28.68,
+      "highlight": false
+    },
+    {
+      "word": "ser.",
+      "start": 28.68,
+      "end": 28.86,
+      "highlight": false
+    },
+    {
+      "word": "Lo",
+      "start": 32.72,
+      "end": 32.92,
+      "highlight": false
+    },
+    {
+      "word": "primero",
+      "start": 32.92,
+      "end": 33.28,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 33.28,
+      "end": 33.48,
+      "highlight": false
+    },
+    {
+      "word": "vamos",
+      "start": 33.48,
+      "end": 33.64,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 33.64,
+      "end": 33.76,
+      "highlight": false
+    },
+    {
+      "word": "hacer",
+      "start": 33.76,
+      "end": 33.94,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 33.94,
+      "end": 34.04,
+      "highlight": false
+    },
+    {
+      "word": "GTA",
+      "start": 34.04,
+      "end": 34.18,
+      "highlight": true
+    },
+    {
+      "word": "6",
+      "start": 34.18,
+      "end": 34.48,
+      "highlight": true
+    },
+    {
+      "word": "va",
+      "start": 34.48,
+      "end": 34.68,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 34.68,
+      "end": 34.72,
+      "highlight": false
+    },
+    {
+      "word": "ser",
+      "start": 34.72,
+      "end": 34.9,
+      "highlight": false
+    },
+    {
+      "word": "recorrer",
+      "start": 34.9,
+      "end": 35.38,
+      "highlight": true
+    },
+    {
+      "word": "todo",
+      "start": 35.38,
+      "end": 35.6,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 35.6,
+      "end": 35.8,
+      "highlight": false
+    },
+    {
+      "word": "mapa.",
+      "start": 35.8,
+      "end": 35.98,
+      "highlight": true
+    },
+    {
+      "word": "vamos",
+      "start": 35.98,
+      "end": 36.4,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 36.4,
+      "end": 36.54,
+      "highlight": false
+    },
+    {
+      "word": "estar",
+      "start": 36.54,
+      "end": 36.8,
+      "highlight": false
+    },
+    {
+      "word": "yo,",
+      "start": 36.8,
+      "end": 37.08,
+      "highlight": false
+    },
+    {
+      "word": "John",
+      "start": 37.08,
+      "end": 37.34,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 37.34,
+      "end": 37.52,
+      "highlight": false
+    },
+    {
+      "word": "Milton",
+      "start": 37.52,
+      "end": 38.22,
+      "highlight": true
+    },
+    {
+      "word": "en",
+      "start": 38.22,
+      "end": 38.78,
+      "highlight": false
+    },
+    {
+      "word": "directo",
+      "start": 38.78,
+      "end": 39.16,
+      "highlight": true
+    },
+    {
+      "word": "acá",
+      "start": 39.16,
+      "end": 39.28,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 39.28,
+      "end": 39.4,
+      "highlight": false
+    },
+    {
+      "word": "YouTube",
+      "start": 39.4,
+      "end": 39.62,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 39.62,
+      "end": 40.3,
+      "highlight": false
+    },
+    {
+      "word": "vamos",
+      "start": 40.3,
+      "end": 40.44,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 40.44,
+      "end": 40.6,
+      "highlight": false
+    },
+    {
+      "word": "recorrer",
+      "start": 40.6,
+      "end": 40.9,
+      "highlight": true
+    },
+    {
+      "word": "el",
+      "start": 40.9,
+      "end": 41.06,
+      "highlight": false
+    },
+    {
+      "word": "mapa",
+      "start": 41.06,
+      "end": 41.2,
+      "highlight": true
+    },
+    {
+      "word": "Eso",
+      "start": 41.2,
+      "end": 41.64,
+      "highlight": false
+    },
+    {
+      "word": "vamos",
+      "start": 41.64,
+      "end": 42.76,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 42.76,
+      "end": 42.86,
+      "highlight": false
+    },
+    {
+      "word": "hacer",
+      "start": 42.86,
+      "end": 43.04,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 43.04,
+      "end": 43.12,
+      "highlight": false
+    },
+    {
+      "word": "primer",
+      "start": 43.12,
+      "end": 43.3,
+      "highlight": true
+    },
+    {
+      "word": "día",
+      "start": 43.3,
+      "end": 43.56,
+      "highlight": false
+    },
+    {
+      "word": "hacer",
+      "start": 43.56,
+      "end": 44.04,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 44.04,
+      "end": 44.26,
+      "highlight": false
+    },
+    {
+      "word": "prólogo",
+      "start": 44.26,
+      "end": 44.62,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 44.62,
+      "end": 44.8,
+      "highlight": false
+    },
+    {
+      "word": "recorrer",
+      "start": 44.8,
+      "end": 45.16,
+      "highlight": true
+    },
+    {
+      "word": "todo",
+      "start": 45.16,
+      "end": 45.3,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 45.3,
+      "end": 45.42,
+      "highlight": false
+    },
+    {
+      "word": "mapa.",
+      "start": 45.42,
+      "end": 45.58,
+      "highlight": true
+    },
+    {
+      "word": "¿Cómo",
+      "start": 46.92,
+      "end": 47.5,
+      "highlight": false
+    },
+    {
+      "word": "va,",
+      "start": 47.5,
+      "end": 47.78,
+      "highlight": false
+    },
+    {
+      "word": "Nova?",
+      "start": 47.78,
+      "end": 48.04,
+      "highlight": false
+    },
+    {
+      "word": "Sí,",
+      "start": 48.54,
+      "end": 48.8,
+      "highlight": false
+    },
+    {
+      "word": "bro,",
+      "start": 48.84,
+      "end": 48.9,
+      "highlight": false
+    },
+    {
+      "word": "11",
+      "start": 48.9,
+      "end": 49.34,
+      "highlight": true
+    },
+    {
+      "word": "episodios",
+      "start": 49.34,
+      "end": 50.3,
+      "highlight": true
+    },
+    {
+      "word": "son",
+      "start": 50.3,
+      "end": 50.46,
+      "highlight": false
+    },
+    {
+      "word": "del",
+      "start": 50.46,
+      "end": 50.66,
+      "highlight": false
+    },
+    {
+      "word": "GTA",
+      "start": 50.66,
+      "end": 51.12,
+      "highlight": true
+    },
+    {
+      "word": "Cooperativo.",
+      "start": 51.12,
+      "end": 51.6,
+      "highlight": true
+    },
+    {
+      "word": "¿Para",
+      "start": 51.94,
+      "end": 52.06,
+      "highlight": false
+    },
+    {
+      "word": "cuándo",
+      "start": 52.06,
+      "end": 52.28,
+      "highlight": false
+    },
+    {
+      "word": "Milton",
+      "start": 52.28,
+      "end": 52.52,
+      "highlight": true
+    },
+    {
+      "word": "muestra",
+      "start": 52.52,
+      "end": 52.7,
+      "highlight": true
+    },
+    {
+      "word": "su",
+      "start": 52.7,
+      "end": 52.84,
+      "highlight": false
+    },
+    {
+      "word": "cara?",
+      "start": 52.84,
+      "end": 53.04,
+      "highlight": true
+    },
+    {
+      "word": "Ahora",
+      "start": 54.56,
+      "end": 54.96,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 54.96,
+      "end": 55.36,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 55.36,
+      "end": 55.54,
+      "highlight": false
+    },
+    {
+      "word": "directo",
+      "start": 55.54,
+      "end": 55.98,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 55.98,
+      "end": 56.04,
+      "highlight": false
+    },
+    {
+      "word": "GTA",
+      "start": 56.04,
+      "end": 56.28,
+      "highlight": true
+    },
+    {
+      "word": "6",
+      "start": 56.28,
+      "end": 56.46,
+      "highlight": true
+    },
+    {
+      "word": "seguramente.",
+      "start": 56.46,
+      "end": 57.14,
+      "highlight": false
+    },
+    {
+      "word": "No,",
+      "start": 57.32,
+      "end": 57.48,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 57.58,
+      "end": 57.7,
+      "highlight": false
+    },
+    {
+      "word": "estoy",
+      "start": 57.64,
+      "end": 57.78,
+      "highlight": false
+    },
+    {
+      "word": "viejo.",
+      "start": 57.78,
+      "end": 57.84,
+      "highlight": false
+    },
+    {
+      "word": "Dentro",
+      "start": 57.86,
+      "end": 58.26,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 58.26,
+      "end": 58.42,
+      "highlight": false
+    },
+    {
+      "word": "literalmente",
+      "start": 58.42,
+      "end": 59.38,
+      "highlight": false
+    },
+    {
+      "word": "6",
+      "start": 59.38,
+      "end": 59.76,
+      "highlight": true
+    },
+    {
+      "word": "días,",
+      "start": 59.76,
+      "end": 60.02,
+      "highlight": true
+    },
+    {
+      "word": "hola.",
+      "start": 60.2,
+      "end": 60.42,
+      "highlight": false
+    }
+  ],
+  "hookTeaser": {
+    "start": 51.9,
+    "end": 56.5,
+    "label": "MÁS ADELANTE..."
+  },
+  "backgroundMusic": {
+    "file": "ES_60984_Don't Trip.mp3",
+    "category": "chill_storytime",
+    "volume": 0.035,
+    "cutAtTimestamps": [
+      {
+        "start": 52.18,
+        "end": 53.98
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 46.9,
+      "end": 60.6
+    }
+  ]
+}

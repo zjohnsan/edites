@@ -1,0 +1,776 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "LENTES ROTOS Y REMERA CROTA",
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_01_lentes_remera.mp4",
+  "durationInSeconds": 52.933,
+  "cards": [
+    {
+      "title": "¿ME REGALÁS LOS LENTES?",
+      "text": "¿ME REGALÁS LOS LENTES?",
+      "subtitle": "EL CHAT PIDE",
+      "subtext": "EL CHAT PIDE",
+      "start": 2.85,
+      "end": 5.4,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3",
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.85
+    },
+    {
+      "title": "MÁS ROTOS QUE EL PANTALÓN DE MILTON",
+      "text": "MÁS ROTOS QUE EL PANTALÓN DE MILTON",
+      "subtitle": "DESTRUIDOS",
+      "subtext": "DESTRUIDOS",
+      "start": 11.2,
+      "end": 15.2,
+      "sfx": "SONIDOS/Bonk Sound Effect.mp3",
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.85
+    },
+    {
+      "title": "LA REMERA DEL LABURO 💀",
+      "text": "LA REMERA DEL LABURO 💀",
+      "subtitle": "CROTERA MÁXIMA",
+      "subtext": "CROTERA MÁXIMA",
+      "start": 40.8,
+      "end": 44.6,
+      "sfx": "SONIDOS/Roblox Death Sound (Oof) - Sound Effect (HD).mp3",
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.88
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "¿Meet",
+      "start": 0.0,
+      "end": 0.42,
+      "highlight": false
+    },
+    {
+      "word": "& greet?",
+      "start": 0.42,
+      "end": 1.26,
+      "highlight": false
+    },
+    {
+      "word": "Es bait.",
+      "start": 1.26,
+      "end": 1.88,
+      "highlight": false
+    },
+    {
+      "word": "¿Berlín,",
+      "start": 2.32,
+      "end": 2.84,
+      "highlight": true
+    },
+    {
+      "word": "me",
+      "start": 2.96,
+      "end": 3.04,
+      "highlight": false
+    },
+    {
+      "word": "regalás",
+      "start": 3.04,
+      "end": 3.3,
+      "highlight": false
+    },
+    {
+      "word": "los",
+      "start": 3.3,
+      "end": 3.5,
+      "highlight": false
+    },
+    {
+      "word": "lentes?",
+      "start": 3.5,
+      "end": 3.76,
+      "highlight": true
+    },
+    {
+      "word": "Berlín",
+      "start": 4.28,
+      "end": 4.74,
+      "highlight": false
+    },
+    {
+      "word": "pelea",
+      "start": 4.74,
+      "end": 5.14,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 5.14,
+      "end": 5.58,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 5.58,
+      "end": 6.4,
+      "highlight": false
+    },
+    {
+      "word": "vela",
+      "start": 6.4,
+      "end": 6.94,
+      "highlight": false
+    },
+    {
+      "word": "o",
+      "start": 6.94,
+      "end": 7.14,
+      "highlight": false
+    },
+    {
+      "word": "lo...?",
+      "start": 7.14,
+      "end": 7.52,
+      "highlight": false
+    },
+    {
+      "word": "¿No",
+      "start": 7.52,
+      "end": 8.14,
+      "highlight": false
+    },
+    {
+      "word": "sabían",
+      "start": 8.14,
+      "end": 8.32,
+      "highlight": false
+    },
+    {
+      "word": "usted?",
+      "start": 8.32,
+      "end": 8.48,
+      "highlight": false
+    },
+    {
+      "word": "Ven,",
+      "start": 8.9,
+      "end": 9.06,
+      "highlight": false
+    },
+    {
+      "word": "mira",
+      "start": 9.12,
+      "end": 9.34,
+      "highlight": false
+    },
+    {
+      "word": "mis",
+      "start": 9.34,
+      "end": 9.46,
+      "highlight": false
+    },
+    {
+      "word": "lentes,",
+      "start": 9.46,
+      "end": 9.64,
+      "highlight": true
+    },
+    {
+      "word": "¿cómo",
+      "start": 9.7,
+      "end": 9.8,
+      "highlight": false
+    },
+    {
+      "word": "están?",
+      "start": 9.8,
+      "end": 9.98,
+      "highlight": false
+    },
+    {
+      "word": "Mira,",
+      "start": 10.48,
+      "end": 10.66,
+      "highlight": false
+    },
+    {
+      "word": "mira,",
+      "start": 10.74,
+      "end": 10.9,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 11.04,
+      "end": 11.34,
+      "highlight": false
+    },
+    {
+      "word": "están",
+      "start": 11.34,
+      "end": 11.52,
+      "highlight": false
+    },
+    {
+      "word": "más",
+      "start": 11.52,
+      "end": 11.82,
+      "highlight": false
+    },
+    {
+      "word": "rotos",
+      "start": 11.82,
+      "end": 12.18,
+      "highlight": true
+    },
+    {
+      "word": "que",
+      "start": 12.18,
+      "end": 12.76,
+      "highlight": false
+    },
+    {
+      "word": "los",
+      "start": 12.76,
+      "end": 12.9,
+      "highlight": false
+    },
+    {
+      "word": "pantalones",
+      "start": 12.9,
+      "end": 13.44,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 13.44,
+      "end": 13.6,
+      "highlight": false
+    },
+    {
+      "word": "Milton",
+      "start": 13.6,
+      "end": 13.8,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 13.8,
+      "end": 14.08,
+      "highlight": false
+    },
+    {
+      "word": "tanto",
+      "start": 14.08,
+      "end": 14.28,
+      "highlight": false
+    },
+    {
+      "word": "comer.",
+      "start": 14.28,
+      "end": 14.62,
+      "highlight": false
+    },
+    {
+      "word": "Imaginate.",
+      "start": 15.16,
+      "end": 15.68,
+      "highlight": true
+    },
+    {
+      "word": "Los",
+      "start": 16.26,
+      "end": 16.66,
+      "highlight": false
+    },
+    {
+      "word": "lentes",
+      "start": 16.66,
+      "end": 17.06,
+      "highlight": false
+    },
+    {
+      "word": "oscuros...",
+      "start": 17.06,
+      "end": 18.98,
+      "highlight": true
+    },
+    {
+      "word": "Berlín,",
+      "start": 18.98,
+      "end": 19.48,
+      "highlight": true
+    },
+    {
+      "word": "no",
+      "start": 19.54,
+      "end": 19.62,
+      "highlight": false
+    },
+    {
+      "word": "sé",
+      "start": 19.62,
+      "end": 19.7,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 19.7,
+      "end": 19.78,
+      "highlight": false
+    },
+    {
+      "word": "misión.",
+      "start": 19.78,
+      "end": 20.12,
+      "highlight": true
+    },
+    {
+      "word": "¿Me",
+      "start": 22.22,
+      "end": 22.74,
+      "highlight": false
+    },
+    {
+      "word": "regalas",
+      "start": 22.74,
+      "end": 23.02,
+      "highlight": true
+    },
+    {
+      "word": "tu",
+      "start": 23.02,
+      "end": 23.14,
+      "highlight": false
+    },
+    {
+      "word": "gorra?",
+      "start": 23.14,
+      "end": 23.38,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 23.94,
+      "end": 24.1,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 24.34,
+      "end": 24.42,
+      "highlight": false
+    },
+    {
+      "word": "mi.",
+      "start": 24.42,
+      "end": 24.54,
+      "highlight": false
+    },
+    {
+      "word": "Yes,",
+      "start": 24.96,
+      "end": 25.26,
+      "highlight": false
+    },
+    {
+      "word": "good.",
+      "start": 25.74,
+      "end": 25.94,
+      "highlight": false
+    },
+    {
+      "word": "¿Cómo",
+      "start": 26.18,
+      "end": 26.28,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 26.28,
+      "end": 26.54,
+      "highlight": false
+    },
+    {
+      "word": "haces?",
+      "start": 26.54,
+      "end": 26.54,
+      "highlight": false
+    },
+    {
+      "word": "No,",
+      "start": 27.74,
+      "end": 28.26,
+      "highlight": false
+    },
+    {
+      "word": "mi",
+      "start": 28.38,
+      "end": 28.48,
+      "highlight": false
+    },
+    {
+      "word": "camiseta,",
+      "start": 28.48,
+      "end": 28.86,
+      "highlight": true
+    },
+    {
+      "word": "ey.",
+      "start": 29.02,
+      "end": 29.18,
+      "highlight": false
+    },
+    {
+      "word": "Tengo",
+      "start": 29.76,
+      "end": 30.0,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 30.0,
+      "end": 30.14,
+      "highlight": false
+    },
+    {
+      "word": "remera",
+      "start": 30.14,
+      "end": 30.48,
+      "highlight": false
+    },
+    {
+      "word": "rota,",
+      "start": 30.48,
+      "end": 30.9,
+      "highlight": false
+    },
+    {
+      "word": "amigo.",
+      "start": 30.92,
+      "end": 31.1,
+      "highlight": false
+    },
+    {
+      "word": "¿Para",
+      "start": 31.84,
+      "end": 32.1,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 32.1,
+      "end": 32.24,
+      "highlight": false
+    },
+    {
+      "word": "quiere",
+      "start": 32.24,
+      "end": 32.38,
+      "highlight": false
+    },
+    {
+      "word": "mi",
+      "start": 32.38,
+      "end": 32.5,
+      "highlight": false
+    },
+    {
+      "word": "remera?",
+      "start": 32.5,
+      "end": 32.8,
+      "highlight": true
+    },
+    {
+      "word": "Está",
+      "start": 32.9,
+      "end": 32.98,
+      "highlight": false
+    },
+    {
+      "word": "comida",
+      "start": 32.98,
+      "end": 33.22,
+      "highlight": false
+    },
+    {
+      "word": "por...",
+      "start": 33.22,
+      "end": 34.22,
+      "highlight": false
+    },
+    {
+      "word": "¡Esto",
+      "start": 34.22,
+      "end": 34.48,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 34.48,
+      "end": 34.56,
+      "highlight": false
+    },
+    {
+      "word": "crotera,",
+      "start": 34.56,
+      "end": 34.9,
+      "highlight": true
+    },
+    {
+      "word": "hermano!",
+      "start": 34.96,
+      "end": 35.32,
+      "highlight": true
+    },
+    {
+      "word": "¡Boludo!",
+      "start": 35.56,
+      "end": 35.8,
+      "highlight": true
+    },
+    {
+      "word": "¡Esto",
+      "start": 36.28,
+      "end": 36.48,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 36.48,
+      "end": 36.56,
+      "highlight": false
+    },
+    {
+      "word": "crotera!",
+      "start": 36.56,
+      "end": 36.82,
+      "highlight": true
+    },
+    {
+      "word": "Mira",
+      "start": 37.94,
+      "end": 38.18,
+      "highlight": false
+    },
+    {
+      "word": "mi",
+      "start": 38.18,
+      "end": 38.3,
+      "highlight": false
+    },
+    {
+      "word": "remera,",
+      "start": 38.3,
+      "end": 40.02,
+      "highlight": true
+    },
+    {
+      "word": "boludo.",
+      "start": 40.08,
+      "end": 40.28,
+      "highlight": true
+    },
+    {
+      "word": "¿Vos",
+      "start": 40.58,
+      "end": 40.74,
+      "highlight": false
+    },
+    {
+      "word": "querés",
+      "start": 40.74,
+      "end": 40.92,
+      "highlight": false
+    },
+    {
+      "word": "mi",
+      "start": 40.92,
+      "end": 41.04,
+      "highlight": false
+    },
+    {
+      "word": "remera?",
+      "start": 41.04,
+      "end": 41.34,
+      "highlight": true
+    },
+    {
+      "word": "Esta",
+      "start": 41.44,
+      "end": 41.6,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 41.6,
+      "end": 41.66,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 41.66,
+      "end": 41.74,
+      "highlight": false
+    },
+    {
+      "word": "remera",
+      "start": 41.74,
+      "end": 42.02,
+      "highlight": false
+    },
+    {
+      "word": "del",
+      "start": 42.02,
+      "end": 42.12,
+      "highlight": false
+    },
+    {
+      "word": "trabajo,",
+      "start": 42.12,
+      "end": 42.38,
+      "highlight": true
+    },
+    {
+      "word": "¿verdad?",
+      "start": 42.58,
+      "end": 42.68,
+      "highlight": true
+    },
+    {
+      "word": "¿Qué",
+      "start": 43.24,
+      "end": 43.5,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 43.5,
+      "end": 43.5,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 43.5,
+      "end": 43.64,
+      "highlight": false
+    },
+    {
+      "word": "gran",
+      "start": 43.64,
+      "end": 43.8,
+      "highlight": false
+    },
+    {
+      "word": "problema?",
+      "start": 43.8,
+      "end": 44.16,
+      "highlight": true
+    },
+    {
+      "word": "¡Mirá!",
+      "start": 44.96,
+      "end": 45.18,
+      "highlight": false
+    },
+    {
+      "word": "¡Mirá!",
+      "start": 45.28,
+      "end": 45.7,
+      "highlight": false
+    },
+    {
+      "word": "¿Qué",
+      "start": 45.94,
+      "end": 46.08,
+      "highlight": false
+    },
+    {
+      "word": "es eso?",
+      "start": 46.08,
+      "end": 46.32,
+      "highlight": true
+    },
+    {
+      "word": "¡Mirá!",
+      "start": 47.16,
+      "end": 47.64,
+      "highlight": false
+    },
+    {
+      "word": "¡Boludo!",
+      "start": 48.0,
+      "end": 48.48,
+      "highlight": true
+    },
+    {
+      "word": "¡Es",
+      "start": 49.04,
+      "end": 49.52,
+      "highlight": false
+    },
+    {
+      "word": "mi",
+      "start": 49.52,
+      "end": 49.62,
+      "highlight": false
+    },
+    {
+      "word": "remera",
+      "start": 49.62,
+      "end": 49.94,
+      "highlight": false
+    },
+    {
+      "word": "del",
+      "start": 49.94,
+      "end": 50.06,
+      "highlight": false
+    },
+    {
+      "word": "trabajo,",
+      "start": 50.06,
+      "end": 50.36,
+      "highlight": true
+    },
+    {
+      "word": "está!",
+      "start": 50.44,
+      "end": 50.62,
+      "highlight": false
+    }
+  ],
+  "hookTeaser": {
+    "start": 44.8,
+    "end": 48.5,
+    "label": "MÁS ADELANTE..."
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 4.8,
+      "end": 15.8
+    },
+    {
+      "start": 33.6,
+      "end": 48.6
+    }
+  ],
+  "backgroundMusic": {
+    "file": "ES_Another Fried Chicken - Stationary Sign.mp3",
+    "category": "comedia_absurda",
+    "volume": 0.1,
+    "cutAtTimestamps": [
+      {
+        "start": 33.12,
+        "end": 34.92
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0
+  }
+}

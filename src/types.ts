@@ -42,10 +42,13 @@ export const svgAnimationSchema = z.enum(['pop', 'float', 'shake']);
 export type SvgAnimation = z.infer<typeof svgAnimationSchema>;
 
 export const cardItemSchema = z.object({
-  title: z.string(),
+  title: z.string().optional(),
+  text: z.string().optional(),
   subtitle: z.string().optional(),
+  subtext: z.string().optional(),
   emoji: z.string().optional(),
   icon: z.string().optional(),
+  image: z.string().optional(),
   start: z.number(),
   end: z.number(),
   position: cardPositionSchema.optional(),
@@ -133,11 +136,62 @@ export const explainerPanelSchema = z.object({
 });
 export type ExplainerPanel = z.infer<typeof explainerPanelSchema>;
 
+/**
+ * Gancho inicial: un fragmento destacado del propio clip (en segundos del video procesado)
+ * que se reproduce ANTES del video completo. Todo lo demás se desplaza por su duración.
+ */
+export const hookTeaserSchema = z.object({
+  start: z.number(),
+  end: z.number(),
+  label: z.string().optional(),
+});
+export type HookTeaser = z.infer<typeof hookTeaserSchema>;
+
+export const cameraFullscreenRangeSchema = z.object({
+  start: z.number(),
+  end: z.number(),
+});
+export type CameraFullscreenRange = z.infer<typeof cameraFullscreenRangeSchema>;
+
+export const musicCategorySchema = z.enum([
+  'comedia_absurda',
+  'tension_accion',
+  'chill_storytime',
+  'epica_climax',
+]);
+export type MusicCategory = z.infer<typeof musicCategorySchema>;
+
+export const musicCutTimestampSchema = z.union([
+  z.number(),
+  z.object({
+    start: z.number(),
+    end: z.number().optional(),
+    duration: z.number().optional(),
+  }),
+]);
+export type MusicCutTimestamp = z.infer<typeof musicCutTimestampSchema>;
+
+export const backgroundMusicSchema = z.object({
+  file: z.string(),
+  category: musicCategorySchema.optional(),
+  volume: z.number().min(0).max(1).default(0.1).optional(),
+  cutAtTimestamps: z.array(musicCutTimestampSchema).optional(),
+  fadeInSeconds: z.number().min(0).max(5).default(0.5).optional(),
+  fadeOutSeconds: z.number().min(0).max(5).default(1.0).optional(),
+  cutFadeInSeconds: z.number().min(0).max(3).default(0.4).optional(),
+});
+export type BackgroundMusic = z.infer<typeof backgroundMusicSchema>;
+
 export const shortSchema = z.object({
   editStyle: editStyleSchema.optional(),
   hookTitle: z.string().optional(),
+  hookTeaser: hookTeaserSchema.optional(),
+  cameraFullscreenRanges: z.array(cameraFullscreenRangeSchema).optional(),
+  backgroundMusic: backgroundMusicSchema.optional(),
   subtitleConfig: subtitleConfigSchema.optional(),
   videoSrc: z.string(),
+  webcamEnhancedFile: z.string().nullable().optional(),
+  usarMejoraIA: z.boolean().default(false).optional(),
   durationInSeconds: z.number().optional(),
   cards: z.array(cardItemSchema).optional(),
   explainerPanels: z.array(explainerPanelSchema).optional(),
@@ -146,3 +200,14 @@ export const shortSchema = z.object({
 });
 
 export type ShortData = z.infer<typeof shortSchema>;
+
+/** Frames que dura el hookTeaser (0 si no está definido o es inválido). */
+export const getTeaserDurationFrames = (
+  teaser: HookTeaser | undefined,
+  fps: number
+): number => {
+  if (!teaser || teaser.end <= teaser.start) {
+    return 0;
+  }
+  return Math.round((teaser.end - teaser.start) * fps);
+};

@@ -1,0 +1,823 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "¿DUERME CON UNA PLANTA?! 🪴",
+  "hookTeaser": {
+    "start": 37.36,
+    "end": 41.0,
+    "label": "MÁS ADELANTE..."
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 9.0,
+      "end": 17.65
+    }
+  ],
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_s3_02_planta_hamburguesa.mp4",
+  "durationInSeconds": 48.5,
+  "backgroundMusic": {
+    "file": "ES_You Might Have Heard of Me - Arthur Benson.mp3",
+    "category": "comedia_absurda",
+    "volume": 0.1,
+    "cutAtTimestamps": [
+      {
+        "start": 4.53,
+        "end": 6.14
+      },
+      {
+        "start": 15.59,
+        "end": 17.65
+      },
+      {
+        "start": 30.73,
+        "end": 32.62
+      },
+      {
+        "start": 38.63,
+        "end": 40.68
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0,
+    "cutFadeInSeconds": 0.4
+  },
+  "cards": [
+    {
+      "title": "LA PLANTA ANTI-GUALICHOS 🪴",
+      "text": "LA PLANTA ANTI-GUALICHOS 🪴",
+      "subtitle": "TE SALVA DE TODO",
+      "subtext": "TE SALVA DE TODO",
+      "start": 15.5,
+      "end": 22.0,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3",
+      "variant": "stamp",
+      "position": "top-left",
+      "scale": 0.8
+    },
+    {
+      "title": "PARA ARRANCAR MOTIVADO EL DÍA ✨",
+      "text": "PARA ARRANCAR MOTIVADO EL DÍA ✨",
+      "subtitle": "ENERGÍA MATINAL",
+      "subtext": "ENERGÍA MATINAL",
+      "start": 24.9,
+      "end": 32.6,
+      "sfx": "SONIDOS/ES_Event, Collect Point - Epidemic Sound - 0000-1708.wav",
+      "variant": "stamp",
+      "position": "top-left",
+      "scale": 0.8
+    },
+    {
+      "title": "MILTON DUERME CON UNA HAMBURGUESA 🍔💀",
+      "text": "MILTON DUERME CON UNA HAMBURGUESA 🍔💀",
+      "subtitle": "PARA QUE NO SE LE ESCAPE",
+      "subtext": "PARA QUE NO SE LE ESCAPE",
+      "start": 35.6,
+      "end": 46.4,
+      "sfx": "SONIDOS/Sonido de impacto.mp3",
+      "variant": "stamp",
+      "position": "top-left",
+      "scale": 0.8
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "No",
+      "start": 0.0,
+      "end": 0.1,
+      "highlight": false
+    },
+    {
+      "word": "sé",
+      "start": 0.1,
+      "end": 0.26,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 0.26,
+      "end": 0.38,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 0.38,
+      "end": 0.5,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 0.5,
+      "end": 0.6,
+      "highlight": false
+    },
+    {
+      "word": "más",
+      "start": 0.6,
+      "end": 0.76,
+      "highlight": false
+    },
+    {
+      "word": "plata",
+      "start": 0.76,
+      "end": 1.02,
+      "highlight": false
+    },
+    {
+      "word": "da.",
+      "start": 1.02,
+      "end": 1.28,
+      "highlight": false
+    },
+    {
+      "word": "Siendo",
+      "start": 1.74,
+      "end": 2.14,
+      "highlight": false
+    },
+    {
+      "word": "sincero.",
+      "start": 2.14,
+      "end": 2.64,
+      "highlight": true
+    },
+    {
+      "word": "Ey,",
+      "start": 2.94,
+      "end": 3.04,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 3.16,
+      "end": 3.22,
+      "highlight": false
+    },
+    {
+      "word": "duermo",
+      "start": 3.22,
+      "end": 3.44,
+      "highlight": true
+    },
+    {
+      "word": "con",
+      "start": 3.44,
+      "end": 4.5,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 4.5,
+      "end": 4.68,
+      "highlight": false
+    },
+    {
+      "word": "planta",
+      "start": 4.68,
+      "end": 5.0,
+      "highlight": true
+    },
+    {
+      "word": "al",
+      "start": 5.0,
+      "end": 5.1,
+      "highlight": false
+    },
+    {
+      "word": "lado",
+      "start": 5.1,
+      "end": 5.24,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 5.24,
+      "end": 5.34,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 5.34,
+      "end": 5.44,
+      "highlight": false
+    },
+    {
+      "word": "vida",
+      "start": 5.44,
+      "end": 5.56,
+      "highlight": true
+    },
+    {
+      "word": "real,",
+      "start": 5.56,
+      "end": 5.84,
+      "highlight": true
+    },
+    {
+      "word": "boli.",
+      "start": 5.92,
+      "end": 6.06,
+      "highlight": false
+    },
+    {
+      "word": "¿Por",
+      "start": 6.24,
+      "end": 6.44,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 6.44,
+      "end": 6.54,
+      "highlight": false
+    },
+    {
+      "word": "decir",
+      "start": 6.54,
+      "end": 6.68,
+      "highlight": false
+    },
+    {
+      "word": "eso?",
+      "start": 6.68,
+      "end": 6.94,
+      "highlight": false
+    },
+    {
+      "word": "No",
+      "start": 7.6,
+      "end": 8.0,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 8.0,
+      "end": 8.08,
+      "highlight": false
+    },
+    {
+      "word": "broma.",
+      "start": 8.08,
+      "end": 8.28,
+      "highlight": true
+    },
+    {
+      "word": "Es",
+      "start": 9.14,
+      "end": 9.42,
+      "highlight": false
+    },
+    {
+      "word": "joda.",
+      "start": 9.42,
+      "end": 9.64,
+      "highlight": false
+    },
+    {
+      "word": "Mira",
+      "start": 10.2,
+      "end": 10.38,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 10.38,
+      "end": 10.72,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 10.72,
+      "end": 10.82,
+      "highlight": false
+    },
+    {
+      "word": "tengo",
+      "start": 10.82,
+      "end": 11.02,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 11.02,
+      "end": 11.14,
+      "highlight": false
+    },
+    {
+      "word": "fondo.",
+      "start": 11.14,
+      "end": 11.32,
+      "highlight": true
+    },
+    {
+      "word": "Mira,",
+      "start": 11.7,
+      "end": 11.88,
+      "highlight": false
+    },
+    {
+      "word": "mira",
+      "start": 11.98,
+      "end": 12.28,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 12.28,
+      "end": 12.46,
+      "highlight": false
+    },
+    {
+      "word": "tengo",
+      "start": 12.46,
+      "end": 12.58,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 12.58,
+      "end": 12.68,
+      "highlight": false
+    },
+    {
+      "word": "fondo.",
+      "start": 12.68,
+      "end": 12.84,
+      "highlight": true
+    },
+    {
+      "word": "De",
+      "start": 13.06,
+      "end": 13.18,
+      "highlight": false
+    },
+    {
+      "word": "fondo.",
+      "start": 13.18,
+      "end": 13.46,
+      "highlight": true
+    },
+    {
+      "word": "De",
+      "start": 13.94,
+      "end": 14.34,
+      "highlight": false
+    },
+    {
+      "word": "fondo.",
+      "start": 14.34,
+      "end": 14.62,
+      "highlight": true
+    },
+    {
+      "word": "De",
+      "start": 14.88,
+      "end": 15.0,
+      "highlight": false
+    },
+    {
+      "word": "fondo.",
+      "start": 15.0,
+      "end": 15.32,
+      "highlight": true
+    },
+    {
+      "word": "¿Viste?",
+      "start": 15.74,
+      "end": 16.14,
+      "highlight": false
+    },
+    {
+      "word": "Te",
+      "start": 16.52,
+      "end": 16.72,
+      "highlight": false
+    },
+    {
+      "word": "salva",
+      "start": 16.72,
+      "end": 16.94,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 16.94,
+      "end": 17.0,
+      "highlight": false
+    },
+    {
+      "word": "los",
+      "start": 17.0,
+      "end": 17.1,
+      "highlight": false
+    },
+    {
+      "word": "gualichos.",
+      "start": 17.1,
+      "end": 17.56,
+      "highlight": true
+    },
+    {
+      "word": "Esto",
+      "start": 17.8,
+      "end": 18.2,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 18.2,
+      "end": 18.34,
+      "highlight": false
+    },
+    {
+      "word": "todo",
+      "start": 18.34,
+      "end": 18.42,
+      "highlight": false
+    },
+    {
+      "word": "para",
+      "start": 18.42,
+      "end": 18.64,
+      "highlight": false
+    },
+    {
+      "word": "las",
+      "start": 18.64,
+      "end": 18.78,
+      "highlight": false
+    },
+    {
+      "word": "malas",
+      "start": 18.78,
+      "end": 20.32,
+      "highlight": true
+    },
+    {
+      "word": "costumbres,",
+      "start": 20.32,
+      "end": 21.48,
+      "highlight": true
+    },
+    {
+      "word": "todo",
+      "start": 21.6,
+      "end": 21.78,
+      "highlight": false
+    },
+    {
+      "word": "eso.",
+      "start": 21.78,
+      "end": 22.0,
+      "highlight": false
+    },
+    {
+      "word": "Amigos,",
+      "start": 23.22,
+      "end": 23.62,
+      "highlight": false
+    },
+    {
+      "word": "tengo",
+      "start": 23.72,
+      "end": 23.8,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 23.8,
+      "end": 23.9,
+      "highlight": false
+    },
+    {
+      "word": "montón",
+      "start": 23.9,
+      "end": 24.08,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 24.08,
+      "end": 24.2,
+      "highlight": false
+    },
+    {
+      "word": "cosas.",
+      "start": 24.2,
+      "end": 24.36,
+      "highlight": false
+    },
+    {
+      "word": "Cuando",
+      "start": 25.0,
+      "end": 25.2,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 25.2,
+      "end": 25.38,
+      "highlight": false
+    },
+    {
+      "word": "levanta",
+      "start": 25.38,
+      "end": 25.7,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 25.7,
+      "end": 25.78,
+      "highlight": false
+    },
+    {
+      "word": "mañana",
+      "start": 25.78,
+      "end": 25.98,
+      "highlight": false
+    },
+    {
+      "word": "dice,",
+      "start": 25.98,
+      "end": 26.7,
+      "highlight": false
+    },
+    {
+      "word": "ve",
+      "start": 27.12,
+      "end": 27.32,
+      "highlight": false
+    },
+    {
+      "word": "esa",
+      "start": 27.32,
+      "end": 27.5,
+      "highlight": false
+    },
+    {
+      "word": "planta",
+      "start": 27.5,
+      "end": 27.84,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 27.84,
+      "end": 27.92,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 27.92,
+      "end": 28.02,
+      "highlight": false
+    },
+    {
+      "word": "anima.",
+      "start": 28.02,
+      "end": 28.52,
+      "highlight": true
+    },
+    {
+      "word": "Claro,",
+      "start": 29.22,
+      "end": 29.58,
+      "highlight": false
+    },
+    {
+      "word": "ve",
+      "start": 29.72,
+      "end": 29.82,
+      "highlight": false
+    },
+    {
+      "word": "esta",
+      "start": 29.82,
+      "end": 29.96,
+      "highlight": false
+    },
+    {
+      "word": "planta",
+      "start": 29.96,
+      "end": 30.26,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 30.26,
+      "end": 30.28,
+      "highlight": false
+    },
+    {
+      "word": "digo,",
+      "start": 30.28,
+      "end": 30.38,
+      "highlight": false
+    },
+    {
+      "word": "bien,",
+      "start": 30.48,
+      "end": 30.7,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 30.84,
+      "end": 30.88,
+      "highlight": false
+    },
+    {
+      "word": "puta",
+      "start": 30.88,
+      "end": 31.02,
+      "highlight": true
+    },
+    {
+      "word": "madre,",
+      "start": 31.02,
+      "end": 31.32,
+      "highlight": true
+    },
+    {
+      "word": "voy",
+      "start": 31.42,
+      "end": 31.52,
+      "highlight": false
+    },
+    {
+      "word": "bien.",
+      "start": 31.52,
+      "end": 32.54,
+      "highlight": false
+    },
+    {
+      "word": "Milton.",
+      "start": 35.66,
+      "end": 36.02,
+      "highlight": true
+    },
+    {
+      "word": "Milton.",
+      "start": 37.36,
+      "end": 37.72,
+      "highlight": true
+    },
+    {
+      "word": "Duerme",
+      "start": 38.78,
+      "end": 39.14,
+      "highlight": true
+    },
+    {
+      "word": "al",
+      "start": 39.14,
+      "end": 39.22,
+      "highlight": false
+    },
+    {
+      "word": "lado",
+      "start": 39.22,
+      "end": 39.36,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 39.36,
+      "end": 39.44,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 39.44,
+      "end": 39.5,
+      "highlight": false
+    },
+    {
+      "word": "hamburguesa,",
+      "start": 39.5,
+      "end": 40.12,
+      "highlight": true
+    },
+    {
+      "word": "qué",
+      "start": 40.18,
+      "end": 40.28,
+      "highlight": false
+    },
+    {
+      "word": "gordo.",
+      "start": 40.28,
+      "end": 40.58,
+      "highlight": true
+    },
+    {
+      "word": "Ya",
+      "start": 42.48,
+      "end": 42.84,
+      "highlight": false
+    },
+    {
+      "word": "la tenía",
+      "start": 42.84,
+      "end": 43.08,
+      "highlight": true
+    },
+    {
+      "word": "preparada",
+      "start": 43.08,
+      "end": 43.58,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 43.58,
+      "end": 43.7,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 43.7,
+      "end": 43.82,
+      "highlight": false
+    },
+    {
+      "word": "anoche.",
+      "start": 43.82,
+      "end": 44.04,
+      "highlight": true
+    },
+    {
+      "word": "La",
+      "start": 44.3,
+      "end": 44.48,
+      "highlight": false
+    },
+    {
+      "word": "deja",
+      "start": 44.48,
+      "end": 44.82,
+      "highlight": false
+    },
+    {
+      "word": "ahí",
+      "start": 44.82,
+      "end": 45.0,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 45.0,
+      "end": 45.12,
+      "highlight": false
+    },
+    {
+      "word": "gordo",
+      "start": 45.12,
+      "end": 45.36,
+      "highlight": true
+    },
+    {
+      "word": "para",
+      "start": 45.36,
+      "end": 45.62,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 45.62,
+      "end": 45.8,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 45.8,
+      "end": 45.9,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 45.9,
+      "end": 46.0,
+      "highlight": false
+    },
+    {
+      "word": "le",
+      "start": 46.0,
+      "end": 46.1,
+      "highlight": false
+    },
+    {
+      "word": "escape.",
+      "start": 46.1,
+      "end": 46.36,
+      "highlight": true
+    }
+  ],
+  "webcamEnhancedFile": "clips/clip_s3_02_planta_hamburguesa_webcam_ia.mp4",
+  "usarMejoraIA": true
+}

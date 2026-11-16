@@ -1,0 +1,169 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "CEREAL EN LA HELADERA 🥣❄️",
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_s3_06_cereal_heladera.mp4",
+  "webcamEnhancedFile": "clips/clip_s3_06_cereal_heladera_webcam_ia.mp4",
+  "usarMejoraIA": true,
+  "durationInSeconds": 10.0,
+  "cards": [
+    {
+      "id": "card-cereal-heladera",
+      "title": "GUARDA EL CEREAL EN LA HELADERA 💀❄️",
+      "text": "GUARDA EL CEREAL EN LA HELADERA 💀❄️",
+      "start": 3.8,
+      "end": 7.6,
+      "position": "top-left",
+      "scale": 0.8,
+      "variant": "stamp",
+      "sfx": "SONIDOS/Bonk Sound Effect.mp3"
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "¿Quién",
+      "start": 1.18,
+      "end": 1.68,
+      "highlight": false
+    },
+    {
+      "word": "pone",
+      "start": 1.68,
+      "end": 1.84,
+      "highlight": false
+    },
+    {
+      "word": "cereal?",
+      "start": 1.84,
+      "end": 2.08,
+      "highlight": true
+    },
+    {
+      "word": "Y",
+      "start": 2.08,
+      "end": 2.44,
+      "highlight": false
+    },
+    {
+      "word": "amigo,",
+      "start": 2.44,
+      "end": 2.8,
+      "highlight": false
+    },
+    {
+      "word": "ey,",
+      "start": 3.36,
+      "end": 3.56,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 4.06,
+      "end": 4.28,
+      "highlight": false
+    },
+    {
+      "word": "pongo",
+      "start": 4.28,
+      "end": 4.6,
+      "highlight": false
+    },
+    {
+      "word": "cereal",
+      "start": 4.6,
+      "end": 4.88,
+      "highlight": true
+    },
+    {
+      "word": "en",
+      "start": 4.88,
+      "end": 5.12,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 5.12,
+      "end": 5.22,
+      "highlight": false
+    },
+    {
+      "word": "heladera,",
+      "start": 5.22,
+      "end": 5.58,
+      "highlight": true
+    },
+    {
+      "word": "boludo.",
+      "start": 5.64,
+      "end": 5.98,
+      "highlight": true
+    },
+    {
+      "word": "No",
+      "start": 6.28,
+      "end": 6.42,
+      "highlight": false
+    },
+    {
+      "word": "te",
+      "start": 6.42,
+      "end": 6.52,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 6.52,
+      "end": 6.62,
+      "highlight": false
+    },
+    {
+      "word": "vengas",
+      "start": 6.62,
+      "end": 6.88,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 6.88,
+      "end": 7.0,
+      "highlight": false
+    },
+    {
+      "word": "hacer",
+      "start": 7.0,
+      "end": 7.14,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 7.14,
+      "end": 7.26,
+      "highlight": false
+    },
+    {
+      "word": "capo.",
+      "start": 7.26,
+      "end": 7.58,
+      "highlight": true
+    }
+  ],
+  "backgroundMusic": {
+    "file": "ES_A Shadow on Wigmore Street - Duke Herrington.mp3",
+    "category": "tension_accion",
+    "volume": 0.09,
+    "cutAtTimestamps": [
+      {
+        "start": 5.07,
+        "end": 6.45
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0,
+    "cutFadeInSeconds": 0.4
+  }
+}

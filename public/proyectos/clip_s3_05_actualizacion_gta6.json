@@ -1,0 +1,1062 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "¿ACTUALIZARON GTA 6 ANTES DE SALIR? 🚨",
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_s3_05_actualizacion_gta6.mp4",
+  "webcamEnhancedFile": null,
+  "usarMejoraIA": false,
+  "durationInSeconds": 62.033,
+  "cards": [
+    {
+      "id": "card-actualizacion-gta6",
+      "title": "¿YA ACTUALIZARON GTA 6 ANTES DE SALIR? 🚨",
+      "text": "¿YA ACTUALIZARON GTA 6 ANTES DE SALIR? 🚨",
+      "start": 5.2,
+      "end": 12.6,
+      "position": "top-left",
+      "scale": 0.8,
+      "variant": "stamp",
+      "sfx": "SONIDOS/Sonido de impacto.mp3"
+    },
+    {
+      "id": "card-edicion-deluxe",
+      "title": "¿VALE LA PENA LA EDICIÓN DELUXE? 💸",
+      "text": "¿VALE LA PENA LA EDICIÓN DELUXE? 💸",
+      "start": 40.4,
+      "end": 46.5,
+      "position": "top-left",
+      "scale": 0.8,
+      "variant": "stamp",
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    },
+    {
+      "id": "card-80-dolares",
+      "title": "JUEGO COMPLETO POR  DÓLARES 🔥",
+      "text": "JUEGO COMPLETO POR  DÓLARES 🔥",
+      "start": 49.0,
+      "end": 56.6,
+      "position": "top-left",
+      "scale": 0.8,
+      "variant": "stamp",
+      "sfx": "Impact y hit/Efecto de Sonido Impacto - Sonido para TUS VÍDEOS.mp3"
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "una",
+      "start": 0.0,
+      "end": 0.54,
+      "highlight": false
+    },
+    {
+      "word": "tormenta",
+      "start": 0.54,
+      "end": 1.02,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 1.02,
+      "end": 1.16,
+      "highlight": false
+    },
+    {
+      "word": "mal",
+      "start": 1.16,
+      "end": 1.46,
+      "highlight": false
+    },
+    {
+      "word": "mal",
+      "start": 1.46,
+      "end": 1.86,
+      "highlight": false
+    },
+    {
+      "word": "verdil",
+      "start": 1.86,
+      "end": 2.58,
+      "highlight": false
+    },
+    {
+      "word": "te",
+      "start": 2.58,
+      "end": 2.8,
+      "highlight": false
+    },
+    {
+      "word": "tengo",
+      "start": 2.8,
+      "end": 3.08,
+      "highlight": false
+    },
+    {
+      "word": "noticia",
+      "start": 3.08,
+      "end": 4.06,
+      "highlight": false
+    },
+    {
+      "word": "¿Qué",
+      "start": 4.06,
+      "end": 4.58,
+      "highlight": false
+    },
+    {
+      "word": "pasó?",
+      "start": 4.58,
+      "end": 4.74,
+      "highlight": false
+    },
+    {
+      "word": "actualizaron",
+      "start": 5.38,
+      "end": 5.94,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 5.94,
+      "end": 6.12,
+      "highlight": false
+    },
+    {
+      "word": "g",
+      "start": 6.12,
+      "end": 6.26,
+      "highlight": false
+    },
+    {
+      "word": "-106",
+      "start": 6.26,
+      "end": 6.74,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 6.74,
+      "end": 7.46,
+      "highlight": false
+    },
+    {
+      "word": "vi,",
+      "start": 7.46,
+      "end": 7.68,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 8.04,
+      "end": 8.22,
+      "highlight": false
+    },
+    {
+      "word": "vi",
+      "start": 8.22,
+      "end": 8.44,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 8.44,
+      "end": 8.64,
+      "highlight": false
+    },
+    {
+      "word": "cierto",
+      "start": 8.64,
+      "end": 8.98,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 8.98,
+      "end": 9.32,
+      "highlight": false
+    },
+    {
+      "word": "giga",
+      "start": 9.32,
+      "end": 9.9,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 9.9,
+      "end": 10.06,
+      "highlight": false
+    },
+    {
+      "word": "pico",
+      "start": 10.06,
+      "end": 10.4,
+      "highlight": false
+    },
+    {
+      "word": "ya",
+      "start": 10.4,
+      "end": 10.78,
+      "highlight": false
+    },
+    {
+      "word": "boludo,",
+      "start": 10.78,
+      "end": 11.2,
+      "highlight": false
+    },
+    {
+      "word": "ni",
+      "start": 11.2,
+      "end": 11.32,
+      "highlight": false
+    },
+    {
+      "word": "salió",
+      "start": 11.32,
+      "end": 11.64,
+      "highlight": false
+    },
+    {
+      "word": "y",
+      "start": 11.64,
+      "end": 11.72,
+      "highlight": false
+    },
+    {
+      "word": "ya",
+      "start": 11.72,
+      "end": 11.8,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 11.8,
+      "end": 11.88,
+      "highlight": false
+    },
+    {
+      "word": "están",
+      "start": 11.88,
+      "end": 12.0,
+      "highlight": false
+    },
+    {
+      "word": "actualizando",
+      "start": 12.0,
+      "end": 12.58,
+      "highlight": true
+    },
+    {
+      "word": "ni",
+      "start": 12.58,
+      "end": 13.14,
+      "highlight": false
+    },
+    {
+      "word": "pasó",
+      "start": 13.14,
+      "end": 13.34,
+      "highlight": false
+    },
+    {
+      "word": "ni",
+      "start": 13.34,
+      "end": 13.54,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 13.54,
+      "end": 13.64,
+      "highlight": false
+    },
+    {
+      "word": "segundo",
+      "start": 13.64,
+      "end": 14.04,
+      "highlight": false
+    },
+    {
+      "word": "boludo,",
+      "start": 14.7,
+      "end": 15.26,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 15.46,
+      "end": 16.02,
+      "highlight": false
+    },
+    {
+      "word": "te",
+      "start": 16.02,
+      "end": 16.14,
+      "highlight": false
+    },
+    {
+      "word": "puedo",
+      "start": 16.14,
+      "end": 16.34,
+      "highlight": false
+    },
+    {
+      "word": "creer",
+      "start": 16.34,
+      "end": 16.86,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 16.86,
+      "end": 17.16,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 17.16,
+      "end": 17.34,
+      "highlight": false
+    },
+    {
+      "word": "ni",
+      "start": 17.34,
+      "end": 17.8,
+      "highlight": false
+    },
+    {
+      "word": "salió",
+      "start": 17.8,
+      "end": 18.08,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 18.08,
+      "end": 18.2,
+      "highlight": false
+    },
+    {
+      "word": "juego",
+      "start": 18.2,
+      "end": 18.4,
+      "highlight": false
+    },
+    {
+      "word": "si",
+      "start": 18.94,
+      "end": 19.22,
+      "highlight": false
+    },
+    {
+      "word": "y",
+      "start": 19.22,
+      "end": 19.78,
+      "highlight": false
+    },
+    {
+      "word": "ya",
+      "start": 19.78,
+      "end": 20.1,
+      "highlight": false
+    },
+    {
+      "word": "solo",
+      "start": 20.1,
+      "end": 20.94,
+      "highlight": false
+    },
+    {
+      "word": "ando",
+      "start": 20.94,
+      "end": 21.18,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 21.18,
+      "end": 21.28,
+      "highlight": false
+    },
+    {
+      "word": "actualizando",
+      "start": 21.28,
+      "end": 21.92,
+      "highlight": true
+    },
+    {
+      "word": "¿Vos",
+      "start": 21.92,
+      "end": 22.22,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 22.22,
+      "end": 22.32,
+      "highlight": false
+    },
+    {
+      "word": "compraste?",
+      "start": 22.32,
+      "end": 22.7,
+      "highlight": false
+    },
+    {
+      "word": "si,",
+      "start": 23.44,
+      "end": 24.0,
+      "highlight": false
+    },
+    {
+      "word": "ya",
+      "start": 24.08,
+      "end": 24.2,
+      "highlight": false
+    },
+    {
+      "word": "tengo",
+      "start": 24.2,
+      "end": 24.52,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 24.52,
+      "end": 24.68,
+      "highlight": false
+    },
+    {
+      "word": "versión",
+      "start": 24.68,
+      "end": 24.98,
+      "highlight": false
+    },
+    {
+      "word": "del",
+      "start": 24.98,
+      "end": 25.2,
+      "highlight": false
+    },
+    {
+      "word": "otro",
+      "start": 25.2,
+      "end": 25.4,
+      "highlight": false
+    },
+    {
+      "word": "si,",
+      "start": 25.88,
+      "end": 26.16,
+      "highlight": false
+    },
+    {
+      "word": "si,",
+      "start": 26.32,
+      "end": 26.42,
+      "highlight": false
+    },
+    {
+      "word": "ya",
+      "start": 26.58,
+      "end": 26.58,
+      "highlight": false
+    },
+    {
+      "word": "también",
+      "start": 26.58,
+      "end": 26.76,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 26.76,
+      "end": 26.9,
+      "highlight": false
+    },
+    {
+      "word": "quiero",
+      "start": 26.9,
+      "end": 27.0,
+      "highlight": false
+    },
+    {
+      "word": "comprar",
+      "start": 27.0,
+      "end": 27.26,
+      "highlight": false
+    },
+    {
+      "word": "eso",
+      "start": 27.26,
+      "end": 27.56,
+      "highlight": false
+    },
+    {
+      "word": "si,",
+      "start": 28.7,
+      "end": 29.18,
+      "highlight": false
+    },
+    {
+      "word": "porque",
+      "start": 29.32,
+      "end": 29.5,
+      "highlight": false
+    },
+    {
+      "word": "si",
+      "start": 29.5,
+      "end": 29.74,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 29.74,
+      "end": 30.02,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 30.22,
+      "end": 30.42,
+      "highlight": false
+    },
+    {
+      "word": "va",
+      "start": 30.42,
+      "end": 30.62,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 30.62,
+      "end": 30.62,
+      "highlight": false
+    },
+    {
+      "word": "tener",
+      "start": 30.62,
+      "end": 30.78,
+      "highlight": false
+    },
+    {
+      "word": "mucho",
+      "start": 30.78,
+      "end": 31.1,
+      "highlight": false
+    },
+    {
+      "word": "contenido",
+      "start": 31.1,
+      "end": 31.5,
+      "highlight": false
+    },
+    {
+      "word": "ah,",
+      "start": 32.02,
+      "end": 32.5,
+      "highlight": false
+    },
+    {
+      "word": "si,",
+      "start": 32.7,
+      "end": 32.84,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 33.22,
+      "end": 34.04,
+      "highlight": false
+    },
+    {
+      "word": "mas",
+      "start": 34.04,
+      "end": 34.26,
+      "highlight": false
+    },
+    {
+      "word": "o",
+      "start": 34.26,
+      "end": 34.44,
+      "highlight": false
+    },
+    {
+      "word": "menos",
+      "start": 34.44,
+      "end": 34.84,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 35.54,
+      "end": 36.02,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 36.02,
+      "end": 36.2,
+      "highlight": false
+    },
+    {
+      "word": "hay",
+      "start": 36.2,
+      "end": 36.64,
+      "highlight": false
+    },
+    {
+      "word": "muchas",
+      "start": 36.64,
+      "end": 37.0,
+      "highlight": false
+    },
+    {
+      "word": "cosas",
+      "start": 37.0,
+      "end": 37.28,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 37.28,
+      "end": 37.54,
+      "highlight": false
+    },
+    {
+      "word": "limitan",
+      "start": 37.54,
+      "end": 37.78,
+      "highlight": false
+    },
+    {
+      "word": "como",
+      "start": 38.72,
+      "end": 39.2,
+      "highlight": false
+    },
+    {
+      "word": "interiores",
+      "start": 39.2,
+      "end": 39.68,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 40.6,
+      "end": 41.08,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 41.08,
+      "end": 41.22,
+      "highlight": false
+    },
+    {
+      "word": "voludez",
+      "start": 41.22,
+      "end": 41.72,
+      "highlight": false
+    },
+    {
+      "word": "igual",
+      "start": 41.72,
+      "end": 41.86,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 41.86,
+      "end": 42.1,
+      "highlight": false
+    },
+    {
+      "word": "hayan",
+      "start": 42.1,
+      "end": 42.42,
+      "highlight": false
+    },
+    {
+      "word": "sacado",
+      "start": 42.42,
+      "end": 42.7,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 42.7,
+      "end": 42.82,
+      "highlight": false
+    },
+    {
+      "word": "versión",
+      "start": 42.82,
+      "end": 42.98,
+      "highlight": false
+    },
+    {
+      "word": "standard",
+      "start": 42.98,
+      "end": 43.38,
+      "highlight": true
+    },
+    {
+      "word": "todo",
+      "start": 43.38,
+      "end": 43.76,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 43.76,
+      "end": 43.86,
+      "highlight": false
+    },
+    {
+      "word": "mundo",
+      "start": 43.86,
+      "end": 44.06,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 44.06,
+      "end": 44.24,
+      "highlight": false
+    },
+    {
+      "word": "ser",
+      "start": 44.24,
+      "end": 44.24,
+      "highlight": false
+    },
+    {
+      "word": "algo",
+      "start": 44.24,
+      "end": 44.38,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 44.38,
+      "end": 44.48,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 44.48,
+      "end": 44.58,
+      "highlight": false
+    },
+    {
+      "word": "deluxe",
+      "start": 44.58,
+      "end": 44.98,
+      "highlight": true
+    },
+    {
+      "word": "si,",
+      "start": 45.66,
+      "end": 46.14,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 46.68,
+      "end": 46.82,
+      "highlight": false
+    },
+    {
+      "word": "ese",
+      "start": 46.82,
+      "end": 46.92,
+      "highlight": false
+    },
+    {
+      "word": "para",
+      "start": 46.92,
+      "end": 47.06,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 47.06,
+      "end": 47.12,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 47.12,
+      "end": 47.22,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 47.22,
+      "end": 47.36,
+      "highlight": false
+    },
+    {
+      "word": "quejen",
+      "start": 47.36,
+      "end": 47.6,
+      "highlight": false
+    },
+    {
+      "word": "del",
+      "start": 47.6,
+      "end": 47.76,
+      "highlight": false
+    },
+    {
+      "word": "precio",
+      "start": 47.76,
+      "end": 48.12,
+      "highlight": false
+    },
+    {
+      "word": "claro,",
+      "start": 48.62,
+      "end": 49.1,
+      "highlight": false
+    },
+    {
+      "word": "porque",
+      "start": 49.22,
+      "end": 49.42,
+      "highlight": false
+    },
+    {
+      "word": "son",
+      "start": 49.42,
+      "end": 49.6,
+      "highlight": false
+    },
+    {
+      "word": "80",
+      "start": 49.6,
+      "end": 49.98,
+      "highlight": true
+    },
+    {
+      "word": "dólares",
+      "start": 49.98,
+      "end": 50.34,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 50.34,
+      "end": 50.58,
+      "highlight": false
+    },
+    {
+      "word": "realmente",
+      "start": 50.58,
+      "end": 50.9,
+      "highlight": false
+    },
+    {
+      "word": "tenes",
+      "start": 50.9,
+      "end": 51.46,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 51.46,
+      "end": 51.56,
+      "highlight": false
+    },
+    {
+      "word": "juego",
+      "start": 51.56,
+      "end": 51.74,
+      "highlight": false
+    },
+    {
+      "word": "entero",
+      "start": 51.74,
+      "end": 52.06,
+      "highlight": true
+    },
+    {
+      "word": "por",
+      "start": 52.06,
+      "end": 52.2,
+      "highlight": false
+    },
+    {
+      "word": "80",
+      "start": 52.2,
+      "end": 52.44,
+      "highlight": true
+    },
+    {
+      "word": "dólares",
+      "start": 52.44,
+      "end": 52.88,
+      "highlight": true
+    },
+    {
+      "word": "lo",
+      "start": 52.88,
+      "end": 53.02,
+      "highlight": false
+    },
+    {
+      "word": "único",
+      "start": 53.02,
+      "end": 53.2,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 53.2,
+      "end": 53.36,
+      "highlight": false
+    },
+    {
+      "word": "agrega",
+      "start": 53.36,
+      "end": 53.56,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 53.56,
+      "end": 53.68,
+      "highlight": false
+    },
+    {
+      "word": "deluxe",
+      "start": 53.68,
+      "end": 53.96,
+      "highlight": true
+    },
+    {
+      "word": "son",
+      "start": 53.96,
+      "end": 54.12,
+      "highlight": false
+    },
+    {
+      "word": "cosas",
+      "start": 54.12,
+      "end": 54.36,
+      "highlight": false
+    },
+    {
+      "word": "varias",
+      "start": 54.36,
+      "end": 54.84,
+      "highlight": false
+    },
+    {
+      "word": "y",
+      "start": 54.84,
+      "end": 55.06,
+      "highlight": false
+    },
+    {
+      "word": "demás",
+      "start": 55.06,
+      "end": 55.34,
+      "highlight": false
+    },
+    {
+      "word": "y",
+      "start": 55.34,
+      "end": 55.9,
+      "highlight": false
+    },
+    {
+      "word": "contenido",
+      "start": 55.9,
+      "end": 56.26,
+      "highlight": false
+    },
+    {
+      "word": "extra",
+      "start": 56.26,
+      "end": 56.6,
+      "highlight": true
+    },
+    {
+      "word": "si,",
+      "start": 59.46,
+      "end": 59.82,
+      "highlight": false
+    },
+    {
+      "word": "supuestamente",
+      "start": 59.82,
+      "end": 60.18,
+      "highlight": false
+    },
+    {
+      "word": "hay",
+      "start": 60.18,
+      "end": 60.3,
+      "highlight": false
+    },
+    {
+      "word": "misiones",
+      "start": 60.3,
+      "end": 60.7,
+      "highlight": false
+    },
+    {
+      "word": "extra,",
+      "start": 60.7,
+      "end": 60.9,
+      "highlight": true
+    },
+    {
+      "word": "si",
+      "start": 61.06,
+      "end": 61.16,
+      "highlight": false
+    }
+  ],
+  "backgroundMusic": {
+    "file": "ES_Last Move - White Bones.mp3",
+    "category": "chill_storytime",
+    "volume": 0.09,
+    "cutAtTimestamps": [
+      {
+        "start": 8.81,
+        "end": 10.9
+      },
+      {
+        "start": 40.39,
+        "end": 42.5
+      },
+      {
+        "start": 49.43,
+        "end": 51.4
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0,
+    "cutFadeInSeconds": 0.4
+  },
+  "hookTeaser": {
+    "start": 8.96,
+    "end": 12.56,
+    "label": "MÁS ADELANTE..."
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 40.3,
+      "end": 62.0
+    }
+  ]
+}

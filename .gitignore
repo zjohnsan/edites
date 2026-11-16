@@ -30,6 +30,15 @@ public/vertical_temp.mp4
 public/clips/*
 !public/clips/.gitkeep
 
+# Archivos binarios, comprimidos y música pesada (se conservan los catálogos JSON)
+*.rar
+*.zip
+tools/
+musica/**/*.mp3
+musica/**/*.wav
+public/musica/**/*.mp3
+public/musica/**/*.wav
+
 # Logs y SO
 *.log
 .DS_Store

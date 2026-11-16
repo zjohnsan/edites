@@ -1,0 +1,701 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "¿CUÁNTO ES 2 POR 6?",
+  "hookTeaser": {
+    "start": 31.9,
+    "end": 34.3,
+    "label": "MÁS ADELANTE..."
+  },
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_1A_cuanto_es_2x6.mp4",
+  "durationInSeconds": 40.233,
+  "cards": [
+    {
+      "title": "EL PROFESOR: ¿CUÁNTO ES 2x6?",
+      "text": "EL PROFESOR: ¿CUÁNTO ES 2x6?",
+      "subtitle": "MOMENTO INCÓMODO",
+      "subtext": "MOMENTO INCÓMODO",
+      "start": 5.4,
+      "end": 7.8,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3",
+      "variant": "stamp"
+    },
+    {
+      "title": "¿2 HAMBURGUESAS x 6?",
+      "text": "¿2 HAMBURGUESAS x 6?",
+      "subtitle": "LA PREGUNTA DEFINITIVA",
+      "subtext": "LA PREGUNTA DEFINITIVA",
+      "start": 25.8,
+      "end": 28.5,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3",
+      "variant": "stamp"
+    },
+    {
+      "title": "¡¡¡ OCHO !!!",
+      "text": "¡¡¡ OCHO !!!",
+      "subtitle": "RESPUESTA FINAL",
+      "subtext": "RESPUESTA FINAL",
+      "start": 31.9,
+      "end": 34.5,
+      "sfx": "SONIDOS/Bonk Sound Effect.mp3",
+      "variant": "stamp"
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "¿Qué?",
+      "start": 0.0,
+      "end": 0.06,
+      "highlight": false
+    },
+    {
+      "word": "Le",
+      "start": 0.72,
+      "end": 0.98,
+      "highlight": false
+    },
+    {
+      "word": "cuento",
+      "start": 0.98,
+      "end": 1.26,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 1.26,
+      "end": 1.38,
+      "highlight": false
+    },
+    {
+      "word": "anécdota.",
+      "start": 1.38,
+      "end": 1.76,
+      "highlight": true
+    },
+    {
+      "word": "A",
+      "start": 2.06,
+      "end": 2.18,
+      "highlight": false
+    },
+    {
+      "word": "ver,",
+      "start": 2.18,
+      "end": 2.32,
+      "highlight": false
+    },
+    {
+      "word": "contame",
+      "start": 2.48,
+      "end": 2.86,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 2.86,
+      "end": 2.9,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 2.9,
+      "end": 2.98,
+      "highlight": false
+    },
+    {
+      "word": "verdad.",
+      "start": 2.98,
+      "end": 3.24,
+      "highlight": true
+    },
+    {
+      "word": "Boludo,",
+      "start": 3.68,
+      "end": 4.02,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 4.48,
+      "end": 5.16,
+      "highlight": false
+    },
+    {
+      "word": "profe",
+      "start": 5.16,
+      "end": 5.44,
+      "highlight": true
+    },
+    {
+      "word": "me",
+      "start": 5.44,
+      "end": 5.54,
+      "highlight": false
+    },
+    {
+      "word": "dijo",
+      "start": 5.54,
+      "end": 5.7,
+      "highlight": false
+    },
+    {
+      "word": "¿cuánto",
+      "start": 5.7,
+      "end": 6.14,
+      "highlight": true
+    },
+    {
+      "word": "es",
+      "start": 6.14,
+      "end": 6.26,
+      "highlight": false
+    },
+    {
+      "word": "2",
+      "start": 6.26,
+      "end": 6.36,
+      "highlight": true
+    },
+    {
+      "word": "por",
+      "start": 6.36,
+      "end": 6.52,
+      "highlight": false
+    },
+    {
+      "word": "6?",
+      "start": 6.52,
+      "end": 6.72,
+      "highlight": true
+    },
+    {
+      "word": "2",
+      "start": 7.14,
+      "end": 7.26,
+      "highlight": false
+    },
+    {
+      "word": "por",
+      "start": 7.26,
+      "end": 7.46,
+      "highlight": false
+    },
+    {
+      "word": "6.",
+      "start": 7.46,
+      "end": 7.72,
+      "highlight": false
+    },
+    {
+      "word": "Sí,",
+      "start": 7.88,
+      "end": 8.0,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 8.22,
+      "end": 8.3,
+      "highlight": false
+    },
+    {
+      "word": "creo",
+      "start": 8.3,
+      "end": 8.4,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 8.4,
+      "end": 8.48,
+      "highlight": false
+    },
+    {
+      "word": "dijiste.",
+      "start": 8.48,
+      "end": 8.82,
+      "highlight": false
+    },
+    {
+      "word": "A",
+      "start": 9.04,
+      "end": 9.1,
+      "highlight": false
+    },
+    {
+      "word": "mí",
+      "start": 9.1,
+      "end": 9.18,
+      "highlight": false
+    },
+    {
+      "word": "estaba",
+      "start": 9.18,
+      "end": 9.36,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 9.36,
+      "end": 9.54,
+      "highlight": false
+    },
+    {
+      "word": "blanco.",
+      "start": 9.54,
+      "end": 9.88,
+      "highlight": true
+    },
+    {
+      "word": "Y",
+      "start": 10.9,
+      "end": 11.34,
+      "highlight": false
+    },
+    {
+      "word": "estaba",
+      "start": 11.34,
+      "end": 11.58,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 11.58,
+      "end": 11.82,
+      "highlight": false
+    },
+    {
+      "word": "blanco.",
+      "start": 11.82,
+      "end": 12.28,
+      "highlight": true
+    },
+    {
+      "word": "Boludo,",
+      "start": 12.94,
+      "end": 13.2,
+      "highlight": false
+    },
+    {
+      "word": "¿sí?",
+      "start": 13.46,
+      "end": 13.5,
+      "highlight": false
+    },
+    {
+      "word": "No",
+      "start": 13.56,
+      "end": 13.62,
+      "highlight": false
+    },
+    {
+      "word": "sabía",
+      "start": 13.62,
+      "end": 13.9,
+      "highlight": true
+    },
+    {
+      "word": "cuánto",
+      "start": 13.9,
+      "end": 14.28,
+      "highlight": false
+    },
+    {
+      "word": "era",
+      "start": 14.28,
+      "end": 14.36,
+      "highlight": false
+    },
+    {
+      "word": "2",
+      "start": 14.44,
+      "end": 14.62,
+      "highlight": true
+    },
+    {
+      "word": "por",
+      "start": 14.62,
+      "end": 14.84,
+      "highlight": false
+    },
+    {
+      "word": "6.",
+      "start": 14.84,
+      "end": 15.18,
+      "highlight": true
+    },
+    {
+      "word": "¡Boludo!",
+      "start": 15.5,
+      "end": 15.56,
+      "highlight": false
+    },
+    {
+      "word": "¡Qué",
+      "start": 15.82,
+      "end": 15.98,
+      "highlight": false
+    },
+    {
+      "word": "dijiste!",
+      "start": 15.98,
+      "end": 16.58,
+      "highlight": false
+    },
+    {
+      "word": "No",
+      "start": 16.88,
+      "end": 17.2,
+      "highlight": false
+    },
+    {
+      "word": "le",
+      "start": 17.2,
+      "end": 17.32,
+      "highlight": false
+    },
+    {
+      "word": "dije",
+      "start": 17.32,
+      "end": 17.56,
+      "highlight": false
+    },
+    {
+      "word": "nada.",
+      "start": 17.56,
+      "end": 18.08,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 18.8,
+      "end": 19.14,
+      "highlight": false
+    },
+    {
+      "word": "fue",
+      "start": 19.2,
+      "end": 19.4,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 19.4,
+      "end": 19.56,
+      "highlight": false
+    },
+    {
+      "word": "momento",
+      "start": 19.56,
+      "end": 19.78,
+      "highlight": false
+    },
+    {
+      "word": "más",
+      "start": 19.78,
+      "end": 20.04,
+      "highlight": false
+    },
+    {
+      "word": "incómodo",
+      "start": 20.04,
+      "end": 20.42,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 20.42,
+      "end": 20.56,
+      "highlight": false
+    },
+    {
+      "word": "mi",
+      "start": 20.56,
+      "end": 20.66,
+      "highlight": false
+    },
+    {
+      "word": "vida.",
+      "start": 20.66,
+      "end": 20.92,
+      "highlight": true
+    },
+    {
+      "word": "A",
+      "start": 21.1,
+      "end": 21.1,
+      "highlight": false
+    },
+    {
+      "word": "ver,",
+      "start": 21.1,
+      "end": 21.34,
+      "highlight": false
+    },
+    {
+      "word": "voy",
+      "start": 21.36,
+      "end": 21.58,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 21.58,
+      "end": 21.7,
+      "highlight": false
+    },
+    {
+      "word": "tirar",
+      "start": 21.7,
+      "end": 21.9,
+      "highlight": false
+    },
+    {
+      "word": "inútil.",
+      "start": 21.9,
+      "end": 22.4,
+      "highlight": false
+    },
+    {
+      "word": "A",
+      "start": 22.98,
+      "end": 23.42,
+      "highlight": false
+    },
+    {
+      "word": "ver,",
+      "start": 23.42,
+      "end": 23.56,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 23.82,
+      "end": 24.1,
+      "highlight": false
+    },
+    {
+      "word": "si",
+      "start": 24.1,
+      "end": 24.28,
+      "highlight": false
+    },
+    {
+      "word": "él",
+      "start": 24.48,
+      "end": 24.6,
+      "highlight": false
+    },
+    {
+      "word": "te",
+      "start": 24.6,
+      "end": 24.72,
+      "highlight": false
+    },
+    {
+      "word": "decía",
+      "start": 24.72,
+      "end": 24.96,
+      "highlight": false
+    },
+    {
+      "word": "¿cuánto",
+      "start": 24.96,
+      "end": 25.46,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 25.46,
+      "end": 25.7,
+      "highlight": false
+    },
+    {
+      "word": "2",
+      "start": 25.9,
+      "end": 26.28,
+      "highlight": true
+    },
+    {
+      "word": "hamburguesas",
+      "start": 26.28,
+      "end": 26.88,
+      "highlight": true
+    },
+    {
+      "word": "por",
+      "start": 27.2,
+      "end": 27.34,
+      "highlight": false
+    },
+    {
+      "word": "6",
+      "start": 27.34,
+      "end": 27.7,
+      "highlight": true
+    },
+    {
+      "word": "hamburguesas?",
+      "start": 27.7,
+      "end": 28.38,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 28.38,
+      "end": 28.98,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 29.04,
+      "end": 29.16,
+      "highlight": false
+    },
+    {
+      "word": "hecho",
+      "start": 29.16,
+      "end": 29.28,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 29.28,
+      "end": 29.44,
+      "highlight": false
+    },
+    {
+      "word": "está",
+      "start": 29.6,
+      "end": 29.68,
+      "highlight": false
+    },
+    {
+      "word": "mal",
+      "start": 29.68,
+      "end": 29.8,
+      "highlight": false
+    },
+    {
+      "word": "dicho.",
+      "start": 29.8,
+      "end": 30.12,
+      "highlight": false
+    },
+    {
+      "word": "Pero",
+      "start": 30.44,
+      "end": 30.58,
+      "highlight": false
+    },
+    {
+      "word": "bueno,",
+      "start": 30.58,
+      "end": 30.78,
+      "highlight": false
+    },
+    {
+      "word": "sí,",
+      "start": 30.94,
+      "end": 31.02,
+      "highlight": false
+    },
+    {
+      "word": "ponele.",
+      "start": 31.34,
+      "end": 31.66,
+      "highlight": false
+    },
+    {
+      "word": "¡OCHO!",
+      "start": 32.0,
+      "end": 32.4,
+      "highlight": true
+    },
+    {
+      "word": "¡OCHO!",
+      "start": 33.64,
+      "end": 34.12,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 35.54,
+      "end": 35.78,
+      "highlight": false
+    },
+    {
+      "word": "re",
+      "start": 35.9,
+      "end": 36.08,
+      "highlight": false
+    },
+    {
+      "word": "manco.",
+      "start": 36.08,
+      "end": 36.54,
+      "highlight": true
+    },
+    {
+      "word": "¡Qué",
+      "start": 36.96,
+      "end": 37.2,
+      "highlight": false
+    },
+    {
+      "word": "bronca!",
+      "start": 37.2,
+      "end": 37.78,
+      "highlight": true
+    },
+    {
+      "word": "Boludo,",
+      "start": 38.1,
+      "end": 38.46,
+      "highlight": false
+    },
+    {
+      "word": "¿qué?",
+      "start": 38.56,
+      "end": 38.64,
+      "highlight": false
+    },
+    {
+      "word": "Después",
+      "start": 39.0,
+      "end": 39.36,
+      "highlight": false
+    },
+    {
+      "word": "refresqué",
+      "start": 39.36,
+      "end": 39.8,
+      "highlight": true
+    },
+    {
+      "word": "la",
+      "start": 39.8,
+      "end": 39.92,
+      "highlight": false
+    },
+    {
+      "word": "mente.",
+      "start": 39.92,
+      "end": 40.06,
+      "highlight": true
+    }
+  ],
+  "backgroundMusic": {
+    "file": "Kevin MacLeod  Sneaky Snitch.mp3",
+    "category": "comedia_absurda",
+    "volume": 0.11,
+    "cutAtTimestamps": [],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0
+  }
+}

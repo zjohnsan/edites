@@ -1,0 +1,755 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "COMPETENCIA DE BAILE Y BANEO 🚨",
+  "hookTeaser": {
+    "start": 17.75,
+    "end": 20.95,
+    "label": "MÁS ADELANTE..."
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 37.5,
+      "end": 50.867
+    }
+  ],
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_04_baile_maleducada.mp4",
+  "durationInSeconds": 50.867,
+  "cards": [
+    {
+      "title": "COMPETENCIA DE BAILE EN GTA 4 🕺",
+      "start": 3.1,
+      "end": 7.6,
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.85,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    },
+    {
+      "title": "PELIGRO DE BANEO EN YOUTUBE 🚨",
+      "start": 19.6,
+      "end": 26.8,
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.85,
+      "sfx": "SONIDOS/Sonido de impacto.mp3"
+    },
+    {
+      "title": "ES 100% MALEDUCADA 😤",
+      "start": 42.0,
+      "end": 49.6,
+      "variant": "stamp",
+      "position": "top-right",
+      "scale": 0.88,
+      "sfx": "SONIDOS/Bonk Sound Effect.mp3"
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "Yo",
+      "start": 0.66,
+      "end": 1.22,
+      "highlight": false
+    },
+    {
+      "word": "creo",
+      "start": 1.22,
+      "end": 1.38,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 1.38,
+      "end": 1.52,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 1.52,
+      "end": 1.72,
+      "highlight": false
+    },
+    {
+      "word": "voy",
+      "start": 1.72,
+      "end": 1.86,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 1.86,
+      "end": 1.94,
+      "highlight": false
+    },
+    {
+      "word": "mejor,",
+      "start": 1.94,
+      "end": 2.2,
+      "highlight": true
+    },
+    {
+      "word": "bro.",
+      "start": 2.2,
+      "end": 2.46,
+      "highlight": false
+    },
+    {
+      "word": "Y",
+      "start": 2.46,
+      "end": 2.98,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 2.98,
+      "end": 3.32,
+      "highlight": false
+    },
+    {
+      "word": "ver,",
+      "start": 3.32,
+      "end": 3.58,
+      "highlight": false
+    },
+    {
+      "word": "está...",
+      "start": 3.88,
+      "end": 4.84,
+      "highlight": false
+    },
+    {
+      "word": "Está",
+      "start": 4.84,
+      "end": 5.26,
+      "highlight": false
+    },
+    {
+      "word": "reñida",
+      "start": 5.26,
+      "end": 5.76,
+      "highlight": true
+    },
+    {
+      "word": "la",
+      "start": 5.76,
+      "end": 5.96,
+      "highlight": false
+    },
+    {
+      "word": "pelea.",
+      "start": 5.96,
+      "end": 6.46,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 6.46,
+      "end": 6.96,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 7.12,
+      "end": 7.24,
+      "highlight": false
+    },
+    {
+      "word": "no.",
+      "start": 7.24,
+      "end": 7.52,
+      "highlight": false
+    },
+    {
+      "word": "Mi",
+      "start": 7.52,
+      "end": 8.14,
+      "highlight": false
+    },
+    {
+      "word": "tío,",
+      "start": 8.14,
+      "end": 8.26,
+      "highlight": false
+    },
+    {
+      "word": "amigo,",
+      "start": 8.26,
+      "end": 8.48,
+      "highlight": false
+    },
+    {
+      "word": "sos",
+      "start": 8.64,
+      "end": 8.74,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 8.74,
+      "end": 8.88,
+      "highlight": false
+    },
+    {
+      "word": "amigo.",
+      "start": 8.88,
+      "end": 9.12,
+      "highlight": false
+    },
+    {
+      "word": "Pero",
+      "start": 9.62,
+      "end": 9.9,
+      "highlight": false
+    },
+    {
+      "word": "mirá,",
+      "start": 9.9,
+      "end": 10.34,
+      "highlight": false
+    },
+    {
+      "word": "boludo.",
+      "start": 10.34,
+      "end": 11.36,
+      "highlight": true
+    },
+    {
+      "word": "Encima",
+      "start": 11.98,
+      "end": 12.54,
+      "highlight": false
+    },
+    {
+      "word": "con",
+      "start": 12.54,
+      "end": 12.82,
+      "highlight": false
+    },
+    {
+      "word": "todas",
+      "start": 12.82,
+      "end": 12.96,
+      "highlight": false
+    },
+    {
+      "word": "las",
+      "start": 12.96,
+      "end": 13.16,
+      "highlight": false
+    },
+    {
+      "word": "poses.",
+      "start": 13.16,
+      "end": 13.5,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 14.24,
+      "end": 14.8,
+      "highlight": false
+    },
+    {
+      "word": "esto...",
+      "start": 16.0,
+      "end": 16.5,
+      "highlight": false
+    },
+    {
+      "word": "¡No!",
+      "start": 16.5,
+      "end": 16.72,
+      "highlight": true
+    },
+    {
+      "word": "¡Dejame!",
+      "start": 17.02,
+      "end": 17.4,
+      "highlight": true
+    },
+    {
+      "word": "¡Salí!",
+      "start": 17.82,
+      "end": 18.2,
+      "highlight": true
+    },
+    {
+      "word": "¡Salí!",
+      "start": 18.44,
+      "end": 18.8,
+      "highlight": true
+    },
+    {
+      "word": "¡Salí!",
+      "start": 19.08,
+      "end": 19.48,
+      "highlight": true
+    },
+    {
+      "word": "¡Bro,",
+      "start": 19.78,
+      "end": 19.98,
+      "highlight": false
+    },
+    {
+      "word": "estoy",
+      "start": 20.1,
+      "end": 20.18,
+      "highlight": true
+    },
+    {
+      "word": "en",
+      "start": 20.18,
+      "end": 20.28,
+      "highlight": true
+    },
+    {
+      "word": "peligro!",
+      "start": 20.28,
+      "end": 20.82,
+      "highlight": true
+    },
+    {
+      "word": "¡Ay,",
+      "start": 21.74,
+      "end": 22.3,
+      "highlight": false
+    },
+    {
+      "word": "amigo!",
+      "start": 22.3,
+      "end": 22.72,
+      "highlight": false
+    },
+    {
+      "word": "Bro,",
+      "start": 22.72,
+      "end": 23.22,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 23.34,
+      "end": 23.5,
+      "highlight": false
+    },
+    {
+      "word": "vieron",
+      "start": 23.5,
+      "end": 23.74,
+      "highlight": false
+    },
+    {
+      "word": "unas",
+      "start": 23.74,
+      "end": 24.04,
+      "highlight": false
+    },
+    {
+      "word": "re...",
+      "start": 24.04,
+      "end": 24.78,
+      "highlight": true
+    },
+    {
+      "word": "¡Me",
+      "start": 24.78,
+      "end": 25.24,
+      "highlight": true
+    },
+    {
+      "word": "voy",
+      "start": 25.24,
+      "end": 25.42,
+      "highlight": true
+    },
+    {
+      "word": "a",
+      "start": 25.42,
+      "end": 25.52,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 25.52,
+      "end": 25.58,
+      "highlight": false
+    },
+    {
+      "word": "mierda!",
+      "start": 25.58,
+      "end": 26.14,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 26.14,
+      "end": 26.5,
+      "highlight": false
+    },
+    {
+      "word": "bro.",
+      "start": 26.5,
+      "end": 26.86,
+      "highlight": false
+    },
+    {
+      "word": "¡Bro!",
+      "start": 27.72,
+      "end": 28.05,
+      "highlight": false
+    },
+    {
+      "word": "Igual,",
+      "start": 28.16,
+      "end": 28.46,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 28.46,
+      "end": 28.54,
+      "highlight": false
+    },
+    {
+      "word": "espalda,",
+      "start": 28.54,
+      "end": 28.82,
+      "highlight": true
+    },
+    {
+      "word": "bro.",
+      "start": 28.82,
+      "end": 29.02,
+      "highlight": false
+    },
+    {
+      "word": "¡Salí!",
+      "start": 29.6,
+      "end": 30.04,
+      "highlight": true
+    },
+    {
+      "word": "Pero",
+      "start": 31.88,
+      "end": 32.32,
+      "highlight": false
+    },
+    {
+      "word": "por",
+      "start": 32.32,
+      "end": 32.54,
+      "highlight": false
+    },
+    {
+      "word": "qué...",
+      "start": 32.54,
+      "end": 32.62,
+      "highlight": false
+    },
+    {
+      "word": "¡A",
+      "start": 32.62,
+      "end": 32.7,
+      "highlight": false
+    },
+    {
+      "word": "las",
+      "start": 32.7,
+      "end": 32.84,
+      "highlight": false
+    },
+    {
+      "word": "chicas",
+      "start": 32.84,
+      "end": 33.1,
+      "highlight": true
+    },
+    {
+      "word": "no!",
+      "start": 33.1,
+      "end": 33.86,
+      "highlight": true
+    },
+    {
+      "word": "¡A",
+      "start": 34.28,
+      "end": 34.52,
+      "highlight": false
+    },
+    {
+      "word": "ellas",
+      "start": 34.52,
+      "end": 34.66,
+      "highlight": false
+    },
+    {
+      "word": "no!",
+      "start": 34.66,
+      "end": 34.84,
+      "highlight": false
+    },
+    {
+      "word": "¡Cuidala!",
+      "start": 34.98,
+      "end": 35.22,
+      "highlight": true
+    },
+    {
+      "word": "¡A",
+      "start": 35.22,
+      "end": 35.78,
+      "highlight": false
+    },
+    {
+      "word": "ellas",
+      "start": 35.78,
+      "end": 37.0,
+      "highlight": false
+    },
+    {
+      "word": "no!",
+      "start": 37.0,
+      "end": 37.16,
+      "highlight": false
+    },
+    {
+      "word": "¡Cuidala!",
+      "start": 37.3,
+      "end": 37.54,
+      "highlight": true
+    },
+    {
+      "word": "Son",
+      "start": 37.86,
+      "end": 37.98,
+      "highlight": false
+    },
+    {
+      "word": "unos",
+      "start": 37.98,
+      "end": 38.12,
+      "highlight": false
+    },
+    {
+      "word": "maleducados.",
+      "start": 38.12,
+      "end": 38.56,
+      "highlight": true
+    },
+    {
+      "word": "¿Cómo",
+      "start": 38.66,
+      "end": 39.1,
+      "highlight": false
+    },
+    {
+      "word": "va",
+      "start": 39.1,
+      "end": 39.32,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 39.32,
+      "end": 39.38,
+      "highlight": false
+    },
+    {
+      "word": "venir",
+      "start": 39.38,
+      "end": 39.6,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 39.6,
+      "end": 40.0,
+      "highlight": false
+    },
+    {
+      "word": "tipa?",
+      "start": 40.0,
+      "end": 41.0,
+      "highlight": true
+    },
+    {
+      "word": "¿Cómo",
+      "start": 41.12,
+      "end": 41.3,
+      "highlight": false
+    },
+    {
+      "word": "va",
+      "start": 41.3,
+      "end": 41.4,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 41.4,
+      "end": 41.58,
+      "highlight": false
+    },
+    {
+      "word": "venir",
+      "start": 41.58,
+      "end": 41.66,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 41.66,
+      "end": 41.9,
+      "highlight": false
+    },
+    {
+      "word": "ofrecerse",
+      "start": 41.9,
+      "end": 42.48,
+      "highlight": true
+    },
+    {
+      "word": "así,",
+      "start": 42.48,
+      "end": 42.72,
+      "highlight": false
+    },
+    {
+      "word": "boludo?",
+      "start": 42.72,
+      "end": 42.96,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 43.14,
+      "end": 43.35,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 43.4,
+      "end": 43.62,
+      "highlight": false
+    },
+    {
+      "word": "es",
+      "start": 43.64,
+      "end": 43.82,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 43.82,
+      "end": 43.98,
+      "highlight": false
+    },
+    {
+      "word": "maleducada.",
+      "start": 43.98,
+      "end": 44.46,
+      "highlight": true
+    },
+    {
+      "word": "¿Vos",
+      "start": 44.46,
+      "end": 44.58,
+      "highlight": false
+    },
+    {
+      "word": "te",
+      "start": 44.58,
+      "end": 44.7,
+      "highlight": false
+    },
+    {
+      "word": "das",
+      "start": 44.7,
+      "end": 44.9,
+      "highlight": false
+    },
+    {
+      "word": "cuenta?",
+      "start": 44.9,
+      "end": 45.25,
+      "highlight": true
+    },
+    {
+      "word": "¡Uy,",
+      "start": 46.38,
+      "end": 46.82,
+      "highlight": false
+    },
+    {
+      "word": "boludo!",
+      "start": 46.82,
+      "end": 47.26,
+      "highlight": true
+    },
+    {
+      "word": "¡Listo!",
+      "start": 47.55,
+      "end": 47.72,
+      "highlight": true
+    },
+    {
+      "word": "Es",
+      "start": 47.72,
+      "end": 47.94,
+      "highlight": false
+    },
+    {
+      "word": "una",
+      "start": 47.94,
+      "end": 48.36,
+      "highlight": false
+    },
+    {
+      "word": "maleducada,",
+      "start": 48.36,
+      "end": 48.82,
+      "highlight": true
+    },
+    {
+      "word": "bro.",
+      "start": 48.82,
+      "end": 49.12,
+      "highlight": false
+    },
+    {
+      "word": "100%",
+      "start": 49.46,
+      "end": 49.85,
+      "highlight": true
+    },
+    {
+      "word": "maleducada.",
+      "start": 49.85,
+      "end": 50.45,
+      "highlight": true
+    }
+  ],
+  "backgroundMusic": {
+    "file": "ES_252907_Turbulent Tango.mp3",
+    "category": "comedia_absurda",
+    "volume": 0.11,
+    "cutAtTimestamps": [
+      {
+        "start": 19.68,
+        "end": 21.48
+      },
+      {
+        "start": 43.3,
+        "end": 45.1
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0
+  }
+}

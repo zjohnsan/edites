@@ -17,12 +17,18 @@ Modos de uso:
 
 import argparse
 import json
+import math
 import re
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Any, Optional
+
+VENTANA_AUDIO_SEG = 1.0
+AUDIO_SAMPLE_RATE = 16000
+SILENCIO_DB = -60.0
 
 
 def obtener_ruta_ffmpeg() -> str:
@@ -261,11 +267,18 @@ def construir_filter_complex(
             f"[cam][game]vstack=inputs=2,fps=30,format=yuv420p[v]"
         )
     elif modo == "fullcam":
-        src_crop = f"crop={w}:{h}:{x}:{y}," if None not in (x, y, w, h) else ""
+        if None not in (x, y, w, h):
+            src_crop = f"crop={w}:{h}:{x}:{y},"
+            return (
+                f"[0:v]{src_crop}scale=1080:1920:force_original_aspect_ratio=increase,"
+                f"crop=1080:1920,boxblur=40:5,setsar=1[bg];"
+                f"[0:v]{src_crop}scale=1080:-2,setsar=1[fg];"
+                f"[bg][fg]overlay=(W-w)/2:(H-h)/2,fps=30,format=yuv420p[v]"
+            )
         return (
-            f"[0:v]{src_crop}scale=1080:1920:force_original_aspect_ratio=increase,"
+            f"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,"
             f"crop=1080:1920,boxblur=40:5,setsar=1[bg];"
-            f"[0:v]{src_crop}scale=-2:1350:force_original_aspect_ratio=increase,"
+            f"[0:v]scale=-2:1350:force_original_aspect_ratio=increase,"
             f"crop=1080:min(ih\\,1920),setsar=1[fg];"
             f"[bg][fg]overlay=(W-w)/2:(H-h)/2,fps=30,format=yuv420p[v]"
         )
@@ -484,6 +497,996 @@ def parsear_argumento_segmentos(raw_segmentos: str) -> list[dict[str, Any]]:
     return json.loads(raw_segmentos)
 
 
+CATEGORY_SIGNALS: dict[str, list[str]] = {
+    "comedia_absurda": [
+        "lentes",
+        "roto",
+        "rotos",
+        "remera",
+        "crotera",
+        "croto",
+        "pantalón",
+        "maleducada",
+        "ofrecerse",
+        "ombligo",
+        "cuánto es",
+        "dos por seis",
+        "2x6",
+        "tabla",
+        "multiplicar",
+        "crasheo",
+        "crasheó",
+        "karma",
+        "broma",
+        "chiste",
+        "risa",
+        "ridículo",
+        "payaso",
+        "vergüenza",
+        "troleo",
+        "agujero",
+        "laburo",
+    ],
+    "tension_accion": [
+        "moto",
+        "choque",
+        "chocar",
+        "chocó",
+        "tiroteo",
+        "disparo",
+        "matar",
+        "maté",
+        "mataste",
+        "morir",
+        "muere",
+        "mueren",
+        "peligro",
+        "baneo",
+        "ban",
+        "correr",
+        "huir",
+        "escapar",
+        "policía",
+        "bomba",
+        "explosión",
+        "susto",
+        "miedo",
+        "cuidado",
+        "persecución",
+    ],
+    "chill_storytime": [
+        "gta 6",
+        "rumores",
+        "vice city",
+        "liberty city",
+        "new york",
+        "miami",
+        "recorrer",
+        "mapa",
+        "prólogo",
+        "directo",
+        "episodios",
+        "cooperativo",
+        "charla",
+        "chat",
+        "historia",
+        "planes",
+        "primer día",
+        "noticia",
+        "habla",
+    ],
+    "epica_climax": [
+        "ganamos",
+        "victoria",
+        "récord",
+        "épico",
+        "logramos",
+        "campeón",
+        "mejor jugada",
+        "leyenda",
+        "imposible",
+        "salvada",
+        "triunfo",
+        "festejo",
+    ],
+}
+
+IMPACT_CUT_WORDS: set[str] = {
+    "pelotudo",
+    "pelotuda",
+    "boludo",
+    "boluda",
+    "gordo",
+    "gorda",
+    "mierda",
+    "crasheo",
+    "crasheó",
+    "heladera",
+    "estafa",
+    "antena",
+    "maquina",
+    "máquina",
+    "tarado",
+    "idiota",
+    "forro",
+    "imbecil",
+    "imbécil",
+    "capo",
+    "payaso",
+    "ridiculo",
+    "ridículo",
+    "crotera",
+    "croto",
+    "maleducada",
+    "maleducado",
+    "choco",
+    "chocó",
+    "mataste",
+    "mate",
+    "maté",
+    "moriste",
+    "baneo",
+    "baneado",
+    "domado",
+    "verguenza",
+    "vergüenza",
+    "desastre",
+    "mentira",
+    "nooo",
+    "cago",
+    "cagó",
+    "carajo",
+    "puta",
+}
+
+DEADPAN_CUT_PHRASES: list[str] = [
+    "muestra su cara",
+    "estoy en peligro",
+    "me voy a la",
+    "lo mataste",
+    "muy bien te felicito",
+    "te felicito",
+    "deci algo directo",
+    "decí algo directo",
+    "ya esta tomada",
+    "ya está tomada",
+    "impactar tu audiencia",
+    "lo que dijo la ia",
+    "es lo que hay",
+    "no hay problema",
+    "que le digo",
+    "qué le digo",
+    "que carajo",
+    "qué carajo",
+]
+
+
+def _normalizar_token(texto: str) -> str:
+    return re.sub(r"[^\wáéíóúüñ]", "", texto.lower())
+
+
+def clasificar_intensidad(sobre_promedio_db: float) -> str:
+    """Clasifica cuánto sobresale un pico respecto del promedio del clip."""
+    if sobre_promedio_db >= 10:
+        return "muy_alta"
+    if sobre_promedio_db >= 6:
+        return "alta"
+    if sobre_promedio_db >= 3:
+        return "media"
+    return "baja"
+
+
+def medir_rms_por_ventana(
+    video_path: Path,
+    ventana_seg: float = VENTANA_AUDIO_SEG,
+    sample_rate: int = AUDIO_SAMPLE_RATE,
+) -> list[tuple[float, float]]:
+    """
+    Devuelve una lista de (segundo, rms_db) por ventanas de `ventana_seg` usando FFmpeg astats.
+    """
+    ffmpeg_exe = obtener_ruta_ffmpeg()
+    muestras_por_ventana = int(sample_rate * ventana_seg)
+    filtro = (
+        f"aresample={sample_rate},"
+        f"asetnsamples=n={muestras_por_ventana}:p=0,"
+        "astats=metadata=1:reset=1,"
+        "ametadata=mode=print:key=lavfi.astats.Overall.RMS_level:file=-"
+    )
+    cmd = [
+        ffmpeg_exe,
+        "-hide_banner",
+        "-nostats",
+        "-i",
+        str(video_path),
+        "-vn",
+        "-ac",
+        "1",
+        "-af",
+        filtro,
+        "-f",
+        "null",
+        "-",
+    ]
+    res = subprocess.run(
+        cmd, capture_output=True, text=True, encoding="utf-8", errors="replace"
+    )
+    if res.returncode != 0:
+        raise RuntimeError(
+            f"FFmpeg falló al analizar el audio de '{video_path.name}':\n{res.stderr[-1500:]}"
+        )
+
+    ventanas: list[tuple[float, float]] = []
+    segundo_actual: float | None = None
+    for linea in res.stdout.splitlines():
+        match_tiempo = re.search(r"pts_time:([\d.]+)", linea)
+        if match_tiempo:
+            segundo_actual = float(match_tiempo.group(1))
+            continue
+        if "RMS_level=" in linea and segundo_actual is not None:
+            valor = linea.split("=", 1)[1].strip()
+            try:
+                db = float(valor)
+            except ValueError:
+                db = float("-inf")
+            ventanas.append((segundo_actual, db))
+            segundo_actual = None
+    return ventanas
+
+
+def detectar_picos_audio(
+    ventanas: list[tuple[float, float]],
+    segmentos: list[dict[str, Any]],
+    palabras: list[dict[str, Any]],
+    max_picos: int = 6,
+    separacion_min: float = 2.0,
+    ventana_seg: float = VENTANA_AUDIO_SEG,
+) -> tuple[float | None, list[dict[str, Any]]]:
+    """
+    Calcula el volumen promedio del clip (ignorando silencios) y devuelve los `max_picos`
+    momentos más fuertes separados al menos `separacion_min` segundos entre sí.
+    """
+    con_sonido = [
+        (seg, db) for seg, db in ventanas if math.isfinite(db) and db > SILENCIO_DB
+    ]
+    if not con_sonido:
+        return None, []
+
+    promedio_db = sum(db for _, db in con_sonido) / len(con_sonido)
+
+    elegidos: list[tuple[float, float]] = []
+    for seg, db in sorted(con_sonido, key=lambda item: item[1], reverse=True):
+        if all(abs(seg - otro) >= separacion_min for otro, _ in elegidos):
+            elegidos.append((seg, db))
+        if len(elegidos) >= max_picos:
+            break
+
+    picos: list[dict[str, Any]] = []
+    for seg, db in sorted(elegidos, key=lambda item: item[0]):
+        sobre = db - promedio_db
+        if palabras:
+            texto_cercano = " ".join(
+                str(w.get("word", ""))
+                for w in palabras
+                if float(w.get("start", 0.0)) <= seg + ventana_seg + 0.5
+                and float(w.get("end", 0.0)) >= seg - 0.5
+            ).strip()
+        else:
+            centro = seg + ventana_seg / 2
+            texto_cercano = " ".join(
+                str(s.get("text", ""))
+                for s in segmentos
+                if float(s.get("start", 0.0)) <= centro + 1.5
+                and float(s.get("end", 0.0)) >= centro - 1.5
+            ).strip()
+        picos.append(
+            {
+                "segundo": round(seg, 2),
+                "db": round(db, 1),
+                "sobre_promedio_db": round(sobre, 1),
+                "intensidad": clasificar_intensidad(sobre),
+                "texto_cercano": texto_cercano,
+            }
+        )
+    return round(promedio_db, 1), picos
+
+
+def _calcular_rango_corte_frase(
+    palabras: list[dict[str, Any]],
+    idx: int,
+    duracion_total: float,
+    lead_in: float = 0.15,
+    min_dur: float = 1.2,
+    max_dur: float = 2.2,
+) -> tuple[float, float]:
+    """
+    Calcula [cut_start, cut_end] empezando `lead_in` (0.15s) antes de la palabra clave
+    y manteniendo el silencio entre `min_dur` (1.2s) y `max_dur` (2.2s) según dure la frase.
+    """
+    t_trigger = float(palabras[idx].get("start", 0.0))
+    cut_start = round(max(0.0, t_trigger - lead_in), 2)
+    phrase_end = float(palabras[idx].get("end", t_trigger + 0.3))
+
+    n = len(palabras)
+    for j in range(idx, min(n, idx + 8)):
+        w_end = float(palabras[j].get("end", phrase_end))
+        if (w_end - cut_start) > max_dur:
+            break
+        phrase_end = w_end
+        word_raw = str(palabras[j].get("word", "")).strip()
+        if word_raw.endswith((".", "!")):
+            break
+        if word_raw.endswith("?"):
+            # Si sigue una respuesta seca corta dentro del presupuesto max_dur, incluirla
+            can_extend_reply = False
+            if j + 1 < n:
+                gap_reply = float(palabras[j + 1].get("start", w_end)) - w_end
+                if gap_reply <= 0.45:
+                    for k in range(j + 1, min(n, j + 5)):
+                        k_end = float(palabras[k].get("end", w_end))
+                        if (k_end - cut_start) > max_dur:
+                            break
+                        if str(palabras[k].get("word", "")).strip().endswith((".", "!")):
+                            can_extend_reply = True
+                            break
+            if not can_extend_reply:
+                break
+        if j + 1 < n:
+            next_start = float(palabras[j + 1].get("start", w_end))
+            if (next_start - w_end) >= 0.35 and (phrase_end - cut_start) >= min_dur:
+                break
+
+    duracion_corte = max(min_dur, min(max_dur, (phrase_end - cut_start) + 0.08))
+    cut_end = round(min(duracion_total, cut_start + duracion_corte), 2)
+    return cut_start, cut_end
+
+
+def _inicio_oracion_reciente(palabras: list[dict[str, Any]], idx: int, max_back: int = 3) -> int:
+    """Si la palabra de impacto está al inicio de una cláusula/respuesta corta, retrocede hasta 3 palabras."""
+    cur = idx
+    for steps in range(1, max_back + 1):
+        prev_idx = idx - steps
+        if prev_idx < 0:
+            break
+        prev_word = str(palabras[prev_idx].get("word", "")).strip()
+        if prev_word.endswith((".", "!", "?")):
+            break
+        cur_start = float(palabras[cur].get("start", 0.0))
+        prev_end = float(palabras[prev_idx].get("end", 0.0))
+        if (cur_start - prev_end) >= 0.30:
+            break
+        cur = prev_idx
+    return cur
+
+
+def detectar_cortes_remate(
+    palabras: list[dict[str, Any]],
+    duracion_total: float,
+    picos_audio: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    """
+    Analiza timestamps de Whisper y picos de voz para detectar entre 2 y 4 cortes
+    estratégicos en seco (`volume = 0`), iniciando `0.15s` antes de la palabra/frase clave
+    y sosteniendo el silencio entre `1.2s` y `2.2s`.
+    """
+    candidatos: list[dict[str, Any]] = []
+    picos_altos = [
+        p
+        for p in (picos_audio or [])
+        if p.get("intensidad") in {"alta", "muy_alta"}
+        or float(p.get("sobre_promedio_db", 0.0)) >= 4.0
+    ]
+
+    def _cerca_de_pico(t: float) -> float:
+        mejor = 0.0
+        for p in picos_altos:
+            seg = float(p.get("segundo", -99.0))
+            if t - 0.8 <= seg <= t + 0.4:
+                sobre = float(p.get("sobre_promedio_db", 0.0))
+                if sobre > mejor:
+                    mejor = sobre
+        return mejor
+
+    if palabras:
+        n = len(palabras)
+        for i, w in enumerate(palabras):
+            raw = str(w.get("word", "")).strip()
+            tok = _normalizar_token(raw)
+            t_start = float(w.get("start", 0.0))
+            if t_start < 4.5 or t_start > max(4.5, duracion_total - 0.9):
+                continue
+
+            ventana_txt = " ".join(
+                re.sub(r"[¡!¿?,.;:\"'()]", "", str(palabras[j].get("word", "")).lower())
+                for j in range(i, min(n, i + 5))
+            )
+
+            score = 0.0
+            reason = ""
+            target_idx = i
+
+            if tok in IMPACT_CUT_WORDS:
+                score = 12.0 + _cerca_de_pico(t_start) * 0.5
+                reason = f"impacto:{raw}"
+            elif any(ventana_txt.startswith(phr) for phr in DEADPAN_CUT_PHRASES):
+                target_idx = _inicio_oracion_reciente(palabras, i, max_back=3)
+                t_eff = float(palabras[target_idx].get("start", t_start))
+                score = 10.5 + _cerca_de_pico(t_eff) * 0.4
+                reason = f"remate:{ventana_txt[:28]}"
+            else:
+                sobre_pico = _cerca_de_pico(t_start)
+                is_hl = bool(w.get("highlight"))
+                is_exclam_or_turn = raw.endswith(("!", "?")) or raw.isupper()
+                if is_hl and (is_exclam_or_turn or sobre_pico >= 4.0):
+                    # Retroceder al inicio de la frase corta si es el remate de una pregunta/grito
+                    target_idx = _inicio_oracion_reciente(palabras, i, max_back=3)
+                    score = 7.0 + sobre_pico * 0.6 + (1.5 if raw.endswith("!") else 0.5)
+                    reason = f"enfasis:{raw}"
+
+            if score > 0.0:
+                cut_start, cut_end = _calcular_rango_corte_frase(
+                    palabras, target_idx, duracion_total
+                )
+                if cut_start >= 4.0 and (cut_end - cut_start) >= 1.1:
+                    candidatos.append(
+                        {
+                            "start": cut_start,
+                            "end": cut_end,
+                            "score": round(score, 2),
+                            "reason": reason,
+                        }
+                    )
+
+    # Respaldo con picos de voz de alta intensidad acoplados a la palabra más cercana
+    if picos_audio:
+        for p in picos_audio:
+            if p.get("intensidad") not in {"alta", "muy_alta"}:
+                continue
+            seg = float(p.get("segundo", 0.0))
+            if seg < 4.5 or seg > max(4.5, duracion_total - 1.2):
+                continue
+
+            anchor_idx: int | None = None
+            if palabras:
+                cercanas = [
+                    (abs(float(w.get("start", 0.0)) - seg), idx)
+                    for idx, w in enumerate(palabras)
+                    if seg - 0.6 <= float(w.get("start", 0.0)) <= seg + 1.2
+                ]
+                if cercanas:
+                    _, anchor_idx = min(cercanas, key=lambda item: item[0])
+
+            if anchor_idx is not None:
+                cut_start, cut_end = _calcular_rango_corte_frase(
+                    palabras, anchor_idx, duracion_total
+                )
+            else:
+                cut_start = round(max(0.0, seg - 0.15), 2)
+                cut_end = round(min(duracion_total, cut_start + 1.6), 2)
+
+            if (cut_end - cut_start) >= 1.1:
+                sobre = float(p.get("sobre_promedio_db", 6.0))
+                candidatos.append(
+                    {
+                        "start": cut_start,
+                        "end": cut_end,
+                        "score": round(6.5 + sobre * 0.4, 2),
+                        "reason": f"pico_voz:{sobre}dB",
+                    }
+                )
+
+    if not candidatos:
+        return []
+
+    max_cortes = 2 if duracion_total < 24.0 else (3 if duracion_total < 42.0 else 4)
+    separacion_min = 6.5 if duracion_total >= 35.0 else 5.0
+
+    elegidos: list[dict[str, Any]] = []
+    for cand in sorted(candidatos, key=lambda c: c["score"], reverse=True):
+        if any(
+            abs(cand["start"] - prev["start"]) < separacion_min
+            or not (cand["end"] + 0.8 <= prev["start"] or cand["start"] >= prev["end"] + 0.8)
+            for prev in elegidos
+        ):
+            continue
+        elegidos.append(cand)
+        if len(elegidos) >= max_cortes:
+            break
+
+    elegidos.sort(key=lambda c: c["start"])
+    return [{"start": c["start"], "end": c["end"]} for c in elegidos]
+
+
+def seleccionar_musica_fondo(
+    base_dir: Path,
+    texto: str,
+    palabras: list[dict[str, Any]] | None = None,
+    duracion_final: float = 60.0,
+    clip_name: str = "",
+    categoria_forzada: str | None = None,
+    pista_forzada: str | None = None,
+    picos_audio: list[dict[str, Any]] | None = None,
+) -> dict[str, Any] | None:
+    """
+    Elige automáticamente la pista más acorde de `musica/catalogo_musica.json`
+    según la transcripción, el tono del clip y sus palabras clave.
+    """
+    catalogo_path = base_dir / "musica" / "catalogo_musica.json"
+    if not catalogo_path.is_file():
+        return None
+
+    try:
+        catalogo = json.loads(catalogo_path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+    tracks: list[dict[str, Any]] = catalogo.get("tracks", [])
+    if not tracks:
+        return None
+
+    texto_lower = f"{clip_name.replace('_', ' ')} {texto}".lower()
+    cortes = detectar_cortes_remate(palabras or [], duracion_final, picos_audio)
+
+    # 1. Si se indicó una pista específica por CLI
+    if pista_forzada:
+        for t in tracks:
+            if t["file"].lower() == pista_forzada.lower() or pista_forzada.lower() in t["file"].lower():
+                return {
+                    "file": t["file"],
+                    "category": t["category"],
+                    "volume": t.get("recommendedVolume", 0.10),
+                    "cutAtTimestamps": cortes,
+                    "fadeInSeconds": 0.5,
+                    "fadeOutSeconds": 1.0,
+                    "cutFadeInSeconds": 0.4,
+                }
+
+    # 2. Determinar categoría según señales del texto (o usar categoria_forzada)
+    if categoria_forzada in CATEGORY_SIGNALS:
+        categoria = categoria_forzada
+    else:
+        scores_cat: dict[str, int] = {cat: 0 for cat in CATEGORY_SIGNALS}
+        for cat, kws in CATEGORY_SIGNALS.items():
+            for kw in kws:
+                if kw in texto_lower:
+                    scores_cat[cat] += 3 if len(kw) > 5 else 2
+
+        if picos_audio:
+            altos = sum(1 for p in picos_audio if p.get("intensidad") in {"alta", "muy_alta"})
+            if altos >= 2:
+                scores_cat["tension_accion"] += 2
+                scores_cat["comedia_absurda"] += 1
+
+        mejor_cat, mejor_score = max(scores_cat.items(), key=lambda kv: kv[1])
+        categoria = mejor_cat if mejor_score > 0 else "comedia_absurda"
+
+    # 3. Elegir la mejor pista dentro de la categoría
+    candidatas = [
+        t
+        for t in tracks
+        if t.get("category") == categoria and not t.get("excludeFromAutoBgm", False)
+    ]
+    if not candidatas:
+        candidatas = [t for t in tracks if not t.get("excludeFromAutoBgm", False)] or tracks
+
+    mejor_pista = candidatas[0]
+    mejor_puntaje = -999.0
+    seed = sum(ord(ch) for ch in (clip_name or texto[:30]))
+
+    for idx, t in enumerate(candidatas):
+        pts = 0.0
+        fname = str(t.get("file", ""))
+        # Priorizar pistas ES_ (Epidemic Sound) y bajar prioridad a Kevin MacLeod
+        if fname.startswith("ES_"):
+            pts += 8.0
+        elif "kevin macleod" in fname.lower():
+            pts -= 12.0
+
+        for kw in t.get("keywords", []):
+            if kw.lower() in texto_lower:
+                pts += 4.0
+        # Preferir pistas cuya duración cubra el clip o tenga buen cuerpo (>60s)
+        if float(t.get("durationSeconds", 0)) >= duracion_final:
+            pts += 1.0
+        # Desempate determinista por nombre del clip para variar entre pistas top
+        tie_breaker = ((seed + idx * 7) % 3) * 0.1
+        total_pts = pts + tie_breaker
+        if total_pts > mejor_puntaje:
+            mejor_puntaje = total_pts
+            mejor_pista = t
+
+    return {
+        "file": mejor_pista["file"],
+        "category": categoria,
+        "volume": mejor_pista.get("recommendedVolume", 0.10),
+        "cutAtTimestamps": cortes,
+        "fadeInSeconds": 0.5,
+        "fadeOutSeconds": 1.0,
+        "cutFadeInSeconds": 0.4,
+    }
+
+
+def cargar_config_edicion(base_dir: Path) -> dict[str, Any]:
+    """Lee config_edicion.json para obtener la configuración global por defecto (ej. usarMejoraIA)."""
+    cfg_path = base_dir / "config_edicion.json"
+    defaults: dict[str, Any] = {
+        "usarMejoraIA": False,
+        "modeloIA": "realesr-animevideov3",
+        "escalaIA": 2,
+    }
+    if cfg_path.is_file():
+        try:
+            loaded = json.loads(cfg_path.read_text(encoding="utf-8"))
+            if isinstance(loaded, dict):
+                defaults.update(loaded)
+        except Exception:
+            pass
+    return defaults
+
+
+def _resolver_coords_webcam(
+    args: argparse.Namespace, lista_segmentos: Optional[list[dict[str, Any]]]
+) -> tuple[int, int, int, int]:
+    """Obtiene (x, y, w, h) del recorte de webcam para la mejora IA."""
+    if None not in (args.x, args.y, args.w, args.h):
+        return int(args.x), int(args.y), int(args.w), int(args.h)
+    if lista_segmentos:
+        for seg in lista_segmentos:
+            coords = seg.get("coords")
+            if isinstance(coords, (list, tuple)) and len(coords) == 4:
+                return int(coords[0]), int(coords[1]), int(coords[2]), int(coords[3])
+    return 0, 206, 468, 330
+
+
+def generar_video_webcam_ia(
+    base_dir: Path,
+    source_video: Path,
+    vertical_base_video: Path,
+    output_ia_video: Path,
+    procesados_dir: Path,
+    coords: tuple[int, int, int, int],
+    lista_segmentos: Optional[list[dict[str, Any]]] = None,
+    modo_unico: str = "gameplay",
+    modelo_ia: str = "realesr-animevideov3",
+    escala_ia: int = 2,
+) -> Optional[dict[str, float]]:
+    """
+    Aplica Super-Resolution 2x con realesrgan-ncnn-vulkan (Vulkan GPU) ÚNICAMENTE en los
+    tramos de cámara sola sin el juego ('fullcam'). Los tramos con gameplay se mantienen
+    intactos sin pasar por IA para no alterar texturas del juego ni perder tiempo.
+    Nunca sobrescribe el video original ni el vertical_base_video limpio.
+    """
+    realesrgan_bin = base_dir / "tools" / "ai-upscaler" / "realesrgan-ncnn-vulkan.exe"
+    models_dir = base_dir / "tools" / "ai-upscaler" / "models"
+    if not realesrgan_bin.is_file():
+        raise FileNotFoundError(
+            f"No se encontró el binario de Super-Resolution IA en: {realesrgan_bin}"
+        )
+
+    ffmpeg_bin = obtener_ruta_ffmpeg()
+    t0_total = time.perf_counter()
+
+    # Caso 1: Modo segmentado (--segmentos) -> solo aplicar IA en segmentos con modo == "fullcam"
+    if lista_segmentos and len(lista_segmentos) > 0:
+        fullcam_indices = [
+            idx
+            for idx, seg in enumerate(lista_segmentos)
+            if str(seg.get("modo", "gameplay")).lower() == "fullcam"
+        ]
+        if not fullcam_indices:
+            print(
+                "      [IA] Omitido: el clip no tiene segmentos 'fullcam' (solo cámara sin juego)."
+            )
+            return None
+
+        seg_files: list[Path] = []
+        total_frames_ia = 0
+        t_upscale_total = 0.0
+
+        for idx, seg in enumerate(lista_segmentos):
+            st = float(seg["start"])
+            en = float(seg["end"])
+            modo_seg = str(seg.get("modo", "gameplay")).lower()
+            seg_out = procesados_dir / f"ia_seg_{idx}.mp4"
+
+            if modo_seg != "fullcam":
+                # Tramo con juego: copiar/renderizar limpio sin IA
+                sc = seg.get("coords") or list(coords)
+                sx, sy, sw, sh = int(sc[0]), int(sc[1]), int(sc[2]), int(sc[3])
+                fc = construir_filter_complex("gameplay", sx, sy, sw, sh)
+                cmd_gp = [
+                    ffmpeg_bin,
+                    "-y",
+                    "-ss",
+                    f"{st:.3f}",
+                    "-to",
+                    f"{en:.3f}",
+                    "-i",
+                    str(source_video),
+                    "-filter_complex",
+                    fc,
+                    "-map",
+                    "[outv]",
+                    "-map",
+                    "0:a?",
+                    "-r",
+                    "30",
+                    "-c:v",
+                    "libx264",
+                    "-preset",
+                    "fast",
+                    "-crf",
+                    "18",
+                    "-pix_fmt",
+                    "yuv420p",
+                    "-c:a",
+                    "aac",
+                    "-b:a",
+                    "192k",
+                    "-ar",
+                    "48000",
+                    "-ac",
+                    "2",
+                    str(seg_out),
+                ]
+                subprocess.run(cmd_gp, check=True, capture_output=True)
+                seg_files.append(seg_out)
+                continue
+
+            # Tramo fullcam (solo cámara sin juego): extraer crop nativo 9:16 -> 2x GPU -> 1080x1920
+            in_dir = procesados_dir / f"ia_frames_in_{idx}"
+            out_dir = procesados_dir / f"ia_frames_out_{idx}"
+            shutil.rmtree(in_dir, ignore_errors=True)
+            shutil.rmtree(out_dir, ignore_errors=True)
+            in_dir.mkdir(parents=True, exist_ok=True)
+            out_dir.mkdir(parents=True, exist_ok=True)
+
+            subprocess.run(
+                [
+                    ffmpeg_bin,
+                    "-y",
+                    "-ss",
+                    f"{st:.3f}",
+                    "-to",
+                    f"{en:.3f}",
+                    "-i",
+                    str(source_video),
+                    "-vf",
+                    "fps=30,crop=trunc(ih*9/16/2)*2:ih",
+                    "-q:v",
+                    "2",
+                    str(in_dir / "frame_%05d.jpg"),
+                ],
+                check=True,
+                capture_output=True,
+            )
+            n_f = len(list(in_dir.glob("frame_*.jpg")))
+            total_frames_ia += n_f
+
+            t0_u = time.perf_counter()
+            res_ia = subprocess.run(
+                [
+                    str(realesrgan_bin),
+                    "-i",
+                    str(in_dir),
+                    "-o",
+                    str(out_dir),
+                    "-n",
+                    modelo_ia,
+                    "-s",
+                    str(escala_ia),
+                    "-m",
+                    str(models_dir),
+                    "-f",
+                    "jpg",
+                ],
+                capture_output=True,
+                text=True,
+            )
+            if res_ia.returncode != 0:
+                raise RuntimeError(
+                    f"Error ejecutando realesrgan-ncnn-vulkan en segmento {idx}:\n{res_ia.stderr[-800:]}"
+                )
+            t_upscale_total += time.perf_counter() - t0_u
+
+            subprocess.run(
+                [
+                    ffmpeg_bin,
+                    "-y",
+                    "-framerate",
+                    "30",
+                    "-i",
+                    str(out_dir / "frame_%05d.jpg"),
+                    "-ss",
+                    f"{st:.3f}",
+                    "-to",
+                    f"{en:.3f}",
+                    "-i",
+                    str(source_video),
+                    "-vf",
+                    "scale=1080:1920:flags=lanczos,setsar=1",
+                    "-map",
+                    "0:v:0",
+                    "-map",
+                    "1:a?",
+                    "-r",
+                    "30",
+                    "-c:v",
+                    "libx264",
+                    "-preset",
+                    "fast",
+                    "-crf",
+                    "18",
+                    "-pix_fmt",
+                    "yuv420p",
+                    "-c:a",
+                    "aac",
+                    "-b:a",
+                    "192k",
+                    "-ar",
+                    "48000",
+                    "-ac",
+                    "2",
+                    "-shortest",
+                    str(seg_out),
+                ],
+                check=True,
+                capture_output=True,
+            )
+            shutil.rmtree(in_dir, ignore_errors=True)
+            shutil.rmtree(out_dir, ignore_errors=True)
+            seg_files.append(seg_out)
+
+        concat_txt = procesados_dir / "ia_concat_list.txt"
+        concat_txt.write_text(
+            "\n".join(f"file '{p.as_posix()}'" for p in seg_files), encoding="utf-8"
+        )
+        subprocess.run(
+            [
+                ffmpeg_bin,
+                "-y",
+                "-f",
+                "concat",
+                "-safe",
+                "0",
+                "-i",
+                str(concat_txt),
+                "-c",
+                "copy",
+                str(output_ia_video),
+            ],
+            check=True,
+            capture_output=True,
+        )
+        for sf in seg_files:
+            sf.unlink(missing_ok=True)
+        concat_txt.unlink(missing_ok=True)
+
+        t_total = time.perf_counter() - t0_total
+        fps_ia = total_frames_ia / t_upscale_total if t_upscale_total > 0 else 0.0
+        print(
+            f"      [IA] Fullcam mejorado ({len(fullcam_indices)} tramo(s), {total_frames_ia} frames) en {t_total:.2f}s (GPU {fps_ia:.1f} fps) -> '{output_ia_video.name}'"
+        )
+        return {
+            "frames": float(total_frames_ia),
+            "upscaleSeconds": round(t_upscale_total, 2),
+            "totalSeconds": round(t_total, 2),
+            "fpsGpu": round(fps_ia, 2),
+        }
+
+    # Caso 2: Escena única -> solo aplicar si modo_unico == "fullcam"
+    if str(modo_unico).lower() != "fullcam":
+        print(
+            "      [IA] Omitido: en escena única la mejora IA solo se aplica en '--modo fullcam' (cámara sola sin juego)."
+        )
+        return None
+
+    in_frames_dir = procesados_dir / "ia_frames_in"
+    out_frames_dir = procesados_dir / "ia_frames_out"
+    shutil.rmtree(in_frames_dir, ignore_errors=True)
+    shutil.rmtree(out_frames_dir, ignore_errors=True)
+    in_frames_dir.mkdir(parents=True, exist_ok=True)
+    out_frames_dir.mkdir(parents=True, exist_ok=True)
+
+    t0_extract = time.perf_counter()
+    subprocess.run(
+        [
+            ffmpeg_bin,
+            "-y",
+            "-i",
+            str(source_video),
+            "-vf",
+            "fps=30,crop=trunc(ih*9/16/2)*2:ih",
+            "-q:v",
+            "2",
+            str(in_frames_dir / "frame_%05d.jpg"),
+        ],
+        check=True,
+        capture_output=True,
+    )
+    t_extract = time.perf_counter() - t0_extract
+    num_frames = len(list(in_frames_dir.glob("frame_*.jpg")))
+
+    t0_upscale = time.perf_counter()
+    res_ia = subprocess.run(
+        [
+            str(realesrgan_bin),
+            "-i",
+            str(in_frames_dir),
+            "-o",
+            str(out_frames_dir),
+            "-n",
+            modelo_ia,
+            "-s",
+            str(escala_ia),
+            "-m",
+            str(models_dir),
+            "-f",
+            "jpg",
+        ],
+        capture_output=True,
+        text=True,
+    )
+    if res_ia.returncode != 0:
+        raise RuntimeError(
+            f"Error ejecutando realesrgan-ncnn-vulkan:\n{res_ia.stderr[-800:]}"
+        )
+    t_upscale = time.perf_counter() - t0_upscale
+    fps_ia = num_frames / t_upscale if t_upscale > 0 else 0.0
+
+    t0_merge = time.perf_counter()
+    subprocess.run(
+        [
+            ffmpeg_bin,
+            "-y",
+            "-framerate",
+            "30",
+            "-i",
+            str(out_frames_dir / "frame_%05d.jpg"),
+            "-i",
+            str(vertical_base_video),
+            "-vf",
+            "scale=1080:1920:flags=lanczos,setsar=1",
+            "-map",
+            "0:v:0",
+            "-map",
+            "1:a?",
+            "-r",
+            "30",
+            "-c:v",
+            "libx264",
+            "-preset",
+            "fast",
+            "-crf",
+            "18",
+            "-pix_fmt",
+            "yuv420p",
+            "-c:a",
+            "copy",
+            "-shortest",
+            str(output_ia_video),
+        ],
+        check=True,
+        capture_output=True,
+    )
+    t_merge = time.perf_counter() - t0_merge
+    t_total = time.perf_counter() - t0_total
+
+    shutil.rmtree(in_frames_dir, ignore_errors=True)
+    shutil.rmtree(out_frames_dir, ignore_errors=True)
+
+    print(
+        f"      [IA] Fullcam mejorado ({num_frames} frames) en {t_total:.2f}s (Extract: {t_extract:.2f}s, GPU 2x: {t_upscale:.2f}s [{fps_ia:.1f} fps], Merge: {t_merge:.2f}s) -> '{output_ia_video.name}'"
+    )
+    return {
+        "frames": float(num_frames),
+        "extractSeconds": round(t_extract, 2),
+        "upscaleSeconds": round(t_upscale, 2),
+        "mergeSeconds": round(t_merge, 2),
+        "totalSeconds": round(t_total, 2),
+        "fpsGpu": round(fps_ia, 2),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Procesa un clip eliminando silencios, detectando cambios de cámara por escena, armando el vertical 9:16 (30fps) y transcribiendo con Whisper."
@@ -571,6 +1574,36 @@ def main() -> None:
         default="simple",
         help="Nivel de edición para public/data.json ('simple', 'detallada', 'ilustraciones'). Default: simple",
     )
+    parser.add_argument(
+        "--categoria-musica",
+        choices=["comedia_absurda", "tension_accion", "chill_storytime", "epica_climax"],
+        default=None,
+        help="Fuerza la categoría de música de fondo para el clip.",
+    )
+    parser.add_argument(
+        "--musica",
+        default=None,
+        help="Nombre exacto o parcial del archivo de música dentro de musica/.",
+    )
+    parser.add_argument(
+        "--sin-musica",
+        action="store_true",
+        help="Desactiva la selección automática de música de fondo.",
+    )
+    ia_group = parser.add_mutually_exclusive_group()
+    ia_group.add_argument(
+        "--mejorar-ia",
+        dest="mejorar_ia",
+        action="store_true",
+        default=None,
+        help="Activa Super-Resolution IA (2x Real-ESRGAN Vulkan) únicamente sobre el recorte de la webcam y genera <nombre>_webcam_ia.mp4.",
+    )
+    ia_group.add_argument(
+        "--sin-ia",
+        dest="mejorar_ia",
+        action="store_false",
+        help="Desactiva explícitamente la mejora de calidad por IA (usa el video limpio original).",
+    )
 
     args = parser.parse_args()
 
@@ -629,6 +1662,7 @@ def main() -> None:
     transcripcion_json = procesados_dir / "transcripcion.json"
 
     # Fase 2: Procesamiento por segmentos múltiples o modo único
+    lista_segmentos: Optional[list[dict[str, Any]]] = None
     if args.segmentos:
         lista_segmentos = parsear_argumento_segmentos(args.segmentos)
         print(f"[2/3] Procesando {len(lista_segmentos)} segmento(s) dinámico(s) a 30fps...")
@@ -653,6 +1687,16 @@ def main() -> None:
             h=args.h,
         )
 
+    # Resolver si la mejora de calidad por IA está activa (--mejorar-ia / --sin-ia / config_edicion.json)
+    cfg_edicion = cargar_config_edicion(base_dir)
+    usar_ia = (
+        bool(cfg_edicion.get("usarMejoraIA", False))
+        if args.mejorar_ia is None
+        else bool(args.mejorar_ia)
+    )
+    modelo_ia = str(cfg_edicion.get("modeloIA", "realesr-animevideov3"))
+    escala_ia = int(cfg_edicion.get("escalaIA", 2))
+
     # Fase 3: Transcripción con Whisper sobre el video vertical final
     palabras = transcribir_whisper(
         vertical_temp, transcripcion_json, model_name=args.model
@@ -671,8 +1715,55 @@ def main() -> None:
         # También mantenemos vertical_temp.mp4 como respaldo para MainShort
         shutil.copy2(vertical_temp, public_dir / "vertical_temp.mp4")
 
+        ia_video_name = f"{clip_name}_webcam_ia.mp4"
+        ia_video_dest = clips_public_dir / ia_video_name
+        webcam_enhanced_rel: Optional[str] = None
+        if usar_ia:
+            coords_ia = _resolver_coords_webcam(args, lista_segmentos)
+            res_ia_stats = generar_video_webcam_ia(
+                base_dir=base_dir,
+                source_video=source_for_ffmpeg,
+                vertical_base_video=vertical_temp,
+                output_ia_video=ia_video_dest,
+                procesados_dir=procesados_dir,
+                coords=coords_ia,
+                lista_segmentos=lista_segmentos,
+                modo_unico=args.modo,
+                modelo_ia=modelo_ia,
+                escala_ia=escala_ia,
+            )
+            if res_ia_stats is not None:
+                webcam_enhanced_rel = f"clips/{ia_video_name}"
+        elif ia_video_dest.is_file():
+            webcam_enhanced_rel = f"clips/{ia_video_name}"
+
         duracion_final = obtener_duracion_video(vertical_temp)
-        remotion_data = {
+        texto_transcripcion = " ".join(str(w.get("word", "")) for w in palabras)
+        picos_voz: list[dict[str, Any]] = []
+        if not args.sin_musica:
+            try:
+                ventanas_audio = medir_rms_por_ventana(vertical_temp)
+                _, picos_voz = detectar_picos_audio(
+                    ventanas_audio, [], palabras, max_picos=6
+                )
+            except Exception as err:
+                print(f"      [Música] Aviso: no se pudieron medir picos de voz ({err})")
+        musica_fondo = (
+            None
+            if args.sin_musica
+            else seleccionar_musica_fondo(
+                base_dir=base_dir,
+                texto=texto_transcripcion,
+                palabras=palabras,
+                duracion_final=duracion_final,
+                clip_name=clip_name,
+                categoria_forzada=args.categoria_musica,
+                pista_forzada=args.musica,
+                picos_audio=picos_voz,
+            )
+        )
+
+        remotion_data: dict[str, Any] = {
             "editStyle": args.edit_style,
             "hookTitle": "",
             "subtitleConfig": {
@@ -680,12 +1771,25 @@ def main() -> None:
                 "scale": 1,
             },
             "videoSrc": f"clips/{clip_name}.mp4",
+            "webcamEnhancedFile": webcam_enhanced_rel,
+            "usarMejoraIA": bool(usar_ia and webcam_enhanced_rel is not None),
             "durationInSeconds": duracion_final,
             "cards": [],
             "illustrations": [],
             "explainerPanels": [],
             "subtitles": palabras,
         }
+        if musica_fondo:
+            remotion_data["backgroundMusic"] = musica_fondo
+            musica_public_dir = public_dir / "musica"
+            musica_public_dir.mkdir(parents=True, exist_ok=True)
+            src_music = base_dir / "musica" / musica_fondo["file"]
+            dst_music = musica_public_dir / musica_fondo["file"]
+            if src_music.is_file() and not dst_music.is_file():
+                shutil.copy2(src_music, dst_music)
+            print(
+                f"      [Música] Categoría='{musica_fondo['category']}' | Pista='{musica_fondo['file']}' (vol={musica_fondo['volume']}) | Cortes={musica_fondo.get('cutAtTimestamps', [])}"
+            )
 
         proyecto_json_path = proyectos_dir / f"{clip_name}.json"
         proyecto_json_path.write_text(

@@ -3,6 +3,31 @@ trigger: always_on
 description: Flujo automático para procesar clips a 30fps con detección de cambios de escena, 3 niveles de edición, hook visual, catálogo SFX y barra de progreso
 ---
 
+## Evaluación previa de clips
+
+Cuando el usuario pida **"calificá los clips pendientes"** (o similar), NO proceses ni renderices nada todavía. Seguí estos pasos:
+
+1. **Extraer datos**: Ejecutá `python evaluar_clips.py` (agregá `--modelo small` si la transcripción con `base` sale mal). Escanea `clips-entrada/` (`.mp4`, `.mkv`, `.mov`, `.webm`), transcribe con Whisper y mide la energía del audio con FFmpeg por ventanas de 1s. Los clips ya evaluados se saltean salvo que pases `--forzar`.
+2. **Leer** `clips-entrada/transcripciones_pendientes.json`. Por cada clip tenés: `duracion`, `texto_completo`, `segmentos` (`start`, `end`, `text`), `promedio_db` y `picos_audio` (`segundo`, `db`, `sobre_promedio_db`, `intensidad`: `baja` | `media` | `alta` | `muy_alta`, y `texto_cercano`).
+3. **Evaluar cruzando texto + energía**: lo que dice (`segmentos`) y cómo lo dice (`picos_audio`). Un pico `alta`/`muy_alta` con `texto_cercano` vacío o muy corto suele ser una risa explosiva, un grito o un susto sin palabras: es material de gancho aunque no aparezca en la transcripción.
+4. **Presentar una tabla ordenada de mayor a menor puntaje** con estas columnas:
+   - **Puntaje (1-10) y motivo**: retención, energía/picos de audio, si se entiende sin contexto previo y si tiene remate.
+   - **Gancho inicial (`hookTeaser`)**: indicá si el clip ya arranca fuerte (sin teaser) o si conviene adelantar un fragmento de más adelante (frase explosiva o pico de risa/grito) con su `start` y `end` en segundos del clip original. Duración ideal del teaser: 1.5 a 3.5 segundos, y que no sea el remate final completo (que no arruine el desenlace).
+   - **Título gancho sugerido (`hookTitle`)** de 4 a 6 palabras.
+   - **Estilo de edición recomendado**: `simple`, `detallada` o `ilustraciones`.
+5. **Esperar la aprobación del usuario** sobre qué clips procesar. No proceses ninguno por tu cuenta.
+6. **Al aprobar un clip**: seguí el flujo de procesamiento de abajo (`procesar_clip.py` → escenas → segmentos → JSON → render) y en `public/proyectos/<nombre>.json` incluí automáticamente el `hookTitle` y, si correspondía, el `hookTeaser`:
+   ```json
+   "hookTeaser": { "start": 14.2, "end": 16.8, "label": "MÁS ADELANTE..." }
+   ```
+   - **Re-mapear los tiempos del teaser (obligatorio)**: `procesar_clip.py` recorta los silencios con auto-editor, así que los segundos del clip original **no coinciden** con los del video procesado. Buscá la frase del teaser dentro de `subtitles` del JSON recién generado y usá el `start` de su primera palabra y el `end` de su última palabra. Si el teaser era un pico sin palabras, ubicalo por las palabras de alrededor (`texto_cercano`).
+   - `procesar_clip.py` sobrescribe el JSON del proyecto, así que agregá `hookTitle` y `hookTeaser` **después** de correrlo.
+   - En Remotion el teaser se reproduce primero (con sus subtítulos y el badge `label` arriba), luego un flash blanco de 3 frames con whoosh, y después el video completo desde 0:00 con todo desplazado automáticamente. La duración total se ajusta sola en `calculateMetadata`.
+
+---
+
+## Procesamiento de un clip
+
 Cada vez que el usuario pida procesar un clip de `clips-entrada/` (o del directorio del proyecto), seguí este flujo automático de principio a fin sin preguntar:
 
 1. **Eliminar silencios y detectar escenas dinámicas**:
@@ -96,5 +121,14 @@ Cada vez que el usuario pida procesar un clip de `clips-entrada/` (o del directo
        - `"SONIDOS/Comer De Minecraft - Sonido.mp3"` (4.34s) — Comer / tragar (ideal cuando toma pastilla o come algo)
    - **Regla de duración**: Priorizá sonidos cortos (`0.3s` a `3.5s`) para tarjetas, palabras clave e ilustraciones, evitando pistas musicales largas (`>10s`) salvo que el usuario las pida explícitamente.
 
-5. **Renderizar MP4 final (a 30 FPS)**:
+5. **Regla obligatoria de énfasis musical (`cutAtTimestamps` dinámicos en `backgroundMusic`)**:
+   - Al procesar el clip con `evaluar_clips.py` y `procesar_clip.py` (y al refinar `public/proyectos/<nombre>.json`), analizá los timestamps exactos de Whisper (`subtitles`) y los picos de voz para **cortar la música de fondo en seco (`volume = 0`)** con el fin de dar énfasis cómico o dramático:
+   - **Cuándo cortar**:
+     - **Remates, insultos o gritos de reacción**: cortá `0.15s` antes de palabras de alto impacto (ej. *"pelotudo"*, *"gordo"*, *"mierda"*, *"crasheó"*, *"heladera"*, *"estafa"*, *"antena"*, *"máquina"*).
+     - **Respuestas secas de Milton o de la IA**: cuando haya una respuesta sarcástica o incómoda que deje pagando a Berlín.
+     - **Palabras resaltadas clave (`highlight: true`)**: si una frase clave o giro del clip marca un remate importante.
+   - **Cómo debe sonar**: corte instantáneo en seco (`0ms` de fade-out) al empezar la palabra/frase, silencio sostenido entre `1.2s` y `2.2s` según dure el remate, y regreso con rampa suave (`"cutFadeInSeconds": 0.4`).
+   - **Cantidad**: aplicá entre **2 y 4 cortes estratégicos por Short** sin abusar en cada oración.
+
+6. **Renderizar MP4 final (a 30 FPS)**:
    Ejecutá `npx remotion render <nombre> shorts-salida/<nombre>.mp4` para exportar la composición específica de ese clip en `shorts-salida/` (reemplazando `_` o espacios por `-` en el ID de composición si el nombre del archivo los tuviera).

@@ -6,7 +6,7 @@ import {
   staticFile,
 } from 'remotion';
 import { ShortComposition } from './ShortComposition';
-import { ShortData, shortSchema } from './types';
+import { getTeaserDurationFrames, ShortData, shortSchema } from './types';
 import defaultData from '../public/data.json';
 import proyectosIndexDefault from '../public/proyectos/index.json';
 import './style.css';
@@ -84,7 +84,10 @@ const buildCalculateMetadata = (jsonRelativePath: string) => {
 
     return {
       fps: FPS,
-      durationInFrames: Math.round(totalSeconds * FPS),
+      // Si hay hookTeaser, se reproduce antes del video completo: suma su duración al total
+      durationInFrames:
+        Math.round(totalSeconds * FPS) +
+        getTeaserDurationFrames(loadedData.hookTeaser, FPS),
       props: loadedData,
     };
   };

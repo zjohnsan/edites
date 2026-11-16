@@ -1,0 +1,710 @@
+{
+  "editStyle": "detallada",
+  "hookTitle": "¡SE INCLINA LA MOTO! (CHOQUE)",
+  "hookTeaser": {
+    "start": 57.0,
+    "end": 60.5,
+    "label": "MÁS ADELANTE..."
+  },
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_4_moto_choque.mp4",
+  "durationInSeconds": 78.52,
+  "cards": [
+    {
+      "title": "PESA MUCHO ATRÁS",
+      "text": "PESA MUCHO ATRÁS",
+      "subtitle": "LA RUEDA NO AGUANTA",
+      "subtext": "LA RUEDA NO AGUANTA",
+      "start": 9.5,
+      "end": 12.5,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3",
+      "variant": "stamp",
+      "position": "top-right"
+    },
+    {
+      "title": "¡DALE GORDO!",
+      "text": "¡DALE GORDO!",
+      "subtitle": "SE HUNDE LA RUEDA",
+      "subtext": "SE HUNDE LA RUEDA",
+      "start": 13.5,
+      "end": 17.5,
+      "sfx": "SONIDOS/Sonido de impacto.mp3",
+      "variant": "stamp",
+      "position": "top-left"
+    },
+    {
+      "title": "SE VA DE COSTADO",
+      "text": "SE VA DE COSTADO",
+      "subtitle": "¡PESÁS MUCHO!",
+      "subtext": "¡PESÁS MUCHO!",
+      "start": 40.5,
+      "end": 44.5,
+      "sfx": "Whosh/Cartoon_Whoosh.wav",
+      "variant": "stamp",
+      "position": "top-right"
+    },
+    {
+      "title": "¡LITERALMENTE SE INCLINA!",
+      "text": "¡LITERALMENTE SE INCLINA!",
+      "subtitle": "AL BORDE DEL DESASTRE",
+      "subtext": "AL BORDE DEL DESASTRE",
+      "start": 56.5,
+      "end": 60.5,
+      "sfx": "SONIDOS/Sonido de impacto.mp3",
+      "variant": "stamp",
+      "position": "top-left"
+    },
+    {
+      "title": "¡CHOQUE FATAL!",
+      "text": "¡CHOQUE FATAL!",
+      "subtitle": "A VOLAR...",
+      "subtext": "A VOLAR...",
+      "start": 62.5,
+      "end": 68.0,
+      "sfx": "SONIDOS/Roblox Death Sound (Oof) - Sound Effect (HD).mp3",
+      "variant": "stamp",
+      "position": "center",
+      "yOffset": -140
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "Hey",
+      "start": 2.04,
+      "end": 2.54,
+      "highlight": false
+    },
+    {
+      "word": "moto",
+      "start": 2.54,
+      "end": 2.84,
+      "highlight": true
+    },
+    {
+      "word": "bro,",
+      "start": 2.84,
+      "end": 3.34,
+      "highlight": false
+    },
+    {
+      "word": "vamos",
+      "start": 3.66,
+      "end": 3.94,
+      "highlight": false
+    },
+    {
+      "word": "moto,",
+      "start": 3.94,
+      "end": 4.28,
+      "highlight": true
+    },
+    {
+      "word": "amigos",
+      "start": 4.52,
+      "end": 4.86,
+      "highlight": false
+    },
+    {
+      "word": "nunca",
+      "start": 4.86,
+      "end": 5.06,
+      "highlight": false
+    },
+    {
+      "word": "han",
+      "start": 5.06,
+      "end": 5.3,
+      "highlight": false
+    },
+    {
+      "word": "anduvimos",
+      "start": 5.3,
+      "end": 5.32,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 5.32,
+      "end": 5.48,
+      "highlight": false
+    },
+    {
+      "word": "moto.",
+      "start": 5.48,
+      "end": 5.72,
+      "highlight": true
+    },
+    {
+      "word": "El",
+      "start": 6.58,
+      "end": 7.08,
+      "highlight": false
+    },
+    {
+      "word": "moto",
+      "start": 7.08,
+      "end": 7.58,
+      "highlight": true
+    },
+    {
+      "word": "creo",
+      "start": 7.58,
+      "end": 7.78,
+      "highlight": false
+    },
+    {
+      "word": "no.",
+      "start": 7.78,
+      "end": 7.98,
+      "highlight": false
+    },
+    {
+      "word": "Sí,",
+      "start": 8.64,
+      "end": 8.78,
+      "highlight": false
+    },
+    {
+      "word": "sí,",
+      "start": 8.98,
+      "end": 8.98,
+      "highlight": false
+    },
+    {
+      "word": "sí,",
+      "start": 8.98,
+      "end": 9.08,
+      "highlight": false
+    },
+    {
+      "word": "los",
+      "start": 9.08,
+      "end": 9.28,
+      "highlight": false
+    },
+    {
+      "word": "estoy",
+      "start": 9.28,
+      "end": 9.42,
+      "highlight": false
+    },
+    {
+      "word": "haciendo.",
+      "start": 9.42,
+      "end": 9.58,
+      "highlight": false
+    },
+    {
+      "word": "Ay",
+      "start": 9.68,
+      "end": 9.7,
+      "highlight": false
+    },
+    {
+      "word": "pesa",
+      "start": 9.7,
+      "end": 10.52,
+      "highlight": true
+    },
+    {
+      "word": "mucho",
+      "start": 10.52,
+      "end": 10.76,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 10.76,
+      "end": 10.98,
+      "highlight": false
+    },
+    {
+      "word": "moto",
+      "start": 10.98,
+      "end": 11.18,
+      "highlight": true
+    },
+    {
+      "word": "atrás,",
+      "start": 11.18,
+      "end": 11.5,
+      "highlight": false
+    },
+    {
+      "word": "amigo.",
+      "start": 11.56,
+      "end": 11.78,
+      "highlight": false
+    },
+    {
+      "word": "Dale,",
+      "start": 13.62,
+      "end": 14.12,
+      "highlight": false
+    },
+    {
+      "word": "gordo.",
+      "start": 14.18,
+      "end": 14.54,
+      "highlight": true
+    },
+    {
+      "word": "Mira,",
+      "start": 18.72,
+      "end": 19.22,
+      "highlight": false
+    },
+    {
+      "word": "amigo.",
+      "start": 19.46,
+      "end": 19.46,
+      "highlight": false
+    },
+    {
+      "word": "¡se hunde,",
+      "start": 21.26,
+      "end": 21.76,
+      "highlight": true
+    },
+    {
+      "word": "se hunde",
+      "start": 21.76,
+      "end": 22.26,
+      "highlight": true
+    },
+    {
+      "word": "la",
+      "start": 22.26,
+      "end": 22.44,
+      "highlight": false
+    },
+    {
+      "word": "rueda.",
+      "start": 22.44,
+      "end": 22.8,
+      "highlight": true
+    },
+    {
+      "word": "Amigos,",
+      "start": 22.96,
+      "end": 23.22,
+      "highlight": false
+    },
+    {
+      "word": "literalmente",
+      "start": 23.28,
+      "end": 23.94,
+      "highlight": false
+    },
+    {
+      "word": "segunde.",
+      "start": 23.94,
+      "end": 24.36,
+      "highlight": false
+    },
+    {
+      "word": "Ahora",
+      "start": 25.4,
+      "end": 25.7,
+      "highlight": false
+    },
+    {
+      "word": "sí,",
+      "start": 25.7,
+      "end": 25.76,
+      "highlight": false
+    },
+    {
+      "word": "subite.",
+      "start": 25.94,
+      "end": 26.42,
+      "highlight": false
+    },
+    {
+      "word": "Dale.",
+      "start": 28.28,
+      "end": 28.5,
+      "highlight": false
+    },
+    {
+      "word": "El",
+      "start": 32.34,
+      "end": 32.7,
+      "highlight": false
+    },
+    {
+      "word": "auto.",
+      "start": 32.7,
+      "end": 32.92,
+      "highlight": false
+    },
+    {
+      "word": "Sí,",
+      "start": 33.22,
+      "end": 33.4,
+      "highlight": false
+    },
+    {
+      "word": "pero",
+      "start": 33.48,
+      "end": 33.54,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 33.54,
+      "end": 33.68,
+      "highlight": false
+    },
+    {
+      "word": "vi,",
+      "start": 33.68,
+      "end": 33.78,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 33.78,
+      "end": 33.9,
+      "highlight": false
+    },
+    {
+      "word": "vi.",
+      "start": 33.9,
+      "end": 34.04,
+      "highlight": false
+    },
+    {
+      "word": "Está",
+      "start": 35.06,
+      "end": 35.42,
+      "highlight": false
+    },
+    {
+      "word": "hermoso.",
+      "start": 35.42,
+      "end": 35.78,
+      "highlight": false
+    },
+    {
+      "word": "Bro,",
+      "start": 35.94,
+      "end": 36.08,
+      "highlight": false
+    },
+    {
+      "word": "chocamos",
+      "start": 36.18,
+      "end": 36.46,
+      "highlight": true
+    },
+    {
+      "word": "y",
+      "start": 36.46,
+      "end": 36.58,
+      "highlight": false
+    },
+    {
+      "word": "muero.",
+      "start": 36.58,
+      "end": 36.76,
+      "highlight": true
+    },
+    {
+      "word": "No",
+      "start": 37.82,
+      "end": 38.18,
+      "highlight": false
+    },
+    {
+      "word": "choques.",
+      "start": 38.18,
+      "end": 38.42,
+      "highlight": true
+    },
+    {
+      "word": "Amigos,",
+      "start": 40.8,
+      "end": 41.16,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 41.34,
+      "end": 41.36,
+      "highlight": false
+    },
+    {
+      "word": "va",
+      "start": 41.36,
+      "end": 41.48,
+      "highlight": false
+    },
+    {
+      "word": "para",
+      "start": 41.48,
+      "end": 41.66,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 41.66,
+      "end": 41.78,
+      "highlight": false
+    },
+    {
+      "word": "otro",
+      "start": 41.78,
+      "end": 41.9,
+      "highlight": false
+    },
+    {
+      "word": "lado",
+      "start": 41.9,
+      "end": 42.14,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 42.14,
+      "end": 42.26,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 42.26,
+      "end": 42.32,
+      "highlight": false
+    },
+    {
+      "word": "moto,",
+      "start": 42.32,
+      "end": 42.48,
+      "highlight": true
+    },
+    {
+      "word": "pesa",
+      "start": 42.78,
+      "end": 43.0,
+      "highlight": true
+    },
+    {
+      "word": "mucho.",
+      "start": 43.0,
+      "end": 43.24,
+      "highlight": false
+    },
+    {
+      "word": "Ay,",
+      "start": 47.78,
+      "end": 48.14,
+      "highlight": false
+    },
+    {
+      "word": "dios",
+      "start": 48.32,
+      "end": 48.56,
+      "highlight": false
+    },
+    {
+      "word": "mío.",
+      "start": 48.56,
+      "end": 48.68,
+      "highlight": false
+    },
+    {
+      "word": "Che,",
+      "start": 48.68,
+      "end": 48.84,
+      "highlight": false
+    },
+    {
+      "word": "para",
+      "start": 48.84,
+      "end": 49.22,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 49.22,
+      "end": 49.38,
+      "highlight": false
+    },
+    {
+      "word": "wasp,",
+      "start": 49.38,
+      "end": 49.62,
+      "highlight": false
+    },
+    {
+      "word": "bro,",
+      "start": 49.8,
+      "end": 49.8,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 49.9,
+      "end": 50.1,
+      "highlight": false
+    },
+    {
+      "word": "clima.",
+      "start": 50.1,
+      "end": 50.4,
+      "highlight": false
+    },
+    {
+      "word": "Y",
+      "start": 51.54,
+      "end": 51.9,
+      "highlight": false
+    },
+    {
+      "word": "bueno,",
+      "start": 51.9,
+      "end": 52.06,
+      "highlight": false
+    },
+    {
+      "word": "amigo,",
+      "start": 52.2,
+      "end": 52.3,
+      "highlight": false
+    },
+    {
+      "word": "está",
+      "start": 52.34,
+      "end": 52.46,
+      "highlight": false
+    },
+    {
+      "word": "lloviendo,",
+      "start": 52.46,
+      "end": 52.9,
+      "highlight": true
+    },
+    {
+      "word": "que",
+      "start": 53.32,
+      "end": 53.36,
+      "highlight": false
+    },
+    {
+      "word": "nunca",
+      "start": 53.36,
+      "end": 53.52,
+      "highlight": false
+    },
+    {
+      "word": "puede",
+      "start": 53.52,
+      "end": 53.8,
+      "highlight": false
+    },
+    {
+      "word": "llover.",
+      "start": 53.8,
+      "end": 54.02,
+      "highlight": false
+    },
+    {
+      "word": "Cuando",
+      "start": 55.08,
+      "end": 55.72,
+      "highlight": false
+    },
+    {
+      "word": "al",
+      "start": 55.72,
+      "end": 55.96,
+      "highlight": false
+    },
+    {
+      "word": "left.",
+      "start": 55.96,
+      "end": 56.2,
+      "highlight": false
+    },
+    {
+      "word": "Sin",
+      "start": 57.08,
+      "end": 57.72,
+      "highlight": false
+    },
+    {
+      "word": "clínala",
+      "start": 57.72,
+      "end": 58.08,
+      "highlight": false
+    },
+    {
+      "word": "moto,",
+      "start": 58.08,
+      "end": 58.38,
+      "highlight": true
+    },
+    {
+      "word": "literalmente",
+      "start": 58.48,
+      "end": 59.54,
+      "highlight": false
+    },
+    {
+      "word": "sin",
+      "start": 59.54,
+      "end": 59.7,
+      "highlight": false
+    },
+    {
+      "word": "clínala",
+      "start": 59.7,
+      "end": 60.02,
+      "highlight": false
+    },
+    {
+      "word": "moto.",
+      "start": 60.02,
+      "end": 60.28,
+      "highlight": true
+    },
+    {
+      "word": "¡Fua",
+      "start": 60.8,
+      "end": 61.3,
+      "highlight": true
+    },
+    {
+      "word": "no,",
+      "start": 61.3,
+      "end": 61.6,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 61.6,
+      "end": 61.9,
+      "highlight": false
+    },
+    {
+      "word": "choco!",
+      "start": 61.9,
+      "end": 62.6,
+      "highlight": true,
+      "sfx": "SONIDOS/Sonido de impacto.mp3"
+    }
+  ],
+  "backgroundMusic": {
+    "file": "ES_Call for Action - Jon Bjork.mp3",
+    "category": "tension_accion",
+    "volume": 0.11,
+    "cutAtTimestamps": [],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0
+  }
+}

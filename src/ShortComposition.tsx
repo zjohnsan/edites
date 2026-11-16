@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AbsoluteFill,
   Audio,
+  Img,
   interpolate,
   OffthreadVideo,
   Sequence,
@@ -11,10 +12,13 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {
+  BackgroundMusic,
   CardItem,
   CardPosition,
   ExplainerGridItem,
   ExplainerPanel,
+  getTeaserDurationFrames,
+  HookTeaser,
   IllustrationItem,
   ShortData,
   SubtitleConfig,
@@ -44,6 +48,94 @@ const resolveSfxSrc = (sfx: string | undefined, defaultFile: string): string => 
   return staticFile(withPrefix);
 };
 
+const resolveMusicSrc = (musicFile: string): string => {
+  const normalized = musicFile.trim().replace(/^\/+/, '');
+  const withPrefix = normalized.startsWith('musica/')
+    ? normalized
+    : `musica/${normalized}`;
+  return staticFile(withPrefix);
+};
+
+/**
+ * BackgroundMusicLayer: Música de fondo con volumen bajo (0.08–0.12 por defecto),
+ * fade-in suave (0.5s), fade-out final (1.0s), loop automático y corte dramático en seco
+ * (volume = 0 por 1.5–2s) en remates/crasheos indicados en `cutAtTimestamps`.
+ */
+const BackgroundMusicLayer: React.FC<{
+  music: BackgroundMusic;
+  teaserFrames: number;
+}> = ({ music, teaserFrames }) => {
+  const frame = useCurrentFrame();
+  const { fps, durationInFrames } = useVideoConfig();
+
+  if (!music.file?.trim()) {
+    return null;
+  }
+
+  const baseVolume = music.volume ?? 0.1;
+  const fadeInFrames = Math.max(1, Math.round((music.fadeInSeconds ?? 0.5) * fps));
+  const fadeOutFrames = Math.max(1, Math.round((music.fadeOutSeconds ?? 1.0) * fps));
+
+  const fadeInFactor = interpolate(frame, [0, fadeInFrames], [0, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  const fadeOutFactor = interpolate(
+    frame,
+    [Math.max(0, durationInFrames - fadeOutFrames), durationInFrames],
+    [1, 0],
+    {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    }
+  );
+
+  // Corte limpio durante el flash de transición entre el hookTeaser y el inicio del video
+  let cutFactor = 1;
+  if (teaserFrames > 0) {
+    if (frame >= teaserFrames - 1 && frame <= teaserFrames + 4) {
+      cutFactor = 0;
+    } else if (frame > teaserFrames + 4 && frame < teaserFrames + Math.round(0.3 * fps)) {
+      cutFactor = interpolate(
+        frame,
+        [teaserFrames + 4, teaserFrames + Math.round(0.3 * fps)],
+        [0, 1],
+        { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
+      );
+    }
+  }
+
+  // Corte en seco (0ms fade-out) en los segundos del video principal definidos en cutAtTimestamps
+  // y rampa suave de regreso (0.4s fade-in por defecto)
+  if (frame >= teaserFrames && music.cutAtTimestamps?.length) {
+    const mainTime = (frame - teaserFrames) / fps;
+    const resumeFadeSeconds = Math.max(0.05, music.cutFadeInSeconds ?? 0.4);
+    for (const rawCut of music.cutAtTimestamps) {
+      const cutStart = typeof rawCut === 'number' ? rawCut : rawCut.start;
+      const cutEnd =
+        typeof rawCut === 'number'
+          ? rawCut + 1.6
+          : rawCut.end ?? rawCut.start + (rawCut.duration ?? 1.6);
+
+      if (mainTime >= cutStart && mainTime <= cutEnd) {
+        cutFactor = 0;
+        break;
+      }
+      if (mainTime > cutEnd && mainTime < cutEnd + resumeFadeSeconds) {
+        const resumeRamp = (mainTime - cutEnd) / resumeFadeSeconds;
+        cutFactor = Math.min(cutFactor, resumeRamp);
+      }
+    }
+  }
+
+  const finalVolume = Math.max(
+    0,
+    baseVolume * fadeInFactor * fadeOutFactor * cutFactor
+  );
+
+  return <Audio src={resolveMusicSrc(music.file)} volume={finalVolume} loop />;
+};
+
 const AnimatedSubtitle: React.FC<{
   item: SubtitleItem;
   config?: SubtitleConfig;
@@ -67,7 +159,12 @@ const AnimatedSubtitle: React.FC<{
   const customScale = config?.scale ?? 1;
 
   const isHighlighted = Boolean(item.highlight);
-  const shouldPlaySfx = isHighlighted || Boolean(item.sfx);
+
+  // Solo reproducir SFX si está definido explícitamente en el JSON y no es sonido de notificación/ping
+  const isNotificationSfx =
+    item.sfx?.toLowerCase().includes('notification') ||
+    item.sfx?.toLowerCase().includes('pingding');
+  const shouldPlaySfx = Boolean(item.sfx) && !isNotificationSfx;
 
   // El pop de entrada arranca en 0.88 (no en 0) para que las palabras muy cortas
   // (3-4 frames) se vean siempre a tamaño completo. Highlight solo suma un leve scale(1.1).
@@ -131,25 +228,72 @@ const AnimatedCard: React.FC<{ card: CardItem }> = ({ card }) => {
   const yOffset = card.yOffset ?? 0;
   const customScale = card.scale ?? 1;
   const scale = enterSpring * exitProgress * customScale;
-  const posClass = positionClasses[card.position || 'top-right'];
+  const isCentered = (card.position || 'top-right') === 'center';
+  const posClass = isCentered
+    ? 'top-1/2 left-1/2'
+    : positionClasses[card.position || 'top-right'];
+  const baseTranslate = isCentered
+    ? `translate(calc(-50% + ${xOffset}px), calc(-50% + ${yOffset}px))`
+    : `translate(${xOffset}px, ${yOffset}px)`;
   const displayIcon = card.icon || card.emoji;
+
+  if (card.image) {
+    const imgSrc = card.image.startsWith('http') || card.image.startsWith('/')
+      ? card.image
+      : staticFile(card.image);
+
+    return (
+      <div
+        style={{
+          transform: `${baseTranslate} scale(${scale})`,
+          opacity: Math.min(1, enterSpring * exitProgress),
+        }}
+        className={`absolute z-30 ${posClass} bg-black/90 backdrop-blur-md border-4 border-yellow-400 rounded-3xl p-5 shadow-[0_16px_40px_rgba(0,0,0,0.9),0_0_24px_rgba(255,230,0,0.3)] flex flex-col items-center gap-3 w-[840px] max-w-[92vw]`}
+      >
+        <Sequence from={startFrame} layout="none">
+          <Audio src={resolveSfxSrc(card.sfx, DEFAULT_POP_SFX)} volume={0.35} />
+        </Sequence>
+        <div className="flex items-center gap-3 w-full justify-between border-b border-white/20 pb-2 px-1">
+          <div className="flex items-center gap-2">
+            <span className="w-3.5 h-3.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-yellow-400 font-black text-2xl uppercase tracking-wider">
+              {card.title || 'PREGUNTA DEL CHAT'}
+            </span>
+          </div>
+          {card.subtitle && (
+            <span className="text-white/70 font-bold text-lg uppercase tracking-wide">
+              {card.subtitle}
+            </span>
+          )}
+        </div>
+        <div className="rounded-xl overflow-hidden bg-black/85 border border-white/20 p-2 shadow-inner w-full flex items-center justify-center">
+          <Img
+            src={imgSrc}
+            alt="Chat question"
+            className="w-full h-auto object-contain rounded"
+            style={{ imageRendering: 'crisp-edges' }}
+          />
+        </div>
+      </div>
+    );
+  }
 
   if (card.variant === 'stamp') {
     return (
       <div
         style={{
-          transform: `translate(${xOffset}px, ${yOffset}px) scale(${scale}) rotate(-8deg)`,
+          transform: `${baseTranslate} scale(${scale}) rotate(-8deg)`,
           opacity: Math.min(1, enterSpring * exitProgress),
         }}
-        className={`absolute z-30 ${posClass} border-8 border-yellow-400 bg-black/90 px-8 py-4 rounded-2xl shadow-2xl`}
+        className={`absolute z-30 ${posClass} border-8 border-yellow-400 bg-black/90 px-8 py-4 rounded-2xl shadow-2xl max-w-[920px] text-center`}
       >
         <Sequence from={startFrame} layout="none">
           <Audio src={resolveSfxSrc(card.sfx, DEFAULT_POP_SFX)} volume={0.35} />
         </Sequence>
-        <div className="flex items-center gap-4">
-          {displayIcon && <span className="text-5xl">{displayIcon}</span>}
-          <span className="text-yellow-400 font-black text-5xl uppercase tracking-widest">
-            {card.title}
+        <div className="flex items-center justify-center gap-4">
+          {displayIcon && <span className="text-5xl shrink-0">{displayIcon}</span>}
+          <span className="text-yellow-400 font-black text-5xl uppercase tracking-wider leading-tight">
+            {card.title || card.text}
           </span>
         </div>
       </div>
@@ -159,7 +303,7 @@ const AnimatedCard: React.FC<{ card: CardItem }> = ({ card }) => {
   return (
     <div
       style={{
-        transform: `translate(${xOffset}px, ${yOffset}px) scale(${scale})`,
+        transform: `${baseTranslate} scale(${scale})`,
         opacity: Math.min(1, enterSpring * exitProgress),
       }}
       className={`absolute z-20 ${posClass} bg-zinc-900/95 border-4 border-yellow-400 rounded-3xl px-7 py-5 shadow-2xl flex items-center gap-5 max-w-[650px]`}
@@ -172,11 +316,11 @@ const AnimatedCard: React.FC<{ card: CardItem }> = ({ card }) => {
       )}
       <div className="flex flex-col">
         <span className="text-yellow-400 font-black text-3xl uppercase tracking-wide leading-tight">
-          {card.title}
+          {card.title || card.text}
         </span>
-        {card.subtitle && (
+        {(card.subtitle || card.subtext) && (
           <span className="text-white font-bold text-2xl mt-1 leading-snug">
-            {card.subtitle}
+            {card.subtitle || card.subtext}
           </span>
         )}
       </div>
@@ -989,21 +1133,25 @@ export const ExplainerPanelOverlay: React.FC<{ panel: ExplainerPanel }> = ({
 
 /**
  * ChannelWatermark: Badge fijo con los logos de YouTube y Kick + marca "berlinuno"
- * Ubicado justo arriba de los subtítulos (top: 71%), centrado, lejos de la cara y del corte webcam/juego.
+ * En formato dividido (gameplay + cam) se ubica en la línea divisoria (y = 640px).
+ * En cámara completa (cameraFullscreenRanges) baja al borde del difuminado inferior (85%)
+ * para no tapar la cara ni el pecho del streamer.
  */
-export const ChannelWatermark: React.FC = () => {
+export const ChannelWatermark: React.FC<{ isFullscreen?: boolean }> = ({
+  isFullscreen = false,
+}) => {
   return (
     <div
       style={{
-        top: '71%',
+        top: isFullscreen ? '85%' : '640px',
         transform: 'translate(-50%, -50%)',
       }}
       className="absolute left-1/2 z-40 pointer-events-none select-none"
     >
-      <div className="flex items-center gap-3.5 bg-black/60 backdrop-blur-md border border-white/20 rounded-full px-6 py-2.5 shadow-[0_6px_20px_rgba(0,0,0,0.65)]">
+      <div className="flex items-center gap-4 bg-black/75 backdrop-blur-md border border-white/25 rounded-full px-8 py-3.5 shadow-[0_8px_25px_rgba(0,0,0,0.75)]">
         {/* Logo SVG de YouTube (#FF0000 con triángulo blanco) */}
         <svg
-          className="w-9 h-7 shrink-0"
+          className="w-11 h-8 shrink-0"
           viewBox="0 0 36 26"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -1014,7 +1162,7 @@ export const ChannelWatermark: React.FC = () => {
 
         {/* Logo SVG de Kick (#53FC18 con la "K" geométrica/pixelada) */}
         <svg
-          className="w-7 h-7 shrink-0"
+          className="w-9 h-9 shrink-0"
           viewBox="0 0 28 28"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -1031,7 +1179,7 @@ export const ChannelWatermark: React.FC = () => {
           style={{
             fontFamily: "'Montserrat', 'Arial Black', 'Impact', sans-serif",
           }}
-          className="text-white font-black text-2xl tracking-wider lowercase leading-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
+          className="text-white font-black text-3xl tracking-wider lowercase leading-none drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]"
         >
           berlinuno
         </span>
@@ -1040,10 +1188,137 @@ export const ChannelWatermark: React.FC = () => {
   );
 };
 
-export const ShortComposition: React.FC<ShortData & { data?: ShortData }> = (
-  props
-) => {
-  const data: ShortData = props.data ?? props;
+const resolveVideoSrc = (videoSrc: string | undefined | null): string =>
+  videoSrc
+    ? videoSrc.startsWith('http') || videoSrc.startsWith('/')
+      ? videoSrc
+      : staticFile(videoSrc)
+    : '';
+
+const resolveActiveVideoSrc = (data: ShortData): string => {
+  const enhanced = data.webcamEnhancedFile?.trim();
+  const useEnhanced =
+    Boolean(enhanced) && (data.usarMejoraIA ?? true);
+  return resolveVideoSrc(useEnhanced ? enhanced : data.videoSrc);
+};
+
+/**
+ * TeaserLabelBadge: Badge superior durante el hookTeaser (ej. "MÁS ADELANTE...").
+ */
+const TeaserLabelBadge: React.FC<{ label: string }> = ({ label }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const enter = spring({
+    frame,
+    fps,
+    config: { damping: 11, stiffness: 220, mass: 0.7 },
+  });
+  // Punto rojo parpadeante estilo "REC"
+  const blink = Math.floor(frame / 8) % 2 === 0 ? 1 : 0.25;
+
+  return (
+    <div
+      style={{
+        top: 100,
+        transform: `translate(-50%, ${interpolate(enter, [0, 1], [-40, 0])}px) scale(${interpolate(enter, [0, 1], [0.7, 1])})`,
+        opacity: Math.min(1, enter * 1.4),
+      }}
+      className="absolute left-1/2 z-40 pointer-events-none select-none"
+    >
+      <div className="flex items-center gap-3 bg-black/85 border-4 border-red-500 px-8 py-3.5 rounded-full shadow-[0px_10px_30px_rgba(0,0,0,0.85)]">
+        <span
+          style={{ opacity: blink }}
+          className="w-4 h-4 rounded-full bg-red-500 shrink-0"
+        />
+        <span
+          style={{
+            fontFamily: "'Montserrat', 'Arial Black', 'Impact', sans-serif",
+          }}
+          className="text-white font-black text-3xl uppercase tracking-wider leading-none whitespace-nowrap"
+        >
+          {label}
+        </span>
+      </div>
+    </div>
+  );
+};
+
+/**
+ * HookTeaserSegment: Reproduce el fragmento destacado (hookTeaser.start → end) del clip
+ * con sus subtítulos re-sincronizados al inicio del teaser y el badge opcional.
+ * Se monta dentro de un <Sequence> que empieza en el frame 0.
+ */
+const HookTeaserSegment: React.FC<{ data: ShortData; teaser: HookTeaser }> = ({
+  data,
+  teaser,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const sourceTime = teaser.start + frame / fps;
+  const videoSrc = resolveActiveVideoSrc(data);
+
+  const sourceSubtitle = data.subtitles?.find(
+    (s) => sourceTime >= s.start && sourceTime <= s.end
+  );
+  // Tiempos relativos al inicio del teaser para que el pop y el SFX caigan en el frame correcto
+  const teaserSubtitle = sourceSubtitle
+    ? {
+        ...sourceSubtitle,
+        start: Math.max(0, sourceSubtitle.start - teaser.start),
+        end: sourceSubtitle.end - teaser.start,
+      }
+    : undefined;
+
+  return (
+    <AbsoluteFill>
+      {videoSrc && (
+        <OffthreadVideo
+          src={videoSrc}
+          startFrom={Math.round(teaser.start * fps)}
+          endAt={Math.round(teaser.end * fps)}
+          className="w-full h-full object-cover"
+          style={{ filter: 'contrast(1.06) saturate(1.12)' }}
+        />
+      )}
+      {teaser.label && <TeaserLabelBadge label={teaser.label} />}
+      {teaserSubtitle && (
+        <AnimatedSubtitle
+          key={`teaser-${sourceSubtitle?.start}`}
+          item={teaserSubtitle}
+          config={data.subtitleConfig}
+        />
+      )}
+    </AbsoluteFill>
+  );
+};
+
+/**
+ * TeaserCutFlash: Flash blanco de 3 frames + whoosh en el corte entre el teaser y el video completo.
+ */
+const TeaserCutFlash: React.FC = () => {
+  const frame = useCurrentFrame();
+  return (
+    <AbsoluteFill
+      style={{
+        backgroundColor: '#FFFFFF',
+        opacity: interpolate(frame, [0, 3], [1, 0], {
+          extrapolateLeft: 'clamp',
+          extrapolateRight: 'clamp',
+        }),
+      }}
+      className="z-50 pointer-events-none"
+    >
+      <Audio src={resolveSfxSrc(undefined, DEFAULT_WHOOSH_SFX)} volume={0.4} />
+    </AbsoluteFill>
+  );
+};
+
+/**
+ * MainShortContent: El video completo desde 0:00 con subtítulos, hook, tarjetas, ilustraciones
+ * y paneles. Al estar dentro de un <Sequence from={teaserFrames}>, useCurrentFrame() es relativo
+ * al inicio del video principal, así que todo queda desplazado y sincronizado automáticamente.
+ */
+const MainShortContent: React.FC<{ data: ShortData }> = ({ data }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const currentTime = frame / fps;
@@ -1075,14 +1350,10 @@ export const ShortComposition: React.FC<ShortData & { data?: ShortData }> = (
       )
     : [];
 
-  const resolvedVideoSrc = data.videoSrc
-    ? data.videoSrc.startsWith('http') || data.videoSrc.startsWith('/')
-      ? data.videoSrc
-      : staticFile(data.videoSrc)
-    : '';
+  const resolvedVideoSrc = resolveActiveVideoSrc(data);
 
   return (
-    <AbsoluteFill className="bg-black overflow-hidden">
+    <AbsoluteFill>
       {resolvedVideoSrc ? (
         <OffthreadVideo
           src={resolvedVideoSrc}
@@ -1106,10 +1377,7 @@ export const ShortComposition: React.FC<ShortData & { data?: ShortData }> = (
         </AbsoluteFill>
       )}
 
-      {/* Badge fijo del canal ("berlinuno" + YouTube + Kick) presente en los 3 modos */}
-      <ChannelWatermark />
-
-      {/* Hook visual inicial en los primeros 2.5 a 3 segundos */}
+      {/* Hook visual en los primeros 2.5 a 3 segundos del video principal */}
       {data.hookTitle && <HookTitleBanner title={data.hookTitle} />}
 
       {/* Modo 'detallada' e 'ilustraciones': Gráficos Explainer transparentes sobre el gameplay */}
@@ -1119,7 +1387,7 @@ export const ShortComposition: React.FC<ShortData & { data?: ShortData }> = (
 
       {/* Modo 'detallada' e 'ilustraciones': Tarjetas y sellos animados */}
       {activeCards.map((card, idx) => (
-        <AnimatedCard key={`${card.title}-${idx}`} card={card} />
+        <AnimatedCard key={`${card.title || card.text || 'card'}-${idx}`} card={card} />
       ))}
 
       {/* Modo 'ilustraciones': Ilustraciones SVG literales + Gráficos React/SVG */}
@@ -1140,10 +1408,70 @@ export const ShortComposition: React.FC<ShortData & { data?: ShortData }> = (
         return <StampAlert key={`ill-${idx}`} item={ill} />;
       })}
 
-      {/* Subtítulo Dinámico Palabra por Palabra en la divisoria (Y=640px) */}
+      {/* Subtítulo dinámico palabra por palabra */}
       {activeSubtitle && (
         <AnimatedSubtitle item={activeSubtitle} config={data.subtitleConfig} />
       )}
+    </AbsoluteFill>
+  );
+};
+
+export const ShortComposition: React.FC<ShortData & { data?: ShortData }> = (
+  props
+) => {
+  const data: ShortData = props.data ?? props;
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const teaser = data.hookTeaser;
+  const teaserFrames = getTeaserDurationFrames(teaser, fps);
+
+  const sourceTime =
+    teaser && teaserFrames > 0 && frame < teaserFrames
+      ? teaser.start + frame / fps
+      : (frame - teaserFrames) / fps;
+
+  const isFullscreenCam = Boolean(
+    data.cameraFullscreenRanges?.some(
+      (range) => sourceTime >= range.start && sourceTime <= range.end
+    )
+  );
+
+  return (
+    <AbsoluteFill className="bg-black overflow-hidden">
+      {/* 0. Música de fondo con loop automático, fades y cortes dramáticos en remates */}
+      {data.backgroundMusic?.file && (
+        <BackgroundMusicLayer
+          music={data.backgroundMusic}
+          teaserFrames={teaserFrames}
+        />
+      )}
+
+      {/* 1. Gancho inicial: fragmento destacado antes del video completo */}
+      {teaser && teaserFrames > 0 && (
+        <Sequence durationInFrames={teaserFrames} name="Hook Teaser">
+          <HookTeaserSegment data={data} teaser={teaser} />
+        </Sequence>
+      )}
+
+      {/* 2. Video completo desde 0:00, desplazado por la duración del teaser */}
+      <Sequence
+        from={teaserFrames}
+        name="Video principal"
+        premountFor={teaserFrames > 0 ? fps : undefined}
+      >
+        <MainShortContent data={data} />
+      </Sequence>
+
+      {/* Transición rápida en el corte teaser → video completo */}
+      {teaserFrames > 0 && (
+        <Sequence from={teaserFrames} durationInFrames={3} name="Flash de corte">
+          <TeaserCutFlash />
+        </Sequence>
+      )}
+
+      {/* Badge fijo del canal ("berlinuno" + YouTube + Kick) durante todo el Short */}
+      <ChannelWatermark isFullscreen={isFullscreenCam} />
 
       {/* Barra de progreso inferior fina (6px) con brillo amarillo */}
       <ProgressBar />
