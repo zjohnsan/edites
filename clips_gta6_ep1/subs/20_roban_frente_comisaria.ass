@@ -1,0 +1,41 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 20_roban_frente_comisaria
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.27,0:00:00.91,Shorts,,0,0,0,,{\c&H0000E5FF&}WOW{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.95,0:00:01.75,Shorts,,0,0,0,,QUE {\c&H0000E5FF&}LOCOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.77,0:00:02.27,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.35,0:00:03.11,Shorts,,0,0,0,,{\c&H0000E5FF&}LITERAR{\c&H00FFFFFF&} EN OTRAS COSAS
+Dialogue: 0,0:00:03.13,0:00:04.65,Shorts,,0,0,0,,Y LA PUEDES {\c&H0000E5FF&}DESBLOQUEAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.04,0:00:09.98,Shorts,,0,0,0,,Y TE {\c&H0000E5FF&}VOY{\c&H00FFFFFF&} A
+Dialogue: 0,0:00:10.00,0:00:10.50,Shorts,,0,0,0,,{\c&H0000E5FF&}ROBAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.37,0:00:15.73,Shorts,,0,0,0,,ACÁ Y TE {\c&H0000E5FF&}VOY{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.75,0:00:16.33,Shorts,,0,0,0,,A TOMAR {\c&H0000E5FF&}AGUA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.71,0:00:22.45,Shorts,,0,0,0,,ESTÁ {\c&H0000E5FF&}ABIERTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.47,0:00:23.39,Shorts,,0,0,0,,ME CORTO LA {\c&H0000E5FF&}POLLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.67,0:00:24.97,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.99,0:00:26.45,Shorts,,0,0,0,,LA ESTACIÓN DE {\c&H0000E5FF&}POLICÍA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.47,0:00:26.93,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.71,0:00:28.53,Shorts,,0,0,0,,Y DEBE {\c&H0000E5FF&}TENERLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.49,0:00:31.73,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.75,0:00:32.65,Shorts,,0,0,0,,ESTÁ LA {\c&H0000E5FF&}POLICÍA{\c&H00FFFFFF&} ENFRENTE
+Dialogue: 0,0:00:32.81,0:00:33.26,Shorts,,0,0,0,,POR {\c&H0000E5FF&}LO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.02,0:00:38.32,Shorts,,0,0,0,,ESTÁ LA {\c&H0000E5FF&}POLICÍA{\c&H00FFFFFF&} ENFRENTE
+Dialogue: 0,0:00:38.46,0:00:39.66,Shorts,,0,0,0,,ES {\c&H0000E5FF&}MUY{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.68,0:00:41.32,Shorts,,0,0,0,,ME {\c&H0000E5FF&}METO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:43.66,0:00:44.36,Shorts,,0,0,0,,DÓNDE {\c&H0000E5FF&}ES?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:48.66,0:00:49.11,Shorts,,0,0,0,,ME {\c&H0000E5FF&}SIENTO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.34,0:00:49.52,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.52,0:00:49.90,Shorts,,0,0,0,,PERO {\c&H0000E5FF&}ESTÁS{\c&H00FFFFFF&} ACÁ
+Dialogue: 0,0:00:49.92,0:00:50.98,Shorts,,0,0,0,,MUY {\c&H0000E5FF&}BIEN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.74,0:00:53.22,Shorts,,0,0,0,,ME {\c&H0000E5FF&}METO?{\c&H00FFFFFF&}

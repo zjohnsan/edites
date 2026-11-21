@@ -1,0 +1,56 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 04_senor_manglares
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.18,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.16,0:00:00.42,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.44,0:00:01.00,Shorts,,0,0,0,,ES JUSTO EN {\c&H0000E5FF&}PRIMERA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.02,0:00:01.54,Shorts,,0,0,0,,{\c&H0000E5FF&}PERSONA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.62,0:00:02.28,Shorts,,0,0,0,,QUÉ {\c&H0000E5FF&}MIERDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.30,0:00:02.82,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.65,0:00:09.77,Shorts,,0,0,0,,ME CAGUÉ {\c&H0000E5FF&}ENTERO{\c&H00FFFFFF&} EL
+Dialogue: 0,0:00:09.79,0:00:10.65,Shorts,,0,0,0,,{\c&H0000E5FF&}RUIDO{\c&H00FFFFFF&} QUE HIZO
+Dialogue: 0,0:00:10.71,0:00:11.35,Shorts,,0,0,0,,{\c&H0000E5FF&}BOLUDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.61,0:00:14.99,Shorts,,0,0,0,,QUÉ {\c&H0000E5FF&}MIERDA{\c&H00FFFFFF&} ES ESTO
+Dialogue: 0,0:00:15.01,0:00:15.67,Shorts,,0,0,0,,{\c&H0000E5FF&}BOLUDO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.61,0:00:22.41,Shorts,,0,0,0,,QUÉ ES {\c&H0000E5FF&}ESO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.43,0:00:22.61,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.51,0:00:22.96,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.01,0:00:23.19,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.05,0:00:24.01,Shorts,,0,0,0,,ESTO ES UNA {\c&H0000E5FF&}MACUMBA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.03,0:00:24.48,Shorts,,0,0,0,,{\c&H0000E5FF&}BOLUDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.77,0:00:25.41,Shorts,,0,0,0,,ESTO LO {\c&H0000E5FF&}HACEN{\c&H00FFFFFF&} ACÁ
+Dialogue: 0,0:00:25.43,0:00:25.95,Shorts,,0,0,0,,EN MI {\c&H0000E5FF&}CIUDAD{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.97,0:00:26.71,Shorts,,0,0,0,,LO {\c&H0000E5FF&}HACEN{\c&H00FFFFFF&} A ESTO
+Dialogue: 0,0:00:27.27,0:00:27.51,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.53,0:00:27.71,Shorts,,0,0,0,,{\c&H0000E5FF&}ESTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.71,0:00:28.21,Shorts,,0,0,0,,ESTO {\c&H0000E5FF&}LO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.23,0:00:28.68,Shorts,,0,0,0,,{\c&H0000E5FF&}¡ME{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.60,0:00:31.42,Shorts,,0,0,0,,VAN A {\c&H0000E5FF&}VIOLAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.44,0:00:32.10,Shorts,,0,0,0,,{\c&H0000E5FF&}BOLUDO!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.60,0:00:34.28,Shorts,,0,0,0,,{\c&H0000E5FF&}FUÍ{\c&H00FFFFFF&} LA
+Dialogue: 0,0:00:34.30,0:00:34.84,Shorts,,0,0,0,,{\c&H0000E5FF&}SALÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.86,0:00:35.62,Shorts,,0,0,0,,{\c&H0000E5FF&}RAJADA{\c&H00FFFFFF&} ACÁ
+Dialogue: 0,0:00:38.15,0:00:38.71,Shorts,,0,0,0,,{\c&H0000E5FF&}GRABADO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.34,0:00:42.34,Shorts,,0,0,0,,{\c&H0000E5FF&}PERTURBADORA{\c&H00FFFFFF&} PAREJA
+Dialogue: 0,0:00:42.70,0:00:43.70,Shorts,,0,0,0,,UN MONO {\c&H0000E5FF&}ZORRILLO{\c&H00FFFFFF&} ESTÁ
+Dialogue: 0,0:00:43.72,0:00:44.34,Shorts,,0,0,0,,{\c&H0000E5FF&}TERRORIZANDO{\c&H00FFFFFF&} LOS
+Dialogue: 0,0:00:44.36,0:00:44.92,Shorts,,0,0,0,,{\c&H0000E5FF&}CORAZONES{\c&H00FFFFFF&} DE LOS
+Dialogue: 0,0:00:44.94,0:00:45.90,Shorts,,0,0,0,,{\c&H0000E5FF&}HABITANTES{\c&H00FFFFFF&} EN GRASS RIVER
+Dialogue: 0,0:00:45.92,0:00:47.26,Shorts,,0,0,0,,{\c&H0000E5FF&}CONOCIDO{\c&H00FFFFFF&} POR LOS LOCALES
+Dialogue: 0,0:00:47.28,0:00:48.70,Shorts,,0,0,0,,COMO EL SEÑOR {\c&H0000E5FF&}MANGLARES{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.30,0:00:49.86,Shorts,,0,0,0,,SE {\c&H0000E5FF&}DICE{\c&H00FFFFFF&} QUE EL
+Dialogue: 0,0:00:49.88,0:00:50.98,Shorts,,0,0,0,,ANIMAL {\c&H0000E5FF&}SUPERARÍA{\c&H00FFFFFF&} LOS DOS
+Dialogue: 0,0:00:51.00,0:00:51.72,Shorts,,0,0,0,,METROS DE {\c&H0000E5FF&}ALTURA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.74,0:00:52.36,Shorts,,0,0,0,,¡ESTE ES EL {\c&H0000E5FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:52.38,0:00:53.18,Shorts,,0,0,0,,ME {\c&H0000E5FF&}VIOLÓ!{\c&H00FFFFFF&}

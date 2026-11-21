@@ -1,0 +1,74 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 04_andando_bici
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.36,Shorts,,0,0,0,,POR QUÉ TE {\c&H0000E5FF&}LO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.38,0:00:00.83,Shorts,,0,0,0,,{\c&H0000E5FF&}CASCO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.04,0:00:02.49,Shorts,,0,0,0,,{\c&H0000E5FF&}EQUÍ?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.40,0:00:03.76,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.78,0:00:03.98,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.00,0:00:04.68,Shorts,,0,0,0,,VÍSIS {\c&H0000E5FF&}BANDIDOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.70,0:00:04.98,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.00,0:00:05.72,Shorts,,0,0,0,,VÍSIS {\c&H0000E5FF&}BANDIDOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.74,0:00:06.92,Shorts,,0,0,0,,EL LITERAL VÍSIS {\c&H0000E5FF&}BANDIDOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.50,0:00:07.95,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.06,0:00:08.50,Shorts,,0,0,0,,{\c&H0000E5FF&}AHORA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.52,0:00:08.72,Shorts,,0,0,0,,{\c&H0000E5FF&}AHORA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.74,0:00:09.00,Shorts,,0,0,0,,{\c&H0000E5FF&}AHORA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.02,0:00:09.24,Shorts,,0,0,0,,NO {\c&H0000E5FF&}MIRE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.26,0:00:09.56,Shorts,,0,0,0,,NO {\c&H0000E5FF&}MIRE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.58,0:00:10.03,Shorts,,0,0,0,,{\c&H0000E5FF&}AHORA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.76,0:00:13.38,Shorts,,0,0,0,,MUY {\c&H0000E5FF&}BIEN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.54,0:00:14.22,Shorts,,0,0,0,,LE SALTO UN {\c&H0000E5FF&}AUTO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.64,0:00:14.96,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.98,0:00:15.36,Shorts,,0,0,0,,{\c&H0000E5FF&}SALTA{\c&H00FFFFFF&} DE ESO
+Dialogue: 0,0:00:15.38,0:00:15.78,Shorts,,0,0,0,,{\c&H0000E5FF&}SALTA{\c&H00FFFFFF&} DE ESO
+Dialogue: 0,0:00:15.80,0:00:16.25,Shorts,,0,0,0,,MUY {\c&H0000E5FF&}BIEN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.76,0:00:17.18,Shorts,,0,0,0,,{\c&H0000E5FF&}OJO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.20,0:00:17.56,Shorts,,0,0,0,,QUE NO TE {\c&H0000E5FF&}ROBE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.58,0:00:18.00,Shorts,,0,0,0,,EN LA {\c&H0000E5FF&}BICI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.02,0:00:19.46,Shorts,,0,0,0,,REAL TAPE {\c&H0000E5FF&}MANHOOD{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.44,0:00:21.28,Shorts,,0,0,0,,DEJALA AHÍ {\c&H0000E5FF&}PORQUE{\c&H00FFFFFF&} ES
+Dialogue: 0,0:00:21.30,0:00:21.82,Shorts,,0,0,0,,UN {\c&H0000E5FF&}AUTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.94,0:00:22.84,Shorts,,0,0,0,,ES {\c&H0000E5FF&}NUESTRO{\c&H00FFFFFF&} AUTO
+Dialogue: 0,0:00:22.88,0:00:23.46,Shorts,,0,0,0,,AHÍ LA {\c&H0000E5FF&}DEJÁS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.58,0:00:23.76,Shorts,,0,0,0,,QUÉ ES LO {\c&H0000E5FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.78,0:00:24.32,Shorts,,0,0,0,,ESTÁN {\c&H0000E5FF&}HACIENDO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.16,0:00:25.84,Shorts,,0,0,0,,ESTÁS {\c&H0000E5FF&}HACIENDO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.04,0:00:26.50,Shorts,,0,0,0,,AHÍ LA {\c&H0000E5FF&}DEJÁS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.32,0:00:28.76,Shorts,,0,0,0,,AHÍ LA {\c&H0000E5FF&}DEJÁS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.78,0:00:30.22,Shorts,,0,0,0,,QUÉ GANTE TIENE {\c&H0000E5FF&}PATISTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.24,0:00:30.68,Shorts,,0,0,0,,LA {\c&H0000E5FF&}BICI?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.70,0:00:30.88,Shorts,,0,0,0,,A {\c&H0000E5FF&}VER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.82,0:00:31.34,Shorts,,0,0,0,,LOS {\c&H0000E5FF&}DETALLES{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.70,0:00:33.84,Shorts,,0,0,0,,QUÉ NO {\c&H0000E5FF&}TIENE{\c&H00FFFFFF&} QUE
+Dialogue: 0,0:00:33.86,0:00:34.31,Shorts,,0,0,0,,{\c&H0000E5FF&}DAR?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.84,0:00:35.02,Shorts,,0,0,0,,QUE NO {\c&H0000E5FF&}TIENE{\c&H00FFFFFF&} QUE
+Dialogue: 0,0:00:34.86,0:00:35.04,Shorts,,0,0,0,,{\c&H0000E5FF&}DAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.86,0:00:35.72,Shorts,,0,0,0,,UN {\c&H0000E5FF&}POQUITO{\c&H00FFFFFF&} QUE ESTÁ
+Dialogue: 0,0:00:36.16,0:00:36.90,Shorts,,0,0,0,,QUÉ NO {\c&H0000E5FF&}TIENE{\c&H00FFFFFF&} QUE
+Dialogue: 0,0:00:36.92,0:00:37.46,Shorts,,0,0,0,,{\c&H0000E5FF&}DAR?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.68,0:00:37.88,Shorts,,0,0,0,,QUÉ NO {\c&H0000E5FF&}TIENE{\c&H00FFFFFF&} QUE
+Dialogue: 0,0:00:37.90,0:00:38.08,Shorts,,0,0,0,,{\c&H0000E5FF&}DAR?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.90,0:00:38.08,Shorts,,0,0,0,,QUÉ NO {\c&H0000E5FF&}TIENE{\c&H00FFFFFF&} QUE
+Dialogue: 0,0:00:37.96,0:00:38.14,Shorts,,0,0,0,,{\c&H0000E5FF&}DAR?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.96,0:00:38.64,Shorts,,0,0,0,,ANDA POR LA {\c&H0000E5FF&}BICI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.66,0:00:39.30,Shorts,,0,0,0,,{\c&H0000E5FF&}VENDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.14,0:00:42.10,Shorts,,0,0,0,,SACANTE EL {\c&H0000E5FF&}CACO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.24,0:00:42.56,Shorts,,0,0,0,,{\c&H0000E5FF&}BUENO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.58,0:00:42.84,Shorts,,0,0,0,,{\c&H0000E5FF&}NADA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.86,0:00:43.64,Shorts,,0,0,0,,ESTÁ EN LA {\c&H0000E5FF&}BICI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:43.66,0:00:43.88,Shorts,,0,0,0,,ESTÁ EN LA {\c&H0000E5FF&}BICI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:43.90,0:00:44.08,Shorts,,0,0,0,,ESTÁ EN LA {\c&H0000E5FF&}BICI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.02,0:00:44.32,Shorts,,0,0,0,,{\c&H0000E5FF&}BUENO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.34,0:00:44.84,Shorts,,0,0,0,,SÍ SÉ {\c&H0000E5FF&}COSA{\c&H00FFFFFF&}

@@ -1,0 +1,52 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 03_limite_mapa
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.84,Shorts,,0,0,0,,PASABA {\c&H0000E5FF&}CUANDO{\c&H00FFFFFF&} VOS TE
+Dialogue: 0,0:00:00.86,0:00:01.94,Shorts,,0,0,0,,ALEJABA DEL {\c&H0000E5FF&}MAPA{\c&H00FFFFFF&} ES
+Dialogue: 0,0:00:01.96,0:00:03.64,Shorts,,0,0,0,,QUE LO QUE {\c&H0000E5FF&}SEA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.66,0:00:05.10,Shorts,,0,0,0,,QUE TENÍAS AVIÓN {\c&H0000E5FF&}LANCHA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.12,0:00:05.80,Shorts,,0,0,0,,LO QUE SEA {\c&H0000E5FF&}PUM{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.82,0:00:08.00,Shorts,,0,0,0,,{\c&H0000E5FF&}PINCHABA{\c&H00FFFFFF&} SE ROMPÍA Y
+Dialogue: 0,0:00:08.02,0:00:09.18,Shorts,,0,0,0,,ME RE {\c&H0000E5FF&}INTERESA{\c&H00FFFFFF&} SABER
+Dialogue: 0,0:00:09.20,0:00:09.94,Shorts,,0,0,0,,QUÉ ES LO {\c&H0000E5FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.96,0:00:11.48,Shorts,,0,0,0,,PASA SI NOS {\c&H0000E5FF&}ALEJAMOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.50,0:00:13.66,Shorts,,0,0,0,,DEL {\c&H0000E5FF&}MAPA{\c&H00FFFFFF&} EN ESTE
+Dialogue: 0,0:00:13.68,0:00:14.72,Shorts,,0,0,0,,{\c&H0000E5FF&}JUEGO{\c&H00FFFFFF&} NO POR ESO
+Dialogue: 0,0:00:14.74,0:00:15.74,Shorts,,0,0,0,,{\c&H0000E5FF&}GUARDA{\c&H00FFFFFF&} SE ESTÁN
+Dialogue: 0,0:00:15.76,0:00:17.64,Shorts,,0,0,0,,AGRANDANDO LAS {\c&H0000E5FF&}OLAS{\c&H00FFFFFF&} NO
+Dialogue: 0,0:00:20.69,0:00:21.23,Shorts,,0,0,0,,{\c&H0000E5FF&}CAPA{\c&H00FFFFFF&} NO VA QUE
+Dialogue: 0,0:00:21.25,0:00:22.41,Shorts,,0,0,0,,ME DEN {\c&H0000E5FF&}VUELTA{\c&H00FFFFFF&} LAS
+Dialogue: 0,0:00:22.43,0:00:22.95,Shorts,,0,0,0,,{\c&H0000E5FF&}OLAS{\c&H00FFFFFF&} DEL
+Dialogue: 0,0:00:23.85,0:00:24.45,Shorts,,0,0,0,,{\c&H0000E5FF&}TAMAÑO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.55,0:00:24.83,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGOS{\c&H00FFFFFF&} SE ESTÁN
+Dialogue: 0,0:00:24.85,0:00:26.25,Shorts,,0,0,0,,AGRANDANDO LAS {\c&H0000E5FF&}OLAS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.27,0:00:27.71,Shorts,,0,0,0,,MOTOR {\c&H0000E5FF&}DAÑADO{\c&H00FFFFFF&} MIRA SE
+Dialogue: 0,0:00:27.73,0:00:29.15,Shorts,,0,0,0,,ME {\c&H0000E5FF&}ROMPIÓ{\c&H00FFFFFF&} ES EL
+Dialogue: 0,0:00:29.17,0:00:30.49,Shorts,,0,0,0,,GTA {\c&H0000E5FF&}5{\c&H00FFFFFF&} NO ES
+Dialogue: 0,0:00:30.51,0:00:37.35,Shorts,,0,0,0,,LO {\c&H0000E5FF&}MISMO{\c&H00FFFFFF&} PERO NADA
+Dialogue: 0,0:00:37.37,0:00:39.59,Shorts,,0,0,0,,PARA MÍ {\c&H0000E5FF&}PINCHO{\c&H00FFFFFF&} PARA
+Dialogue: 0,0:00:39.61,0:00:40.19,Shorts,,0,0,0,,MÍ NO ME {\c&H0000E5FF&}DEJA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.21,0:00:42.25,Shorts,,0,0,0,,ESTOY {\c&H0000E5FF&}PERDIENDO{\c&H00FFFFFF&} VIDA
+Dialogue: 0,0:00:44.07,0:00:45.91,Shorts,,0,0,0,,NO NO ESTO {\c&H0000E5FF&}ES{\c&H00FFFFFF&}
+Dialogue: 0,0:00:45.93,0:00:49.67,Shorts,,0,0,0,,{\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&} BOLUDO NO NO
+Dialogue: 0,0:00:49.69,0:00:50.51,Shorts,,0,0,0,,{\c&H0000E5FF&}PUEDE{\c&H00FFFFFF&} SER ES
+Dialogue: 0,0:00:50.53,0:00:52.31,Shorts,,0,0,0,,LITERALMENTE GTA {\c&H0000E5FF&}5{\c&H00FFFFFF&} BOLUDO
+Dialogue: 0,0:00:55.19,0:00:56.27,Shorts,,0,0,0,,PERO SI ME {\c&H0000E5FF&}QUIEBRAN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.29,0:00:57.27,Shorts,,0,0,0,,LOS {\c&H0000E5FF&}HUESOS{\c&H00FFFFFF&} QUE LA
+Dialogue: 0,0:00:57.29,0:00:59.25,Shorts,,0,0,0,,{\c&H0000E5FF&}PRESIÓN{\c&H00FFFFFF&} ME MATÓ
+Dialogue: 0,0:01:06.84,0:01:07.68,Shorts,,0,0,0,,ERA OBVIO PERO {\c&H0000E5FF&}HABÍA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:07.70,0:01:08.72,Shorts,,0,0,0,,{\c&H0000E5FF&}ESPERANZA{\c&H00FFFFFF&} NO YO PENSÉ
+Dialogue: 0,0:01:08.74,0:01:09.14,Shorts,,0,0,0,,QUE IBA A {\c&H0000E5FF&}PASAR{\c&H00FFFFFF&}
+Dialogue: 0,0:01:09.16,0:01:09.86,Shorts,,0,0,0,,OTRA COSA {\c&H0000E5FF&}IGUAL{\c&H00FFFFFF&} NO
+Dialogue: 0,0:01:09.88,0:01:10.33,Shorts,,0,0,0,,LO {\c&H0000E5FF&}MISMO{\c&H00FFFFFF&}

@@ -1,0 +1,42 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 18_dueno_tienda_machete
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.58,Shorts,,0,0,0,,¡ME PASO A {\c&H0000E5FF&}MÍ!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.08,0:00:05.12,Shorts,,0,0,0,,MI {\c&H0000E5FF&}HERDA{\c&H00FFFFFF&} ERA EL
+Dialogue: 0,0:00:05.14,0:00:06.14,Shorts,,0,0,0,,DUEÑO DE LA {\c&H0000E5FF&}TIENDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.30,0:00:17.20,Shorts,,0,0,0,,MI {\c&H0000E5FF&}HERDA{\c&H00FFFFFF&} ERA EL
+Dialogue: 0,0:00:17.22,0:00:18.14,Shorts,,0,0,0,,DUEÑO DE LA {\c&H0000E5FF&}TIENDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.18,0:00:18.64,Shorts,,0,0,0,,O LA VI {\c&H0000E5FF&}AHORA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.22,0:00:23.32,Shorts,,0,0,0,,QUÉ VA A {\c&H0000E5FF&}PASAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.34,0:00:24.00,Shorts,,0,0,0,,SI EL {\c&H0000E5FF&}DUEÑO{\c&H00FFFFFF&} DE
+Dialogue: 0,0:00:24.02,0:00:24.47,Shorts,,0,0,0,,LA {\c&H0000E5FF&}TIENDA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.91,0:00:32.91,Shorts,,0,0,0,,{\c&H0000E5FF&}VES{\c&H00FFFFFF&} CON DE LA
+Dialogue: 0,0:00:32.93,0:00:33.38,Shorts,,0,0,0,,{\c&H0000E5FF&}LANA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.67,0:00:35.15,Shorts,,0,0,0,,A {\c&H0000E5FF&}DONDE{\c&H00FFFFFF&} ESTA LA
+Dialogue: 0,0:00:35.17,0:00:35.62,Shorts,,0,0,0,,{\c&H0000E5FF&}PLATA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.32,0:00:38.86,Shorts,,0,0,0,,{\c&H0000E5FF&}¡HEY{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.10,0:00:39.55,Shorts,,0,0,0,,{\c&H0000E5FF&}BUDDY!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.48,0:00:41.66,Shorts,,0,0,0,,A {\c&H0000E5FF&}DÓNDE{\c&H00FFFFFF&} ESTÁ LA
+Dialogue: 0,0:00:41.68,0:00:42.13,Shorts,,0,0,0,,{\c&H0000E5FF&}BLADA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.16,0:00:43.10,Shorts,,0,0,0,,QUÉ {\c&H0000E5FF&}HACES?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:43.60,0:00:44.20,Shorts,,0,0,0,,{\c&H0000E5FF&}¡HAZ!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.32,0:00:44.78,Shorts,,0,0,0,,¡I {\c&H0000E5FF&}KNOW!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:45.14,0:00:45.66,Shorts,,0,0,0,,¡I {\c&H0000E5FF&}KNOW!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:48.20,0:00:49.52,Shorts,,0,0,0,,A {\c&H0000E5FF&}DÓNDE{\c&H00FFFFFF&} ESTÁ LA
+Dialogue: 0,0:00:49.54,0:00:49.99,Shorts,,0,0,0,,{\c&H0000E5FF&}BLADA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:50.98,0:00:51.72,Shorts,,0,0,0,,{\c&H0000E5FF&}¡GENORATOR!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:52.02,0:00:52.74,Shorts,,0,0,0,,{\c&H0000E5FF&}¡GENORATOR!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:54.86,0:00:55.40,Shorts,,0,0,0,,¡LA {\c&H0000E5FF&}BOLA!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:55.90,0:00:56.64,Shorts,,0,0,0,,¡GRACEN A {\c&H0000E5FF&}MÍ!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.86,0:00:57.72,Shorts,,0,0,0,,¡GRACEN A {\c&H0000E5FF&}MÍ!{\c&H00FFFFFF&}

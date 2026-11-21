@@ -1,0 +1,33 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 07_pateando_cangrejo
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.66,Shorts,,0,0,0,,EN {\c&H0000E5FF&}ALGUNA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.00,0:00:14.10,Shorts,,0,0,0,,SE LO PUEDO {\c&H0000E5FF&}TIRAR?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.40,0:00:15.30,Shorts,,0,0,0,,SE LO {\c&H0000E5FF&}TIRO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.78,0:00:16.54,Shorts,,0,0,0,,SE LO {\c&H0000E5FF&}TIRO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.58,0:00:16.94,Shorts,,0,0,0,,SE LO {\c&H0000E5FF&}TIRO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.96,0:00:17.48,Shorts,,0,0,0,,SE LO {\c&H0000E5FF&}TIRO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.50,0:00:17.95,Shorts,,0,0,0,,ME {\c&H0000E5FF&}ESCONDO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.28,0:00:19.12,Shorts,,0,0,0,,LE TIRO UN {\c&H0000E5FF&}CANGREJO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.14,0:00:19.76,Shorts,,0,0,0,,Y MI {\c&H0000E5FF&}ESCONDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.27,0:00:24.45,Shorts,,0,0,0,,CONSEGUÍ UNA BUENA {\c&H0000E5FF&}PRESA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.47,0:00:25.13,Shorts,,0,0,0,,YA TIENES TU {\c&H0000E5FF&}EQUIPO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.15,0:00:25.93,Shorts,,0,0,0,,{\c&H0000E5FF&}INSTALADO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.12,0:00:29.36,Shorts,,0,0,0,,LE VOY A {\c&H0000E5FF&}ESCRIBIRTE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.70,0:00:31.78,Shorts,,0,0,0,,POR EL {\c&H0000E5FF&}CANGREJO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.02,0:00:32.58,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.42,0:00:37.86,Shorts,,0,0,0,,UNA FILETE DE {\c&H0000E5FF&}CAIMÁN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.32,0:00:38.78,Shorts,,0,0,0,,ES {\c&H0000E5FF&}CIERTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.48,0:00:40.36,Shorts,,0,0,0,,EL {\c&H0000E5FF&}CANGREJO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.38,0:00:40.83,Shorts,,0,0,0,,EN {\c&H0000E5FF&}SERIO{\c&H00FFFFFF&}

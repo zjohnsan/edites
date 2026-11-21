@@ -1,0 +1,81 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 01_intro_gta6
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.64,Shorts,,0,0,0,,{\c&H0000E5FF&}PROLOGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.66,0:00:01.12,Shorts,,0,0,0,,{\c&H0000E5FF&}OK{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.24,0:00:03.20,Shorts,,0,0,0,,{\c&H0000E5FF&}ARRANCAMOS{\c&H00FFFFFF&} EL PROLOGO
+Dialogue: 0,0:00:04.22,0:00:04.64,Shorts,,0,0,0,,{\c&H0000E5FF&}BIEN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.66,0:00:05.38,Shorts,,0,0,0,,AL {\c&H0000E5FF&}AIRE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.42,0:00:05.88,Shorts,,0,0,0,,ACÁ HAY QUE {\c&H0000E5FF&}LEER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.90,0:00:06.80,Shorts,,0,0,0,,{\c&H0000E5FF&}MUCHACHO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.20,0:00:11.62,Shorts,,0,0,0,,{\c&H0000E5FF&}ALGO{\c&H00FFFFFF&} ESTO JE
+Dialogue: 0,0:00:11.64,0:00:11.88,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.90,0:00:12.64,Shorts,,0,0,0,,NO ME {\c&H0000E5FF&}PUEDO{\c&H00FFFFFF&} CRE
+Dialogue: 0,0:00:12.66,0:00:13.26,Shorts,,0,0,0,,NO ME PUEDO {\c&H0000E5FF&}CREER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.28,0:00:13.98,Shorts,,0,0,0,,QUE ESTO ES {\c&H0000E5FF&}GAMEPLAY{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.74,0:00:16.30,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.56,0:00:16.78,Shorts,,0,0,0,,{\c&H0000E5FF&}MÍO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.80,0:00:17.44,Shorts,,0,0,0,,NO {\c&H0000E5FF&}PUEDE{\c&H00FFFFFF&} SER
+Dialogue: 0,0:00:17.46,0:00:18.40,Shorts,,0,0,0,,NO {\c&H0000E5FF&}PUEDE{\c&H00FFFFFF&} SER
+Dialogue: 0,0:00:18.42,0:00:18.62,Shorts,,0,0,0,,A {\c&H0000E5FF&}MÍO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.64,0:00:19.16,Shorts,,0,0,0,,NO SE {\c&H0000E5FF&}PUEDE{\c&H00FFFFFF&} VER
+Dialogue: 0,0:00:19.18,0:00:19.40,Shorts,,0,0,0,,{\c&H0000E5FF&}ASÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.42,0:00:20.82,Shorts,,0,0,0,,ESTE JUEGO {\c&H0000E5FF&}VOLUDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.42,0:00:24.32,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.70,0:00:25.06,Shorts,,0,0,0,,{\c&H0000E5FF&}MÍO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.08,0:00:25.78,Shorts,,0,0,0,,NO SE {\c&H0000E5FF&}PUEDE{\c&H00FFFFFF&} VER
+Dialogue: 0,0:00:25.80,0:00:26.08,Shorts,,0,0,0,,{\c&H0000E5FF&}ASÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.10,0:00:26.88,Shorts,,0,0,0,,{\c&H0000E5FF&}HOLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.90,0:00:28.30,Shorts,,0,0,0,,COMO ANDA LA {\c&H0000E5FF&}SEÑORA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.32,0:00:29.08,Shorts,,0,0,0,,DE {\c&H0000E5FF&}MILTON{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.06,0:00:31.48,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.50,0:00:32.02,Shorts,,0,0,0,,NO {\c&H0000E5FF&}PUEDE{\c&H00FFFFFF&} SER ESTO
+Dialogue: 0,0:00:32.04,0:00:32.52,Shorts,,0,0,0,,EL {\c&H0000E5FF&}PROLOGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.54,0:00:32.82,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.84,0:00:33.02,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.98,0:00:33.70,Shorts,,0,0,0,,ESTO LO QUE {\c&H0000E5FF&}LO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.72,0:00:34.38,Shorts,,0,0,0,,ESTÁN VIENDO EN {\c&H0000E5FF&}YOUTUBE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.40,0:00:34.82,Shorts,,0,0,0,,A {\c&H0000E5FF&}MÍ{\c&H00FFFFFF&} O NO
+Dialogue: 0,0:00:34.84,0:00:35.64,Shorts,,0,0,0,,SE PUEDEN {\c&H0000E5FF&}PERDER{\c&H00FFFFFF&} ESTO
+Dialogue: 0,0:00:35.66,0:00:36.28,Shorts,,0,0,0,,ASÍ ME {\c&H0000E5FF&}VOY{\c&H00FFFFFF&} A
+Dialogue: 0,0:00:36.30,0:00:36.48,Shorts,,0,0,0,,{\c&H0000E5FF&}DIR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.38,0:00:36.60,Shorts,,0,0,0,,{\c&H0000E5FF&}MIRA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.62,0:00:37.00,Shorts,,0,0,0,,VOY A {\c&H0000E5FF&}HACER{\c&H00FFFFFF&} EL
+Dialogue: 0,0:00:37.02,0:00:37.68,Shorts,,0,0,0,,{\c&H0000E5FF&}DIRECTITO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.72,0:00:38.42,Shorts,,0,0,0,,ESTO ES LO {\c&H0000E5FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.44,0:00:39.24,Shorts,,0,0,0,,LO VEAN {\c&H0000E5FF&}RESUBIDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.48,0:00:40.12,Shorts,,0,0,0,,VOY A {\c&H0000E5FF&}HACER{\c&H00FFFFFF&} EL
+Dialogue: 0,0:00:40.14,0:00:40.64,Shorts,,0,0,0,,{\c&H0000E5FF&}DIRECTITO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.66,0:00:41.04,Shorts,,0,0,0,,{\c&H0000E5FF&}LUNES{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.06,0:00:41.68,Shorts,,0,0,0,,{\c&H0000E5FF&}MIÉRCOLES{\c&H00FFFFFF&} Y VIERNES
+Dialogue: 0,0:00:41.70,0:00:42.82,Shorts,,0,0,0,,{\c&H0000E5FF&}HACIENDO{\c&H00FFFFFF&} LA SERIE DE
+Dialogue: 0,0:00:42.84,0:00:43.86,Shorts,,0,0,0,,GTA {\c&H0000E5FF&}6{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.80,0:00:45.82,Shorts,,0,0,0,,ES {\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&} DECIR ESTO
+Dialogue: 0,0:00:45.84,0:00:46.24,Shorts,,0,0,0,,{\c&H0000E5FF&}MIRA{\c&H00FFFFFF&} LO QUE ES
+Dialogue: 0,0:00:46.26,0:00:46.62,Shorts,,0,0,0,,{\c&H0000E5FF&}SUCIA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:46.64,0:00:46.98,Shorts,,0,0,0,,{\c&H0000E5FF&}HOLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:47.00,0:00:47.74,Shorts,,0,0,0,,NO SE PUEDEN {\c&H0000E5FF&}PERDER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:47.76,0:00:48.10,Shorts,,0,0,0,,{\c&H0000E5FF&}ESTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:48.12,0:00:48.96,Shorts,,0,0,0,,{\c&H0000E5FF&}HOLA{\c&H00FFFFFF&} ASÍ QUE
+Dialogue: 0,0:00:48.98,0:00:49.24,Shorts,,0,0,0,,{\c&H0000E5FF&}CAPO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.26,0:00:49.71,Shorts,,0,0,0,,{\c&H0000E5FF&}PRIMERO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.78,0:00:50.28,Shorts,,0,0,0,,LOS {\c&H0000E5FF&}CHICOS{\c&H00FFFFFF&} QUE ESTÁN
+Dialogue: 0,0:00:50.30,0:00:51.24,Shorts,,0,0,0,,ACÁ EN {\c&H0000E5FF&}DIRECTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.26,0:00:52.06,Shorts,,0,0,0,,YA TE PASASTE {\c&H0000E5FF&}GTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:52.08,0:00:52.74,Shorts,,0,0,0,,{\c&H0000E5FF&}6{\c&H00FFFFFF&} Y SI
+Dialogue: 0,0:00:53.20,0:00:54.26,Shorts,,0,0,0,,{\c&H0000E5FF&}SALUDEN{\c&H00FFFFFF&} A LOS PIDEY
+Dialogue: 0,0:00:54.28,0:00:54.90,Shorts,,0,0,0,,{\c&H0000E5FF&}YOUTUBE{\c&H00FFFFFF&} QUE ESTÁN VIENDO
+Dialogue: 0,0:00:54.92,0:00:56.14,Shorts,,0,0,0,,ESTO {\c&H0000E5FF&}RESUBIDO{\c&H00FFFFFF&} Y
+Dialogue: 0,0:00:56.16,0:00:57.94,Shorts,,0,0,0,,{\c&H0000E5FF&}BIENVENIDOS{\c&H00FFFFFF&} AL PROLOGO
+Dialogue: 0,0:00:57.96,0:00:59.36,Shorts,,0,0,0,,DE GTA {\c&H0000E5FF&}6{\c&H00FFFFFF&} PARA

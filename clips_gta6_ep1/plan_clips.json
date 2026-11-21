@@ -1,0 +1,360 @@
+[
+  {
+    "id": "01_intro_gta6",
+    "categoria": "reaccion",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "04:38:19",
+        "fin": "04:39:19",
+        "inicio_seg": 16699.0,
+        "fin_seg": 16759.0
+      }
+    ],
+    "duracion_est": 60.0,
+    "titulo_youtube": "Reaccionan al inicio de GTA 6 😱🔥 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "02_primeros_graficos",
+    "categoria": "reaccion",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "04:39:27",
+        "fin": "04:40:26",
+        "inicio_seg": 16767.0,
+        "fin_seg": 16826.0
+      }
+    ],
+    "duracion_est": 59.0,
+    "titulo_youtube": "No creen los gráficos de GTA 6 🤯 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "03_cargando_nafta",
+    "categoria": "mecanica",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "08:01:02",
+        "fin": "08:01:42",
+        "inicio_seg": 28862.0,
+        "fin_seg": 28902.0
+      }
+    ],
+    "duracion_est": 40.0,
+    "titulo_youtube": "Cargan nafta por primera vez GTA6 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "04_andando_bici",
+    "categoria": "mecanica",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "05:54:20",
+        "fin": "05:55:06",
+        "inicio_seg": 21260.0,
+        "fin_seg": 21306.0
+      }
+    ],
+    "duracion_est": 46.0,
+    "titulo_youtube": "Andando en bici en GTA 6 🚲😂 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "05_andando_auto",
+    "categoria": "mecanica",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "05:19:57",
+        "fin": "05:21:15",
+        "inicio_seg": 19197.0,
+        "fin_seg": 19275.0
+      }
+    ],
+    "duracion_est": 78.0,
+    "titulo_youtube": "Manejan su primer auto en GTA 6 🚗 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "06_pescando",
+    "categoria": "animal",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "07:28:40",
+        "fin": "07:29:45",
+        "inicio_seg": 26920.0,
+        "fin_seg": 26985.0
+      }
+    ],
+    "duracion_est": 65.0,
+    "titulo_youtube": "Pescan por primera vez en GTA 6 🎣 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "07_pateando_cangrejo",
+    "categoria": "animal",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "07:31:12",
+        "fin": "07:31:56",
+        "inicio_seg": 27072.0,
+        "fin_seg": 27116.0
+      }
+    ],
+    "duracion_est": 44.0,
+    "titulo_youtube": "Patean un cangrejo en GTA 6 🦀😂 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "08_cae_avion",
+    "categoria": "bug",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "08:01:57",
+        "fin": "08:02:58",
+        "inicio_seg": 28917.0,
+        "fin_seg": 28978.0
+      }
+    ],
+    "duracion_est": 61.0,
+    "titulo_youtube": "Se cae un avión en GTA 6 😱✈️ @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "09_cocodrilo",
+    "categoria": "animal",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "07:31:38",
+        "fin": "07:32:22",
+        "inicio_seg": 27098.0,
+        "fin_seg": 27142.0
+      }
+    ],
+    "duracion_est": 44.0,
+    "titulo_youtube": "Se cruzan un cocodrilo en GTA 6 🐊 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "10_npc_recuerda_pega",
+    "categoria": "npc",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "06:07:42",
+        "fin": "06:08:23",
+        "inicio_seg": 22062.0,
+        "fin_seg": 22103.0
+      },
+      {
+        "inicio": "06:41:18",
+        "fin": "06:41:56",
+        "inicio_seg": 24078.0,
+        "fin_seg": 24116.0
+      }
+    ],
+    "duracion_est": 79.0,
+    "titulo_youtube": "Este NPC los recuerda y les pega @berlinuno #shorts",
+    "etiqueta_opcional": "AL RATO LO VOLVIERON A ENCONTRAR..."
+  },
+  {
+    "id": "11_lucia_en_prision",
+    "categoria": "reaccion",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "04:36:14",
+        "fin": "04:37:06",
+        "inicio_seg": 16574.0,
+        "fin_seg": 16626.0
+      }
+    ],
+    "duracion_est": 52.0,
+    "titulo_youtube": "Así empieza GTA 6 con Lucía 😱 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "12_fiesta_y_descontrol",
+    "categoria": "reaccion",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "04:40:26",
+        "fin": "04:40:59",
+        "inicio_seg": 16826.0,
+        "fin_seg": 16859.0
+      }
+    ],
+    "duracion_est": 33.0,
+    "titulo_youtube": "El primer descontrol en GTA 6 😂 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "13_sacarse_la_ropa_policia",
+    "categoria": "bug",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "04:48:27",
+        "fin": "04:49:43",
+        "inicio_seg": 17307.0,
+        "fin_seg": 17383.0
+      }
+    ],
+    "duracion_est": 76.0,
+    "titulo_youtube": "Escapan de la poli en cuero 😱😂 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "14_bici_vieja_acosa",
+    "categoria": "npc",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "07:12:38",
+        "fin": "07:13:21",
+        "inicio_seg": 25958.0,
+        "fin_seg": 26001.0
+      }
+    ],
+    "duracion_est": 43.0,
+    "titulo_youtube": "Devuelven una bici y los acosan 😂 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "15_pelota_en_el_auto",
+    "categoria": "bug",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "05:50:48",
+        "fin": "05:51:35",
+        "inicio_seg": 21048.0,
+        "fin_seg": 21095.0
+      }
+    ],
+    "duracion_est": 47.0,
+    "titulo_youtube": "Bugean una pelota en el auto 😂🏀 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "16_botella_al_mar",
+    "categoria": "mecanica",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "05:36:20",
+        "fin": "05:37:06",
+        "inicio_seg": 20180.0,
+        "fin_seg": 20226.0
+      }
+    ],
+    "duracion_est": 46.0,
+    "titulo_youtube": "Contaminan el mar en GTA 6 🍾😂 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "17_agua_y_patada",
+    "categoria": "bug",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "06:03:27",
+        "fin": "06:04:26",
+        "inicio_seg": 21807.0,
+        "fin_seg": 21866.0
+      }
+    ],
+    "duracion_est": 59.0,
+    "titulo_youtube": "Se tiran al agua y los atacan 😱 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "18_dueno_tienda_machete",
+    "categoria": "npc",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "07:50:12",
+        "fin": "07:51:10",
+        "inicio_seg": 28212.0,
+        "fin_seg": 28270.0
+      }
+    ],
+    "duracion_est": 58.0,
+    "titulo_youtube": "Era el dueño de la tienda 😱🔪 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "19_avion_policia_botin",
+    "categoria": "mecanica",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "08:07:36",
+        "fin": "08:08:52",
+        "inicio_seg": 29256.0,
+        "fin_seg": 29332.0
+      }
+    ],
+    "duracion_est": 76.0,
+    "titulo_youtube": "Roban el avión antes que la poli @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "20_roban_frente_comisaria",
+    "categoria": "npc",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "08:27:25",
+        "fin": "08:28:20",
+        "inicio_seg": 30445.0,
+        "fin_seg": 30500.0
+      }
+    ],
+    "duracion_est": 55.0,
+    "titulo_youtube": "Roban frente a la comisaría 🤦‍♂️ @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "21_restaurante_mal_vestido",
+    "categoria": "npc",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "08:29:30",
+        "fin": "08:30:35",
+        "inicio_seg": 30570.0,
+        "fin_seg": 30635.0
+      }
+    ],
+    "duracion_est": 65.0,
+    "titulo_youtube": "Los rebotan por crotos en GTA 6 😂 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  },
+  {
+    "id": "22_tienda_ropa_alpargatas",
+    "categoria": "reaccion",
+    "encontrado": true,
+    "partes": [
+      {
+        "inicio": "08:40:37",
+        "fin": "08:41:43",
+        "inicio_seg": 31237.0,
+        "fin_seg": 31303.0
+      }
+    ],
+    "duracion_est": 66.0,
+    "titulo_youtube": "No creen la ropa de GTA 6 👟😱 @berlinuno #shorts",
+    "etiqueta_opcional": null
+  }
+]

@@ -1,0 +1,28 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 12_fiesta_y_descontrol
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.94,0:00:09.76,Shorts,,0,0,0,,QUÉ KNOTS LA {\c&H0000E5FF&}KOWOO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.78,0:00:11.32,Shorts,,0,0,0,,{\c&H0000E5FF&}PARADISE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.45,0:00:12.89,Shorts,,0,0,0,,ES ÉLA {\c&H0000E5FF&}MIRA{\c&H00FFFFFF&} NOS
+Dialogue: 0,0:00:12.91,0:00:13.36,Shorts,,0,0,0,,VEMOS {\c&H0000E5FF&}TODOS!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.75,0:00:14.47,Shorts,,0,0,0,,LO HEADO {\c&H0000E5FF&}TODOЕЧTOJUNI{\c&H00FFFFFF&} TENES
+Dialogue: 0,0:00:16.67,0:00:18.69,Shorts,,0,0,0,,{\c&H0000E5FF&}PAL!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.71,0:00:19.35,Shorts,,0,0,0,,NI PUTA {\c&H0000E5FF&}IDEA{\c&H00FFFFFF&} DE
+Dialogue: 0,0:00:19.37,0:00:20.75,Shorts,,0,0,0,,{\c&H0000E5FF&}QUIÉN{\c&H00FFFFFF&} ES
+Dialogue: 0,0:00:20.77,0:00:26.65,Shorts,,0,0,0,,HOY QUIERO {\c&H0000E5FF&}BARRANO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.67,0:00:27.69,Shorts,,0,0,0,,{\c&H0000E5FF&}CONSICANDO{\c&H00FFFFFF&} UNA RECLUSE
+Dialogue: 0,0:00:27.71,0:00:28.97,Shorts,,0,0,0,,DE BAJO DEL {\c&H0000E5FF&}PANTALÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.99,0:00:29.45,Shorts,,0,0,0,,QUE {\c&H0000E5FF&}ES{\c&H00FFFFFF&}
+Dialogue: 0,0:00:29.67,0:00:30.49,Shorts,,0,0,0,,OH {\c&H0000E5FF&}AMIGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.57,0:00:31.15,Shorts,,0,0,0,,{\c&H0000E5FF&}FUCK{\c&H00FFFFFF&}

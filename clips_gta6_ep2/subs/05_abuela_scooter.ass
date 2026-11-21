@@ -1,0 +1,29 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 05_abuela_scooter
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.14,0:00:01.72,Shorts,,0,0,0,,SEÑORA {\c&H0000E5FF&}EXPIRÓ{\c&H00FFFFFF&} SU
+Dialogue: 0,0:00:01.74,0:00:03.42,Shorts,,0,0,0,,{\c&H0000E5FF&}CONTRATO{\c&H00FFFFFF&} ES EN SERIO
+Dialogue: 0,0:00:03.44,0:00:08.28,Shorts,,0,0,0,,SE LO {\c&H0000E5FF&}ROBO{\c&H00FFFFFF&} LA
+Dialogue: 0,0:00:08.30,0:00:13.50,Shorts,,0,0,0,,HAGO {\c&H0000E5FF&}CORRER{\c&H00FFFFFF&} LA VIEJA
+Dialogue: 0,0:00:15.30,0:00:17.74,Shorts,,0,0,0,,NO ANDA MÁS {\c&H0000E5FF&}RÁPIDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.76,0:00:18.96,Shorts,,0,0,0,,{\c&H0000E5FF&}SEÑORA{\c&H00FFFFFF&} POR FAVOR NO
+Dialogue: 0,0:00:18.98,0:00:20.30,Shorts,,0,0,0,,SE VA A {\c&H0000E5FF&}LASTIMAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.66,0:00:24.04,Shorts,,0,0,0,,NO POR EL {\c&H0000E5FF&}SEÑOR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.06,0:00:25.26,Shorts,,0,0,0,,{\c&H0000E5FF&}YO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.38,0:00:28.67,Shorts,,0,0,0,,NO PUEDO {\c&H0000E5FF&}CREER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.10,0:00:34.62,Shorts,,0,0,0,,QUE HAGO LA {\c&H0000E5FF&}AYUDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.94,0:00:37.44,Shorts,,0,0,0,,NO SE {\c&H0000E5FF&}LEVANTÓ{\c&H00FFFFFF&} SE
+Dialogue: 0,0:00:37.46,0:00:38.90,Shorts,,0,0,0,,LEVANTÓ {\c&H0000E5FF&}CORREGIRÁ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.96,0:00:41.82,Shorts,,0,0,0,,{\c&H0000E5FF&}VISTE{\c&H00FFFFFF&} ERA TODO UN
+Dialogue: 0,0:00:41.84,0:00:43.22,Shorts,,0,0,0,,SHOW {\c&H0000E5FF&}MENTIROSA{\c&H00FFFFFF&}

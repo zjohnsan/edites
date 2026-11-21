@@ -258,6 +258,7 @@ def construir_filter_complex(
     y: Optional[int] = None,
     w: Optional[int] = None,
     h: Optional[int] = None,
+    game_coords: Optional[tuple[int, int, int, int]] = None,
 ) -> str:
     """Devuelve la cadena filter_complex de FFmpeg para 'gameplay' o 'fullcam' a 1080x1920 @ 30fps."""
     if modo == "gameplay":
@@ -265,12 +266,25 @@ def construir_filter_complex(
             raise ValueError(
                 "Para el modo 'gameplay' debés especificar las coordenadas [x, y, w, h] de la cámara."
             )
+        if game_coords is not None:
+            gx, gy, gw, gh = game_coords
+            game_filter = (
+                f"[0:v]crop={w}:{h}:{x}:{y},"
+                f"scale=1080:1280:force_original_aspect_ratio=increase,"
+                f"crop=1080:1280,boxblur=45:5,eq=brightness=-0.08,setsar=1[gbg];"
+                f"[0:v]crop={gw}:{gh}:{gx}:{gy},scale=1080:-2,setsar=1[gfg];"
+                f"[gbg][gfg]overlay=0:120[game];"
+            )
+        else:
+            game_filter = (
+                f"[0:v]scale=1080:1280:force_original_aspect_ratio=increase,"
+                f"crop=1080:1280,setsar=1[game];"
+            )
         return (
             f"[0:v]crop={w}:{h}:{x}:{y},"
             f"scale=1080:640:force_original_aspect_ratio=increase,"
             f"crop=1080:640,setsar=1[cam];"
-            f"[0:v]scale=1080:1280:force_original_aspect_ratio=increase,"
-            f"crop=1080:1280,setsar=1[game];"
+            f"{game_filter}"
             f"[cam][game]vstack=inputs=2,fps=30,format=yuv420p[v]"
         )
     elif modo == "fullcam":
@@ -303,10 +317,11 @@ def procesar_video_ffmpeg(
     h: Optional[int] = None,
     start_time: Optional[float] = None,
     end_time: Optional[float] = None,
+    game_coords: Optional[tuple[int, int, int, int]] = None,
 ) -> None:
     """Procesa un video completo o un tramo [start_time, end_time] al formato 1080x1920 @ 30fps."""
     ffmpeg_exe = obtener_ruta_ffmpeg()
-    filter_complex = construir_filter_complex(modo, x, y, w, h)
+    filter_complex = construir_filter_complex(modo, x, y, w, h, game_coords=game_coords)
 
     cmd = [ffmpeg_exe, "-y"]
     if start_time is not None:
@@ -326,12 +341,18 @@ def procesar_video_ffmpeg(
             "0:a?",
             "-r",
             "30",
+            "-fps_mode",
+            "cfr",
             "-c:v",
             "libx264",
             "-preset",
             "fast",
             "-crf",
             "18",
+            "-g",
+            "30",
+            "-bf",
+            "0",
             "-c:a",
             "aac",
             "-b:a",
@@ -340,6 +361,8 @@ def procesar_video_ffmpeg(
             "48000",
             "-ac",
             "2",
+            "-movflags",
+            "+faststart",
             str(output_path),
         ]
     )
@@ -363,6 +386,8 @@ def procesar_por_segmentos(
         seg = segmentos[0]
         modo = seg.get("modo", "fullcam")
         coords = seg.get("coords") or [None, None, None, None]
+        raw_gc = seg.get("game_coords")
+        game_coords = (int(raw_gc[0]), int(raw_gc[1]), int(raw_gc[2]), int(raw_gc[3])) if isinstance(raw_gc, (list, tuple)) and len(raw_gc) == 4 else None
         print(
             f"[Segmento único] Procesando ({seg.get('start', 0)}s -> {seg.get('end')}s) en modo '{modo}'..."
         )
@@ -376,6 +401,7 @@ def procesar_por_segmentos(
             h=coords[3],
             start_time=seg.get("start"),
             end_time=seg.get("end"),
+            game_coords=game_coords,
         )
         return
 
@@ -383,6 +409,8 @@ def procesar_por_segmentos(
     for idx, seg in enumerate(segmentos):
         modo = seg.get("modo", "fullcam")
         coords = seg.get("coords") or [None, None, None, None]
+        raw_gc = seg.get("game_coords")
+        game_coords = (int(raw_gc[0]), int(raw_gc[1]), int(raw_gc[2]), int(raw_gc[3])) if isinstance(raw_gc, (list, tuple)) and len(raw_gc) == 4 else None
         start_t = float(seg.get("start", 0.0))
         end_t = float(seg["end"]) if seg.get("end") is not None else None
         tramo_path = procesados_dir / f"seg_temp_{idx}.mp4"
@@ -400,6 +428,7 @@ def procesar_por_segmentos(
             h=coords[3],
             start_time=start_t,
             end_time=end_t,
+            game_coords=game_coords,
         )
         archivos_tramos.append(tramo_path)
 
@@ -426,10 +455,18 @@ def procesar_por_segmentos(
         "18",
         "-r",
         "30",
+        "-fps_mode",
+        "cfr",
+        "-g",
+        "30",
+        "-bf",
+        "0",
         "-c:a",
         "aac",
         "-b:a",
         "192k",
+        "-movflags",
+        "+faststart",
         str(output_path),
     ]
     subprocess.run(cmd_concat, check=True)
@@ -1066,7 +1103,7 @@ def seleccionar_musica_fondo(
         mejor_cat, mejor_score = max(scores_cat.items(), key=lambda kv: kv[1])
         categoria = mejor_cat if mejor_score > 0 else "comedia_absurda"
 
-    # 3. Elegir la mejor pista dentro de la categoría
+    # 3. Elegir la mejor pista dentro de la categoría (priorizando las existentes en disco)
     candidatas = [
         t
         for t in tracks
@@ -1074,6 +1111,21 @@ def seleccionar_musica_fondo(
     ]
     if not candidatas:
         candidatas = [t for t in tracks if not t.get("excludeFromAutoBgm", False)] or tracks
+
+    candidatas_locales = [
+        t for t in candidatas if (base_dir / "musica" / str(t.get("file", ""))).is_file()
+    ]
+    if candidatas_locales:
+        candidatas = candidatas_locales
+    else:
+        locales_cualquier_cat = [
+            t
+            for t in tracks
+            if not t.get("excludeFromAutoBgm", False)
+            and (base_dir / "musica" / str(t.get("file", ""))).is_file()
+        ]
+        if locales_cualquier_cat:
+            candidatas = locales_cualquier_cat
 
     mejor_pista = candidatas[0]
     mejor_puntaje = -999.0
@@ -1785,6 +1837,170 @@ def generar_metadata_seo_short(
     }
 
 
+def _recortar_frase_card(frase: str, max_chars: int) -> str:
+    """Recorta una frase en límites de palabra sin dejar conectores o artículos colgados al final."""
+    limpia = re.sub(r"\s{2,}", " ", frase.strip(" ,;:-.")).strip()
+    stop_finales = {
+        "de", "del", "el", "la", "los", "las", "un", "una", "unos", "unas",
+        "en", "con", "por", "para", "sin", "sobre", "entre", "hacia", "hasta",
+        "que", "qué", "como", "cómo", "cuando", "donde", "y", "e", "o", "u",
+        "ni", "pero", "a", "al", "se", "su", "sus", "mi", "tu", "es", "son",
+        "hay", "ese", "esa", "eso", "este", "esta", "esto", "muy", "más", "tan",
+    }
+    if len(limpia) > max_chars:
+        limpia = limpia[:max_chars].rsplit(" ", 1)[0].strip(" ,;:-.")
+    palabras_tmp = limpia.split()
+    while len(palabras_tmp) > 3 and _normalizar_token(palabras_tmp[-1]) in stop_finales:
+        palabras_tmp.pop()
+    recorte = " ".join(palabras_tmp).strip(" ,;:-.")
+    if len(recorte) < 6:
+        recorte = limpia[:max_chars].strip(" ,;:-.")
+    return recorte.upper()
+
+
+_NUMEROS_TEXTO_A_DIGITO = {
+    "dos": "2", "tres": "3", "cuatro": "4", "cinco": "5", "seis": "6",
+    "siete": "7", "ocho": "8", "nueve": "9", "diez": "10", "quince": "15",
+    "veinte": "20", "treinta": "30", "cincuenta": "50", "cien": "100", "mil": "1000",
+}
+
+
+def _extraer_dato_coral(frase: str, clip_name: str = "") -> Optional[str]:
+    """Si la frase contiene un dato numérico (cifra o palabra) o exclamación corta fuerte, devuelve texto corto estilo coral."""
+    m_num = re.search(
+        r"(?:\$?\d+(?:[.,]\d+)?\s*(?:gb|mb|tb|kg|kilos|horas?|hs|minutos?|mins?|segundos?|veces|dólares?|dolares|pesos|usd|ojos?|años?|%|x)?)",
+        frase,
+        flags=re.IGNORECASE,
+    )
+    if m_num:
+        dato = m_num.group(0).strip(" ,.;:!?¡¿").upper()
+        if dato and len(dato) >= 2 and re.search(r"\d", dato):
+            return dato if len(dato) >= 3 else f"¡{dato}!"
+
+    m_pal = re.search(
+        r"\b(dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|quince|veinte|treinta|cincuenta|cien|mil)\s+(veces|horas?|d[oó]lares|pesos|ojos?|a[nñ]os?|kilos?|minutos?|meses)\b",
+        frase,
+        flags=re.IGNORECASE,
+    )
+    if m_pal:
+        num_norm = _NUMEROS_TEXTO_A_DIGITO.get(m_pal.group(1).lower(), m_pal.group(1))
+        unidad = m_pal.group(2).upper()
+        return f"¡{num_norm} {unidad}!"
+
+    limpio = limpiar_identificadores_internos(frase).strip(" ,.")
+    if len(limpio) <= 22 and ("!" in limpio or "?" in limpio):
+        return limpio.upper()
+    return None
+
+
+def generar_cards_automaticas(
+    palabras: list[dict[str, Any]],
+    duracion_final: float,
+    edit_style: str = "simple",
+    picos_audio: list[dict[str, Any]] | None = None,
+    clip_name: str = "",
+) -> list[dict[str, Any]]:
+    """
+    Genera automáticamente entre 2 y 3 tarjetas superiores rectas (`top: 130px`, `rotate(0deg)`)
+    en el formato editorial limpio (`badge`, `texto`, `subtitulo`, `estilo: "editorial" | "coral"`)
+    para los modos `'detallada'` e `'ilustraciones'`, sin coordenadas ni rotaciones variables.
+    """
+    if edit_style not in ("detallada", "ilustraciones") or duracion_final < 5.0:
+        return []
+
+    inicio_cards = 2.9 if duracion_final >= 10.0 else 0.3
+    fin_cards = max(inicio_cards + 3.0, round(duracion_final - 0.15, 2))
+    rango_total = fin_cards - inicio_cards
+    if rango_total < 3.0:
+        return []
+
+    num_cards = 3 if rango_total >= 14.0 else 2
+    paso = rango_total / num_cards
+    badges_ciclo = ["★ MOMENTO", "🎮 EN VIVO", "⚡ REMATE"]
+    subs_defecto = [
+        "CONTEXTO DEL CLIP",
+        "LO QUE PASÓ EN DIRECTO",
+        "EL REMATE FINAL",
+    ]
+
+    picos_seg = sorted(
+        float(p.get("segundo", -1.0))
+        for p in (picos_audio or [])
+        if p.get("intensidad") in ("alta", "muy_alta")
+    )
+
+    cards: list[dict[str, Any]] = []
+    for idx in range(num_cards):
+        raw_start = inicio_cards + idx * paso
+        raw_end = (
+            fin_cards
+            if idx == num_cards - 1
+            else inicio_cards + (idx + 1) * paso - 0.35
+        )
+        c_start = round(raw_start, 2)
+        c_end = round(max(c_start + 2.0, raw_end), 2)
+        if c_end > fin_cards:
+            c_end = round(fin_cards, 2)
+        if c_end - c_start < 1.5:
+            continue
+
+        tramo_palabras = [
+            str(w.get("word", "")).strip()
+            for w in palabras
+            if float(w.get("end", 0.0)) >= c_start - 0.4
+            and float(w.get("start", 0.0)) <= c_end + 0.2
+        ]
+        frase_tramo = limpiar_identificadores_internos(" ".join(tramo_palabras))
+        if not frase_tramo:
+            continue
+
+        es_ultimo = idx == num_cards - 1
+        tiene_pico = any(c_start <= s <= c_end for s in picos_seg)
+        dato_coral = _extraer_dato_coral(frase_tramo, clip_name=clip_name)
+
+        # Usar píldora coral de impacto cuando hay un dato numérico corto o es el remate final con impacto
+        if dato_coral and (es_ultimo or tiene_pico or idx > 0):
+            cards.append(
+                {
+                    "id": f"card-{idx + 1}",
+                    "estilo": "coral",
+                    "texto": dato_coral,
+                    "start": c_start,
+                    "end": c_end,
+                    "sfx": "SONIDOS/Sonido de impacto.mp3",
+                }
+            )
+            continue
+
+        oraciones = [
+            o.strip()
+            for o in re.split(r"(?<=[.!?])\s+", frase_tramo)
+            if len(o.strip()) >= 6
+        ]
+        oracion_principal = oraciones[0] if oraciones else frase_tramo
+        titulo = _recortar_frase_card(oracion_principal, 38)
+        subtitulo = (
+            _recortar_frase_card(oraciones[1], 44)
+            if len(oraciones) > 1
+            else subs_defecto[idx % len(subs_defecto)]
+        )
+
+        cards.append(
+            {
+                "id": f"card-{idx + 1}",
+                "estilo": "editorial",
+                "badge": badges_ciclo[idx % len(badges_ciclo)],
+                "texto": titulo,
+                "subtitulo": subtitulo,
+                "start": c_start,
+                "end": c_end,
+                "sfx": "SONIDOS/efecto de sonido POP.mp3",
+            }
+        )
+
+    return cards
+
+
 def _resolver_coords_webcam(
     args: argparse.Namespace, lista_segmentos: Optional[list[dict[str, Any]]]
 ) -> tuple[int, int, int, int]:
@@ -2478,6 +2694,13 @@ def main() -> None:
             max_chars=int(cfg_edicion.get("maxCaracteresTitulo", MAX_CARACTERES_TITULO)),
             sufijo_canal=str(cfg_edicion.get("sufijoTituloCanal", SUFIJO_TITULO_CANAL)),
         )
+        cards_auto = generar_cards_automaticas(
+            palabras=palabras,
+            duracion_final=duracion_final,
+            edit_style=args.edit_style,
+            picos_audio=picos_voz,
+            clip_name=clip_name,
+        )
 
         remotion_data: dict[str, Any] = {
             "editStyle": args.edit_style,
@@ -2498,7 +2721,7 @@ def main() -> None:
             "webcamEnhancedFile": webcam_enhanced_rel,
             "usarMejoraIA": bool(usar_ia and webcam_enhanced_rel is not None),
             "durationInSeconds": duracion_final,
-            "cards": [],
+            "cards": cards_auto,
             "illustrations": [],
             "explainerPanels": [],
             "subtitles": palabras,
@@ -2522,6 +2745,7 @@ def main() -> None:
             src_music = base_dir / "musica" / musica_fondo["file"]
             dst_music = musica_public_dir / musica_fondo["file"]
             if src_music.is_file() and not dst_music.is_file():
+                dst_music.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(src_music, dst_music)
             print(
                 f"      [Música] Categoría='{musica_fondo['category']}' | Pista='{musica_fondo['file']}' (vol={musica_fondo['volume']}) | Cortes={musica_fondo.get('cutAtTimestamps', [])}"

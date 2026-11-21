@@ -1,0 +1,36 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 01_piedra_flotante
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:02.76,Shorts,,0,0,0,,QUÉ {\c&H0000E5FF&}MIERDA{\c&H00FFFFFF&} ES ESTO
+Dialogue: 0,0:00:04.72,0:00:07.52,Shorts,,0,0,0,,NO NO ME {\c&H0000E5FF&}PARECE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.54,0:00:09.22,Shorts,,0,0,0,,{\c&H0000E5FF&}TERRIBLE{\c&H00FFFFFF&} ROSTRA
+Dialogue: 0,0:00:10.34,0:00:11.28,Shorts,,0,0,0,,NO YO NO {\c&H0000E5FF&}PUEDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.30,0:00:11.75,Shorts,,0,0,0,,{\c&H0000E5FF&}CREER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.82,0:00:16.26,Shorts,,0,0,0,,AMIGO UN {\c&H0000E5FF&}PROGRAMADOR{\c&H00FFFFFF&} SE
+Dialogue: 0,0:00:16.28,0:00:17.12,Shorts,,0,0,0,,OLVIDÓ LA {\c&H0000E5FF&}PIEDRA{\c&H00FFFFFF&} Y
+Dialogue: 0,0:00:17.14,0:00:18.40,Shorts,,0,0,0,,NUNCA DIJO A {\c&H0000E5FF&}BUENO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.42,0:00:19.46,Shorts,,0,0,0,,QUIÉN VA A {\c&H0000E5FF&}ENCONTRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.48,0:00:20.58,Shorts,,0,0,0,,ESA {\c&H0000E5FF&}PIEDRA{\c&H00FFFFFF&} Y TIRAN
+Dialogue: 0,0:00:20.60,0:00:22.32,Shorts,,0,0,0,,EN {\c&H0000E5FF&}MEDIO{\c&H00FFFFFF&} LA NADA
+Dialogue: 0,0:00:22.34,0:00:24.90,Shorts,,0,0,0,,QUÉ COSA ES {\c&H0000E5FF&}TERRIBLE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.92,0:00:28.50,Shorts,,0,0,0,,PERO BOLUDO TENDRÁ {\c&H0000E5FF&}COLISIÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.21,0:00:35.21,Shorts,,0,0,0,,Y SE {\c&H0000E5FF&}HUNDE{\c&H00FFFFFF&} NO
+Dialogue: 0,0:00:35.23,0:00:38.09,Shorts,,0,0,0,,NO NO NO {\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.11,0:00:38.93,Shorts,,0,0,0,,NO YO NO {\c&H0000E5FF&}PUEDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.95,0:00:40.07,Shorts,,0,0,0,,{\c&H0000E5FF&}CREER{\c&H00FFFFFF&} NO NO TE
+Dialogue: 0,0:00:40.09,0:00:41.09,Shorts,,0,0,0,,{\c&H0000E5FF&}JURO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:43.56,0:00:45.08,Shorts,,0,0,0,,QUE ES QUE {\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:45.10,0:00:46.80,Shorts,,0,0,0,,ES JODA LO {\c&H0000E5FF&}ARREGLÉ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:46.82,0:00:48.00,Shorts,,0,0,0,,LE ARREGLÉ {\c&H0000E5FF&}TRABAJO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:48.02,0:00:49.94,Shorts,,0,0,0,,{\c&H0000E5FF&}TRANQUILA{\c&H00FFFFFF&} LE ARREGLÉ TRABAJO

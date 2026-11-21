@@ -1,0 +1,739 @@
+{
+  "editStyle": "detallada",
+  "habilitarHookTeaser": false,
+  "hookTitle": "COMPRANDO GTA 6 POR $100 USD 💸",
+  "seo": {
+    "youtubeTitle": "Compré GTA 6 en vivo y pasó esto con el peso 💀💸 @berlinuno #shorts",
+    "cleanTitle": "Compré GTA 6 en vivo y pasó esto con el peso 💀💸",
+    "titleCharCount": 66,
+    "youtubeDescription": "Berlín compró GTA 6 Ultimate Edition en vivo en PS5 por $100 dólares y no podía creer los 210 GB y 17 horas de descarga. Remate épico de Milton.\n\n#gaming #humor #clips #gta6 #ps5 #argentina #streamer",
+    "hashtagsDescripcion": [
+      "#gaming",
+      "#humor",
+      "#clips",
+      "#gta6",
+      "#ps5",
+      "#argentina",
+      "#streamer"
+    ]
+  },
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_s4_01_compra_gta6.mp4",
+  "webcamEnhancedFile": null,
+  "usarMejoraIA": false,
+  "durationInSeconds": 41.667,
+  "cards": [
+    {
+      "id": "card-comprando-gta6",
+      "title": "COMPRANDO GTA 6 POR $100 DÓLARES 💸😭",
+      "text": "COMPRANDO GTA 6 POR $100 DÓLARES 💸😭",
+      "start": 2.9,
+      "end": 21.5,
+      "position": "top-left",
+      "scale": 0.75,
+      "variant": "stamp",
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    },
+    {
+      "id": "card-210gb-17horas",
+      "title": "¡210 GB Y 17 HORAS DE DESCARGA! 🚨",
+      "text": "¡210 GB Y 17 HORAS DE DESCARGA! 🚨",
+      "start": 26.8,
+      "end": 33.8,
+      "position": "top-left",
+      "scale": 0.75,
+      "variant": "stamp",
+      "sfx": "SONIDOS/Sonido de impacto.mp3"
+    },
+    {
+      "id": "card-milton-remate",
+      "title": "MILTON: 'PESA MENOS QUE YO' 💀",
+      "text": "MILTON: 'PESA MENOS QUE YO' 💀",
+      "start": 36.4,
+      "end": 41.5,
+      "position": "top-left",
+      "scale": 0.75,
+      "variant": "stamp",
+      "sfx": "Impact y hit/Efecto de Sonido Impacto - Sonido para TUS VÍDEOS.mp3"
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "Trabajé",
+      "start": 0.0,
+      "end": 0.62,
+      "highlight": true
+    },
+    {
+      "word": "como",
+      "start": 0.62,
+      "end": 0.78,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 0.78,
+      "end": 0.94,
+      "highlight": false
+    },
+    {
+      "word": "hijo",
+      "start": 0.94,
+      "end": 1.08,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 1.08,
+      "end": 1.26,
+      "highlight": false
+    },
+    {
+      "word": "mil",
+      "start": 1.26,
+      "end": 1.42,
+      "highlight": false
+    },
+    {
+      "word": "putas",
+      "start": 1.42,
+      "end": 1.86,
+      "highlight": false
+    },
+    {
+      "word": "para",
+      "start": 1.86,
+      "end": 2.04,
+      "highlight": false
+    },
+    {
+      "word": "hacer",
+      "start": 2.04,
+      "end": 2.26,
+      "highlight": false
+    },
+    {
+      "word": "esto",
+      "start": 2.26,
+      "end": 2.5,
+      "highlight": false
+    },
+    {
+      "word": "Me",
+      "start": 3.52,
+      "end": 3.92,
+      "highlight": false
+    },
+    {
+      "word": "cagué",
+      "start": 3.92,
+      "end": 4.26,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 4.26,
+      "end": 4.38,
+      "highlight": false
+    },
+    {
+      "word": "calor",
+      "start": 4.38,
+      "end": 4.52,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 4.52,
+      "end": 4.68,
+      "highlight": false
+    },
+    {
+      "word": "un",
+      "start": 4.68,
+      "end": 4.76,
+      "highlight": false
+    },
+    {
+      "word": "¡tractor!",
+      "start": 4.76,
+      "end": 5.16,
+      "highlight": true,
+      "sfx": "SONIDOS/Hit Marker sound effect.mp3"
+    },
+    {
+      "word": "Te",
+      "start": 5.16,
+      "end": 5.86,
+      "highlight": false
+    },
+    {
+      "word": "levantabas",
+      "start": 5.86,
+      "end": 6.2,
+      "highlight": true
+    },
+    {
+      "word": "a",
+      "start": 6.2,
+      "end": 6.34,
+      "highlight": false
+    },
+    {
+      "word": "las",
+      "start": 6.34,
+      "end": 6.5,
+      "highlight": false
+    },
+    {
+      "word": "seis",
+      "start": 6.5,
+      "end": 6.96,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 6.96,
+      "end": 7.18,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 7.18,
+      "end": 7.32,
+      "highlight": false
+    },
+    {
+      "word": "mañana",
+      "start": 7.32,
+      "end": 7.52,
+      "highlight": false
+    },
+    {
+      "word": "todos",
+      "start": 7.52,
+      "end": 7.8,
+      "highlight": false
+    },
+    {
+      "word": "los",
+      "start": 7.8,
+      "end": 7.94,
+      "highlight": false
+    },
+    {
+      "word": "días",
+      "start": 7.94,
+      "end": 8.1,
+      "highlight": false
+    },
+    {
+      "word": "volvías",
+      "start": 8.1,
+      "end": 8.42,
+      "highlight": true
+    },
+    {
+      "word": "a",
+      "start": 8.42,
+      "end": 8.56,
+      "highlight": false
+    },
+    {
+      "word": "las",
+      "start": 8.56,
+      "end": 8.68,
+      "highlight": false
+    },
+    {
+      "word": "10",
+      "start": 8.68,
+      "end": 8.78,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 8.78,
+      "end": 8.88,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 8.88,
+      "end": 8.96,
+      "highlight": false
+    },
+    {
+      "word": "noche",
+      "start": 8.96,
+      "end": 9.2,
+      "highlight": false
+    },
+    {
+      "word": "¿Por",
+      "start": 9.2,
+      "end": 9.56,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 9.56,
+      "end": 9.7,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 9.7,
+      "end": 9.86,
+      "highlight": false
+    },
+    {
+      "word": "vas",
+      "start": 9.86,
+      "end": 10.06,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 10.06,
+      "end": 10.14,
+      "highlight": false
+    },
+    {
+      "word": "gastar",
+      "start": 10.14,
+      "end": 10.62,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 10.62,
+      "end": 10.82,
+      "highlight": false
+    },
+    {
+      "word": "este",
+      "start": 10.82,
+      "end": 11.0,
+      "highlight": false
+    },
+    {
+      "word": "juego?",
+      "start": 11.0,
+      "end": 11.34,
+      "highlight": true
+    },
+    {
+      "word": "¡Estamos",
+      "start": 11.56,
+      "end": 11.96,
+      "highlight": true
+    },
+    {
+      "word": "acá,",
+      "start": 11.96,
+      "end": 12.54,
+      "highlight": false
+    },
+    {
+      "word": "gordo!",
+      "start": 12.62,
+      "end": 12.86,
+      "highlight": false
+    },
+    {
+      "word": "¡Amigo!",
+      "start": 16.8,
+      "end": 17.62,
+      "highlight": true
+    },
+    {
+      "word": "Procesando",
+      "start": 18.26,
+      "end": 18.66,
+      "highlight": true
+    },
+    {
+      "word": "Ay,",
+      "start": 20.22,
+      "end": 20.62,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 20.7,
+      "end": 20.78,
+      "highlight": false
+    },
+    {
+      "word": "duele",
+      "start": 20.78,
+      "end": 21.04,
+      "highlight": false
+    },
+    {
+      "word": "algo,",
+      "start": 21.04,
+      "end": 21.38,
+      "highlight": false
+    },
+    {
+      "word": "hermano",
+      "start": 21.48,
+      "end": 21.6,
+      "highlight": false
+    },
+    {
+      "word": "Me",
+      "start": 21.6,
+      "end": 21.86,
+      "highlight": false
+    },
+    {
+      "word": "estoy",
+      "start": 21.86,
+      "end": 22.02,
+      "highlight": false
+    },
+    {
+      "word": "por",
+      "start": 22.02,
+      "end": 22.2,
+      "highlight": false
+    },
+    {
+      "word": "morir...",
+      "start": 22.2,
+      "end": 22.6,
+      "highlight": false
+    },
+    {
+      "word": "Ay,",
+      "start": 22.6,
+      "end": 23.14,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 23.22,
+      "end": 23.34,
+      "highlight": false
+    },
+    {
+      "word": "duele",
+      "start": 23.34,
+      "end": 23.68,
+      "highlight": false
+    },
+    {
+      "word": "algo",
+      "start": 23.68,
+      "end": 24.08,
+      "highlight": false
+    },
+    {
+      "word": "Ay,",
+      "start": 24.08,
+      "end": 24.32,
+      "highlight": false
+    },
+    {
+      "word": "¡sudé",
+      "start": 24.42,
+      "end": 24.68,
+      "highlight": true
+    },
+    {
+      "word": "sangre",
+      "start": 24.68,
+      "end": 25.06,
+      "highlight": true
+    },
+    {
+      "word": "por",
+      "start": 25.06,
+      "end": 25.3,
+      "highlight": false
+    },
+    {
+      "word": "esto,",
+      "start": 25.3,
+      "end": 25.5,
+      "highlight": false
+    },
+    {
+      "word": "hermano",
+      "start": 25.62,
+      "end": 26.14,
+      "highlight": true
+    },
+    {
+      "word": "¡209",
+      "start": 26.84,
+      "end": 27.24,
+      "highlight": true,
+      "sfx": "SONIDOS/ES_Event, Collect Point - Epidemic Sound - 0000-1708.wav"
+    },
+    {
+      "word": "GB,",
+      "start": 27.64,
+      "end": 27.78,
+      "highlight": true
+    },
+    {
+      "word": "amigo!",
+      "start": 27.88,
+      "end": 28.54,
+      "highlight": true
+    },
+    {
+      "word": "Ay,",
+      "start": 28.54,
+      "end": 28.86,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 28.92,
+      "end": 29.12,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 29.26,
+      "end": 29.44,
+      "highlight": false
+    },
+    {
+      "word": "210,",
+      "start": 29.44,
+      "end": 30.08,
+      "highlight": false
+    },
+    {
+      "word": "gigas,",
+      "start": 30.1,
+      "end": 30.7,
+      "highlight": false
+    },
+    {
+      "word": "amigo",
+      "start": 30.76,
+      "end": 30.9,
+      "highlight": false
+    },
+    {
+      "word": "¡17",
+      "start": 30.9,
+      "end": 31.62,
+      "highlight": true
+    },
+    {
+      "word": "horas!",
+      "start": 31.62,
+      "end": 32.24,
+      "highlight": true
+    },
+    {
+      "word": "¡No,",
+      "start": 32.74,
+      "end": 33.1,
+      "highlight": false
+    },
+    {
+      "word": "Dios",
+      "start": 33.36,
+      "end": 33.58,
+      "highlight": false
+    },
+    {
+      "word": "santo,",
+      "start": 33.58,
+      "end": 34.3,
+      "highlight": false
+    },
+    {
+      "word": "boludo!",
+      "start": 34.42,
+      "end": 34.76,
+      "highlight": true
+    },
+    {
+      "word": "Yo",
+      "start": 35.18,
+      "end": 35.46,
+      "highlight": false
+    },
+    {
+      "word": "voy",
+      "start": 35.46,
+      "end": 35.7,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 35.7,
+      "end": 35.88,
+      "highlight": false
+    },
+    {
+      "word": "sacar",
+      "start": 35.88,
+      "end": 36.12,
+      "highlight": true
+    },
+    {
+      "word": "una",
+      "start": 36.12,
+      "end": 36.26,
+      "highlight": false
+    },
+    {
+      "word": "foto",
+      "start": 36.26,
+      "end": 36.54,
+      "highlight": false
+    },
+    {
+      "word": "Amigo,",
+      "start": 36.54,
+      "end": 36.96,
+      "highlight": false
+    },
+    {
+      "word": "pesa",
+      "start": 37.1,
+      "end": 37.38,
+      "highlight": false
+    },
+    {
+      "word": "menos",
+      "start": 37.38,
+      "end": 37.48,
+      "highlight": true
+    },
+    {
+      "word": "que",
+      "start": 37.48,
+      "end": 37.7,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 37.7,
+      "end": 37.88,
+      "highlight": true
+    },
+    {
+      "word": "el",
+      "start": 37.88,
+      "end": 38.0,
+      "highlight": false
+    },
+    {
+      "word": "juego",
+      "start": 38.0,
+      "end": 38.24,
+      "highlight": false
+    },
+    {
+      "word": "Ay,",
+      "start": 38.24,
+      "end": 38.9,
+      "highlight": false
+    },
+    {
+      "word": "pesa",
+      "start": 39.04,
+      "end": 39.28,
+      "highlight": false
+    },
+    {
+      "word": "menos",
+      "start": 39.28,
+      "end": 39.38,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 39.38,
+      "end": 39.52,
+      "highlight": false
+    },
+    {
+      "word": "vos,",
+      "start": 39.52,
+      "end": 39.64,
+      "highlight": false
+    },
+    {
+      "word": "viste,",
+      "start": 39.74,
+      "end": 39.88,
+      "highlight": false
+    },
+    {
+      "word": "vos",
+      "start": 40.02,
+      "end": 40.12,
+      "highlight": true
+    },
+    {
+      "word": "pesás",
+      "start": 40.12,
+      "end": 40.38,
+      "highlight": true
+    },
+    {
+      "word": "si",
+      "start": 40.38,
+      "end": 40.52,
+      "highlight": false
+    },
+    {
+      "word": "lo",
+      "start": 40.64,
+      "end": 40.7,
+      "highlight": false
+    },
+    {
+      "word": "pasamos",
+      "start": 40.7,
+      "end": 41.04,
+      "highlight": true
+    },
+    {
+      "word": "a",
+      "start": 41.04,
+      "end": 41.16,
+      "highlight": false
+    },
+    {
+      "word": "kilos!",
+      "start": 41.16,
+      "end": 41.36,
+      "highlight": true,
+      "sfx": "SONIDOS/Hit Marker sound effect.mp3"
+    }
+  ],
+  "backgroundMusic": {
+    "file": "epica_climax/epic_cinematic.mp3",
+    "category": "epica_climax",
+    "volume": 0.1,
+    "cutAtTimestamps": [],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0,
+    "cutFadeInSeconds": 0.4
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 0.0,
+      "end": 11.35
+    }
+  ]
+}

@@ -1,3 +1,5 @@
 openai-whisper
+faster-whisper
+pillow
 auto-editor
 yt-dlp

@@ -6,3 +6,5 @@ Config.overrideWebpackConfig((currentConfiguration) => {
 });
 Config.setVideoImageFormat('jpeg');
 Config.setOverwriteOutput(true);
+Config.setConcurrency(2);
+Config.setOffthreadVideoCacheSizeInBytes(1024 * 1024 * 1024);

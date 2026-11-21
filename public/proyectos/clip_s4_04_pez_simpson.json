@@ -1,0 +1,625 @@
+{
+  "editStyle": "detallada",
+  "habilitarHookTeaser": false,
+  "hookTitle": "¡EL PEZ DE LOS SIMPSON! 🐟☢️",
+  "seo": {
+    "youtubeTitle": "Cuando elegís al peor amigo para jugar cooperativo 🐟💀 @berlinuno #shorts",
+    "cleanTitle": "Cuando elegís al peor amigo para jugar cooperativo 🐟💀",
+    "titleCharCount": 72,
+    "youtubeDescription": "Berlín cuenta por qué el dicho de 'hay muchos peces en el mar' le salió mal eligiendo amigos para jugar: terminó con el pez radioactivo de Los Simpson.\n\n#gaming #humor #clips #gta5 #lossimpson #argentina #streamer",
+    "hashtagsDescripcion": [
+      "#gaming",
+      "#humor",
+      "#clips",
+      "#gta5",
+      "#lossimpson",
+      "#argentina",
+      "#streamer"
+    ]
+  },
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_s4_04_pez_simpson.mp4",
+  "webcamEnhancedFile": null,
+  "usarMejoraIA": false,
+  "durationInSeconds": 32.167,
+  "cards": [
+    {
+      "id": "card-peces-mar",
+      "estilo": "editorial",
+      "badge": "★ MOMENTO",
+      "texto": "HAY MUCHOS PECES EN EL MAR",
+      "subtitulo": "EL DICHO QUE TERMINÓ EN TRAGEDIA",
+      "start": 2.9,
+      "end": 12.2,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    },
+    {
+      "id": "card-eligiendo-amigos",
+      "estilo": "editorial",
+      "badge": "🎮 EN VIVO",
+      "texto": "ELIGIENDO AMIGOS PARA JUGAR",
+      "subtitulo": "Y SE REUNIÓ CON EL MÁS ESTÚPIDO",
+      "start": 12.6,
+      "end": 24.4,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    },
+    {
+      "id": "card-pez-simpson",
+      "estilo": "coral",
+      "texto": "¡PEZ DE 8 OJOS! ☢️",
+      "start": 24.8,
+      "end": 32.0,
+      "sfx": "Impact y hit/Efecto de Sonido Impacto - Sonido para TUS VÍDEOS.mp3"
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "No,",
+      "start": 0.0,
+      "end": 0.28,
+      "highlight": false
+    },
+    {
+      "word": "Dios",
+      "start": 0.4,
+      "end": 0.58,
+      "highlight": false
+    },
+    {
+      "word": "mío,",
+      "start": 0.58,
+      "end": 0.86,
+      "highlight": false
+    },
+    {
+      "word": "¿por",
+      "start": 0.96,
+      "end": 1.04,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 1.04,
+      "end": 1.24,
+      "highlight": false
+    },
+    {
+      "word": "a mí?",
+      "start": 1.24,
+      "end": 1.62,
+      "highlight": true
+    },
+    {
+      "word": "Cuando",
+      "start": 2.18,
+      "end": 2.38,
+      "highlight": false
+    },
+    {
+      "word": "está",
+      "start": 2.38,
+      "end": 2.66,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 2.66,
+      "end": 2.8,
+      "highlight": false
+    },
+    {
+      "word": "dicho,",
+      "start": 2.8,
+      "end": 3.1,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 3.3,
+      "end": 3.42,
+      "highlight": false
+    },
+    {
+      "word": "dicho",
+      "start": 3.42,
+      "end": 3.66,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 3.66,
+      "end": 3.74,
+      "highlight": false
+    },
+    {
+      "word": "ese,",
+      "start": 3.74,
+      "end": 3.9,
+      "highlight": false
+    },
+    {
+      "word": "hay",
+      "start": 3.98,
+      "end": 4.04,
+      "highlight": false
+    },
+    {
+      "word": "muchos",
+      "start": 4.04,
+      "end": 4.32,
+      "highlight": false
+    },
+    {
+      "word": "peces",
+      "start": 4.32,
+      "end": 4.6,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 4.6,
+      "end": 4.8,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 4.8,
+      "end": 4.94,
+      "highlight": false
+    },
+    {
+      "word": "mar,",
+      "start": 4.94,
+      "end": 5.14,
+      "highlight": false
+    },
+    {
+      "word": "¿viste?",
+      "start": 5.38,
+      "end": 5.6,
+      "highlight": true
+    },
+    {
+      "word": "El",
+      "start": 6.14,
+      "end": 6.26,
+      "highlight": false
+    },
+    {
+      "word": "dicho",
+      "start": 6.26,
+      "end": 6.46,
+      "highlight": false
+    },
+    {
+      "word": "de,",
+      "start": 6.46,
+      "end": 6.66,
+      "highlight": false
+    },
+    {
+      "word": "hay",
+      "start": 6.88,
+      "end": 7.02,
+      "highlight": false
+    },
+    {
+      "word": "muchos",
+      "start": 7.02,
+      "end": 7.18,
+      "highlight": false
+    },
+    {
+      "word": "peces",
+      "start": 7.18,
+      "end": 7.44,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 7.44,
+      "end": 7.6,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 7.6,
+      "end": 7.74,
+      "highlight": false
+    },
+    {
+      "word": "mar,",
+      "start": 7.74,
+      "end": 7.88,
+      "highlight": false
+    },
+    {
+      "word": "ok.",
+      "start": 8.04,
+      "end": 8.28,
+      "highlight": false
+    },
+    {
+      "word": "Eso",
+      "start": 8.84,
+      "end": 9.1,
+      "highlight": false
+    },
+    {
+      "word": "se",
+      "start": 9.1,
+      "end": 9.28,
+      "highlight": false
+    },
+    {
+      "word": "hace",
+      "start": 9.28,
+      "end": 9.4,
+      "highlight": false
+    },
+    {
+      "word": "referencia",
+      "start": 9.4,
+      "end": 10.0,
+      "highlight": true
+    },
+    {
+      "word": "a",
+      "start": 10.0,
+      "end": 10.22,
+      "highlight": false
+    },
+    {
+      "word": "las",
+      "start": 10.22,
+      "end": 10.34,
+      "highlight": false
+    },
+    {
+      "word": "mujeres.",
+      "start": 10.34,
+      "end": 10.62,
+      "highlight": true
+    },
+    {
+      "word": "Pero",
+      "start": 11.12,
+      "end": 11.42,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 11.42,
+      "end": 11.9,
+      "highlight": false
+    },
+    {
+      "word": "cuando",
+      "start": 11.9,
+      "end": 12.36,
+      "highlight": false
+    },
+    {
+      "word": "hice",
+      "start": 12.36,
+      "end": 13.42,
+      "highlight": false
+    },
+    {
+      "word": "la",
+      "start": 13.42,
+      "end": 13.64,
+      "highlight": false
+    },
+    {
+      "word": "elección",
+      "start": 13.64,
+      "end": 14.12,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 14.12,
+      "end": 14.26,
+      "highlight": false
+    },
+    {
+      "word": "amistades,",
+      "start": 14.26,
+      "end": 14.72,
+      "highlight": true
+    },
+    {
+      "word": "había",
+      "start": 15.3,
+      "end": 15.74,
+      "highlight": false
+    },
+    {
+      "word": "muchos",
+      "start": 15.74,
+      "end": 16.0,
+      "highlight": false
+    },
+    {
+      "word": "peces",
+      "start": 16.0,
+      "end": 16.24,
+      "highlight": false
+    },
+    {
+      "word": "en",
+      "start": 16.24,
+      "end": 16.38,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 16.38,
+      "end": 16.5,
+      "highlight": false
+    },
+    {
+      "word": "mar.",
+      "start": 16.5,
+      "end": 16.66,
+      "highlight": false
+    },
+    {
+      "word": "Yo",
+      "start": 16.8,
+      "end": 17.04,
+      "highlight": false
+    },
+    {
+      "word": "como",
+      "start": 17.04,
+      "end": 17.94,
+      "highlight": false
+    },
+    {
+      "word": "pescadito",
+      "start": 17.94,
+      "end": 18.58,
+      "highlight": true
+    },
+    {
+      "word": "que",
+      "start": 18.58,
+      "end": 18.74,
+      "highlight": false
+    },
+    {
+      "word": "soy,",
+      "start": 18.74,
+      "end": 18.98,
+      "highlight": false
+    },
+    {
+      "word": "como",
+      "start": 19.72,
+      "end": 19.9,
+      "highlight": false
+    },
+    {
+      "word": "pez",
+      "start": 19.9,
+      "end": 20.12,
+      "highlight": false
+    },
+    {
+      "word": "que",
+      "start": 20.12,
+      "end": 20.32,
+      "highlight": false
+    },
+    {
+      "word": "soy,",
+      "start": 20.32,
+      "end": 20.52,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 20.98,
+      "end": 21.3,
+      "highlight": false
+    },
+    {
+      "word": "reuní",
+      "start": 21.3,
+      "end": 21.84,
+      "highlight": false
+    },
+    {
+      "word": "con",
+      "start": 22.72,
+      "end": 23.16,
+      "highlight": false
+    },
+    {
+      "word": "el",
+      "start": 23.16,
+      "end": 23.34,
+      "highlight": false
+    },
+    {
+      "word": "más",
+      "start": 23.34,
+      "end": 23.48,
+      "highlight": false
+    },
+    {
+      "word": "estúpido.",
+      "start": 23.48,
+      "end": 24.24,
+      "highlight": true,
+      "sfx": "SONIDOS/Hit Marker sound effect.mp3"
+    },
+    {
+      "word": "El",
+      "start": 24.54,
+      "end": 24.98,
+      "highlight": false
+    },
+    {
+      "word": "que,",
+      "start": 24.98,
+      "end": 25.1,
+      "highlight": false
+    },
+    {
+      "word": "¿viste?",
+      "start": 25.32,
+      "end": 25.56,
+      "highlight": true
+    },
+    {
+      "word": "Ese",
+      "start": 25.8,
+      "end": 26.04,
+      "highlight": false
+    },
+    {
+      "word": "pez",
+      "start": 26.04,
+      "end": 26.62,
+      "highlight": false
+    },
+    {
+      "word": "radioactivo",
+      "start": 26.62,
+      "end": 27.22,
+      "highlight": true
+    },
+    {
+      "word": "de",
+      "start": 27.22,
+      "end": 27.36,
+      "highlight": false
+    },
+    {
+      "word": "los",
+      "start": 27.36,
+      "end": 27.48,
+      "highlight": false
+    },
+    {
+      "word": "Simpsons",
+      "start": 27.48,
+      "end": 27.86,
+      "highlight": true
+    },
+    {
+      "word": "que",
+      "start": 27.86,
+      "end": 27.96,
+      "highlight": false
+    },
+    {
+      "word": "tiene",
+      "start": 27.96,
+      "end": 28.16,
+      "highlight": false
+    },
+    {
+      "word": "como",
+      "start": 28.16,
+      "end": 28.36,
+      "highlight": false
+    },
+    {
+      "word": "ocho",
+      "start": 28.36,
+      "end": 28.68,
+      "highlight": true
+    },
+    {
+      "word": "ojos.",
+      "start": 28.68,
+      "end": 28.96,
+      "highlight": true
+    },
+    {
+      "word": "¡Ay,",
+      "start": 28.96,
+      "end": 29.36,
+      "highlight": false
+    },
+    {
+      "word": "ese",
+      "start": 29.4,
+      "end": 29.52,
+      "highlight": false
+    },
+    {
+      "word": "estúpido",
+      "start": 29.52,
+      "end": 30.08,
+      "highlight": true
+    },
+    {
+      "word": "me",
+      "start": 30.08,
+      "end": 30.2,
+      "highlight": false
+    },
+    {
+      "word": "fui",
+      "start": 30.2,
+      "end": 30.38,
+      "highlight": false
+    },
+    {
+      "word": "yo",
+      "start": 30.38,
+      "end": 30.54,
+      "highlight": false
+    },
+    {
+      "word": "a",
+      "start": 30.54,
+      "end": 30.78,
+      "highlight": false
+    },
+    {
+      "word": "reunir!",
+      "start": 30.78,
+      "end": 31.92,
+      "highlight": true
+    }
+  ],
+  "backgroundMusic": {
+    "file": "comedia_absurda/monkeys_spinning_monkeys.mp3",
+    "category": "comedia_absurda",
+    "volume": 0.1,
+    "cutAtTimestamps": [
+      {
+        "start": 22.55,
+        "end": 24.35
+      },
+      {
+        "start": 25.65,
+        "end": 27.45
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0,
+    "cutFadeInSeconds": 0.4
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 0.0,
+      "end": 1.6
+    },
+    {
+      "start": 10.9,
+      "end": 32.167
+    }
+  ]
+}

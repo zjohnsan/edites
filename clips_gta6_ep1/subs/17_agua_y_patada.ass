@@ -1,0 +1,74 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 17_agua_y_patada
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.65,0:00:02.29,Shorts,,0,0,0,,ME VOY A {\c&H0000E5FF&}TIRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.31,0:00:02.55,Shorts,,0,0,0,,EL {\c&H0000E5FF&}AGUA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.57,0:00:02.99,Shorts,,0,0,0,,ME VOY A {\c&H0000E5FF&}TIRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.01,0:00:06.53,Shorts,,0,0,0,,EL {\c&H0000E5FF&}AGUA{\c&H00FFFFFF&} ME PUEDO
+Dialogue: 0,0:00:06.55,0:00:07.25,Shorts,,0,0,0,,SACAR LA {\c&H0000E5FF&}CAMISA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.35,0:00:07.53,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.55,0:00:08.15,Shorts,,0,0,0,,NO SE {\c&H0000E5FF&}PUEDE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.39,0:00:08.84,Shorts,,0,0,0,,{\c&H0000E5FF&}SI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.67,0:00:09.97,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.99,0:00:10.61,Shorts,,0,0,0,,NO {\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.93,0:00:13.97,Shorts,,0,0,0,,ERA {\c&H0000E5FF&}BUENA{\c&H00FFFFFF&} PUTA
+Dialogue: 0,0:00:13.99,0:00:15.27,Shorts,,0,0,0,,Y SE {\c&H0000E5FF&}MALO{\c&H00FFFFFF&} Y
+Dialogue: 0,0:00:15.29,0:00:15.77,Shorts,,0,0,0,,SE {\c&H0000E5FF&}MALO{\c&H00FFFFFF&} VAN A
+Dialogue: 0,0:00:15.79,0:00:15.97,Shorts,,0,0,0,,{\c&H0000E5FF&}VER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.95,0:00:16.41,Shorts,,0,0,0,,LO VAN A {\c&H0000E5FF&}VER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.43,0:00:17.17,Shorts,,0,0,0,,ME {\c&H0000E5FF&}VOY{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.85,0:00:18.65,Shorts,,0,0,0,,MIRA EL {\c&H0000E5FF&}AGUA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.53,0:00:20.51,Shorts,,0,0,0,,CUÁL SE TE {\c&H0000E5FF&}SALIÓ?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.47,0:00:23.15,Shorts,,0,0,0,,SE SALIÓ LO {\c&H0000E5FF&}ARBUSTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.17,0:00:23.75,Shorts,,0,0,0,,ME LO {\c&H0000E5FF&}SACARON{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.91,0:00:26.67,Shorts,,0,0,0,,ME {\c&H0000E5FF&}LIMPIO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.73,0:00:28.11,Shorts,,0,0,0,,{\c&H0000E5FF&}PERDÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.13,0:00:28.39,Shorts,,0,0,0,,{\c&H0000E5FF&}PERDÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.41,0:00:28.65,Shorts,,0,0,0,,{\c&H0000E5FF&}SEÑOR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.67,0:00:29.13,Shorts,,0,0,0,,{\c&H0000E5FF&}PERDÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:29.45,0:00:29.89,Shorts,,0,0,0,,YO {\c&H0000E5FF&}SÉ{\c&H00FFFFFF&} QUE TU
+Dialogue: 0,0:00:29.91,0:00:30.36,Shorts,,0,0,0,,{\c&H0000E5FF&}CASA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.27,0:00:31.77,Shorts,,0,0,0,,{\c&H0000E5FF&}AHORA{\c&H00FFFFFF&} SÍ
+Dialogue: 0,0:00:31.79,0:00:31.99,Shorts,,0,0,0,,ME VOY A {\c&H0000E5FF&}TOCAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.01,0:00:32.27,Shorts,,0,0,0,,LA {\c&H0000E5FF&}BISA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.29,0:00:32.49,Shorts,,0,0,0,,ME VOY A {\c&H0000E5FF&}TOCAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.51,0:00:32.96,Shorts,,0,0,0,,LA {\c&H0000E5FF&}BISA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.45,0:00:34.29,Shorts,,0,0,0,,{\c&H0000E5FF&}VOLVÍ{\c&H00FFFFFF&} A VIVA
+Dialogue: 0,0:00:34.31,0:00:34.93,Shorts,,0,0,0,,LO {\c&H0000E5FF&}CHOCABA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.95,0:00:35.63,Shorts,,0,0,0,,EL {\c&H0000E5FF&}CUERPO{\c&H00FFFFFF&} DE ESTE
+Dialogue: 0,0:00:35.65,0:00:36.57,Shorts,,0,0,0,,LO {\c&H0000E5FF&}PISABA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.51,0:00:38.11,Shorts,,0,0,0,,LO {\c&H0000E5FF&}PISO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.13,0:00:38.41,Shorts,,0,0,0,,LO {\c&H0000E5FF&}PISO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.43,0:00:38.93,Shorts,,0,0,0,,LE PEGO UNA {\c&H0000E5FF&}PATA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.95,0:00:40.11,Shorts,,0,0,0,,LE PEGO UNA {\c&H0000E5FF&}PATA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.13,0:00:41.07,Shorts,,0,0,0,,PO DE {\c&H0000E5FF&}MIL{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.43,0:00:41.88,Shorts,,0,0,0,,{\c&H0000E5FF&}PUTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.71,0:00:45.39,Shorts,,0,0,0,,{\c&H0000E5FF&}OH{\c&H00FFFFFF&} NO
+Dialogue: 0,0:00:45.41,0:00:45.86,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:45.93,0:00:46.11,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:46.11,0:00:47.13,Shorts,,0,0,0,,NO HIJO DE {\c&H0000E5FF&}PERRA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:47.15,0:00:47.49,Shorts,,0,0,0,,MI NO ME {\c&H0000E5FF&}VA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:47.51,0:00:48.03,Shorts,,0,0,0,,A {\c&H0000E5FF&}BUSCAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:50.63,0:00:51.39,Shorts,,0,0,0,,ESTA BISA ME {\c&H0000E5FF&}GUSTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.41,0:00:51.86,Shorts,,0,0,0,,{\c&H0000E5FF&}MUCHO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.95,0:00:52.21,Shorts,,0,0,0,,{\c&H0000E5FF&}NADA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:52.23,0:00:52.63,Shorts,,0,0,0,,PERO ME {\c&H0000E5FF&}VOY{\c&H00FFFFFF&} CON
+Dialogue: 0,0:00:52.65,0:00:53.27,Shorts,,0,0,0,,MÍA {\c&H0000E5FF&}MIRA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:53.37,0:00:53.82,Shorts,,0,0,0,,{\c&H0000E5FF&}MIRA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:54.75,0:00:55.20,Shorts,,0,0,0,,{\c&H0000E5FF&}SI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:55.23,0:00:55.93,Shorts,,0,0,0,,A MÍ ME {\c&H0000E5FF&}ATACARON{\c&H00FFFFFF&}
+Dialogue: 0,0:00:55.95,0:00:56.40,Shorts,,0,0,0,,A {\c&H0000E5FF&}MÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.69,0:00:57.23,Shorts,,0,0,0,,A {\c&H0000E5FF&}MÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:57.33,0:00:58.53,Shorts,,0,0,0,,A MÍ FUE {\c&H0000E5FF&}MIRA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:58.85,0:00:59.30,Shorts,,0,0,0,,{\c&H0000E5FF&}MIRA{\c&H00FFFFFF&}

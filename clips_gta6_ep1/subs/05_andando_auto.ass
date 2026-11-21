@@ -1,0 +1,49 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 05_andando_auto
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.26,Shorts,,0,0,0,,ESTE DE LA {\c&H0000E5FF&}AUTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.28,0:00:04.12,Shorts,,0,0,0,,{\c&H0000E5FF&}MIRA{\c&H00FFFFFF&} A VER QUÉ
+Dialogue: 0,0:00:04.14,0:00:04.58,Shorts,,0,0,0,,{\c&H0000E5FF&}PASA{\c&H00FFFFFF&} ASÍ ES QUE
+Dialogue: 0,0:00:04.60,0:00:05.30,Shorts,,0,0,0,,NO HAY UN {\c&H0000E5FF&}AUTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.32,0:00:07.66,Shorts,,0,0,0,,ACCESO CON LLAVE {\c&H0000E5FF&}SISTEMA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.68,0:00:08.64,Shorts,,0,0,0,,DE {\c&H0000E5FF&}SEGURIDAD{\c&H00FFFFFF&} CON ALARMA
+Dialogue: 0,0:00:08.66,0:00:11.30,Shorts,,0,0,0,,{\c&H0000E5FF&}LOCALIZADOR{\c&H00FFFFFF&} NINGUNO EN
+Dialogue: 0,0:00:11.32,0:00:12.72,Shorts,,0,0,0,,LA {\c&H0000E5FF&}CAMIONETA{\c&H00FFFFFF&} JASON A
+Dialogue: 0,0:00:12.74,0:00:13.19,Shorts,,0,0,0,,{\c&H0000E5FF&}VER{\c&H00FFFFFF&} A
+Dialogue: 0,0:00:15.13,0:00:16.45,Shorts,,0,0,0,,VER MÁS {\c&H0000E5FF&}CERCA{\c&H00FFFFFF&} DE
+Dialogue: 0,0:00:16.47,0:00:17.13,Shorts,,0,0,0,,LA CAMIONETA {\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.15,0:00:18.49,Shorts,,0,0,0,,QUE SE VEA {\c&H0000E5FF&}TOMÓ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.51,0:00:19.31,Shorts,,0,0,0,,APRETADO ES {\c&H0000E5FF&}IZQUIERDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.33,0:00:24.77,Shorts,,0,0,0,,{\c&H0000E5FF&}DERECHA{\c&H00FFFFFF&} DICE MÚSICA Y
+Dialogue: 0,0:00:24.79,0:00:27.99,Shorts,,0,0,0,,QUIERE {\c&H0000E5FF&}DERECHA{\c&H00FFFFFF&} LO GUIÑO
+Dialogue: 0,0:00:28.01,0:00:30.63,Shorts,,0,0,0,,NO NO ESTE {\c&H0000E5FF&}HORRIBLE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.65,0:00:34.55,Shorts,,0,0,0,,ESTE {\c&H0000E5FF&}HORRIBLE{\c&H00FFFFFF&} PRENDE LA
+Dialogue: 0,0:00:34.57,0:00:40.57,Shorts,,0,0,0,,AUTO NO TIENE {\c&H0000E5FF&}PRIMERA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.59,0:00:43.07,Shorts,,0,0,0,,PERSONA LA {\c&H0000E5FF&}CAMIONETA{\c&H00FFFFFF&} A
+Dialogue: 0,0:00:43.09,0:00:46.97,Shorts,,0,0,0,,VER {\c&H0000E5FF&}CAMBIA{\c&H00FFFFFF&} NO TIENE
+Dialogue: 0,0:00:46.99,0:00:48.21,Shorts,,0,0,0,,QUE EL {\c&H0000E5FF&}ACTIVO{\c&H00FFFFFF&} SE
+Dialogue: 0,0:00:48.23,0:00:50.15,Shorts,,0,0,0,,VE UNA PUTA {\c&H0000E5FF&}LOCURA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:50.17,0:00:50.81,Shorts,,0,0,0,,{\c&H0000E5FF&}MÍO{\c&H00FFFFFF&}
+Dialogue: 0,0:01:00.35,0:01:02.05,Shorts,,0,0,0,,NO TIENE {\c&H0000E5FF&}CUIDADO{\c&H00FFFFFF&} MANEJA
+Dialogue: 0,0:01:02.07,0:01:02.89,Shorts,,0,0,0,,CON {\c&H0000E5FF&}CUIDADO{\c&H00FFFFFF&} O LO
+Dialogue: 0,0:01:02.91,0:01:04.61,Shorts,,0,0,0,,{\c&H0000E5FF&}MIRA{\c&H00FFFFFF&} LO QUE ES
+Dialogue: 0,0:01:04.63,0:01:05.39,Shorts,,0,0,0,,ESTO MANEJA CON {\c&H0000E5FF&}CUIDADO{\c&H00FFFFFF&}
+Dialogue: 0,0:01:05.41,0:01:06.29,Shorts,,0,0,0,,POR {\c&H0000E5FF&}FAVOR{\c&H00FFFFFF&} COMO SE
+Dialogue: 0,0:01:06.31,0:01:09.79,Shorts,,0,0,0,,VE {\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&} PONE GUIÑO
+Dialogue: 0,0:01:09.81,0:01:10.47,Shorts,,0,0,0,,{\c&H0000E5FF&}TODO{\c&H00FFFFFF&} NI EN LA
+Dialogue: 0,0:01:10.49,0:01:11.73,Shorts,,0,0,0,,VIDA REAL PONE {\c&H0000E5FF&}GUIÑO{\c&H00FFFFFF&}
+Dialogue: 0,0:01:12.97,0:01:14.41,Shorts,,0,0,0,,RADIO RADIO {\c&H0000E5FF&}RADIO{\c&H00FFFFFF&} NO
+Dialogue: 0,0:01:14.43,0:01:16.13,Shorts,,0,0,0,,DIO TRENA {\c&H0000E5FF&}TRENA{\c&H00FFFFFF&} QUE
+Dialogue: 0,0:01:16.15,0:01:16.89,Shorts,,0,0,0,,TE {\c&H0000E5FF&}PASASTE{\c&H00FFFFFF&} DE LARGO
+Dialogue: 0,0:01:16.91,0:01:18.03,Shorts,,0,0,0,,{\c&H0000E5FF&}TRENA{\c&H00FFFFFF&} Y

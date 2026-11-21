@@ -1,0 +1,32 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 14_bici_vieja_acosa
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:03.79,0:00:05.43,Shorts,,0,0,0,,SEÑORA {\c&H0000E5FF&}DETRÁS{\c&H00FFFFFF&} DE SU
+Dialogue: 0,0:00:05.45,0:00:07.01,Shorts,,0,0,0,,BICI {\c&H0000E5FF&}VENGA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.34,0:00:11.84,Shorts,,0,0,0,,{\c&H0000E5FF&}SEÑORA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.28,0:00:14.20,Shorts,,0,0,0,,SI MI {\c&H0000E5FF&}AMOR{\c&H00FFFFFF&} SI
+Dialogue: 0,0:00:14.22,0:00:16.00,Shorts,,0,0,0,,{\c&H0000E5FF&}TOMAR{\c&H00FFFFFF&} MI AMOR NO
+Dialogue: 0,0:00:16.02,0:00:16.42,Shorts,,0,0,0,,TE VOY A {\c&H0000E5FF&}COBRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.44,0:00:17.76,Shorts,,0,0,0,,NADA PERO {\c&H0000E5FF&}CUANDO{\c&H00FFFFFF&} YO
+Dialogue: 0,0:00:17.78,0:00:18.98,Shorts,,0,0,0,,{\c&H0000E5FF&}NECESITE{\c&H00FFFFFF&} ALGO
+Dialogue: 0,0:00:19.76,0:00:21.80,Shorts,,0,0,0,,VOY A {\c&H0000E5FF&}SABER{\c&H00FFFFFF&} NADA
+Dialogue: 0,0:00:21.82,0:00:22.44,Shorts,,0,0,0,,TE VOY A {\c&H0000E5FF&}COBRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.90,0:00:24.74,Shorts,,0,0,0,,{\c&H0000E5FF&}CHAU{\c&H00FFFFFF&} ME
+Dialogue: 0,0:00:28.88,0:00:37.60,Shorts,,0,0,0,,ESTÁN {\c&H0000E5FF&}ACOSANDO{\c&H00FFFFFF&} LAS
+Dialogue: 0,0:00:37.62,0:00:39.08,Shorts,,0,0,0,,VIEJAS {\c&H0000E5FF&}MUCHACHOS{\c&H00FFFFFF&} ME
+Dialogue: 0,0:00:39.10,0:00:39.96,Shorts,,0,0,0,,ESTÁN {\c&H0000E5FF&}ACOSANDO{\c&H00FFFFFF&} LAS
+Dialogue: 0,0:00:39.98,0:00:41.02,Shorts,,0,0,0,,VIEJAS {\c&H0000E5FF&}VOLADO{\c&H00FFFFFF&} YO
+Dialogue: 0,0:00:41.04,0:00:41.86,Shorts,,0,0,0,,{\c&H0000E5FF&}QUISIERA{\c&H00FFFFFF&} TOMAR A LUI
+Dialogue: 0,0:00:41.88,0:00:42.56,Shorts,,0,0,0,,Y NO ME {\c&H0000E5FF&}DEJARON{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.58,0:00:43.10,Shorts,,0,0,0,,ESTOS {\c&H0000E5FF&}TIEMPOS{\c&H00FFFFFF&}

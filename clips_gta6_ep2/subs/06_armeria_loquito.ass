@@ -1,0 +1,33 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 06_armeria_loquito
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.11,0:00:01.31,Shorts,,0,0,0,,{\c&H0000E5FF&}CIGARRILLO{\c&H00FFFFFF&} ME VOY A
+Dialogue: 0,0:00:01.33,0:00:02.53,Shorts,,0,0,0,,{\c&H0000E5FF&}FUMAR{\c&H00FFFFFF&} UNO
+Dialogue: 0,0:00:04.17,0:00:06.29,Shorts,,0,0,0,,NO NO ES {\c&H0000E5FF&}ESTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.27,0:00:10.73,Shorts,,0,0,0,,{\c&H0000E5FF&}COCAÍNA{\c&H00FFFFFF&} AMIGO NO YO
+Dialogue: 0,0:00:10.75,0:00:11.59,Shorts,,0,0,0,,NO PUEDO {\c&H0000E5FF&}CREER{\c&H00FFFFFF&} SE
+Dialogue: 0,0:00:11.61,0:00:12.99,Shorts,,0,0,0,,PUEDE USAR {\c&H0000E5FF&}COCAÍNA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.89,0:00:16.81,Shorts,,0,0,0,,{\c&H0000E5FF&}DROGATE{\c&H00FFFFFF&} A VER QUÉ
+Dialogue: 0,0:00:16.83,0:00:18.81,Shorts,,0,0,0,,PASA DICE QUE {\c&H0000E5FF&}COMPRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.83,0:00:19.67,Shorts,,0,0,0,,UNA {\c&H0000E5FF&}TUENDO{\c&H00FFFFFF&} AHÍ ESTÁ
+Dialogue: 0,0:00:19.69,0:00:20.13,Shorts,,0,0,0,,EN LA {\c&H0000E5FF&}TIENDA{\c&H00FFFFFF&} ARMA
+Dialogue: 0,0:00:20.15,0:00:21.27,Shorts,,0,0,0,,OK VOY BIEN {\c&H0000E5FF&}DROGADO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.29,0:00:22.15,Shorts,,0,0,0,,{\c&H0000E5FF&}ENCIMA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.90,0:00:27.34,Shorts,,0,0,0,,NO ES UNA {\c&H0000E5FF&}BANDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.36,0:00:30.62,Shorts,,0,0,0,,A VER CÓMO {\c&H0000E5FF&}CORRE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.64,0:00:33.94,Shorts,,0,0,0,,DALE CAPO SI {\c&H0000E5FF&}DAME{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.96,0:00:34.68,Shorts,,0,0,0,,{\c&H0000E5FF&}ARMA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.45,0:00:37.99,Shorts,,0,0,0,,DAME ARMA DAME {\c&H0000E5FF&}ARMA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.01,0:00:39.75,Shorts,,0,0,0,,CAPO ME HA {\c&H0000E5FF&}QUEDADO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.77,0:00:40.51,Shorts,,0,0,0,,BIEN {\c&H0000E5FF&}LOQUITO{\c&H00FFFFFF&}

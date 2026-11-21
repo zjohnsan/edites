@@ -1,0 +1,55 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 08_cae_avion
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.32,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.34,0:00:00.60,Shorts,,0,0,0,,{\c&H0000E5FF&}MÍO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.62,0:00:01.20,Shorts,,0,0,0,,QUE {\c&H0000E5FF&}LENTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.96,0:00:03.84,Shorts,,0,0,0,,TODO {\c&H0000E5FF&}ALGO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.57,0:00:11.19,Shorts,,0,0,0,,UNA {\c&H0000E5FF&}AVIÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.31,0:00:11.75,Shorts,,0,0,0,,ES {\c&H0000E5FF&}CIERTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.77,0:00:11.99,Shorts,,0,0,0,,{\c&H0000E5FF&}BOLUDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.01,0:00:12.46,Shorts,,0,0,0,,LA {\c&H0000E5FF&}AVIÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.69,0:00:14.43,Shorts,,0,0,0,,EN {\c&H0000E5FF&}SERIO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.49,0:00:14.97,Shorts,,0,0,0,,SÍ O {\c&H0000E5FF&}SÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.99,0:00:15.44,Shorts,,0,0,0,,{\c&H0000E5FF&}OK{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.36,0:00:20.04,Shorts,,0,0,0,,ME {\c&H0000E5FF&}SIENTO{\c&H00FFFFFF&} IR POR
+Dialogue: 0,0:00:20.06,0:00:20.52,Shorts,,0,0,0,,EL {\c&H0000E5FF&}IZQUIERDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.98,0:00:21.20,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.22,0:00:21.84,Shorts,,0,0,0,,ESE {\c&H0000E5FF&}BAJABA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.06,0:00:23.58,Shorts,,0,0,0,,{\c&H0000E5FF&}PERMISO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.28,0:00:26.72,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.74,0:00:27.16,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.18,0:00:27.54,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.56,0:00:28.01,Shorts,,0,0,0,,{\c&H0000E5FF&}QUÉ?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.90,0:00:29.14,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:29.16,0:00:29.88,Shorts,,0,0,0,,NO {\c&H0000E5FF&}TENGO{\c&H00FFFFFF&} QUE IR
+Dialogue: 0,0:00:30.50,0:00:31.26,Shorts,,0,0,0,,SEGUIRLO Y {\c&H0000E5FF&}PLATA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.82,0:00:33.27,Shorts,,0,0,0,,{\c&H0000E5FF&}OK{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.74,0:00:34.26,Shorts,,0,0,0,,{\c&H0000E5FF&}DIOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.22,0:00:35.67,Shorts,,0,0,0,,MUY {\c&H0000E5FF&}BIEN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.76,0:00:36.21,Shorts,,0,0,0,,{\c&H0000E5FF&}SÍ!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.46,0:00:37.92,Shorts,,0,0,0,,{\c&H0000E5FF&}VALE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.94,0:00:39.16,Shorts,,0,0,0,,VALE POR LA {\c&H0000E5FF&}DERECHA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.22,0:00:41.72,Shorts,,0,0,0,,AHÍ TENGO QUE {\c&H0000E5FF&}PAGAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.74,0:00:42.68,Shorts,,0,0,0,,EL PUTO {\c&H0000E5FF&}PEAJE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.44,0:00:49.90,Shorts,,0,0,0,,{\c&H0000E5FF&}FAZÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.92,0:00:50.37,Shorts,,0,0,0,,{\c&H0000E5FF&}SERIO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.26,0:00:51.86,Shorts,,0,0,0,,{\c&H0000E5FF&}FAZÓN?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:51.94,0:00:53.90,Shorts,,0,0,0,,Y {\c&H0000E5FF&}IZQUIERDA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:55.74,0:00:56.00,Shorts,,0,0,0,,{\c&H0000E5FF&}SÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.02,0:00:56.20,Shorts,,0,0,0,,{\c&H0000E5FF&}SÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.22,0:00:56.40,Shorts,,0,0,0,,{\c&H0000E5FF&}SÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.26,0:00:56.71,Shorts,,0,0,0,,ME {\c&H0000E5FF&}METO{\c&H00FFFFFF&}
+Dialogue: 0,0:01:00.00,0:01:00.50,Shorts,,0,0,0,,{\c&H0000E5FF&}PERDÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:01:00.60,0:01:01.06,Shorts,,0,0,0,,{\c&H0000E5FF&}PERDÓN{\c&H00FFFFFF&}

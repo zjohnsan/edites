@@ -1,0 +1,30 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 07_triplazo_imposible
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.58,Shorts,,0,0,0,,10 DE {\c&H0000E5FF&}10{\c&H00FFFFFF&} Y
+Dialogue: 0,0:00:01.60,0:00:03.20,Shorts,,0,0,0,,MIRA Y TE {\c&H0000E5FF&}METO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.22,0:00:03.74,Shorts,,0,0,0,,UN {\c&H0000E5FF&}TRIPLE{\c&H00FFFFFF&} TE METO
+Dialogue: 0,0:00:03.76,0:00:04.46,Shorts,,0,0,0,,UN {\c&H0000E5FF&}TRIPLE{\c&H00FFFFFF&} MIRA YO
+Dialogue: 0,0:00:04.48,0:00:04.90,Shorts,,0,0,0,,TE LLEVO A {\c&H0000E5FF&}METER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.92,0:00:05.66,Shorts,,0,0,0,,UN {\c&H0000E5FF&}TRIPLE{\c&H00FFFFFF&} AHORA
+Dialogue: 0,0:00:07.34,0:00:07.94,Shorts,,0,0,0,,{\c&H0000E5FF&}MIRA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.96,0:00:12.62,Shorts,,0,0,0,,SACA LA {\c&H0000E5FF&}CAPO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.19,0:00:15.31,Shorts,,0,0,0,,{\c&H0000E5FF&}QUIERE{\c&H00FFFFFF&} MÁS LEJOS MÁS
+Dialogue: 0,0:00:15.33,0:00:17.07,Shorts,,0,0,0,,{\c&H0000E5FF&}LEJOS{\c&H00FFFFFF&} A VER A
+Dialogue: 0,0:00:17.09,0:00:21.65,Shorts,,0,0,0,,DONDE {\c&H0000E5FF&}CREES{\c&H00FFFFFF&} ACÁ ESTÁ
+Dialogue: 0,0:00:21.67,0:00:23.39,Shorts,,0,0,0,,MUY LEJOS NO {\c&H0000E5FF&}LLEGA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.73,0:00:26.59,Shorts,,0,0,0,,ACÁ {\c&H0000E5FF&}LLEGA{\c&H00FFFFFF&} OH MIRA
+Dialogue: 0,0:00:26.61,0:00:27.11,Shorts,,0,0,0,,LO QUE ES {\c&H0000E5FF&}EL{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.13,0:00:30.15,Shorts,,0,0,0,,{\c&H0000E5FF&}PUNTO{\c&H00FFFFFF&} YO METO ESTO
+Dialogue: 0,0:00:40.14,0:00:41.10,Shorts,,0,0,0,,A {\c&H0000E5FF&}DONDE{\c&H00FFFFFF&}

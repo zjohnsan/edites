@@ -43,3 +43,11 @@ public/musica/**/*.wav
 *.log
 .DS_Store
 Thumbs.db
+
+# Pipelines en lote GTA 6 (temporales, audio pesado y renders finales)
+temp_gta6/
+temp_gta6_ep2/
+clips_gta6_ep*/listos/
+clips_gta6_ep*/test_*.jpg
+*.m4a
+Gemini_Generated_Image_*.jfif

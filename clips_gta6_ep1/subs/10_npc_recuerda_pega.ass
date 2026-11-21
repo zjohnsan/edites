@@ -1,0 +1,61 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 10_npc_recuerda_pega
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.53,0:00:01.41,Shorts,,0,0,0,,VA A {\c&H0000E5FF&}PELEAR{\c&H00FFFFFF&} CON
+Dialogue: 0,0:00:01.43,0:00:01.97,Shorts,,0,0,0,,LA {\c&H0000E5FF&}SEÑORA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.31,0:00:02.59,Shorts,,0,0,0,,{\c&H0000E5FF&}BRO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.61,0:00:03.13,Shorts,,0,0,0,,ROBO {\c&H0000E5FF&}ALGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.15,0:00:03.97,Shorts,,0,0,0,,ESA {\c&H0000E5FF&}TÍPICA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.98,0:00:08.56,Shorts,,0,0,0,,{\c&H0000E5FF&}CARIO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.60,0:00:09.66,Shorts,,0,0,0,,HORA DE {\c&H0000E5FF&}CASA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.52,0:00:11.28,Shorts,,0,0,0,,{\c&H0000E5FF&}SEÑOR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.50,0:00:13.26,Shorts,,0,0,0,,{\c&H0000E5FF&}HEY{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.68,0:00:14.24,Shorts,,0,0,0,,{\c&H0000E5FF&}SEÑOR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.90,0:00:15.82,Shorts,,0,0,0,,POR QUÉ ESTÁ {\c&H0000E5FF&}CORRIENDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.84,0:00:16.08,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.10,0:00:16.64,Shorts,,0,0,0,,QUÉ LE {\c&H0000E5FF&}PASA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.56,0:00:18.01,Shorts,,0,0,0,,{\c&H0000E5FF&}DEINA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.46,0:00:18.94,Shorts,,0,0,0,,QUÉ {\c&H0000E5FF&}DECÍA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.96,0:00:20.46,Shorts,,0,0,0,,CONSUMIR {\c&H0000E5FF&}PROTEÍNA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.48,0:00:22.78,Shorts,,0,0,0,,{\c&H0000E5FF&}REDUCER{\c&H00FFFFFF&} EL TIEMPO DE
+Dialogue: 0,0:00:23.62,0:00:25.18,Shorts,,0,0,0,,LA {\c&H0000E5FF&}RECUPERACIÓN{\c&H00FFFFFF&} MUSCULAR
+Dialogue: 0,0:00:25.20,0:00:27.00,Shorts,,0,0,0,,QUÉ LE {\c&H0000E5FF&}PASA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.18,0:00:27.86,Shorts,,0,0,0,,{\c&H0000E5FF&}BUENO{\c&H00FFFFFF&} PERO QUÉ LE
+Dialogue: 0,0:00:27.88,0:00:28.46,Shorts,,0,0,0,,{\c&H0000E5FF&}PASA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.74,0:00:32.74,Shorts,,0,0,0,,YO LO OIGO {\c&H0000E5FF&}¡HOLA!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.38,0:00:34.83,Shorts,,0,0,0,,QUÉ HA {\c&H0000E5FF&}HECHO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.78,0:00:36.46,Shorts,,0,0,0,,{\c&H0000E5FF&}AII{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.50,0:00:36.88,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.90,0:00:39.08,Shorts,,0,0,0,,{\c&H0000E5FF&}ESTOY{\c&H00FFFFFF&} MAL POR QUÉ
+Dialogue: 0,0:00:39.10,0:00:40.74,Shorts,,0,0,0,,ESTABA {\c&H0000E5FF&}CORRIENDO{\c&H00FFFFFF&} AMIGO
+Dialogue: 0,0:00:40.76,0:00:41.52,Shorts,,0,0,0,,PERO {\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.66,0:00:44.34,Shorts,,0,0,0,,ESTO ES {\c&H0000E5FF&}TIPO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:45.36,0:00:46.50,Shorts,,0,0,0,,EL TIPO QUE {\c&H0000E5FF&}ESTABA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:46.52,0:00:47.62,Shorts,,0,0,0,,SIGUIENDO YO LA {\c&H0000E5FF&}CALLE?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:48.26,0:00:49.16,Shorts,,0,0,0,,ME {\c&H0000E5FF&}DIJO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.18,0:00:49.96,Shorts,,0,0,0,,ESO ES TU {\c&H0000E5FF&}PEO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:49.98,0:00:50.78,Shorts,,0,0,0,,OTRA VEZ LO {\c&H0000E5FF&}AMIGOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:50.80,0:00:52.52,Shorts,,0,0,0,,ESTOY {\c&H0000E5FF&}TOMANDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:52.54,0:00:53.66,Shorts,,0,0,0,,ENTONCES ESTOY {\c&H0000E5FF&}SIGUIENDO{\c&H00FFFFFF&} BOL
+Dialogue: 0,0:00:54.28,0:00:54.96,Shorts,,0,0,0,,{\c&H0000E5FF&}BRONQUE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:55.34,0:00:56.18,Shorts,,0,0,0,,QUE VOS ESTOY {\c&H0000E5FF&}SIGUIENDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.20,0:00:56.86,Shorts,,0,0,0,,LE {\c&H0000E5FF&}PUTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:58.72,0:00:59.22,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:59.24,0:00:59.42,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:59.34,0:00:59.52,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:59.48,0:00:59.76,Shorts,,0,0,0,,{\c&H0000E5FF&}SEÑORES{\c&H00FFFFFF&}
+Dialogue: 0,0:00:59.78,0:01:02.68,Shorts,,0,0,0,,ESTO {\c&H0000E5FF&}PAREN{\c&H00FFFFFF&} UN POCO
+Dialogue: 0,0:01:02.72,0:01:03.50,Shorts,,0,0,0,,{\c&H0000E5FF&}PAREN{\c&H00FFFFFF&} UN POCO
+Dialogue: 0,0:01:03.52,0:01:04.18,Shorts,,0,0,0,,YO NO {\c&H0000E5FF&}FUI{\c&H00FFFFFF&}
+Dialogue: 0,0:01:04.52,0:01:05.12,Shorts,,0,0,0,,LO {\c&H0000E5FF&}VISTE{\c&H00FFFFFF&}

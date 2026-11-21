@@ -1,0 +1,50 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 02_primera_persona
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.17,0:00:02.07,Shorts,,0,0,0,,{\c&H0000E5FF&}BRO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.35,0:00:03.29,Shorts,,0,0,0,,ME {\c&H0000E5FF&}SALIÓ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:03.31,0:00:04.53,Shorts,,0,0,0,,ME {\c&H0000E5FF&}SALIÓ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.55,0:00:06.07,Shorts,,0,0,0,,NO NO NO {\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.09,0:00:06.54,Shorts,,0,0,0,,NO {\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.21,0:00:08.41,Shorts,,0,0,0,,SALÍ DEL {\c&H0000E5FF&}AUTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.43,0:00:10.71,Shorts,,0,0,0,,AJÁ Y {\c&H0000E5FF&}AHORA{\c&H00FFFFFF&} SACO
+Dialogue: 0,0:00:10.73,0:00:11.45,Shorts,,0,0,0,,EL {\c&H0000E5FF&}CELULAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.39,0:00:15.07,Shorts,,0,0,0,,Y {\c&H0000E5FF&}TENES{\c&H00FFFFFF&} QUE COMO
+Dialogue: 0,0:00:15.09,0:00:15.59,Shorts,,0,0,0,,{\c&H0000E5FF&}ESPAMEAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.09,0:00:17.15,Shorts,,0,0,0,,ME {\c&H0000E5FF&}ENTENDES?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.25,0:00:18.09,Shorts,,0,0,0,,NO AMIGO {\c&H0000E5FF&}ESTOY{\c&H00FFFFFF&} EN
+Dialogue: 0,0:00:18.11,0:00:19.85,Shorts,,0,0,0,,PRIMERA {\c&H0000E5FF&}PERSONA{\c&H00FFFFFF&} PERO
+Dialogue: 0,0:00:19.87,0:00:21.05,Shorts,,0,0,0,,ESTO ESTABA {\c&H0000E5FF&}PENSADO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.79,0:00:24.21,Shorts,,0,0,0,,ESTO ESTABA {\c&H0000E5FF&}PENSADÍSIMO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:24.23,0:00:24.87,Shorts,,0,0,0,,A VER {\c&H0000E5FF&}NECESITO{\c&H00FFFFFF&} VER
+Dialogue: 0,0:00:24.89,0:00:26.13,Shorts,,0,0,0,,UN {\c&H0000E5FF&}REFLEJO{\c&H00FFFFFF&} POR FAVOR
+Dialogue: 0,0:00:26.15,0:00:27.43,Shorts,,0,0,0,,JUGAR EN PRIMERA {\c&H0000E5FF&}PERSONA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.45,0:00:28.63,Shorts,,0,0,0,,ES {\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&} OK LO
+Dialogue: 0,0:00:28.65,0:00:29.05,Shorts,,0,0,0,,QUE VAMOS A {\c&H0000E5FF&}HACER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:29.07,0:00:30.11,Shorts,,0,0,0,,PERO {\c&H0000E5FF&}LITERAL{\c&H00FFFFFF&} ES A
+Dialogue: 0,0:00:30.13,0:00:31.65,Shorts,,0,0,0,,LA DE {\c&H0000E5FF&}META{\c&H00FFFFFF&} A
+Dialogue: 0,0:00:31.67,0:00:34.19,Shorts,,0,0,0,,VER UN {\c&H0000E5FF&}ARMA{\c&H00FFFFFF&} NA
+Dialogue: 0,0:00:34.21,0:00:35.19,Shorts,,0,0,0,,ESTO ESTABA {\c&H0000E5FF&}PENSADO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.17,0:00:36.63,Shorts,,0,0,0,,{\c&H0000E5FF&}NA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.65,0:00:37.19,Shorts,,0,0,0,,ESTE {\c&H0000E5FF&}JUEGO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.01,0:00:39.27,Shorts,,0,0,0,,SE LO {\c&H0000E5FF&}SACARON{\c&H00FFFFFF&} ESTO
+Dialogue: 0,0:00:39.29,0:00:40.05,Shorts,,0,0,0,,LO {\c&H0000E5FF&}SACARON{\c&H00FFFFFF&} EN UN
+Dialogue: 0,0:00:40.07,0:00:41.53,Shorts,,0,0,0,,ULTIMO {\c&H0000E5FF&}MOMENTO{\c&H00FFFFFF&} A VER
+Dialogue: 0,0:00:41.55,0:00:42.53,Shorts,,0,0,0,,LOS {\c&H0000E5FF&}RETROVISORES{\c&H00FFFFFF&} SI LOS
+Dialogue: 0,0:00:42.55,0:00:43.19,Shorts,,0,0,0,,{\c&H0000E5FF&}ARREGLARON{\c&H00FFFFFF&}
+Dialogue: 0,0:00:47.17,0:00:48.27,Shorts,,0,0,0,,{\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&} LO DE ROCKSTAR
+Dialogue: 0,0:00:48.29,0:00:50.29,Shorts,,0,0,0,,BOLUDO NO {\c&H0000E5FF&}PUSIERON{\c&H00FFFFFF&} LA
+Dialogue: 0,0:00:50.31,0:00:50.93,Shorts,,0,0,0,,PRIMERA {\c&H0000E5FF&}PERSONA{\c&H00FFFFFF&} PORQUE
+Dialogue: 0,0:00:50.95,0:00:51.93,Shorts,,0,0,0,,NO QUERÍAN {\c&H0000E5FF&}ARREGLAR{\c&H00FFFFFF&} LOS
+Dialogue: 0,0:00:51.95,0:00:52.40,Shorts,,0,0,0,,{\c&H0000E5FF&}RETROVISORES{\c&H00FFFFFF&}

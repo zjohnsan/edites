@@ -1,0 +1,30 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 03_cargando_nafta
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.79,0:00:03.31,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.61,0:00:05.23,Shorts,,0,0,0,,{\c&H0000E5FF&}TODO{\c&H00FFFFFF&} LO QUE HAY
+Dialogue: 0,0:00:05.25,0:00:05.55,Shorts,,0,0,0,,A {\c&H0000E5FF&}MÍ{\c&H00FFFFFF&} NO ES
+Dialogue: 0,0:00:05.57,0:00:06.99,Shorts,,0,0,0,,UNA LOCURA {\c&H0000E5FF&}VOLVIDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.69,0:00:08.65,Shorts,,0,0,0,,TENGO COMO {\c&H0000E5FF&}POSIBLE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.51,0:00:10.41,Shorts,,0,0,0,,VAMOS A {\c&H0000E5FF&}REPOSTAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.43,0:00:10.88,Shorts,,0,0,0,,{\c&H0000E5FF&}VERDAD?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.76,0:00:21.28,Shorts,,0,0,0,,{\c&H0000E5FF&}SERVICIOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.00,0:00:23.90,Shorts,,0,0,0,,SENAR {\c&H0000E5FF&}TANQUE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.97,0:00:28.37,Shorts,,0,0,0,,{\c&H0000E5FF&}NADA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.39,0:00:28.84,Shorts,,0,0,0,,{\c&H0000E5FF&}BUENO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.07,0:00:31.59,Shorts,,0,0,0,,{\c&H0000E5FF&}GOT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.33,0:00:32.71,Shorts,,0,0,0,,{\c&H0000E5FF&}GOT{\c&H00FFFFFF&} IT
+Dialogue: 0,0:00:32.73,0:00:33.18,Shorts,,0,0,0,,LA {\c&H0000E5FF&}VERDAD{\c&H00FFFFFF&}
+Dialogue: 0,0:00:33.39,0:00:34.17,Shorts,,0,0,0,,ESTE SE LO {\c&H0000E5FF&}GANABA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.88,0:00:38.72,Shorts,,0,0,0,,100 POR {\c&H0000E5FF&}100{\c&H00FFFFFF&}

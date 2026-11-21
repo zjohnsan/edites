@@ -1,0 +1,42 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 16_botella_al_mar
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.18,Shorts,,0,0,0,,{\c&H0000E5FF&}SÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.18,0:00:00.80,Shorts,,0,0,0,,ME NOS {\c&H0000E5FF&}SENTAMOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.42,0:00:05.46,Shorts,,0,0,0,,Y ME {\c&H0000E5FF&}TOMO{\c&H00FFFFFF&} ACÁ
+Dialogue: 0,0:00:05.48,0:00:06.58,Shorts,,0,0,0,,MI {\c&H0000E5FF&}AGUA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.04,0:00:10.08,Shorts,,0,0,0,,QUE ES LA {\c&H0000E5FF&}OBRA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.10,0:00:11.08,Shorts,,0,0,0,,ESTA ES UNA {\c&H0000E5FF&}LOCURA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.10,0:00:11.55,Shorts,,0,0,0,,A {\c&H0000E5FF&}MÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.46,0:00:15.32,Shorts,,0,0,0,,LA DEJO {\c&H0000E5FF&}AHÍ?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.82,0:00:17.64,Shorts,,0,0,0,,LA {\c&H0000E5FF&}BOTELLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.42,0:00:19.02,Shorts,,0,0,0,,{\c&H0000E5FF&}PARATE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.94,0:00:20.66,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:21.22,0:00:22.26,Shorts,,0,0,0,,SI YO PUEDO {\c&H0000E5FF&}AGARRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:22.28,0:00:25.30,Shorts,,0,0,0,,ESTA {\c&H0000E5FF&}BOTELLA{\c&H00FFFFFF&} PARA
+Dialogue: 0,0:00:25.32,0:00:26.20,Shorts,,0,0,0,,YO PUEDO {\c&H0000E5FF&}AGARRAR{\c&H00FFFFFF&} ESTA
+Dialogue: 0,0:00:26.22,0:00:26.84,Shorts,,0,0,0,,{\c&H0000E5FF&}BOTELLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.14,0:00:29.76,Shorts,,0,0,0,,ME PUEDO IR {\c&H0000E5FF&}AFUERA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.34,0:00:31.28,Shorts,,0,0,0,,Y LA PUEDO {\c&H0000E5FF&}TIRAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.30,0:00:33.18,Shorts,,0,0,0,,LA {\c&H0000E5FF&}AGUA{\c&H00FFFFFF&} HACIENDO CONTAMINACIÓN
+Dialogue: 0,0:00:34.20,0:00:35.40,Shorts,,0,0,0,,YO TE {\c&H0000E5FF&}JURO{\c&H00FFFFFF&} QUE
+Dialogue: 0,0:00:35.42,0:00:36.16,Shorts,,0,0,0,,VOY EL DE {\c&H0000E5FF&}BESO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.18,0:00:37.44,Shorts,,0,0,0,,AL CULO A {\c&H0000E5FF&}ROSA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.34,0:00:38.78,Shorts,,0,0,0,,YO ME {\c&H0000E5FF&}VOY{\c&H00FFFFFF&} CON
+Dialogue: 0,0:00:38.80,0:00:39.46,Shorts,,0,0,0,,LA {\c&H0000E5FF&}BOTELLA{\c&H00FFFFFF&} VACÍA
+Dialogue: 0,0:00:39.48,0:00:39.93,Shorts,,0,0,0,,{\c&H0000E5FF&}NO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.78,0:00:43.24,Shorts,,0,0,0,,ME {\c&H0000E5FF&}VOY{\c&H00FFFFFF&} CON LA
+Dialogue: 0,0:00:43.26,0:00:44.04,Shorts,,0,0,0,,{\c&H0000E5FF&}BOTELLA{\c&H00FFFFFF&} VACÍA
+Dialogue: 0,0:00:44.20,0:00:45.48,Shorts,,0,0,0,,LA {\c&H0000E5FF&}BOTELLA{\c&H00FFFFFF&} VACÍA
+Dialogue: 0,0:00:45.54,0:00:46.02,Shorts,,0,0,0,,{\c&H0000E5FF&}FLOTA{\c&H00FFFFFF&}

@@ -41,7 +41,16 @@ export type SvgPosition = z.infer<typeof svgPositionSchema>;
 export const svgAnimationSchema = z.enum(['pop', 'float', 'shake']);
 export type SvgAnimation = z.infer<typeof svgAnimationSchema>;
 
+export const cardStyleSchema = z.enum(['editorial', 'coral']);
+export type CardStyle = z.infer<typeof cardStyleSchema>;
+
 export const cardItemSchema = z.object({
+  id: z.string().optional(),
+  estilo: cardStyleSchema.default('editorial').optional(),
+  badge: z.string().optional(),
+  texto: z.string().optional(),
+  subtitulo: z.string().optional(),
+  // Campos heredados por compatibilidad con proyectos anteriores y stickers con imagen
   title: z.string().optional(),
   text: z.string().optional(),
   subtitle: z.string().optional(),
@@ -52,7 +61,7 @@ export const cardItemSchema = z.object({
   start: z.number(),
   end: z.number(),
   position: cardPositionSchema.optional(),
-  variant: z.enum(['card', 'stamp']).optional(),
+  variant: z.enum(['card', 'stamp', 'sticker']).optional(),
   xOffset: z.number().min(-600).max(600).default(0).optional(),
   yOffset: z.number().min(-800).max(800).default(0).optional(),
   scale: z.number().min(0.3).max(3).step(0.05).default(1).optional(),

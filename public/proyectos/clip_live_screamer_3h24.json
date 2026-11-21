@@ -1,0 +1,318 @@
+{
+  "editStyle": "detallada",
+  "habilitarHookTeaser": false,
+  "hookTitle": "¡TERROR EN VIVO! 💀",
+  "seo": {
+    "youtubeTitle": "El screamer que casi lo tira 💀 @berlinuno #shorts",
+    "cleanTitle": "El screamer que casi lo tira 💀",
+    "titleCharCount": 49,
+    "youtubeDescription": "12 segundos de pura tensión caminando a oscuras hasta que salta el screamer y Berlín casi se sube al mueble del susto.\n\n#gaming #terror #screamer #clips #roblox #humor #argentina",
+    "hashtagsDescripcion": [
+      "#gaming",
+      "#terror",
+      "#screamer",
+      "#clips",
+      "#roblox",
+      "#humor",
+      "#argentina"
+    ]
+  },
+  "subtitleConfig": {
+    "yOffset": 0,
+    "scale": 1
+  },
+  "videoSrc": "clips/clip_live_screamer_3h24.mp4",
+  "webcamEnhancedFile": null,
+  "usarMejoraIA": false,
+  "durationInSeconds": 37.233,
+  "cards": [
+    {
+      "id": "card-1",
+      "estilo": "editorial",
+      "badge": "👻 TENSIÓN",
+      "texto": "CAMINANDO A OSCURAS EN VIVO",
+      "subtitulo": "NADA PUEDE SALIR MAL...",
+      "start": 2.9,
+      "end": 11.6,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    },
+    {
+      "id": "card-2",
+      "estilo": "coral",
+      "texto": "¡EL SCREAMER! 💀👻",
+      "start": 11.9,
+      "end": 22.8,
+      "sfx": "SONIDOS/Sonido de impacto.mp3"
+    },
+    {
+      "id": "card-3",
+      "estilo": "editorial",
+      "badge": "😱 REACCIÓN",
+      "texto": "CASI SE SUBE AL MUEBLE DEL SUSTO",
+      "subtitulo": "ME CAGUÉ EN LAS PATAS, BOLUDO",
+      "start": 23.2,
+      "end": 37.0,
+      "sfx": "SONIDOS/efecto de sonido POP.mp3"
+    }
+  ],
+  "illustrations": [],
+  "explainerPanels": [],
+  "subtitles": [
+    {
+      "word": "Bro,",
+      "start": 22.58,
+      "end": 23.0,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 23.34,
+      "end": 23.52,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 23.64,
+      "end": 23.86,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 23.86,
+      "end": 24.0,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 24.0,
+      "end": 24.22,
+      "highlight": false
+    },
+    {
+      "word": "cagué",
+      "start": 24.22,
+      "end": 24.7,
+      "highlight": true
+    },
+    {
+      "word": "en",
+      "start": 24.7,
+      "end": 24.8,
+      "highlight": false
+    },
+    {
+      "word": "las",
+      "start": 24.8,
+      "end": 24.94,
+      "highlight": false
+    },
+    {
+      "word": "patas,",
+      "start": 24.94,
+      "end": 25.54,
+      "highlight": false
+    },
+    {
+      "word": "boludo.",
+      "start": 25.68,
+      "end": 25.96,
+      "highlight": true
+    },
+    {
+      "word": "¿Por",
+      "start": 25.96,
+      "end": 26.12,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 26.12,
+      "end": 26.28,
+      "highlight": false
+    },
+    {
+      "word": "te",
+      "start": 26.28,
+      "end": 26.44,
+      "highlight": false
+    },
+    {
+      "word": "subiste",
+      "start": 26.44,
+      "end": 26.8,
+      "highlight": true
+    },
+    {
+      "word": "al",
+      "start": 26.8,
+      "end": 26.98,
+      "highlight": false
+    },
+    {
+      "word": "mueble?",
+      "start": 26.98,
+      "end": 27.32,
+      "highlight": true
+    },
+    {
+      "word": "Bro,",
+      "start": 27.32,
+      "end": 28.14,
+      "highlight": false
+    },
+    {
+      "word": "me",
+      "start": 28.22,
+      "end": 28.48,
+      "highlight": false
+    },
+    {
+      "word": "quise",
+      "start": 28.48,
+      "end": 28.78,
+      "highlight": false
+    },
+    {
+      "word": "subir",
+      "start": 28.78,
+      "end": 29.16,
+      "highlight": false
+    },
+    {
+      "word": "al",
+      "start": 29.16,
+      "end": 29.42,
+      "highlight": false
+    },
+    {
+      "word": "mueble!",
+      "start": 29.42,
+      "end": 30.04,
+      "highlight": true
+    },
+    {
+      "word": "No,",
+      "start": 30.04,
+      "end": 30.86,
+      "highlight": false
+    },
+    {
+      "word": "no,",
+      "start": 31.04,
+      "end": 31.12,
+      "highlight": false
+    },
+    {
+      "word": "no",
+      "start": 31.12,
+      "end": 31.82,
+      "highlight": false
+    },
+    {
+      "word": "No,",
+      "start": 32.8,
+      "end": 33.24,
+      "highlight": false
+    },
+    {
+      "word": "Dios",
+      "start": 33.44,
+      "end": 33.64,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 33.64,
+      "end": 33.82,
+      "highlight": false
+    },
+    {
+      "word": "miedo,",
+      "start": 33.82,
+      "end": 34.14,
+      "highlight": true
+    },
+    {
+      "word": "boludo,",
+      "start": 34.22,
+      "end": 34.46,
+      "highlight": true
+    },
+    {
+      "word": "Dios",
+      "start": 34.52,
+      "end": 34.78,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 34.78,
+      "end": 34.94,
+      "highlight": false
+    },
+    {
+      "word": "miedo,",
+      "start": 34.94,
+      "end": 35.2,
+      "highlight": false
+    },
+    {
+      "word": "qué",
+      "start": 35.24,
+      "end": 35.38,
+      "highlight": false
+    },
+    {
+      "word": "juego",
+      "start": 35.38,
+      "end": 35.6,
+      "highlight": false
+    },
+    {
+      "word": "de",
+      "start": 35.6,
+      "end": 35.76,
+      "highlight": false
+    },
+    {
+      "word": "mierda",
+      "start": 35.76,
+      "end": 36.28,
+      "highlight": true
+    },
+    {
+      "word": "de terror!",
+      "start": 36.34,
+      "end": 36.54,
+      "highlight": false
+    }
+  ],
+  "backgroundMusic": {
+    "file": "tension_accion/tense_chase_action.mp3",
+    "category": "tension_accion",
+    "volume": 0.08,
+    "cutAtTimestamps": [
+      {
+        "start": 11.75,
+        "end": 14.0
+      },
+      {
+        "start": 23.95,
+        "end": 25.8
+      },
+      {
+        "start": 33.35,
+        "end": 35.3
+      }
+    ],
+    "fadeInSeconds": 0.5,
+    "fadeOutSeconds": 1.0,
+    "cutFadeInSeconds": 0.4
+  },
+  "cameraFullscreenRanges": [
+    {
+      "start": 16.0,
+      "end": 37.233
+    }
+  ]
+}

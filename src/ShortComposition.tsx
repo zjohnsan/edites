@@ -2,18 +2,23 @@ import React from 'react';
 import {
   AbsoluteFill,
   Audio,
-  Img,
   interpolate,
-  OffthreadVideo,
   Sequence,
   spring,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
+  Video,
 } from 'remotion';
+import { TopCardBanner } from './components/TopCardBanner';
+import {
+  DEFAULT_DING_SFX,
+  DEFAULT_POP_SFX,
+  DEFAULT_WHOOSH_SFX,
+  resolveSfxSrc,
+} from './utils/mediaPaths';
 import {
   BackgroundMusic,
-  CardItem,
   CardPosition,
   ExplainerGridItem,
   ExplainerPanel,
@@ -32,20 +37,6 @@ const positionClasses: Record<CardPosition, string> = {
   center: 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2',
   'bottom-left': 'bottom-32 left-10',
   'bottom-right': 'bottom-32 right-10',
-};
-
-const DEFAULT_POP_SFX = 'SONIDOS/efecto de sonido POP.mp3';
-const DEFAULT_WHOOSH_SFX = 'Whosh/Swipe Swoosh Transition Sound Effect.mp3';
-const DEFAULT_DING_SFX =
-  'SONIDOS/ES_Notification, Tutorial Message Appear, Attention, Video Game 02 - Epidemic Sound.mp3';
-
-const resolveSfxSrc = (sfx: string | undefined, defaultFile: string): string => {
-  const chosen = sfx?.trim() || defaultFile;
-  const normalized = chosen.replace(/^\/+/, '');
-  const withPrefix = normalized.startsWith('sfx/')
-    ? normalized
-    : `sfx/${normalized}`;
-  return staticFile(withPrefix);
 };
 
 const resolveMusicSrc = (musicFile: string): string => {
@@ -197,133 +188,6 @@ const AnimatedSubtitle: React.FC<{
       >
         {item.word}
       </span>
-    </div>
-  );
-};
-
-const AnimatedCard: React.FC<{ card: CardItem }> = ({ card }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const startFrame = Math.round(card.start * fps);
-  const endFrame = Math.round(card.end * fps);
-  const relativeFrame = Math.max(0, frame - startFrame);
-
-  const enterSpring = spring({
-    frame: relativeFrame,
-    fps,
-    config: {
-      damping: 12,
-      stiffness: 180,
-      mass: 0.8,
-    },
-  });
-
-  const exitFrames = Math.max(4, Math.round(0.2 * fps));
-  const exitProgress =
-    frame > endFrame - exitFrames
-      ? Math.max(0, (endFrame - frame) / exitFrames)
-      : 1;
-
-  const xOffset = card.xOffset ?? 0;
-  const yOffset = card.yOffset ?? 0;
-  const customScale = card.scale ?? 1;
-  const scale = enterSpring * exitProgress * customScale;
-  const isCentered = (card.position || 'top-right') === 'center';
-  const posClass = isCentered
-    ? 'top-1/2 left-1/2'
-    : positionClasses[card.position || 'top-right'];
-  const baseTranslate = isCentered
-    ? `translate(calc(-50% + ${xOffset}px), calc(-50% + ${yOffset}px))`
-    : `translate(${xOffset}px, ${yOffset}px)`;
-  const displayIcon = card.icon || card.emoji;
-
-  if (card.image) {
-    const imgSrc = card.image.startsWith('http') || card.image.startsWith('/')
-      ? card.image
-      : staticFile(card.image);
-
-    return (
-      <div
-        style={{
-          transform: `${baseTranslate} scale(${scale})`,
-          opacity: Math.min(1, enterSpring * exitProgress),
-        }}
-        className={`absolute z-30 ${posClass} bg-black/90 backdrop-blur-md border-4 border-yellow-400 rounded-3xl p-5 shadow-[0_16px_40px_rgba(0,0,0,0.9),0_0_24px_rgba(255,230,0,0.3)] flex flex-col items-center gap-3 w-[840px] max-w-[92vw]`}
-      >
-        <Sequence from={startFrame} layout="none">
-          <Audio src={resolveSfxSrc(card.sfx, DEFAULT_POP_SFX)} volume={0.35} />
-        </Sequence>
-        <div className="flex items-center gap-3 w-full justify-between border-b border-white/20 pb-2 px-1">
-          <div className="flex items-center gap-2">
-            <span className="w-3.5 h-3.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-yellow-400 font-black text-2xl uppercase tracking-wider">
-              {card.title || 'PREGUNTA DEL CHAT'}
-            </span>
-          </div>
-          {card.subtitle && (
-            <span className="text-white/70 font-bold text-lg uppercase tracking-wide">
-              {card.subtitle}
-            </span>
-          )}
-        </div>
-        <div className="rounded-xl overflow-hidden bg-black/85 border border-white/20 p-2 shadow-inner w-full flex items-center justify-center">
-          <Img
-            src={imgSrc}
-            alt="Chat question"
-            className="w-full h-auto object-contain rounded"
-            style={{ imageRendering: 'crisp-edges' }}
-          />
-        </div>
-      </div>
-    );
-  }
-
-  if (card.variant === 'stamp') {
-    return (
-      <div
-        style={{
-          transform: `${baseTranslate} scale(${scale}) rotate(-8deg)`,
-          opacity: Math.min(1, enterSpring * exitProgress),
-        }}
-        className={`absolute z-30 ${posClass} border-8 border-yellow-400 bg-black/90 px-8 py-4 rounded-2xl shadow-2xl max-w-[920px] text-center`}
-      >
-        <Sequence from={startFrame} layout="none">
-          <Audio src={resolveSfxSrc(card.sfx, DEFAULT_POP_SFX)} volume={0.35} />
-        </Sequence>
-        <div className="flex items-center justify-center gap-4">
-          {displayIcon && <span className="text-5xl shrink-0">{displayIcon}</span>}
-          <span className="text-yellow-400 font-black text-5xl uppercase tracking-wider leading-tight">
-            {card.title || card.text}
-          </span>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div
-      style={{
-        transform: `${baseTranslate} scale(${scale})`,
-        opacity: Math.min(1, enterSpring * exitProgress),
-      }}
-      className={`absolute z-20 ${posClass} bg-zinc-900/95 border-4 border-yellow-400 rounded-3xl px-7 py-5 shadow-2xl flex items-center gap-5 max-w-[650px]`}
-    >
-      <Sequence from={startFrame} layout="none">
-        <Audio src={resolveSfxSrc(card.sfx, DEFAULT_POP_SFX)} volume={0.35} />
-      </Sequence>
-      {displayIcon && (
-        <span className="text-6xl select-none">{displayIcon}</span>
-      )}
-      <div className="flex flex-col">
-        <span className="text-yellow-400 font-black text-3xl uppercase tracking-wide leading-tight">
-          {card.title || card.text}
-        </span>
-        {(card.subtitle || card.subtext) && (
-          <span className="text-white font-bold text-2xl mt-1 leading-snug">
-            {card.subtitle || card.subtext}
-          </span>
-        )}
-      </div>
     </div>
   );
 };
@@ -1272,7 +1136,7 @@ const HookTeaserSegment: React.FC<{ data: ShortData; teaser: HookTeaser }> = ({
   return (
     <AbsoluteFill>
       {videoSrc && (
-        <OffthreadVideo
+        <Video
           src={videoSrc}
           startFrom={Math.round(teaser.start * fps)}
           endAt={Math.round(teaser.end * fps)}
@@ -1355,7 +1219,7 @@ const MainShortContent: React.FC<{ data: ShortData }> = ({ data }) => {
   return (
     <AbsoluteFill>
       {resolvedVideoSrc ? (
-        <OffthreadVideo
+        <Video
           src={resolvedVideoSrc}
           className="w-full h-full object-cover"
           style={{ filter: 'contrast(1.06) saturate(1.12)' }}
@@ -1377,17 +1241,25 @@ const MainShortContent: React.FC<{ data: ShortData }> = ({ data }) => {
         </AbsoluteFill>
       )}
 
-      {/* Hook visual en los primeros 2.5 a 3 segundos del video principal */}
-      {data.hookTitle && <HookTitleBanner title={data.hookTitle} />}
+      {/* Hook visual en los primeros 2.5 a 3 segundos si no hay tarjeta superior activa */}
+      {data.hookTitle && !activeCards.some((c) => !c.image) && (
+        <HookTitleBanner title={data.hookTitle} />
+      )}
 
       {/* Modo 'detallada' e 'ilustraciones': Gráficos Explainer transparentes sobre el gameplay */}
       {activeExplainerPanels.map((panel, idx) => (
         <ExplainerPanelOverlay key={`explainer-${idx}`} panel={panel} />
       ))}
 
-      {/* Modo 'detallada' e 'ilustraciones': Tarjetas y sellos animados */}
+      {/* Modo 'detallada' e 'ilustraciones': Etiquetas y tarjetas superiores fijas y rectas */}
       {activeCards.map((card, idx) => (
-        <AnimatedCard key={`${card.title || card.text || 'card'}-${idx}`} card={card} />
+        <TopCardBanner
+          key={
+            card.id ||
+            `${card.texto || card.title || card.text || 'card'}-${idx}`
+          }
+          card={card}
+        />
       ))}
 
       {/* Modo 'ilustraciones': Ilustraciones SVG literales + Gráficos React/SVG */}

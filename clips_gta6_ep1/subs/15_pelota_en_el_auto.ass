@@ -1,0 +1,44 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 15_pelota_en_el_auto
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.60,Shorts,,0,0,0,,NO ME {\c&H0000E5FF&}DEJA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.62,0:00:01.32,Shorts,,0,0,0,,NO ME {\c&H0000E5FF&}DEJA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.34,0:00:04.64,Shorts,,0,0,0,,A LA {\c&H0000E5FF&}AUTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:04.66,0:00:08.42,Shorts,,0,0,0,,A LA {\c&H0000E5FF&}AUTO{\c&H00FFFFFF&} OK
+Dialogue: 0,0:00:09.36,0:00:10.52,Shorts,,0,0,0,,DE PODER {\c&H0000E5FF&}PUEDO{\c&H00FFFFFF&} ACÁ
+Dialogue: 0,0:00:11.68,0:00:13.74,Shorts,,0,0,0,,PERO NO ME {\c&H0000E5FF&}DEJA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.76,0:00:14.50,Shorts,,0,0,0,,NO ME DEJA {\c&H0000E5FF&}PORQUE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:14.52,0:00:15.54,Shorts,,0,0,0,,TENGO QUE {\c&H0000E5FF&}ESTAR{\c&H00FFFFFF&} SI
+Dialogue: 0,0:00:15.56,0:00:15.92,Shorts,,0,0,0,,O SI EN {\c&H0000E5FF&}EL{\c&H00FFFFFF&}
+Dialogue: 0,0:00:15.94,0:00:16.39,Shorts,,0,0,0,,{\c&H0000E5FF&}AUTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.31,0:00:19.15,Shorts,,0,0,0,,CÓMO SE HA {\c&H0000E5FF&}ALTO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.07,0:00:20.41,Shorts,,0,0,0,,A {\c&H0000E5FF&}VER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.43,0:00:21.35,Shorts,,0,0,0,,{\c&H0000E5FF&}ACÁ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.34,0:00:28.68,Shorts,,0,0,0,,{\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.70,0:00:29.12,Shorts,,0,0,0,,{\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:29.14,0:00:30.04,Shorts,,0,0,0,,ME LA LLEVA {\c&H0000E5FF&}ADENTRO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.40,0:00:31.14,Shorts,,0,0,0,,Y {\c&H0000E5FF&}SI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:32.38,0:00:33.38,Shorts,,0,0,0,,LA {\c&H0000E5FF&}VERDAD{\c&H00FFFFFF&} QUE SÍ
+Dialogue: 0,0:00:33.44,0:00:34.42,Shorts,,0,0,0,,ME LA {\c&H0000E5FF&}LLEVA{\c&H00FFFFFF&} SE
+Dialogue: 0,0:00:34.44,0:00:35.02,Shorts,,0,0,0,,HUBO GUION {\c&H0000E5FF&}SERIO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.04,0:00:35.66,Shorts,,0,0,0,,APARECIÓ {\c&H0000E5FF&}ABAJO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.92,0:00:36.62,Shorts,,0,0,0,,NO CREO QUE {\c&H0000E5FF&}ESTÁ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:36.64,0:00:37.26,Shorts,,0,0,0,,{\c&H0000E5FF&}DENTRO{\c&H00FFFFFF&} DEL AUTO
+Dialogue: 0,0:00:37.52,0:00:38.26,Shorts,,0,0,0,,ENTRA EL {\c&H0000E5FF&}AUTO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:38.54,0:00:39.34,Shorts,,0,0,0,,ESTÁ {\c&H0000E5FF&}DENTRO{\c&H00FFFFFF&} DEL AUTO
+Dialogue: 0,0:00:39.36,0:00:39.98,Shorts,,0,0,0,,ME ES {\c&H0000E5FF&}PARTE{\c&H00FFFFFF&} DE
+Dialogue: 0,0:00:40.00,0:00:40.32,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.34,0:00:40.84,Shorts,,0,0,0,,ESTÁ {\c&H0000E5FF&}DENTRO{\c&H00FFFFFF&} DEL AUTO
+Dialogue: 0,0:00:40.86,0:00:41.54,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:46.23,0:00:47.11,Shorts,,0,0,0,,{\c&H0000E5FF&}CREO{\c&H00FFFFFF&} Y POR AHÍ

@@ -1,0 +1,43 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 22_tienda_ropa_alpargatas
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:04.48,0:00:06.14,Shorts,,0,0,0,,Y ME {\c&H0000E5FF&}CONTIENE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.44,0:00:09.52,Shorts,,0,0,0,,ME HA {\c&H0000E5FF&}PAGADO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.80,0:00:14.72,Shorts,,0,0,0,,{\c&H0000E5FF&}¡GROO!{\c&H00FFFFFF&}
+Dialogue: 0,0:00:16.02,0:00:17.06,Shorts,,0,0,0,,ME IÓ EL {\c&H0000E5FF&}PARGATO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.08,0:00:17.60,Shorts,,0,0,0,,ME HE {\c&H0000E5FF&}NISTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.20,0:00:25.10,Shorts,,0,0,0,,LO TENGO QUE {\c&H0000E5FF&}HACER{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.12,0:00:25.57,Shorts,,0,0,0,,A {\c&H0000E5FF&}MI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.26,0:00:27.58,Shorts,,0,0,0,,VES A {\c&H0000E5FF&}SER{\c&H00FFFFFF&} EL
+Dialogue: 0,0:00:27.60,0:00:27.86,Shorts,,0,0,0,,{\c&H0000E5FF&}DURO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:27.88,0:00:28.78,Shorts,,0,0,0,,ESO ES {\c&H0000E5FF&}ALGO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.77,0:00:35.43,Shorts,,0,0,0,,ME HE {\c&H0000E5FF&}DADO{\c&H00FFFFFF&} TAN
+Dialogue: 0,0:00:35.45,0:00:35.75,Shorts,,0,0,0,,{\c&H0000E5FF&}MAL{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.77,0:00:36.43,Shorts,,0,0,0,,YO {\c&H0000E5FF&}SUPONGO{\c&H00FFFFFF&} QUE POR
+Dialogue: 0,0:00:36.45,0:00:38.19,Shorts,,0,0,0,,MÍ MI {\c&H0000E5FF&}POBREZ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.19,0:00:41.67,Shorts,,0,0,0,,{\c&H0000E5FF&}NECESITO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:43.99,0:00:44.47,Shorts,,0,0,0,,{\c&H0000E5FF&}NECESITO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.57,0:00:45.31,Shorts,,0,0,0,,{\c&H0000E5FF&}NECESITO{\c&H00FFFFFF&} ARRIBA
+Dialogue: 0,0:00:50.02,0:00:50.50,Shorts,,0,0,0,,{\c&H0000E5FF&}ESTO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:52.48,0:00:53.26,Shorts,,0,0,0,,QUE {\c&H0000E5FF&}SEÑOR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:53.28,0:00:53.50,Shorts,,0,0,0,,{\c&H0000E5FF&}PERDÓN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:53.52,0:00:54.24,Shorts,,0,0,0,,YO {\c&H0000E5FF&}QUIERO{\c&H00FFFFFF&} MIRAR AHÍ
+Dialogue: 0,0:00:55.96,0:00:56.44,Shorts,,0,0,0,,{\c&H0000E5FF&}WOW{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.46,0:00:56.64,Shorts,,0,0,0,,{\c&H0000E5FF&}MÍO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:56.62,0:00:57.40,Shorts,,0,0,0,,HAY TANTA {\c&H0000E5FF&}VARIEDAD{\c&H00FFFFFF&} DE
+Dialogue: 0,0:00:57.42,0:00:57.62,Shorts,,0,0,0,,{\c&H0000E5FF&}ROPA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:57.64,0:00:58.22,Shorts,,0,0,0,,{\c&H0000E5FF&}DIOS{\c&H00FFFFFF&} MÍO
+Dialogue: 0,0:01:00.32,0:01:01.30,Shorts,,0,0,0,,NO ME {\c&H0000E5FF&}GUSTA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:02.46,0:01:03.28,Shorts,,0,0,0,,VOS Y ME {\c&H0000E5FF&}GUSTA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:03.30,0:01:03.75,Shorts,,0,0,0,,CÓMO {\c&H0000E5FF&}ANDAS?{\c&H00FFFFFF&}

@@ -1,23 +1,23 @@
 {
-  "totalTracks": 76,
+  "totalTracks": 82,
   "categories": {
     "comedia_absurda": {
-      "count": 40,
+      "count": 42,
       "description": "Para anécdotas, fails, burlas o situaciones bizarras (ej. lentes rotos, 'es una maleducada')",
       "defaultTrack": "ES_Another Fried Chicken - Stationary Sign.mp3"
     },
     "tension_accion": {
-      "count": 16,
+      "count": 17,
       "description": "Para tiroteos, persecuciones, apuestas críticas o momentos de pánico/baneo",
       "defaultTrack": "ES_Call for Action - Jon Bjork.mp3"
     },
     "chill_storytime": {
-      "count": 9,
+      "count": 10,
       "description": "Para charlas tranquilas con el chat, debates o noticias (ej. planes de GTA 6)",
       "defaultTrack": "ES_60984_Don't Trip.mp3"
     },
     "epica_climax": {
-      "count": 11,
+      "count": 13,
       "description": "Para jugadas buenas, anuncios importantes o remates triunfales",
       "defaultTrack": "ES_LEGENDS - MXRPHEUS.mp3"
     }
@@ -1808,6 +1808,143 @@
         "cámara"
       ],
       "excludeFromAutoBgm": true
+    },
+    {
+      "file": "comedia_absurda/sneaky_snitch.mp3",
+      "path": "musica/comedia_absurda/sneaky_snitch.mp3",
+      "category": "comedia_absurda",
+      "durationSeconds": 136.64,
+      "rmsDb": -18.9,
+      "energy": "medium",
+      "genre": "comedy / quirky",
+      "mood": "comedia absurda",
+      "recommendedVolume": 0.1,
+      "usage": "Instrumental cómico / quirky ideal para fails, sarcasmo o situaciones absurdas. (Sneaky Snitch – Kevin MacLeod (No Copyright Music))",
+      "keywords": [
+        "sigilo",
+        "comedia",
+        "pizzicato",
+        "absurdo",
+        "broma",
+        "sarcasmo",
+        "fail"
+      ],
+      "sourceTitle": "Sneaky Snitch – Kevin MacLeod (No Copyright Music)",
+      "excludeFromAutoBgm": false
+    },
+    {
+      "file": "comedia_absurda/monkeys_spinning_monkeys.mp3",
+      "path": "musica/comedia_absurda/monkeys_spinning_monkeys.mp3",
+      "category": "comedia_absurda",
+      "durationSeconds": 125.17,
+      "rmsDb": -19.8,
+      "energy": "medium",
+      "genre": "comedy / quirky",
+      "mood": "comedia absurda",
+      "recommendedVolume": 0.1,
+      "usage": "Instrumental cómico / quirky ideal para fails, sarcasmo o situaciones absurdas. (Monkeys Spinning Monkeys – Kevin MacLeod (No Copyright Music))",
+      "keywords": [
+        "comedia",
+        "absurdo",
+        "caos",
+        "gracioso",
+        "tonto",
+        "fail",
+        "burla"
+      ],
+      "sourceTitle": "Monkeys Spinning Monkeys – Kevin MacLeod (No Copyright Music)",
+      "excludeFromAutoBgm": false
+    },
+    {
+      "file": "epica_climax/epic_cinematic.mp3",
+      "path": "musica/epica_climax/epic_cinematic.mp3",
+      "category": "epica_climax",
+      "durationSeconds": 167.06,
+      "rmsDb": -10.4,
+      "energy": "high",
+      "genre": "epic / orchestral",
+      "mood": "epica climax",
+      "recommendedVolume": 0.08,
+      "usage": "Instrumental épico triunfal para grandes logros, remontadas o anuncios clave. (Epic Cinematic Background Music NO COPYRIGHT | FREE Epic Background Music For Videos • EMW)",
+      "keywords": [
+        "épico",
+        "cine",
+        "anuncio",
+        "gta 6",
+        "logro",
+        "clímax",
+        "final"
+      ],
+      "sourceTitle": "Epic Cinematic Background Music NO COPYRIGHT | FREE Epic Background Music For Videos • EMW",
+      "excludeFromAutoBgm": false
+    },
+    {
+      "file": "epica_climax/victory_triumphant.mp3",
+      "path": "musica/epica_climax/victory_triumphant.mp3",
+      "category": "epica_climax",
+      "durationSeconds": 141.14,
+      "rmsDb": -11.7,
+      "energy": "high",
+      "genre": "epic / orchestral",
+      "mood": "epica climax",
+      "recommendedVolume": 0.08,
+      "usage": "Instrumental épico triunfal para grandes logros, remontadas o anuncios clave. (ROYALTY FREE Epic Victory Music Royalty Free Instrumental Music | The Victory by MUSIC4VIDEO)",
+      "keywords": [
+        "victoria",
+        "triunfo",
+        "ganar",
+        "escape",
+        "festejo",
+        "remontada"
+      ],
+      "sourceTitle": "ROYALTY FREE Epic Victory Music Royalty Free Instrumental Music | The Victory by MUSIC4VIDEO",
+      "excludeFromAutoBgm": false
+    },
+    {
+      "file": "tension_accion/tense_chase_action.mp3",
+      "path": "musica/tension_accion/tense_chase_action.mp3",
+      "category": "tension_accion",
+      "durationSeconds": 126.29,
+      "rmsDb": -15.4,
+      "energy": "medium",
+      "genre": "action / suspense",
+      "mood": "tension accion",
+      "recommendedVolume": 0.09,
+      "usage": "Instrumental de tensión y acción para persecuciones, momentos límite o caos. (Escape Chase)",
+      "keywords": [
+        "tensión",
+        "persecución",
+        "acción",
+        "peligro",
+        "huida",
+        "caos",
+        "infarto"
+      ],
+      "sourceTitle": "Escape Chase",
+      "excludeFromAutoBgm": false
+    },
+    {
+      "file": "chill_storytime/chill_lofi_storytime.mp3",
+      "path": "musica/chill_storytime/chill_lofi_storytime.mp3",
+      "category": "chill_storytime",
+      "durationSeconds": 139.98,
+      "rmsDb": -9.7,
+      "energy": "high",
+      "genre": "lofi / background",
+      "mood": "chill storytime",
+      "recommendedVolume": 0.08,
+      "usage": "Instrumental chill suave para anécdotas, charlas con el chat o storytime. (bliss - lofi hip hop beat (FREE FOR PROFIT USE))",
+      "keywords": [
+        "chill",
+        "lofi",
+        "anécdota",
+        "charla",
+        "chat",
+        "historia",
+        "tranquilo"
+      ],
+      "sourceTitle": "bliss - lofi hip hop beat (FREE FOR PROFIT USE)",
+      "excludeFromAutoBgm": false
     }
   ]
 }

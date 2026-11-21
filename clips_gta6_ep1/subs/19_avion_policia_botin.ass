@@ -1,0 +1,72 @@
+﻿[Script Info]
+Title: Subtitulos Dinamicos Shorts - 19_avion_policia_botin
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Shorts,Arial Black,54,&H00FFFFFF,&H0000E5FF,&H00000000,&H80000000,1,0,0,0,100,100,0,0,1,4,2,8,80,80,742,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.40,Shorts,,0,0,0,,QUÉ HA {\c&H0000E5FF&}CAÍDO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:00.42,0:00:00.87,Shorts,,0,0,0,,{\c&H0000E5FF&}NO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.56,0:00:02.32,Shorts,,0,0,0,,ES {\c&H0000E5FF&}COPETA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:05.09,0:00:05.79,Shorts,,0,0,0,,DÓNDE LO {\c&H0000E5FF&}HARÍA{\c&H00FFFFFF&} EN
+Dialogue: 0,0:00:05.81,0:00:06.26,Shorts,,0,0,0,,{\c&H0000E5FF&}GRADO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.33,0:00:06.78,Shorts,,0,0,0,,{\c&H0000E5FF&}SÍ{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.13,0:00:07.91,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:07.93,0:00:08.81,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:08.83,0:00:09.13,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.15,0:00:09.49,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.51,0:00:09.69,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.51,0:00:09.93,Shorts,,0,0,0,,LA {\c&H0000E5FF&}CONCHAS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.95,0:00:10.29,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:10.31,0:00:10.77,Shorts,,0,0,0,,LA {\c&H0000E5FF&}POLI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.37,0:00:12.77,Shorts,,0,0,0,,{\c&H0000E5FF&}OK{\c&H00FFFFFF&}
+Dialogue: 0,0:00:12.79,0:00:13.25,Shorts,,0,0,0,,IBAN A {\c&H0000E5FF&}INVESTIGAR{\c&H00FFFFFF&}
+Dialogue: 0,0:00:13.27,0:00:13.99,Shorts,,0,0,0,,{\c&H0000E5FF&}PRIMERO{\c&H00FFFFFF&} LA AVIÓN
+Dialogue: 0,0:00:14.21,0:00:14.95,Shorts,,0,0,0,,AHÍ HAY UN {\c&H0000E5FF&}CUARTO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.08,0:00:18.42,Shorts,,0,0,0,,{\c&H0000E5FF&}MIERDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.44,0:00:18.92,Shorts,,0,0,0,,{\c&H0000E5FF&}MIERDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:18.94,0:00:19.30,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.32,0:00:19.94,Shorts,,0,0,0,,{\c&H0000E5FF&}MIERDA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.96,0:00:20.78,Shorts,,0,0,0,,NO {\c&H0000E5FF&}HUBIERA{\c&H00FFFFFF&} IDO Y
+Dialogue: 0,0:00:20.80,0:00:21.96,Shorts,,0,0,0,,LA PUTA {\c&H0000E5FF&}MADRE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:23.24,0:00:23.72,Shorts,,0,0,0,,{\c&H0000E5FF&}CORRO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.49,0:00:26.27,Shorts,,0,0,0,,SE VISTE LA {\c&H0000E5FF&}MINERÍA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.29,0:00:26.77,Shorts,,0,0,0,,DE {\c&H0000E5FF&}CORREDOR?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.00,0:00:30.40,Shorts,,0,0,0,,NO {\c&H0000E5FF&}ESTÁN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.42,0:00:30.86,Shorts,,0,0,0,,NO {\c&H0000E5FF&}ESTÁN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:30.88,0:00:31.06,Shorts,,0,0,0,,NO {\c&H0000E5FF&}ESTÁN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:31.02,0:00:31.47,Shorts,,0,0,0,,NO {\c&H0000E5FF&}ESTÁN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.53,0:00:34.93,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:34.95,0:00:35.23,Shorts,,0,0,0,,{\c&H0000E5FF&}AMIGOS{\c&H00FFFFFF&}
+Dialogue: 0,0:00:35.25,0:00:35.95,Shorts,,0,0,0,,QUÉ MANERA QUE {\c&H0000E5FF&}VINIERON?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.09,0:00:39.40,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:39.42,0:00:40.44,Shorts,,0,0,0,,ESTAS DE {\c&H0000E5FF&}INCREÍBLE{\c&H00FFFFFF&}
+Dialogue: 0,0:00:40.46,0:00:41.48,Shorts,,0,0,0,,{\c&H0000E5FF&}HOLA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:41.88,0:00:42.66,Shorts,,0,0,0,,ESTE O {\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:42.68,0:00:43.76,Shorts,,0,0,0,,LA {\c&H0000E5FF&}CASUELA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:52.57,0:00:53.29,Shorts,,0,0,0,,CÓMO {\c&H0000E5FF&}GUARDA?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:54.21,0:00:54.95,Shorts,,0,0,0,,ESTO ES {\c&H0000E5FF&}AHÍ?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:55.89,0:00:57.05,Shorts,,0,0,0,,{\c&H0000E5FF&}DEJASTE{\c&H00FFFFFF&} EL RIFE
+Dialogue: 0,0:00:57.27,0:00:57.72,Shorts,,0,0,0,,Y {\c&H0000E5FF&}ESTO?{\c&H00FFFFFF&}
+Dialogue: 0,0:00:58.53,0:00:58.98,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:59.05,0:00:59.23,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:00:59.07,0:00:59.52,Shorts,,0,0,0,,{\c&H0000E5FF&}NO{\c&H00FFFFFF&}
+Dialogue: 0,0:01:01.18,0:01:02.84,Shorts,,0,0,0,,Y GUARDA LA {\c&H0000E5FF&}MERCANCÍA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:04.60,0:01:05.18,Shorts,,0,0,0,,{\c&H0000E5FF&}MIERDA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:05.20,0:01:06.02,Shorts,,0,0,0,,TENEMOS BASTANTE {\c&H0000E5FF&}PLATA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:06.04,0:01:07.00,Shorts,,0,0,0,,MUCHA {\c&H0000E5FF&}PLATA{\c&H00FFFFFF&} TENGO
+Dialogue: 0,0:01:07.28,0:01:07.98,Shorts,,0,0,0,,MUCHA {\c&H0000E5FF&}PLATA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:08.44,0:01:09.24,Shorts,,0,0,0,,ME {\c&H0000E5FF&}VOY{\c&H00FFFFFF&}
+Dialogue: 0,0:01:09.68,0:01:10.14,Shorts,,0,0,0,,VA A {\c&H0000E5FF&}IR{\c&H00FFFFFF&} A
+Dialogue: 0,0:01:10.16,0:01:10.44,Shorts,,0,0,0,,LA {\c&H0000E5FF&}CIUDAD{\c&H00FFFFFF&}
+Dialogue: 0,0:01:10.46,0:01:11.10,Shorts,,0,0,0,,VAMOS A {\c&H0000E5FF&}VENDER{\c&H00FFFFFF&} LA
+Dialogue: 0,0:01:11.12,0:01:11.62,Shorts,,0,0,0,,{\c&H0000E5FF&}MERCANCÍA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:12.16,0:01:12.94,Shorts,,0,0,0,,ES QUE {\c&H0000E5FF&}IR{\c&H00FFFFFF&} CON
+Dialogue: 0,0:01:12.96,0:01:13.86,Shorts,,0,0,0,,TODO {\c&H0000E5FF&}ATRÁS{\c&H00FFFFFF&}
